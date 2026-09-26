@@ -33,6 +33,15 @@ export default function Dashboard({
     return map;
   }, [projects]);
 
+  const flagCountByProject = useMemo(() => {
+    const counts: Record<string, number> = {};
+    for (const o of overlaps) {
+      counts[o.project_id_a] = (counts[o.project_id_a] ?? 0) + 1;
+      counts[o.project_id_b] = (counts[o.project_id_b] ?? 0) + 1;
+    }
+    return counts;
+  }, [overlaps]);
+
   const notesByOverlap = useMemo(() => {
     const map: Record<number, PlannerNote[]> = {};
     for (const n of notes) {
@@ -53,7 +62,7 @@ export default function Dashboard({
   return (
     <div className="grid grid-cols-[1fr_420px] grid-rows-[1fr] h-full">
       <div className="h-full w-full">
-        <GridlockMap projects={projects} selectedOverlap={selectedPair} />
+        <GridlockMap projects={projects} flagCountByProject={flagCountByProject} selectedOverlap={selectedPair} />
       </div>
       <div className="border-l border-[var(--border)] bg-[var(--panel)] overflow-y-auto flex flex-col">
         <div className="grid grid-cols-3 gap-px bg-[var(--border)] border-b border-[var(--border)]">
@@ -62,11 +71,14 @@ export default function Dashboard({
           <Stat n={highPriorityCount} label="High-priority" accent />
         </div>
         {costImpact[0] && <CostImpactPanel ci={costImpact[0]} />}
-        <div className="flex items-baseline justify-between px-4 pt-4 pb-2">
+        <div className="px-4 pt-4 pb-2.5 flex flex-col gap-1">
           <h2 className="text-[12px] uppercase tracking-[0.08em] text-[var(--muted)] font-medium m-0">
             Coordination Opportunities
           </h2>
-          <span className="font-mono-tab text-[11px] text-[var(--muted)]">ranked by distance</span>
+          <p className="text-[11.5px] text-[var(--muted)] leading-snug m-0">
+            Ranked by how close the projects are (tier), then how close their build schedules are, then exact
+            distance.
+          </p>
         </div>
         <OverlapList
           overlaps={overlaps}

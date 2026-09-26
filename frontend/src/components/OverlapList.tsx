@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import type { Overlap, PlannerNote, Project, Tier } from "@/lib/types";
-import { TIER_COLOR, TIER_LABEL } from "@/lib/types";
+import { TIER_COLOR, TIER_LABEL, TIER_ORDER } from "@/lib/types";
 import NoteThread from "@/components/NoteThread";
 
 const TIERS: (Tier | "all")[] = ["all", "touching_crossing", "share_land", "share_logistics", "share_crews"];
@@ -26,9 +26,24 @@ export default function OverlapList({
   const [selectedId, setSelectedId] = useState<number | null>(null);
   const [expandedId, setExpandedId] = useState<number | null>(null);
 
+  // Rank over the full list (tier, then build-date gap, then distance) so a
+  // pair keeps its rank number when the tier filter is applied.
+  const ranked = useMemo(
+    () =>
+      [...overlaps]
+        .sort(
+          (x, y) =>
+            TIER_ORDER[x.tier] - TIER_ORDER[y.tier] ||
+            (x.day_gap ?? Infinity) - (y.day_gap ?? Infinity) ||
+            x.distance_km - y.distance_km
+        )
+        .map((o, i) => ({ o, rank: i + 1 })),
+    [overlaps]
+  );
+
   const rows = useMemo(
-    () => overlaps.filter((o) => filter === "all" || o.tier === filter),
-    [overlaps, filter]
+    () => ranked.filter(({ o }) => filter === "all" || o.tier === filter),
+    [ranked, filter]
   );
 
   return (
@@ -54,7 +69,7 @@ export default function OverlapList({
         })}
       </div>
       <div className="flex-1 overflow-y-auto px-2.5 pb-4 flex flex-col gap-2">
-        {rows.map((o) => {
+        {rows.map(({ o, rank }) => {
           const a = projectsById[o.project_id_a];
           const b = projectsById[o.project_id_b];
           if (!a || !b) return null;
@@ -64,7 +79,7 @@ export default function OverlapList({
           return (
             <div
               key={o.id}
-              className="bg-[var(--panel-2)] border rounded-lg overflow-hidden cursor-pointer transition-colors"
+              className="shrink-0 bg-[var(--panel-2)] border rounded-lg overflow-hidden cursor-pointer transition-colors"
               style={{ borderColor: isSelected ? "var(--accent)" : "var(--border)" }}
             >
               <div
@@ -75,7 +90,15 @@ export default function OverlapList({
                 }}
               >
                 <div className="flex justify-between items-center mb-2">
-                  <span className="font-mono-tab text-[16px] font-semibold">{o.distance_mi} mi</span>
+                  <div className="flex items-baseline gap-2.5">
+                    <span
+                      className="font-mono-tab text-[13px] font-semibold"
+                      style={{ color: rank <= 3 ? "var(--accent-strong)" : "var(--muted)" }}
+                    >
+                      #{rank}
+                    </span>
+                    <span className="font-mono-tab text-[16px] font-semibold">{o.distance_mi} mi</span>
+                  </div>
                   <span
                     className="text-[10px] px-2 py-0.5 rounded-full font-semibold uppercase tracking-wide"
                     style={{ background: `${TIER_COLOR[o.tier]}22`, color: TIER_COLOR[o.tier] }}
@@ -102,10 +125,6 @@ export default function OverlapList({
                     </span>
                     <span>{b.title}</span>
                   </div>
-                </div>
-                <div className="flex justify-between items-center font-mono-tab text-[10.5px] text-[var(--muted)] mt-2 pt-2 border-t border-[var(--border)]">
-                  <span>{o.day_gap != null ? `${o.day_gap}d apart` : "date n/a"}</span>
-                  <span className="px-1.5 py-0.5 rounded bg-[var(--panel-3)]">{o.confidence.replace("_", " ")}</span>
                 </div>
               </div>
               <button

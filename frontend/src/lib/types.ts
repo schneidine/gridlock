@@ -64,6 +64,14 @@ export const TIER_LABEL: Record<Tier, string> = {
   share_crews: "Share Crews",
 };
 
+// Closest (must coordinate) first -- the primary ranking signal from the challenge brief.
+export const TIER_ORDER: Record<Tier, number> = {
+  touching_crossing: 0,
+  share_land: 1,
+  share_logistics: 2,
+  share_crews: 3,
+};
+
 export const TIER_COLOR: Record<Tier, string> = {
   touching_crossing: "#ef4444",
   share_land: "#f59e0b",

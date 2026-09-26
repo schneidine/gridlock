@@ -85,6 +85,11 @@ body {
 .gl-popup-meta {
   color: var(--muted);
 }
+.gl-popup-flag {
+  margin-top: 4px;
+  color: #facc15;
+  font-weight: 500;
+}
 .gl-popup-conf {
   display: inline-block;
   margin-top: 6px;

@@ -11,6 +11,7 @@ import type { Project } from "@/lib/types";
 const DESC_COLOR = "#3b82f6";
 const GPC_COLOR = "#f2762e";
 const SELECTED_COLOR = "#eb9256";
+const FLAG_COLOR = "#facc15";
 
 function fmtDate(iso: string | null) {
   if (!iso) return "date n/a";
@@ -31,9 +32,11 @@ function FocusController({ pair }: { pair: [[number, number], [number, number]] 
 
 export default function GridlockMap({
   projects,
+  flagCountByProject,
   selectedOverlap,
 }: {
   projects: Project[];
+  flagCountByProject: Record<string, number>;
   selectedOverlap: { a: Project; b: Project } | null;
 }) {
   const pair: [[number, number], [number, number]] | null = selectedOverlap
@@ -58,8 +61,17 @@ export default function GridlockMap({
           if (!p.geo_center) return null;
           const color = p.utility.startsWith("Dominion") ? DESC_COLOR : GPC_COLOR;
           const dashed = p.geo_confidence !== "confirmed";
+          const flagCount = flagCountByProject[p.project_id] ?? 0;
           return (
             <Fragment key={p.project_id}>
+              {flagCount > 0 && (
+                <CircleMarker
+                  center={p.geo_center}
+                  radius={10}
+                  interactive={false}
+                  pathOptions={{ color: FLAG_COLOR, weight: 2, opacity: 0.9, fill: false }}
+                />
+              )}
               <CircleMarker
                 center={p.geo_center}
                 radius={5}
@@ -75,6 +87,11 @@ export default function GridlockMap({
                   <div className="gl-popup-title">{p.title}</div>
                   <div className="gl-popup-meta">{p.utility}</div>
                   <div className="gl-popup-meta">In-service: {fmtDate(p.in_service_date)}</div>
+                  {flagCount > 0 && (
+                    <div className="gl-popup-flag">
+                      Flagged in {flagCount} overlap{flagCount === 1 ? "" : "s"}
+                    </div>
+                  )}
                   <div className="gl-popup-conf">{p.geo_confidence?.replace("_", " ")}</div>
                 </Popup>
               </CircleMarker>
@@ -107,6 +124,10 @@ function MapLegend() {
       <LegendRow swatch={<Dot color={DESC_COLOR} />} label="DESC project" />
       <LegendRow swatch={<Dot color={GPC_COLOR} />} label="Georgia Power project" />
       <LegendRow swatch={<Dot color="var(--muted)" dashed />} label="Estimated location" />
+      <LegendRow
+        swatch={<span className="block w-3.5 h-3.5 rounded-full" style={{ border: `2px solid ${FLAG_COLOR}` }} />}
+        label="In a flagged overlap"
+      />
       <LegendRow
         swatch={<span className="block w-4 border-t-2 border-dashed" style={{ borderColor: SELECTED_COLOR }} />}
         label="Selected overlap"
