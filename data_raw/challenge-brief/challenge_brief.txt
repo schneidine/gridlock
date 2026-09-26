@@ -1,0 +1,88 @@
+1. What This Challenge Is
+
+Power grid companies (“utilities”) each plan their own future construction projects — new power lines, upgraded substations, etc. — years in advance. The problem: neighboring utilities in different states often plan this work without much visibility into what the other one is doing nearby.
+
+The challenge: **build a tool that compares at least two utilities' public future construction plans and flags where their planned work overlaps** — either because the projects are physically close to each other, or because they're scheduled around the same time.
+
+Why it matters: when utilities coordinate on nearby projects, they can potentially share resources (crews, equipment, right-of-way, substation capacity), which saves money and gets infrastructure built faster. Right now, that coordination mostly doesn't happen at this level of detail.
+
+This is a real, current problem — federal regulators (FERC) issued a rule in 2024 (“Order No. 1920”) specifically because utilities have historically planned in isolation, leading to duplicated, inefficient work and delays in construction of our nation’s infrastructure. Our challenge is a smaller, hackathon-sized version of that same coordination problem.
+
+2. The Two Utilities We're Using as an Example
+
+**utilities 1: Dominion Energy South Carolina (DESC)**
+
+**utilities 2: Georgia Power (GPC)**
+
+Georgia Power is a founding sponsor of the same regional coordination forum DESC is joining (SERTP, see glossary), so this example for the challenge mirrors a real coordination relationship, not a made-up scenario. More importantly, South Carolina and Georgia share a border (the Savannah River). We confirmed real, currently-planned DESC projects (Jasper, Okatie, Bluffton near Savannah; Urquhart near Augusta) sitting directly across the river from active Georgia Power work in the same two areas (a Plant McIntosh expansion near Savannah, and the Thomson–Vogtle transmission line near Augusta). DESC also owns an existing hydro plant physically located in Martinez, GA, near Augusta — so there's already a real cross of utilities overalapping
+
+*Optional base map layer:* HIFLD (Homeland Infrastructure Foundation-Level Data) provides public, downloadable GIS data on existing transmission lines and substations — useful as a backdrop layer, though it shares the same straight-line-approximation limitation noted in Section 4.
+
+3. VOCAB dictionary (to help you better understand certain terms)
+
+| **Term** | **What it means** |
+| --- | --- |
+| **Transmission line** | A high-voltage power line that moves electricity for long distances between power plants, substations, and regions. (Different from the smaller “distribution lines” that run to individual houses. |
+| **Substation** | A facility where electricity is stepped up/down in voltage and routed between transmission lines. Think of it as a highway interchange for electricity. |
+| **Right-of-way** | The strip of land a utility owns or has legal access to build/maintain a line. If two projects could share a right-of-way, that's a resource-sharing win. |
+| **IRP (Integrated Resource Plan)** | A utility's official long-term plan for how it will generate and deliver power. Both Dominion Energy South Carolina and Georgia Power file one — DESC's is a 15-year plan with the SC PSC; Georgia Power's is a 10-year plan with the Georgia PSC. |
+| **10-Year Transmission Plan** | Georgia Power's version of a long-term plan — it's not a separate filing, but a section embedded within their IRP (see above), filed with the Georgia PSC. |
+| **PSC (Public Service Commission)** | The state government agency that regulates utilities and reviews/approves their plans. Both SC and GA have one. |
+| **FERC** | The federal agency (Federal Energy Regulatory Commission) that regulates interstate electricity transmission — sits above the state-level PSCs. |
+| **FERC Order No. 1920** | A 2024 federal rule requiring utilities to do more coordinated, long-term regional transmission planning — the real-world reason for this challenge is relevant right now. |
+| **SERTP** | Southeastern Regional Transmission Planning — a regional coordination forum founded by Southern Company (Georgia Power's parent) along with Georgia Transmission Corporation, MEAG, and others. DESC is in the process of joining SERTP as part of its own FERC Order 1920 compliance work — so both utilities in this challenge sit in the same regional forum. |
+| **SCRTP** | South Carolina Regional Transmission Planning — the specific process Dominion Energy South Carolina and Santee Cooper use to publish their planned project lists (this is where our DESC data comes from). Dominion and Santee Cooper co-administer this process as peers — it's not a hierarchy. Note: DESC is transitioning from SCRTP to SERTP, so future project lists may move to a SERTP-published source — worth double-checking for a newer source before this challenge runs. |
+| **CEII (Critical Energy Infrastructure Information)** | A special “confidential, do not share” label the government puts on sensitive grid data. Anything marked CEII is off-limited for this challenge — only public filings should be used. |
+| **Geographic overlap** | Two planned projects are physically near or crossing each other on a map. |
+| **Timeline overlap** | Two planned projects are scheduled to be built in the same window of time (even if not in the exact same spot). |
+
+Challenge Title:
+
+Gridlock Challenge
+
+What we want you to make:
+
+Build a tool that ingests publicly available future-construction data from at least two electric utilities overlapping such as Dominion Energy South Carolina and Georgia Power — and identifies where their planned transmission projects overlap, using two definitions of overlap:
+
+**Geographic overlap** — Two planned projects count as overlapping if they are **within 40 km (25 miles) of each other**. Closer than 40 km, we flag it. Farther, we ignore it. We measure the *closest points* between two projects, not their centers — a 60 km power line can still pass within 5 km of the other utility substation, and that counts.
+
+- Why 40 km: it's about how far a crew will drive from one staging yard in the morning. Inside that, two utilities can share crews, cranes, and contractors. Outside it, they'd each set up separately anyway.
+
+Closer overlaps are worth more, so we rank them by distance:
+
+- **Touching / crossing** → must coordinate (outage timing, crossing structures)
+- **Under 1.6 km** → can share the land itself (right-of-way, access roads, permits)
+- **Under 8 km** → can share site logistics (laydown yards, deliveries)
+- **Under 40 km** → can share crews and equipment
+
+**Timeline overlap** — planned projects scheduled in the same build window.
+
+- Teams should treat geographic overlap as the primary signal and timeline overlap as a strong secondary signal used together with it.
+
+**‼️ Data Sources** (examples that you can use) **Below
+*Y**ou are free to use whatever tools you find as well*
+
+Sperry-Tech-Challenge.zip
+
+**Important — Teams** should expect most of the dataset to NOT overlap — finding the real matches is the point of the exercise.
+
+What Teams Must Deliver
+
+Format is up to you — build it as a web app, dashboard, notebook, or anything else. We're not prescribing the tech stack. That said, the output must be visually clear and at least somewhat interactive (e.g., a map you can pan/zoom/click into, not just a static image). The goal is to be creative!
+
+- **Required:** An interactive UI showing both utilities planned projects, visually highlighting where overlaps occur.
+- **Required:** A ranked list of the top coordination opportunities (which overlaps)
+- **Bonus points:** A rough cost/impact estimate for at least one flagged opportunity (e.g., how much land the two projects could share instead of using separate land, or a simple explanation of how much money that could save).
+
+Prizes
+
+- **1st place:** Guaranteed internship + laptop
+- **2nd place:** Internship interview + laptop
+- **3rd place:** Internship interview
+- 🔗 Project Video
+
+Prizes:
+
+- 1st place - Guaranteed internships and Macbook Airs
+- 2nd place - Interviews and IPads
+- 3rd place - Interviews

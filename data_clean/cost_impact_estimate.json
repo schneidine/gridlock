@@ -1,0 +1,30 @@
+{
+  "overlap": {
+    "desc_project": "Hooks - Thurmond 115kV Tie: Rebuild",
+    "gpc_projects": [
+      "Evans Primary - Thurmond Dam (USA) #5 115KV Rebuild",
+      "Evans Primary - Thurmond Dam (USA) #6 115KV Rebuild"
+    ],
+    "distance_mi": 0.0,
+    "tier": "touching_crossing",
+    "day_gap": 3074,
+    "location_note": "Thurmond Dam, Savannah River (SC/GA border) -- coordinate confirmed by the challenge organizers' own validated example, not our estimate."
+  },
+  "known_costs": {
+    "desc_total_project_cost_usd": 2200080,
+    "desc_cost_source": "DESC 'Planned Transmission Projects $2M and Above' 5-Year Budget filing",
+    "gpc_total_project_cost_usd": null,
+    "gpc_cost_note": "Georgia Power's project cost for this line item is redacted as CEII in their public IRP filing (per FERC 18 CFR 388.113). We do not estimate or invent a figure for it."
+  },
+  "illustrative_savings_estimate": {
+    "basis": "shared mobilization / site access / overhead avoided by coordinating timing at the same facility, applied only to DESC's known, public project cost (Georgia Power's two projects at the same site would add further avoided cost we can't quantify without their redacted figures)",
+    "savings_pct_range": [
+      0.1,
+      0.25
+    ],
+    "savings_usd_low": 220008,
+    "savings_usd_high": 550020,
+    "benchmark_source": "NYC DDC 2025 Utility Coordination Report -- coordinated ('Joint Bidding') projects saw ~74% lower utility-delay-driven cost overruns than uncoordinated ('Section U') projects (avg $1.5M vs. $5.8M additional cost per project). We apply a conservative 10-25% range to DESC's own project cost as an illustrative, not literal, translation of that finding."
+  },
+  "the_actual_problem_this_illustrates": "DESC's rebuild at this exact facility is scheduled for 2024. Georgia Power's two rebuilds at the same facility aren't scheduled until 2033 -- 3074 days (8.4 years) later. Under the status quo, that's two separate crew mobilizations to the same dam, eight years apart, each planned with zero visibility into the other. Even a modest timing conversation between the two utilities -- not a shared build, just synchronized scheduling -- is the coordination FERC Order 1920 is meant to produce."
+}

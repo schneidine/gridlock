@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gridlock — DESC × Georgia Power Coordination</title>
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
+<style>
+  :root {
+    --desc-color: #2563eb;
+    --gpc-color: #ea580c;
+    --tier-touch: #dc2626;
+    --tier-land: #f59e0b;
+    --tier-logistics: #eab308;
+    --tier-crews: #84cc16;
+    --bg: #0b1020;
+    --panel: #12172b;
+    --panel-2: #171d36;
+    --text: #e6e9f2;
+    --muted: #8b93ad;
+    --border: #262c47;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  #app { display: grid; grid-template-columns: 1fr 420px; grid-template-rows: auto 1fr; height: 100vh; }
+  header { grid-column: 1 / -1; padding: 14px 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; background: var(--panel); }
+  header h1 { font-size: 17px; margin: 0; font-weight: 650; }
+  header .sub { color: var(--muted); font-size: 12.5px; margin-top: 2px; }
+  .legend { display: flex; gap: 16px; font-size: 12px; color: var(--muted); }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+  #map { height: 100%; width: 100%; }
+  #sidebar { border-left: 1px solid var(--border); background: var(--panel); overflow-y: auto; display: flex; flex-direction: column; }
+  #sidebar h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); padding: 14px 16px 6px; margin: 0; }
+  .filters { display: flex; gap: 6px; padding: 0 16px 10px; flex-wrap: wrap; }
+  .filters button { background: var(--panel-2); border: 1px solid var(--border); color: var(--text); font-size: 11.5px; padding: 5px 9px; border-radius: 6px; cursor: pointer; }
+  .filters button.active { border-color: var(--tier-crews); background: #1c2440; }
+  .overlap-list { flex: 1; overflow-y: auto; padding: 0 10px 16px; }
+  .card { background: var(--panel-2); border: 1px solid var(--border); border-radius: 10px; padding: 11px 12px; margin: 6px; cursor: pointer; transition: border-color .15s; }
+  .card:hover { border-color: #3b4374; }
+  .card.selected { border-color: var(--gpc-color); }
+  .card .rank-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; }
+  .card .dist { font-size: 15px; font-weight: 700; }
+  .card .tier-badge { font-size: 10.5px; padding: 2px 7px; border-radius: 999px; font-weight: 600; text-transform: uppercase; letter-spacing: .03em; }
+  .card .proj { font-size: 12.5px; line-height: 1.4; margin: 3px 0; }
+  .card .proj b { color: var(--desc-color); }
+  .card .proj.b b { color: var(--gpc-color); }
+  .card .meta { font-size: 11px; color: var(--muted); margin-top: 6px; display: flex; justify-content: space-between; }
+  .conf-tag { font-size: 10px; padding: 1px 6px; border-radius: 4px; background: #1c2440; color: var(--muted); }
+  .conf-tag.confirmed { color: #4ade80; }
+  .conf-tag.estimated { color: #fbbf24; }
+  .conf-tag.region_only { color: #f87171; }
+  .leaflet-popup-content { font-size: 12.5px; max-width: 260px; }
+  .leaflet-popup-content b { display: block; margin-bottom: 4px; }
+  .stat-row { display: flex; gap: 10px; padding: 10px 16px; border-bottom: 1px solid var(--border); }
+  .stat { flex: 1; text-align: center; }
+  .stat .n { font-size: 20px; font-weight: 700; }
+  .stat .l { font-size: 10.5px; color: var(--muted); text-transform: uppercase; }
+
+  #cost-impact { margin: 12px 16px; border: 1px solid #3a4a2e; background: linear-gradient(180deg, #1a2416, #141c11); border-radius: 12px; padding: 14px 16px; }
+  #cost-impact .ci-label { font-size: 10.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--tier-crews); font-weight: 700; margin-bottom: 6px; }
+  #cost-impact .ci-headline { font-size: 20px; font-weight: 750; color: var(--text); margin-bottom: 3px; }
+  #cost-impact .ci-sub { font-size: 11.5px; color: var(--muted); margin-bottom: 10px; }
+  #cost-impact .ci-pair { font-size: 12px; line-height: 1.5; margin-bottom: 4px; }
+  #cost-impact .ci-pair b.a { color: var(--desc-color); }
+  #cost-impact .ci-pair b.b { color: var(--gpc-color); }
+  #cost-impact .ci-note { font-size: 10.8px; color: var(--muted); line-height: 1.5; margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border); }
+  #cost-impact .ci-note a { color: inherit; }
+  #cost-impact details summary { cursor: pointer; font-size: 11px; color: var(--muted); margin-top: 6px; }
+</style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div>
+      <h1>Gridlock</h1>
+      <div class="sub">Dominion Energy South Carolina × Georgia Power — planned construction coordination</div>
+    </div>
+    <div class="legend">
+      <span><i class="dot" style="background:var(--desc-color)"></i>DESC (SC)</span>
+      <span><i class="dot" style="background:var(--gpc-color)"></i>Georgia Power (GA)</span>
+    </div>
+  </header>
+  <div id="map"></div>
+  <div id="sidebar">
+    <div class="stat-row" id="stats"></div>
+    <div id="cost-impact"></div>
+    <h2>Coordination Opportunities</h2>
+    <div class="filters" id="filters"></div>
+    <div class="overlap-list" id="overlap-list"></div>
+  </div>
+</div>
+
+<script src="vendor/leaflet/leaflet.js"></script>
+<script>
+const TIER_LABEL = {
+  touching_crossing: "Touching / Crossing",
+  share_land: "Share Right-of-Way",
+  share_logistics: "Share Logistics",
+  share_crews: "Share Crews"
+};
+const TIER_COLOR = {
+  touching_crossing: getCss('--tier-touch'),
+  share_land: getCss('--tier-land'),
+  share_logistics: getCss('--tier-logistics'),
+  share_crews: getCss('--tier-crews')
+};
+function getCss(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+
+let DATA = null;
+let activeFilter = "all";
+let selectedOverlapIdx = null;
+let map, projLayer, lineLayer;
+const projMarkers = {}; // project_id -> marker
+
+function fmtDate(iso) {
+  if (!iso) return "date n/a";
+  const d = new Date(iso);
+  if (isNaN(d)) return "date n/a";
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short' });
+}
+
+function findProject(id) {
+  return DATA.desc_projects.find(p => p.project_id === id) || DATA.gpc_projects.find(p => p.project_id === id);
+}
+
+function initMap() {
+  map = L.map('map', { zoomControl: true }).setView([32.9, -81.3], 8);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+    subdomains: 'abcd', maxZoom: 19
+  }).addTo(map);
+  projLayer = L.layerGroup().addTo(map);
+  lineLayer = L.layerGroup().addTo(map);
+}
+
+function projectPopupHtml(p) {
+  const conf = p.geo ? p.geo.confidence : "unknown";
+  return `<b>${p.title}</b>${p.utility}<br/>In-service: ${fmtDate(p.in_service_date)}<br/><span class="conf-tag ${conf}">${conf.replace('_',' ')}</span>`;
+}
+
+function renderProjects() {
+  projLayer.clearLayers();
+  [...DATA.desc_projects, ...DATA.gpc_projects].forEach(p => {
+    if (!p.geo) return;
+    const color = p.utility.startsWith("Dominion") ? getCss('--desc-color') : getCss('--gpc-color');
+    const dashed = p.geo.confidence !== "confirmed";
+    const [lat, lon] = p.geo.center;
+    const marker = L.circleMarker([lat, lon], {
+      radius: 5, color, weight: dashed ? 1 : 2, fillColor: color, fillOpacity: dashed ? 0.35 : 0.85,
+      dashArray: dashed ? '2,2' : null
+    }).bindPopup(projectPopupHtml(p));
+    marker.addTo(projLayer);
+    projMarkers[p.project_id] = marker;
+
+    // if a project has two endpoints, draw the line
+    if (p.geo.points.length === 2) {
+      L.polyline(p.geo.points, { color, weight: 2, opacity: dashed ? 0.35 : 0.7 }).addTo(projLayer);
+    }
+  });
+}
+
+function tierRank(t) {
+  return ["touching_crossing","share_land","share_logistics","share_crews"].indexOf(t);
+}
+
+function renderStats() {
+  const stats = document.getElementById('stats');
+  const total = DATA.overlaps.length;
+  const highTier = DATA.overlaps.filter(o => tierRank(o.tier) <= 1).length;
+  stats.innerHTML = `
+    <div class="stat"><div class="n">${DATA.desc_projects.length + DATA.gpc_projects.length}</div><div class="l">Projects</div></div>
+    <div class="stat"><div class="n">${total}</div><div class="l">Flagged Overlaps</div></div>
+    <div class="stat"><div class="n">${highTier}</div><div class="l">High-Priority</div></div>
+  `;
+}
+
+function renderFilters() {
+  const tiers = ["all", "touching_crossing", "share_land", "share_logistics", "share_crews"];
+  const el = document.getElementById('filters');
+  el.innerHTML = "";
+  tiers.forEach(t => {
+    const btn = document.createElement('button');
+    btn.textContent = t === "all" ? "All" : TIER_LABEL[t];
+    btn.className = t === activeFilter ? "active" : "";
+    btn.onclick = () => { activeFilter = t; renderFilters(); renderList(); };
+    el.appendChild(btn);
+  });
+}
+
+function renderList() {
+  const el = document.getElementById('overlap-list');
+  el.innerHTML = "";
+  const rows = DATA.overlaps.filter(o => activeFilter === "all" || o.tier === activeFilter);
+  rows.forEach((o, idx) => {
+    const card = document.createElement('div');
+    card.className = "card" + (idx === selectedOverlapIdx ? " selected" : "");
+    card.innerHTML = `
+      <div class="rank-row">
+        <span class="dist">${o.distance_mi} mi</span>
+        <span class="tier-badge" style="background:${TIER_COLOR[o.tier]}22;color:${TIER_COLOR[o.tier]}">${TIER_LABEL[o.tier]}</span>
+      </div>
+      <div class="proj a"><b>DESC</b> ${o.project_a_title}</div>
+      <div class="proj b"><b>GPC</b> ${o.project_b_title}</div>
+      <div class="meta">
+        <span>${o.day_gap != null ? o.day_gap + "d apart" : "date n/a"}</span>
+        <span class="conf-tag ${o.confidence}">${o.confidence.replace('_',' ')}</span>
+      </div>
+    `;
+    card.onclick = () => focusOverlap(o, idx);
+    el.appendChild(card);
+  });
+}
+
+function focusOverlap(o, idx) {
+  selectedOverlapIdx = idx;
+  renderList();
+  lineLayer.clearLayers();
+  const a = findProject(o.project_id_a), b = findProject(o.project_id_b);
+  if (!a || !a.geo || !b || !b.geo) return;
+  const pa = a.geo.center, pb = b.geo.center;
+  L.polyline([pa, pb], { color: '#ffffff', weight: 2, dashArray: '5,5', opacity: 0.8 }).addTo(lineLayer);
+  const bounds = L.latLngBounds([pa, pb]);
+  map.fitBounds(bounds, { padding: [80, 80], maxZoom: 11 });
+  if (projMarkers[a.project_id]) projMarkers[a.project_id].openPopup();
+}
+
+function fmtUsd(n) {
+  if (n == null) return "n/a";
+  return "$" + Math.round(n).toLocaleString('en-US');
+}
+
+function renderCostImpact(ci) {
+  const el = document.getElementById('cost-impact');
+  if (!ci) { el.innerHTML = ""; return; }
+  const o = ci.overlap, kc = ci.known_costs, sv = ci.illustrative_savings_estimate;
+  el.innerHTML = `
+    <div class="ci-label">Bonus &middot; Cost &amp; Impact Estimate</div>
+    <div class="ci-headline">${fmtUsd(sv.savings_usd_low)}&ndash;${fmtUsd(sv.savings_usd_high)}</div>
+    <div class="ci-sub">potential avoided cost, one flagged pair &middot; ${(sv.savings_pct_range[0]*100)|0}&ndash;${(sv.savings_pct_range[1]*100)|0}% of DESC's own project cost</div>
+    <div class="ci-pair"><b class="a">DESC</b> ${o.desc_project} &mdash; ${fmtUsd(kc.desc_total_project_cost_usd)} (public filing)</div>
+    <div class="ci-pair"><b class="b">GPC</b> ${o.gpc_projects.join(' & ')} &mdash; cost redacted as CEII</div>
+    <div class="ci-note">
+      Same facility (${o.distance_mi} mi apart), but scheduled ${o.day_gap} days (${(o.day_gap/365.25).toFixed(1)} yrs) apart under the status quo.
+      <details><summary>Methodology &amp; sources</summary>
+        ${sv.benchmark_source}<br/><br/>
+        ${kc.gpc_cost_note}
+      </details>
+    </div>
+  `;
+}
+
+fetch('data/gridlock_dataset.json')
+  .then(r => r.json())
+  .then(data => {
+    DATA = data;
+    initMap();
+    renderProjects();
+    renderStats();
+    fetch('data/cost_impact_estimate.json').then(r => r.ok ? r.json() : null).then(renderCostImpact).catch(() => {});
+    renderFilters();
+    renderList();
+  });
+</script>
+</body>
+</html>

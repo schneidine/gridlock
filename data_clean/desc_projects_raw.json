@@ -1,0 +1,607 @@
+[
+  {
+    "project_id_raw": "6807 B",
+    "title": "Queensboro - Ft Johnson 115 kV & Queensboro-Bayfront 115kV (Queensboro-James Island Sect)",
+    "description": "Replace the Queensboro \u2013 Ft Johnson 115 kV Line and structures as they have reached the end of life.",
+    "need": "This project is required due to address end of life issues.",
+    "status": "In Progress",
+    "in_service_date": "12/31/23",
+    "total_cost_raw": "$5,404,301",
+    "total_cost_usd": 5404301,
+    "stations": [
+      "Queensboro",
+      "Ft Johnson"
+    ]
+  },
+  {
+    "project_id_raw": "0167C-D",
+    "title": "Union Pier 115-13.8 kV Sub: Tap",
+    "description": "Installing a 115 kV Tap to feed the future Union Pier 115 kV Sub.",
+    "need": "This project is needed to for load growth in the Charleston area.",
+    "status": "Planned",
+    "in_service_date": "12/31/27",
+    "total_cost_raw": "$5,300,000",
+    "total_cost_usd": 5300000,
+    "stations": [
+      "Union Pier"
+    ]
+  },
+  {
+    "project_id_raw": "0139 M,N",
+    "title": "Okatie 230-115kV Substation, Jasper \u2013 Yemassee 230kV #1 Fold-in",
+    "description": "Expand existing Okatie Transmission sub, add a 230-115 autobank and fold the Jasper \u2013 Yemassee 230 kV #1 line into the 230 kV side. Construct two additional 115 kV bus tie lines.",
+    "need": "This project is needed to improve system performance and to meet NERC TPL and internal DESC Planning Criteria for reliability.",
+    "status": "In Progress",
+    "in_service_date": "12/31/2024",
+    "total_cost_raw": "$11,116,933",
+    "total_cost_usd": 11116933,
+    "stations": [
+      "Okatie",
+      "Yemassee"
+    ]
+  },
+  {
+    "project_id_raw": "6341 A-F",
+    "title": "Cainhoy - Hamlin 115kV: Rebuild Line and Cainhoy \u2013 Hamlin 115 kV #2: Construct New 115 kV Line",
+    "description": "Upgrade the 954 ACSR portion of the Cainhoy \u2013 Hamlin 115 kV line to B795 ACSR conductor, construct a new Cainhoy \u2013 Hamlin 115 kV #2 line, add terminals to Cainhoy and Hamlin sub to accommodate upgrades.",
+    "need": "This project is required due to load growth in the Mount Pleasant area and to meet NERC TPL and internal DESC Planning criteria.",
+    "status": "In Progress",
+    "in_service_date": "12/01/25",
+    "total_cost_raw": "$19,890,850",
+    "total_cost_usd": 19890850,
+    "stations": [
+      "Cainhoy",
+      "Hamlin"
+    ]
+  },
+  {
+    "project_id_raw": "6808 J",
+    "title": "Eastover - Square D 115kV: Rebuild",
+    "description": "Replace wooden H-Frame structures with Self Supporting Steel Structures and restring with 1272 ACSR conductor.",
+    "need": "This project is required to address end of life and reliability issues on these lines.",
+    "status": "In Progress",
+    "in_service_date": "06/01/24",
+    "total_cost_raw": "$11,700,000",
+    "total_cost_usd": 11700000,
+    "stations": [
+      "Eastover",
+      "Square D"
+    ]
+  },
+  {
+    "project_id_raw": "6808 K",
+    "title": "Burton-St Helena 115kV: Rebuild Burton-Frogmore Transmission Section",
+    "description": "Replace wooden structures with Self Supporting Steel Structures and restring with 1272 ACSR conductor for the Burton \u2013 Frogmore Transmission section.",
+    "need": "This project is required to address end of life and reliability issues on these lines.",
+    "status": "In Progress",
+    "in_service_date": "12/31/24",
+    "total_cost_raw": "$8,580,000",
+    "total_cost_usd": 8580000,
+    "stations": [
+      "Burton",
+      "St Helena"
+    ]
+  },
+  {
+    "project_id_raw": "6808 L",
+    "title": "Burton-St Helena 115kV: Frogmore Distribution - St Helena",
+    "description": "Replace wooden structures with Self Supporting Steel Structures and upgrade to 795 ACSR for the Frogmore Distribution Tap \u2013 St. Helena section.",
+    "need": "This project is required to address end of life and reliability issues on these lines.",
+    "status": "In Progress",
+    "in_service_date": "12/31/25",
+    "total_cost_raw": "$6,925,000",
+    "total_cost_usd": 6925000,
+    "stations": [
+      "Burton",
+      "St Helena"
+    ]
+  },
+  {
+    "project_id_raw": "6808 N,O",
+    "title": "VCS1-Denny Terrace 230kV & VCS1-Pineland 230kV: Rebuild Single Circuit Sections",
+    "description": "Replace wooden H-Frame structures with Self Supporting Steel Structures and restring with standard 1272 ACSR conductor.",
+    "need": "This project is required to address end of life and reliability issues on these lines.",
+    "status": "In Progress",
+    "in_service_date": "12/31/26",
+    "total_cost_raw": "$4,912,096",
+    "total_cost_usd": 4912096,
+    "stations": [
+      "VCS1",
+      "Denny Terrace"
+    ]
+  },
+  {
+    "project_id_raw": "6808 R",
+    "title": "Wateree-Killian 230kV: Rebuild",
+    "description": "Replace wooden H-Frame structures with Self Supporting Steel Structures.",
+    "need": "This project is required to address end of life and reliability issues on these lines.",
+    "status": "In Progress",
+    "in_service_date": "12/31/28",
+    "total_cost_raw": "$48,224,719",
+    "total_cost_usd": 48224719,
+    "stations": [
+      "Wateree",
+      "Killian"
+    ]
+  },
+  {
+    "project_id_raw": "6808 S",
+    "title": "Okatie-Bluffton 115kV: Rebuild",
+    "description": "Replace wooden H-Frame structures with Self Supporting Steel Structures and upgrade conductor to standard 1272 ACSR.",
+    "need": "This project is required to address end of life and reliability issues on these lines.",
+    "status": "In Progress",
+    "in_service_date": "06/01/2025",
+    "total_cost_raw": "$40,660,000",
+    "total_cost_usd": 40660000,
+    "stations": [
+      "Okatie",
+      "Bluffton"
+    ]
+  },
+  {
+    "project_id_raw": "6808 U",
+    "title": "Hopkins-CIP 230kV: Rebuild",
+    "description": "Replace wooden H-Frame structures with Self Supporting Steel Structures.",
+    "need": "This project is required to address end of life and reliability issues on these lines.",
+    "status": "Planned",
+    "in_service_date": "12/31/25",
+    "total_cost_raw": "$2,600,000",
+    "total_cost_usd": 2600000,
+    "stations": [
+      "Hopkins",
+      "CIP"
+    ]
+  },
+  {
+    "project_id_raw": "6808 V",
+    "title": "Faber Place-Bayfront 115kV: Rebuild North Bridge Terrace to Bayfront Section",
+    "description": "Replace wooden structures with Self Supporting Steel Structures and upgrade conductor to standard 1272 ACSR.",
+    "need": "This project is required to address end of life and reliability issues on these lines.",
+    "status": "Planned",
+    "in_service_date": "12/31/28",
+    "total_cost_raw": "$10,200,000",
+    "total_cost_usd": 10200000,
+    "stations": [
+      "Faber Place",
+      "Bayfront"
+    ]
+  },
+  {
+    "project_id_raw": "6808 W",
+    "title": "Square D - Hopkins 115kV: Rebuild",
+    "description": "Replace wooden H-Frame structures with Self Supporting Steel Structures and restring with 1272 ACSR conductor.",
+    "need": "This project is required to address end of life and reliability issues on these lines.",
+    "status": "In Progress",
+    "in_service_date": "9/30/2024",
+    "total_cost_raw": "$4,300,000",
+    "total_cost_usd": 4300000,
+    "stations": [
+      "Square D",
+      "Hopkins"
+    ]
+  },
+  {
+    "project_id_raw": "6809 E",
+    "title": "Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV Rebuilds",
+    "description": "9.5 miles. Scope includes rebuilding the 115 and 46 kV lines in this corridor SPDC.",
+    "need": "This project is required to address end of life and reliability issues on these lines.",
+    "status": "In Progress",
+    "in_service_date": "12/31/24",
+    "total_cost_raw": "$11,745,543",
+    "total_cost_usd": 11745543,
+    "stations": [
+      "Stevens Creek",
+      "Hooks"
+    ]
+  },
+  {
+    "project_id_raw": "6809 G",
+    "title": "Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV",
+    "description": "Upgrade 6.5 miles of aging conductor with 1272 ACSR and rebuild with SPDC.",
+    "need": "This project is required to address end of life and reliability issues on these lines.",
+    "status": "Planned",
+    "in_service_date": "12/31/25",
+    "total_cost_raw": "$7,800,000",
+    "total_cost_usd": 7800000,
+    "stations": [
+      "Stevens Creek",
+      "Hooks"
+    ]
+  },
+  {
+    "project_id_raw": "6805 G",
+    "title": "Edenwood Sub: #1 & #2 230-115kV Autobanks, Replace with 336MVA",
+    "description": "Replace Autobank 1 and 2 at Edenwood Substation.",
+    "need": "This project is required to address end of life and maintenance issues on these transformers.",
+    "status": "In Progress",
+    "in_service_date": "12/25/24",
+    "total_cost_raw": "$10,833,462",
+    "total_cost_usd": 10833462,
+    "stations": [
+      "Edenwood"
+    ]
+  },
+  {
+    "project_id_raw": "1060A, I, L",
+    "title": "Williams St Sub: Replace Sw House & Relays, AM Williams Sub: Replace Sw House, and McMeekin Sub: Add Sw House",
+    "description": "Replace switch house, switch house equipment, and relay panels at Williams Street substation. Replace the switch house at AM Williams substation. Add Switching House at McMeekin Substation to move relays from plant relay room.",
+    "need": "This project is required to address end of life and maintenance issues on these transformers.",
+    "status": "In Progress",
+    "in_service_date": "12/31/28",
+    "total_cost_raw": "$9,898,924",
+    "total_cost_usd": 9898924,
+    "stations": [
+      "Williams St"
+    ]
+  },
+  {
+    "project_id_raw": "06005 B",
+    "title": "Harleyville 115KV Transmission Tap \u2013 Construct (1.4 miles)",
+    "description": "Extend the 115 kV line from the Blue Circle tap to the Harleyville substation to provide 115 kV service.",
+    "need": "Load growth.",
+    "status": "Planned",
+    "in_service_date": "3/31/2027",
+    "total_cost_raw": "$2,750,000",
+    "total_cost_usd": 2750000,
+    "stations": [
+      "Harleyville"
+    ]
+  },
+  {
+    "project_id_raw": "05004 P",
+    "title": "Summerville: Replace and Spare 230-115kV 336MVA Auto Bank",
+    "description": "Purchase a spare 230/115kV, 336MVA Autobank for the Southern Region to be stored at Summerville 230kV Sub. Include a pad, AC for heaters, and possibly a pit for oil containment.",
+    "need": "Spare equipment needs.",
+    "status": "In Progress",
+    "in_service_date": "12/31/2024",
+    "total_cost_raw": "$3,982,052",
+    "total_cost_usd": 3982052,
+    "stations": [
+      "Summerville"
+    ]
+  },
+  {
+    "project_id_raw": "06076A",
+    "title": "Canadys-Ritter 115KV-Rebld SPDC 230/115KV 1272 (Approx 18 Miles)",
+    "description": "Rebuild Canadys-Ritter 115 kV line as SPDC with 230 kV on one side and 115 kV on the other side.",
+    "need": "This project is needed to improve system performance and to meet NERC TPL and internal DESC Planning Criteria for reliability.",
+    "status": "In Progress",
+    "in_service_date": "6/1/2026",
+    "total_cost_raw": "$40,000,000",
+    "total_cost_usd": 40000000,
+    "stations": [
+      "Canadys",
+      "Ritter"
+    ]
+  },
+  {
+    "project_id_raw": "6359",
+    "title": "Yemassee\u2013 Ritter 230kV #1 & #2: Construct SPDC with B-1272",
+    "description": "Construct Ritter \u2013 Yemassee 230kV #1 and #2 SPDC with B1272 ACSR on both sides. Convert the existing Ritter \u2013 Yemassee 230 kV to 115 kV operation. Convert and add terminals at Ritter and Yemassee. Add 230 kV bus tie at Ritter and upgrade the Yemassee 230 kV bus tie.",
+    "need": "This project is needed to improve system performance and to meet NERC TPL and internal DESC Planning Criteria for reliability.",
+    "status": "Planned",
+    "in_service_date": "6/1/2026",
+    "total_cost_raw": "$40,611,419",
+    "total_cost_usd": 40611419,
+    "stations": [
+      "Yemassee",
+      "Ritter"
+    ]
+  },
+  {
+    "project_id_raw": "06367 A - C, H",
+    "title": "Riverport Tap: Construct Tap",
+    "description": "Construct Okatie \u2013 Riverport 230 kV to feed new Distribution substation.",
+    "need": "Load growth.",
+    "status": "In Progress",
+    "in_service_date": "12/31/25",
+    "total_cost_raw": "$34,877,427",
+    "total_cost_usd": 34877427,
+    "stations": [
+      "Riverport"
+    ]
+  },
+  {
+    "project_id_raw": "06367 D - G",
+    "title": "Jasper \u2013 Okatie 230 kV #2: Construct",
+    "description": "Construct a 230 kV line with B1272 ACSR from Jasper to Okatie 230/115kV Substation. The line is estimated to be 6.5 miles long. This makes Jasper a Medium Impact substation and will require a new CIP Hut.",
+    "need": "This project is needed to improve system performance and to meet NERC TPL and internal DESC Planning Criteria for reliability.",
+    "status": "In Progress",
+    "in_service_date": "12/31/25",
+    "total_cost_raw": "$23,787,423",
+    "total_cost_usd": 23787423,
+    "stations": [
+      "Jasper",
+      "Okatie"
+    ]
+  },
+  {
+    "project_id_raw": "06371 D",
+    "title": "Wagener 115kV Tap: Construct Tap",
+    "description": "Constructing a 115 kV Tap off the Edmund Switching Station- Owens Corning 115 kV Line to feed new Wagener Distribution substation.",
+    "need": "Load growth.",
+    "status": "Planned",
+    "in_service_date": "12/31/25",
+    "total_cost_raw": "$6,005,000",
+    "total_cost_usd": 6005000,
+    "stations": [
+      "Wagener"
+    ]
+  },
+  {
+    "project_id_raw": "06372 A",
+    "title": "Church Creek - Ritter 230kV - Replace 38 Large Angles and Dead Ends",
+    "description": "Replace 6.5 miles of aging conductor.",
+    "need": "Replacing approximately 38 guyed wooden structures due to recent failures in the fiberglass strain insulators along this line. Structures to be changed out are dead ends/large angles.",
+    "status": "In Progress",
+    "in_service_date": "6/1/2024",
+    "total_cost_raw": "$10,850,000",
+    "total_cost_usd": 10850000,
+    "stations": [
+      "Church Creek",
+      "Ritter"
+    ]
+  },
+  {
+    "project_id_raw": "06810 F",
+    "title": "VCS2-Ward 230kV: Rebuild Line",
+    "description": "Rebuild 40 miles of 230 kV line.",
+    "need": "This project is required to address end of life and maintenance issues.",
+    "status": "Planned",
+    "in_service_date": "12/31/29",
+    "total_cost_raw": "$30,000,000",
+    "total_cost_usd": 30000000,
+    "stations": [
+      "VCS2",
+      "Ward"
+    ]
+  },
+  {
+    "project_id_raw": "06810 G",
+    "title": "Goose Creek Reservoir: Rebuild Transmission Line Crossings",
+    "description": "Rebuilding the Williams Goose Creek 230 and 115 kV lines and the Williams - Faber Place 230 kV line across the Goose Creek Reservoir.",
+    "need": "This project is required to address end of life and maintenance issues.",
+    "status": "In Progress",
+    "in_service_date": "12/31/24",
+    "total_cost_raw": "$9,655,669",
+    "total_cost_usd": 9655669,
+    "stations": [
+      "Goose Creek Reservoir"
+    ]
+  },
+  {
+    "project_id_raw": "06810 H",
+    "title": "Summerville 115kV Loop: Rebuild",
+    "description": "Replacing several wood pole sections on the Summerville 115 kV Loop that have reached the end of life.",
+    "need": "This project is required to address end of life and maintenance issues.",
+    "status": "In Progress",
+    "in_service_date": "12/31/24",
+    "total_cost_raw": "$12,475,000",
+    "total_cost_usd": 12475000,
+    "stations": [
+      "Summerville"
+    ]
+  },
+  {
+    "project_id_raw": "6809 M",
+    "title": "St George - Sumter 230kV Tie: Rebuild Line from Santee Substation - Duke/Progress Energy Tie",
+    "description": "Rebuild Line from Santee Substation - Duke/Progress Energy Tie.",
+    "need": "Grid hardening.",
+    "status": "Planned",
+    "in_service_date": "12/31/2025",
+    "total_cost_raw": "$4,000,000",
+    "total_cost_usd": 4000000,
+    "stations": [
+      "St George",
+      "Sumter"
+    ]
+  },
+  {
+    "project_id_raw": "5392 A-C",
+    "title": "Coit \u2013 Gills Creek 115kV: Construct",
+    "description": "Convert the existing Coit - Gills Creek 33 kV Line to 115 kV. Approximately 1.25 miles. Construct Gills Creek Terminal at Coit Bus #1.",
+    "need": "Load growth.",
+    "status": "In Progress",
+    "in_service_date": "12/31/2024",
+    "total_cost_raw": "$2,509,602",
+    "total_cost_usd": 2509602,
+    "stations": [
+      "Coit",
+      "Gills Creek"
+    ]
+  },
+  {
+    "project_id_raw": "6810 A",
+    "title": "Hooks - Thurmond 115kV Tie: Rebuild",
+    "description": "Rebuilding section of line between Hooks and Thurmond. Approximately 2.3 miles. The line will be rebuilt on existing R/W using steel poles, 115 kV insulation, and 1272 ACSR conductor.",
+    "need": "This project is required to address end of life and reliability issues on these lines.",
+    "status": "In Progress",
+    "in_service_date": "12/31/2024",
+    "total_cost_raw": "$2,200,080",
+    "total_cost_usd": 2200080,
+    "stations": [
+      "Hooks",
+      "Thurmond"
+    ]
+  },
+  {
+    "project_id_raw": "6809 N",
+    "title": "Batesburg - Saluda County 115kV: Rebuild",
+    "description": "Rebuild 13.5 miles of conductor.",
+    "need": "Grid hardening.",
+    "status": "In Progress",
+    "in_service_date": "12/31/2025",
+    "total_cost_raw": "$8,750,000",
+    "total_cost_usd": 8750000,
+    "stations": [
+      "Batesburg",
+      "Saluda County"
+    ]
+  },
+  {
+    "project_id_raw": "6853 B-F",
+    "title": "Scout 230 kV Sub and Fold-in: Construct",
+    "description": "Construct 230kV Transmission Line for Scout Customer Substation and modify VCS1 and Killian terminals.",
+    "need": "Load growth.",
+    "status": "In Progress",
+    "in_service_date": "3/31/2026",
+    "total_cost_raw": "$23,685,000",
+    "total_cost_usd": 23685000,
+    "stations": [
+      "Scout"
+    ]
+  },
+  {
+    "project_id_raw": "6859",
+    "title": "Dawson 230kV Sub and Fold-in: Construct and Rebuild",
+    "description": "Construct Dawson 230kV substation. Fold in the existing Canadys \u2013 Church Creek and Canadys \u2013 Faber Place 230kV lines at the Dawson 230kV substation (phase 1). Rebuild Canadys \u2013 Dawson 230kV #1 and #2 with B1272 ACSR (phase 2).",
+    "need": "Load growth.",
+    "status": "In Progress",
+    "in_service_date": "10/1/2025 (phase 1) and 10/1/2026 (phase 2)",
+    "total_cost_raw": "$93,538,207",
+    "total_cost_usd": 93538207,
+    "stations": [
+      "Dawson"
+    ]
+  },
+  {
+    "project_id_raw": "6852",
+    "title": "Urquhart \u2013 Toolebeck 115kV line: Rebuild",
+    "description": "Upgrade the 477 ACSR portions of the Urquhart \u2013 Toolebeck 115 kV line to 1272 ACSR. Replace existing structures with Single Pole Double Circuit Structures. Approximately 12.5 miles.",
+    "need": "This project is needed to improve system performance and to meet NERC TPL and internal DESC Planning Criteria for reliability.",
+    "status": "In Progress",
+    "in_service_date": "8/12/2026",
+    "total_cost_raw": "$17,520,000",
+    "total_cost_usd": 17520000,
+    "stations": [
+      "Urquhart",
+      "Toolebeck"
+    ]
+  },
+  {
+    "project_id_raw": "6388 A",
+    "title": "Williams-Summerville 230kV: Upgrade to SPDC B1272 ACSR",
+    "description": "Rebuild the section of the Williams - Summerville 230 kV line from Ladson Jct to Williams. Line to upgraded to B-1272 and designed for a future second circuit. Approximately 10 miles.",
+    "need": "This project is needed to improve system performance and to meet NERC TPL and internal DESC Planning Criteria for reliability.",
+    "status": "Planned",
+    "in_service_date": "5/1/2027",
+    "total_cost_raw": "$19,300,000",
+    "total_cost_usd": 19300000,
+    "stations": [
+      "Williams",
+      "Summerville"
+    ]
+  },
+  {
+    "project_id_raw": "0147 C, K",
+    "title": "Cainhoy 115 kV Tap: Construct",
+    "description": "Construct a 115 kV tap from Cainhoy to Clements Ferry. Approximately 2.8 miles. Construct terminal at Cainhoy.",
+    "need": "Load growth.",
+    "status": "Planned",
+    "in_service_date": "12/31/2027",
+    "total_cost_raw": "$21,850,000",
+    "total_cost_usd": 21850000,
+    "stations": [
+      "Cainhoy"
+    ]
+  },
+  {
+    "project_id_raw": "0147 B, J",
+    "title": "Jack Primus 115 kV Tap: Construct",
+    "description": "Construct a 115 kV tap from Jack Primus to Clements Ferry. Approximately 2.2 miles. Construct terminals at Jack Primus.",
+    "need": "Load growth.",
+    "status": "Planned",
+    "in_service_date": "12/31/2027",
+    "total_cost_raw": "$18,000,000",
+    "total_cost_usd": 18000000,
+    "stations": [
+      "Jack Primus"
+    ]
+  },
+  {
+    "project_id_raw": "6847 A-B, D-H",
+    "title": "Church Creek \u2013 Faber Place \u2013 Charleston Transmission: Add 230kV Line",
+    "description": "Construct a 230 kV transmission line from Church Creek to Charleston Transmission. The Church Creek \u2013 Faber Place 230kV and 115kV lines will be rebuilt, and a 230kV line will be added between Faber Place and Charleston Transmission. Add 230/115kV transformer at Charleston Transmission. Add/upgrade terminals and bus work at impacted substations.",
+    "need": "This project is needed to improve system performance and to meet NERC TPL and internal DESC Planning Criteria for reliability.",
+    "status": "In Progress",
+    "in_service_date": "05/01/2027",
+    "total_cost_raw": "$34,174,682",
+    "total_cost_usd": 34174682,
+    "stations": [
+      "Church Creek",
+      "Faber Place",
+      "Charleston"
+    ]
+  },
+  {
+    "project_id_raw": "6846 A",
+    "title": "Eastover \u2013 Sumter 115kV DEP Tie: Rebuild with 1272 ACSR",
+    "description": "Upgrade the DESC section (approx. 1 mile) of the tie line from 397.5 ACSR Ibis to 1272 ACSR.",
+    "need": "This project is needed to improve system performance and to meet NERC TPL and internal DESC Planning Criteria for reliability.",
+    "status": "Planned",
+    "in_service_date": "05/31/2026",
+    "total_cost_raw": "$1,100,000",
+    "total_cost_usd": 1100000,
+    "stations": [
+      "Eastover",
+      "Sumter"
+    ]
+  },
+  {
+    "project_id_raw": "6810 U",
+    "title": "Cameron Jct \u2013 Elloree 46 kV Rebuild",
+    "description": "Rebuilding the Cameron Jct \u2013 Elloree 46 kV Line. 7.3 miles.",
+    "need": "System hardening",
+    "status": "Planned",
+    "in_service_date": "12/31/2026",
+    "total_cost_raw": "$4,500,000",
+    "total_cost_usd": 4500000,
+    "stations": [
+      "Cameron Jct",
+      "Elloree"
+    ]
+  },
+  {
+    "project_id_raw": "6810 J",
+    "title": "Elloree \u2013 Santee City 46 kV: Rebuild",
+    "description": "Rebuilding the 46 kV line between Elloree and Santee City. 7 miles.",
+    "need": "System hardening",
+    "status": "Planned",
+    "in_service_date": "12/31/2027",
+    "total_cost_raw": "$4,500,000",
+    "total_cost_usd": 4500000,
+    "stations": [
+      "Elloree",
+      "Santee City"
+    ]
+  },
+  {
+    "project_id_raw": "6810 O",
+    "title": "Urquhart \u2013 Aiken PSA 46 kV: Rebuild",
+    "description": "Rebuilding the section of 46 kV line from Urquhart to the Aiken PSA tap point. TBD if the scope of this project includes rebuilding the actual tap Aiken PSA. 4.5 miles.",
+    "need": "System hardening",
+    "status": "Planned",
+    "in_service_date": "12/31/2027",
+    "total_cost_raw": "$3,000,000",
+    "total_cost_usd": 3000000,
+    "stations": [
+      "Urquhart",
+      "Aiken PSA"
+    ]
+  },
+  {
+    "project_id_raw": "6810 T",
+    "title": "Cameron Jct \u2013 Cameron \u2013 St Matthews 46 kV Rebuild",
+    "description": "Rebuilding the 46 kV line between Cameron Jct and St Matthews. 9.8 miles.",
+    "need": "System hardening.",
+    "status": "Planned",
+    "in_service_date": "12/31/2028",
+    "total_cost_raw": "$5,900,000",
+    "total_cost_usd": 5900000,
+    "stations": [
+      "Cameron Jct",
+      "Cameron",
+      "St Matthews"
+    ]
+  }
+]

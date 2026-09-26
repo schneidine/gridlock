@@ -1,0 +1,106 @@
+"""
+Parse Dominion Energy South Carolina's public "$2M and Above" 5-Year Budget
+PDF into a structured project list.
+
+Input:  data_raw/utility-filings/DESC_5yr_transmission_projects.pdf
+Output: data_clean/desc_projects_raw.json
+
+Each PDF page is one project, laid out as a fixed set of labeled fields
+(Project ID, Project Description, Project Need, Project Status, Planned
+In-Service Date, Estimated Project Cost). We parse it structurally rather
+than with a single regex, since fields vary in line count.
+"""
+import json
+import re
+from pathlib import Path
+
+import pdfplumber
+
+ROOT = Path(__file__).parent.parent
+PDF_PATH = ROOT / "data_raw" / "utility-filings" / "DESC_5yr_transmission_projects.pdf"
+OUT_PATH = ROOT / "data_clean" / "desc_projects_raw.json"
+
+
+def extract_stations(name: str):
+    """Pull the named substations/stations out of a project title.
+
+    Strategy: strip a leading zone prefix (e.g. "SAV:"), strip any
+    dual-voltage class marker (e.g. "230-115kV"), then split on the
+    remaining text up to the first single voltage marker (e.g. "115 kV"),
+    using dashes as the separator between station names.
+    """
+    name2 = re.sub(r"[\x00-\x1f]", "", name)  # strip stray control chars from the PDF
+    name2 = re.sub(r"^[A-Z]{2,6}:\s*", "", name2)
+    name2 = re.sub(r"\d+(\.\d+)?\s*[/\-]\s*\d+(\.\d+)?\s*kv", " ", name2, flags=re.IGNORECASE)
+    m = re.search(r"\d+(\.\d+)?\s?kv", name2, flags=re.IGNORECASE)
+    route = name2[: m.start()] if m else name2
+    route = route.strip(" -–:,")
+    parts = re.split(r"\s*[-–]\s*", route)
+    parts = [re.sub(r"\s+", " ", p).strip() for p in parts if p.strip()]
+
+    def tidy(p):
+        p = re.split(r"[:,&]", p)[0].strip()
+        p = re.sub(r"\b(Sub|Substation|Tap|Line|Transmission)\b\.?$", "", p, flags=re.IGNORECASE).strip()
+        return p
+
+    parts = [tidy(p) for p in parts]
+    return [p for p in parts if len(p) > 1]
+
+
+def parse():
+    projects = []
+    with pdfplumber.open(PDF_PATH) as pdf:
+        for page in pdf.pages:
+            text = page.extract_text()
+            lines = text.split("\n")
+
+            idx_pid = lines.index("Project ID")
+            idx_desc = lines.index("Project Description")
+            idx_need = lines.index("Project Need")
+            idx_status = lines.index("Project Status")
+            idx_date = lines.index("Planned In-Service Date")
+            idx_cost = lines.index("Estimated Project Cost")
+
+            title = " ".join(lines[4:idx_pid]).strip()
+            pid = lines[idx_pid + 1].strip()
+            desc = " ".join(lines[idx_desc + 1 : idx_need]).strip()
+            need = " ".join(lines[idx_need + 1 : idx_status]).strip()
+            status = lines[idx_status + 1].strip()
+            date = lines[idx_date + 1].strip()
+
+            # cost table: header row then a values row; Total is the last $ figure
+            values_line = lines[idx_cost + 2]
+            dollar_amounts = re.findall(r"\$[\d,]+", values_line)
+            total_cost_raw = dollar_amounts[-1] if dollar_amounts else None
+            total_cost_usd = (
+                int(total_cost_raw.replace("$", "").replace(",", "")) if total_cost_raw else None
+            )
+
+            projects.append(
+                {
+                    "project_id_raw": pid,
+                    "title": title,
+                    "description": desc,
+                    "need": need,
+                    "status": status,
+                    "in_service_date": date,
+                    "total_cost_raw": total_cost_raw,
+                    "total_cost_usd": total_cost_usd,
+                    "stations": extract_stations(title),
+                }
+            )
+    return projects
+
+
+def main():
+    projects = parse()
+    OUT_PATH.parent.mkdir(exist_ok=True)
+    json.dump(projects, open(OUT_PATH, "w"), indent=2)
+    print(f"Parsed {len(projects)} DESC projects -> {OUT_PATH}")
+    missing_cost = [p for p in projects if p["total_cost_usd"] is None]
+    if missing_cost:
+        print(f"WARNING: {len(missing_cost)} projects missing a parsed cost")
+
+
+if __name__ == "__main__":
+    main()
