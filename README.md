@@ -12,30 +12,37 @@ potentially share crews, equipment, or right-of-way.
 ## Structure
 
 ```
-data_raw/
-  utility-filings/    the two real source documents (DESC PDF, GPC IRP text)
-  challenge-brief/    organizer materials (challenge doc, worked example, geocoding guide)
-data_clean/           parsed project lists + generated JSON the app reads
-pipeline/             the full pipeline, runnable end-to-end from data_raw/ (see below)
-web/                  the interactive map + ranked-list UI (open web/index.html via a local server)
+backend/
+  data_raw/
+    utility-filings/    the two real source documents (DESC PDF, GPC IRP text)
+    challenge-brief/    organizer materials (challenge doc, worked example, geocoding guide)
+  data_clean/           parsed project lists + generated JSON the app reads
+  pipeline/             the full pipeline, runnable end-to-end from data_raw/ (see below)
+  requirements.txt
+frontend/              Next.js + Supabase dashboard (the real deliverable; see frontend/README.md)
+web/                    static Leaflet demo, reads the JSON directly (open web/index.html via a local server)
 ```
 
 ## Running it
 
 ```bash
+cd backend
 pip install -r requirements.txt
 
 cd pipeline
-python3 parse_desc_pdf.py     # data_raw/utility-filings/*.pdf -> data_clean/desc_projects_raw.json
-python3 parse_gpc_irp.py      # data_raw/utility-filings/*.txt -> data_clean/gpc_projects_raw.json
-python3 build_dataset.py      # -> data_clean/gridlock_dataset.json (the overlap engine)
-python3 cost_impact.py        # -> data_clean/cost_impact_estimate.json (bonus estimate)
+python3 parse_desc_pdf.py     # data_raw/utility-filings/*.pdf -> ../data_clean/desc_projects_raw.json
+python3 parse_gpc_irp.py      # data_raw/utility-filings/*.txt -> ../data_clean/gpc_projects_raw.json
+python3 build_dataset.py      # -> ../data_clean/gridlock_dataset.json (the overlap engine)
+python3 cost_impact.py        # -> ../data_clean/cost_impact_estimate.json (bonus estimate)
 
-cp ../data_clean/gridlock_dataset.json ../data_clean/cost_impact_estimate.json ../web/data/
-cd ../web && python3 -m http.server 8000    # then open http://localhost:8000
+cp ../data_clean/gridlock_dataset.json ../data_clean/cost_impact_estimate.json ../../web/data/
+cd ../../web && python3 -m http.server 8000    # then open http://localhost:8000
 ```
 
-The whole chain is reproducible from the two raw filings in `data_raw/utility-filings/`
+For the full Next.js + Supabase dashboard instead of the static demo, see
+`frontend/README.md`.
+
+The whole chain is reproducible from the two raw filings in `backend/data_raw/utility-filings/`
 straight through to the final dataset — nothing is hand-patched or only exists
 as a cached JSON file.
 
@@ -57,7 +64,7 @@ as a cached JSON file.
    (e.g. "115 kV") as the split point between the two named substations —
    validated exactly against the organizers' own worked example
    (`Projects_Overlaps.xlsx`).
-3. **Geocode** each station via `pipeline/coords_seed.py`, a hand-built
+3. **Geocode** each station via `backend/pipeline/coords_seed.py`, a hand-built
    gazetteer with three honesty tiers:
    - `confirmed` — taken directly from the organizers' validated example, or
      is a real named town/city with well-known coordinates.
@@ -82,7 +89,7 @@ as a cached JSON file.
 
 ## Bonus: cost/impact estimate
 
-`pipeline/cost_impact.py` builds a rough savings estimate for the strongest
+`backend/pipeline/cost_impact.py` builds a rough savings estimate for the strongest
 flagged overlap (DESC's "Hooks - Thurmond 115kV Tie: Rebuild" vs. Georgia
 Power's two "Evans Primary - Thurmond Dam" rebuilds — the same facility on
 the Savannah River, 0.0 mi apart per the organizers' own confirmed

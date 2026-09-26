@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Loads the Python pipeline's output (../../data_clean/*.json) into
+ * Loads the Python pipeline's output (../../backend/data_clean/*.json) into
  * Supabase. Uses the service-role key, which bypasses RLS, so this must
  * only ever be run from a trusted machine/CI -- never expose the
  * service-role key to the browser.
@@ -17,7 +17,7 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const DATA_DIR = path.join(__dirname, "..", "..", "data_clean");
+const DATA_DIR = path.join(__dirname, "..", "..", "backend", "data_clean");
 
 const SUPABASE_URL = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;

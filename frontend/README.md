@@ -8,7 +8,7 @@ Tech "Gridlock" challenge (FERC Order No. 1920 motivation).
 
 This app reads from Supabase Postgres tables (`projects`, `overlaps`,
 `cost_impact`, `planner_notes`), which are seeded from the reproducible data
-pipeline in `../pipeline/` (see the repo root `README.md` for how that JSON
+pipeline in `../backend/pipeline/` (see the repo root `README.md` for how that JSON
 is generated from the raw utility filings).
 
 Viewing the map, ranked list, and bonus cost/impact panel needs no account.
@@ -90,7 +90,7 @@ node scripts/seed.mjs
 ```
 
 The seed script reads the pipeline's output JSON from
-`../data_clean/{gridlock_dataset.json,cost_impact_estimate.json}` and
+`../backend/data_clean/{gridlock_dataset.json,cost_impact_estimate.json}` and
 upserts it into your Supabase tables using the service-role key (bypasses
 RLS, so it must only ever be run from a trusted machine — never in the
 browser). Re-run it any time the underlying data pipeline output changes.
@@ -121,7 +121,7 @@ Vercel's default Next.js build/output settings work as-is.
 ## Project structure
 
 ```
-webapp/
+frontend/
 ├── src/
 │   ├── app/
 │   │   ├── page.tsx            # server component root: fetches data + auth state
@@ -141,7 +141,7 @@ webapp/
 │   │   └── types.ts            # shared TS types
 │   └── proxy.ts                # Supabase session-refresh (Next 16's renamed middleware)
 ├── supabase/migrations/0001_init.sql  # schema + RLS policies
-├── scripts/seed.mjs            # loads ../data_clean/*.json into Supabase
+├── scripts/seed.mjs            # loads ../backend/data_clean/*.json into Supabase
 └── .env.example
 ```
 
@@ -158,5 +158,5 @@ webapp/
   deploy target can reach Google Fonts.
 - GPC's project costs are redacted in their public filing as Critical Energy
   Infrastructure Information (CEII). `cost_impact` intentionally has no
-  invented number for GPC — see `pipeline/cost_impact.py` and the
+  invented number for GPC — see `../backend/pipeline/cost_impact.py` and the
   `CostImpactPanel` methodology note for what is and isn't estimated, and why.
