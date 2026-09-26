@@ -33,20 +33,27 @@ export default function OverlapList({
 
   return (
     <>
-      <div className="flex gap-1.5 flex-wrap px-4 pb-2.5">
-        {TIERS.map((t) => (
-          <button
-            key={t}
-            onClick={() => setFilter(t)}
-            className={`text-[11.5px] px-2.5 py-1 rounded-md border ${
-              filter === t ? "border-lime-500 bg-[#1c2440]" : "border-[var(--border)] bg-[var(--panel-2)]"
-            }`}
-          >
-            {t === "all" ? "All" : TIER_LABEL[t]}
-          </button>
-        ))}
+      <div className="flex gap-1.5 flex-wrap px-4 pb-3">
+        {TIERS.map((t) => {
+          const active = filter === t;
+          const color = t === "all" ? "var(--accent)" : TIER_COLOR[t];
+          return (
+            <button
+              key={t}
+              onClick={() => setFilter(t)}
+              className="text-[11px] font-medium px-2.5 py-1 rounded-full border transition-colors"
+              style={
+                active
+                  ? { borderColor: color, background: `color-mix(in srgb, ${color} 12%, transparent)`, color }
+                  : { borderColor: "var(--border)", background: "var(--panel-2)", color: "var(--muted)" }
+              }
+            >
+              {t === "all" ? "All" : TIER_LABEL[t]}
+            </button>
+          );
+        })}
       </div>
-      <div className="flex-1 overflow-y-auto px-2.5 pb-4">
+      <div className="flex-1 overflow-y-auto px-2.5 pb-4 flex flex-col gap-2">
         {rows.map((o) => {
           const a = projectsById[o.project_id_a];
           const b = projectsById[o.project_id_b];
@@ -57,52 +64,68 @@ export default function OverlapList({
           return (
             <div
               key={o.id}
-              className={`bg-[var(--panel-2)] border rounded-xl p-3 m-1.5 cursor-pointer transition-colors ${
-                isSelected ? "border-orange-500" : "border-[var(--border)] hover:border-[#3b4374]"
-              }`}
+              className="bg-[var(--panel-2)] border rounded-lg overflow-hidden cursor-pointer transition-colors"
+              style={{ borderColor: isSelected ? "var(--accent)" : "var(--border)" }}
             >
               <div
+                className="p-3"
                 onClick={() => {
                   setSelectedId(o.id);
                   onSelect(o);
                 }}
               >
-                <div className="flex justify-between items-baseline mb-1.5">
-                  <span className="text-[15px] font-bold">{o.distance_mi} mi</span>
+                <div className="flex justify-between items-center mb-2">
+                  <span className="font-mono-tab text-[16px] font-semibold">{o.distance_mi} mi</span>
                   <span
-                    className="text-[10.5px] px-1.5 py-0.5 rounded-full font-semibold uppercase tracking-wide"
+                    className="text-[10px] px-2 py-0.5 rounded-full font-semibold uppercase tracking-wide"
                     style={{ background: `${TIER_COLOR[o.tier]}22`, color: TIER_COLOR[o.tier] }}
                   >
                     {TIER_LABEL[o.tier]}
                   </span>
                 </div>
-                <div className="text-[12.5px] leading-relaxed my-0.5">
-                  <b className="text-blue-500">DESC</b> {a.title}
+                <div className="flex flex-col gap-1">
+                  <div className="text-[12.5px] leading-snug flex gap-1.5">
+                    <span
+                      className="shrink-0 font-mono-tab text-[10px] font-semibold px-1.5 rounded leading-[18px]"
+                      style={{ background: "color-mix(in srgb, var(--desc-color) 15%, transparent)", color: "var(--desc-color)" }}
+                    >
+                      DESC
+                    </span>
+                    <span>{a.title}</span>
+                  </div>
+                  <div className="text-[12.5px] leading-snug flex gap-1.5">
+                    <span
+                      className="shrink-0 font-mono-tab text-[10px] font-semibold px-1.5 rounded leading-[18px]"
+                      style={{ background: "color-mix(in srgb, var(--gpc-color) 15%, transparent)", color: "var(--gpc-color)" }}
+                    >
+                      GPC
+                    </span>
+                    <span>{b.title}</span>
+                  </div>
                 </div>
-                <div className="text-[12.5px] leading-relaxed my-0.5">
-                  <b className="text-orange-500">GPC</b> {b.title}
-                </div>
-                <div className="flex justify-between text-[11px] text-[var(--muted)] mt-1.5">
+                <div className="flex justify-between items-center font-mono-tab text-[10.5px] text-[var(--muted)] mt-2 pt-2 border-t border-[var(--border)]">
                   <span>{o.day_gap != null ? `${o.day_gap}d apart` : "date n/a"}</span>
-                  <span className="px-1.5 rounded bg-[#1c2440]">{o.confidence.replace("_", " ")}</span>
+                  <span className="px-1.5 py-0.5 rounded bg-[var(--panel-3)]">{o.confidence.replace("_", " ")}</span>
                 </div>
               </div>
               <button
-                className="text-[11px] text-[var(--muted)] mt-2 underline"
+                className="w-full text-left text-[11px] text-[var(--muted)] px-3 py-1.5 border-t border-[var(--border)] hover:text-[var(--foreground)] transition-colors"
                 onClick={(e) => {
                   e.stopPropagation();
                   setExpandedId(isExpanded ? null : o.id);
                 }}
               >
-                {isExpanded ? "hide notes" : `notes (${notes.length})`}
+                {isExpanded ? "Hide notes" : `Notes (${notes.length})`}
               </button>
               {isExpanded && (
-                <NoteThread
-                  overlapId={o.id}
-                  notes={notes}
-                  currentUserId={currentUserId}
-                  currentUserLabel={currentUserLabel}
-                />
+                <div className="px-3 pb-3">
+                  <NoteThread
+                    overlapId={o.id}
+                    notes={notes}
+                    currentUserId={currentUserId}
+                    currentUserLabel={currentUserLabel}
+                  />
+                </div>
               )}
             </div>
           );

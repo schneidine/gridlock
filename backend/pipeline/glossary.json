@@ -1,0 +1,57 @@
+{
+  "_purpose": "Domain vocabulary for utility transmission-planning filings. Used as context for ai_extract.py's parsing prompt so the model interprets terms correctly, and as the seed corpus for future RAG retrieval over utility filings.",
+  "terms": [
+    {
+      "term": "Transmission line",
+      "definition": "A high-voltage power line that moves electricity for long distances between power plants, substations, and regions. Different from the smaller distribution lines that run to individual houses."
+    },
+    {
+      "term": "Substation",
+      "definition": "A facility where electricity is stepped up/down in voltage and routed between transmission lines. Think of it as a highway interchange for electricity."
+    },
+    {
+      "term": "Right-of-way",
+      "definition": "The strip of land a utility owns or has legal access to build/maintain a line. If two projects could share a right-of-way, that's a resource-sharing win."
+    },
+    {
+      "term": "IRP (Integrated Resource Plan)",
+      "definition": "A utility's official long-term plan for how it will generate and deliver power. Both Dominion Energy South Carolina and Georgia Power file one — DESC's is a 15-year plan with the SC PSC; Georgia Power's is a 10-year plan with the Georgia PSC."
+    },
+    {
+      "term": "10-Year Transmission Plan",
+      "definition": "Georgia Power's version of a long-term plan — it's not a separate filing, but a section embedded within their IRP, filed with the Georgia PSC."
+    },
+    {
+      "term": "PSC (Public Service Commission)",
+      "definition": "The state government agency that regulates utilities and reviews/approves their plans. Both SC and GA have one."
+    },
+    {
+      "term": "FERC",
+      "definition": "The federal agency (Federal Energy Regulatory Commission) that regulates interstate electricity transmission — sits above the state-level PSCs."
+    },
+    {
+      "term": "FERC Order No. 1920",
+      "definition": "A 2024 federal rule requiring utilities to do more coordinated, long-term regional transmission planning — the real-world reason this challenge is relevant right now."
+    },
+    {
+      "term": "SERTP",
+      "definition": "Southeastern Regional Transmission Planning — a regional coordination forum founded by Southern Company (Georgia Power's parent) along with Georgia Transmission Corporation, MEAG, and others. DESC is in the process of joining SERTP as part of its own FERC Order 1920 compliance work, so both utilities in this challenge sit in the same regional forum."
+    },
+    {
+      "term": "SCRTP",
+      "definition": "South Carolina Regional Transmission Planning — the specific process Dominion Energy South Carolina and Santee Cooper use to publish their planned project lists (this is where the DESC data comes from). Dominion and Santee Cooper co-administer this process as peers, not a hierarchy. DESC is transitioning from SCRTP to SERTP, so future project lists may move to a SERTP-published source."
+    },
+    {
+      "term": "CEII (Critical Energy Infrastructure Information)",
+      "definition": "A special confidential label the government puts on sensitive grid data. Anything marked CEII is off-limits — only public filings should be used."
+    },
+    {
+      "term": "Geographic overlap",
+      "definition": "Two planned projects are physically near or crossing each other on a map."
+    },
+    {
+      "term": "Timeline overlap",
+      "definition": "Two planned projects are scheduled to be built in the same window of time (even if not in the exact same spot)."
+    }
+  ]
+}

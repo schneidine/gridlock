@@ -120,6 +120,6 @@ an expandable "Methodology & sources" note.
 - Leaflet is vendored locally under `web/vendor/leaflet/` (not loaded from a
   CDN) so the app has zero external JS dependencies and can't break on
   flaky venue wifi. The basemap tiles themselves still load from a public
-  tile server (CARTO) at runtime, which needs normal internet access — this
+  tile server (OpenStreetMap) at runtime, which needs normal internet access — this
   was verified working end-to-end with a headless-browser screenshot test,
   not just "should work."

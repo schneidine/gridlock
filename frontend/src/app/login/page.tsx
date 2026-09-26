@@ -27,10 +27,10 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="h-screen flex items-center justify-center bg-[var(--background)]">
-      <div className="w-full max-w-sm p-6 border border-[var(--border)] rounded-xl bg-[var(--panel)]">
-        <h1 className="text-lg font-bold mb-1">Sign in to Gridlock</h1>
-        <p className="text-sm text-[var(--muted)] mb-4">
+    <div className="h-screen flex items-center justify-center bg-[var(--background)] px-4">
+      <div className="w-full max-w-sm p-6 border border-[var(--border)] rounded-lg bg-[var(--panel)]">
+        <h1 className="text-lg font-semibold mb-1 tracking-tight">Sign in to Gridlock</h1>
+        <p className="text-sm text-[var(--muted)] mb-5">
           Sign in to leave coordination notes on flagged overlaps. Viewing the map and ranked list needs no
           account.
         </p>
@@ -38,22 +38,26 @@ export default function LoginPage() {
           <p className="text-sm">Check {email} for a sign-in link.</p>
         ) : (
           <form onSubmit={sendLink} className="flex flex-col gap-2.5">
+            <label htmlFor="login-email" className="text-xs text-[var(--muted)]">
+              Work email
+            </label>
             <input
+              id="login-email"
               type="email"
               required
-              placeholder="you@example.com"
+              placeholder="you@utility.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="bg-[var(--panel-2)] border border-[var(--border)] rounded-md px-3 py-2 text-sm"
+              className="bg-[var(--panel-2)] border border-[var(--border)] rounded-md px-3 py-2 text-sm placeholder:text-[var(--muted)] focus:outline-none focus:border-[var(--accent)]"
             />
             <button
               type="submit"
               disabled={loading}
-              className="bg-lime-600 rounded-md py-2 text-sm font-medium disabled:opacity-40"
+              className="bg-[var(--accent)] text-[var(--background)] hover:bg-[var(--accent-strong)] rounded-md py-2 text-sm font-medium disabled:opacity-40 transition-colors"
             >
-              {loading ? "Sending..." : "Send sign-in link"}
+              {loading ? "Sending…" : "Send sign-in link"}
             </button>
-            {error && <p className="text-xs text-red-400">{error}</p>}
+            {error && <p className="text-xs text-[var(--tier-touch)]">{error}</p>}
           </form>
         )}
       </div>

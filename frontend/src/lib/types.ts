@@ -65,7 +65,7 @@ export const TIER_LABEL: Record<Tier, string> = {
 };
 
 export const TIER_COLOR: Record<Tier, string> = {
-  touching_crossing: "#dc2626",
+  touching_crossing: "#ef4444",
   share_land: "#f59e0b",
   share_logistics: "#eab308",
   share_crews: "#84cc16",

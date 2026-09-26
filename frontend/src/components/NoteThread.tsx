@@ -46,44 +46,49 @@ export default function NoteThread({
   }
 
   return (
-    <div className="mt-2 pt-2 border-t border-[var(--border)]" onClick={(e) => e.stopPropagation()}>
+    <div className="flex flex-col gap-2" onClick={(e) => e.stopPropagation()}>
       {localNotes.length === 0 && (
-        <div className="text-[11px] text-[var(--muted)] italic">No coordination notes yet.</div>
+        <div className="text-[11px] text-[var(--muted)]">No coordination notes yet.</div>
       )}
-      <div className="flex flex-col gap-1.5">
-        {localNotes.map((n) => (
-          <div key={n.id} className="text-[11.5px] bg-[#0f1428] rounded-md px-2 py-1.5">
-            <span className="text-[var(--muted)]">{n.author_label} &middot; {new Date(n.created_at).toLocaleDateString()}</span>
-            <div>{n.body}</div>
-          </div>
-        ))}
-      </div>
+      {localNotes.length > 0 && (
+        <div className="flex flex-col gap-1.5">
+          {localNotes.map((n) => (
+            <div key={n.id} className="text-[11.5px] bg-[var(--panel)] border border-[var(--border)] rounded-md px-2.5 py-1.5">
+              <div className="text-[10.5px] text-[var(--muted)] mb-0.5">
+                {n.author_label} &middot; <span className="font-mono-tab">{new Date(n.created_at).toLocaleDateString()}</span>
+              </div>
+              <div>{n.body}</div>
+            </div>
+          ))}
+        </div>
+      )}
       {currentUserId ? (
-        <div className="mt-2 flex gap-1.5">
+        <div className="flex gap-1.5">
           <input
+            id={`note-draft-${overlapId}`}
             value={draft}
             onChange={(e) => setDraft(e.target.value)}
-            placeholder="Add a coordination note..."
-            className="flex-1 bg-[#0f1428] border border-[var(--border)] rounded-md px-2 py-1 text-[11.5px] text-[var(--foreground)]"
+            placeholder="Add a coordination note…"
+            className="flex-1 bg-[var(--panel)] border border-[var(--border)] rounded-md px-2.5 py-1.5 text-[11.5px] text-[var(--foreground)] placeholder:text-[var(--muted)] focus:outline-none focus:border-[var(--accent)]"
             maxLength={1000}
           />
           <button
             onClick={submit}
             disabled={submitting || !draft.trim()}
-            className="text-[11.5px] px-2.5 rounded-md bg-lime-600 disabled:opacity-40"
+            className="text-[11.5px] font-medium px-3 rounded-md bg-[var(--accent)] text-[var(--background)] hover:bg-[var(--accent-strong)] disabled:opacity-40 transition-colors"
           >
-            Post
+            {submitting ? "Posting…" : "Post"}
           </button>
         </div>
       ) : (
-        <div className="text-[11px] text-[var(--muted)] mt-2">
-          <Link href="/login" className="underline">
+        <div className="text-[11px] text-[var(--muted)]">
+          <Link href="/login" className="underline hover:text-[var(--foreground)]">
             Sign in
           </Link>{" "}
           to leave a coordination note.
         </div>
       )}
-      {error && <div className="text-[11px] text-red-400 mt-1">{error}</div>}
+      {error && <div className="text-[11px] text-[var(--tier-touch)]">{error}</div>}
     </div>
   );
 }

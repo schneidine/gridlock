@@ -2,18 +2,34 @@
 @import "leaflet/dist/leaflet.css";
 
 :root {
-  --background: #0b1020;
-  --foreground: #e6e9f2;
-  --panel: #12172b;
-  --panel-2: #171d36;
-  --muted: #8b93ad;
-  --border: #262c47;
-  --desc-color: #2563eb;
-  --gpc-color: #ea580c;
-  --tier-touch: #dc2626;
+  /* Base surfaces -- a control-room dark, not a generic SaaS-dashboard dark:
+     the panel tones lean slightly blue-slate rather than pure neutral grey. */
+  --background: #0a0e1a;
+  --panel: #101524;
+  --panel-2: #161c33;
+  --panel-3: #1c2340;
+  --foreground: #e7e9f3;
+  --muted: #8890ac;
+  --border: #262d4c;
+  --border-strong: #3a4372;
+
+  /* Interactive accent -- copper/amber, deliberately distinct from the
+     semantic utility and tier colors below so it never competes with them. */
+  --accent: #d97b3f;
+  --accent-strong: #eb9256;
+
+  /* Semantic: which utility (used consistently across map, list, panels). */
+  --desc-color: #3b82f6;
+  --gpc-color: #f2762e;
+
+  /* Semantic: overlap ranking tier (closest/most-shareable first). */
+  --tier-touch: #ef4444;
   --tier-land: #f59e0b;
   --tier-logistics: #eab308;
   --tier-crews: #84cc16;
+
+  --font-sans: var(--font-plex-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, Helvetica, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, "SF Mono", Menlo, monospace;
 }
 
 @theme inline {
@@ -24,5 +40,70 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  font-feature-settings: "tnum" 1;
+}
+
+.font-mono-tab {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Leaflet ships light-theme popups/controls; restyle them to sit on the dark map. */
+.leaflet-container {
+  font-family: var(--font-sans);
+}
+
+/* OpenStreetMap only serves light tiles; invert them into a dark basemap.
+   Applied to the tile layer alone so project markers keep their true colors. */
+.gl-dark-tiles {
+  filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9) saturate(0.4);
+}
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: var(--panel-2);
+  color: var(--foreground);
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+}
+.leaflet-popup-content {
+  margin: 10px 12px;
+  font-size: 12px;
+  line-height: 1.45;
+}
+.leaflet-container a.leaflet-popup-close-button {
+  color: var(--muted);
+}
+.gl-popup-title {
+  font-weight: 600;
+  font-size: 12.5px;
+  margin-bottom: 4px;
+}
+.gl-popup-meta {
+  color: var(--muted);
+}
+.gl-popup-conf {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: var(--panel-3);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--muted);
+}
+.leaflet-control-zoom a {
+  background: var(--panel) !important;
+  color: var(--foreground) !important;
+  border-color: var(--border) !important;
+}
+.leaflet-control-attribution {
+  background: color-mix(in srgb, var(--panel) 80%, transparent) !important;
+  color: var(--muted) !important;
+}
+.leaflet-control-attribution a {
+  color: var(--muted) !important;
 }

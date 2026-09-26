@@ -56,15 +56,18 @@ export default function Dashboard({
         <GridlockMap projects={projects} selectedOverlap={selectedPair} />
       </div>
       <div className="border-l border-[var(--border)] bg-[var(--panel)] overflow-y-auto flex flex-col">
-        <div className="flex gap-2.5 p-2.5 border-b border-[var(--border)]">
+        <div className="grid grid-cols-3 gap-px bg-[var(--border)] border-b border-[var(--border)]">
           <Stat n={projects.length} label="Projects" />
-          <Stat n={overlaps.length} label="Flagged Overlaps" />
-          <Stat n={highPriorityCount} label="High-Priority" />
+          <Stat n={overlaps.length} label="Flagged" />
+          <Stat n={highPriorityCount} label="High-priority" accent />
         </div>
         {costImpact[0] && <CostImpactPanel ci={costImpact[0]} />}
-        <h2 className="text-[13px] uppercase tracking-wide text-[var(--muted)] px-4 pt-3.5 pb-1.5 m-0">
-          Coordination Opportunities
-        </h2>
+        <div className="flex items-baseline justify-between px-4 pt-4 pb-2">
+          <h2 className="text-[12px] uppercase tracking-[0.08em] text-[var(--muted)] font-medium m-0">
+            Coordination Opportunities
+          </h2>
+          <span className="font-mono-tab text-[11px] text-[var(--muted)]">ranked by distance</span>
+        </div>
         <OverlapList
           overlaps={overlaps}
           projectsById={projectsById}
@@ -78,11 +81,16 @@ export default function Dashboard({
   );
 }
 
-function Stat({ n, label }: { n: number; label: string }) {
+function Stat({ n, label, accent }: { n: number; label: string; accent?: boolean }) {
   return (
-    <div className="flex-1 text-center">
-      <div className="text-xl font-bold">{n}</div>
-      <div className="text-[10.5px] uppercase text-[var(--muted)]">{label}</div>
+    <div className="bg-[var(--panel)] px-3 py-3 flex flex-col items-center gap-0.5">
+      <div
+        className="font-mono-tab text-[20px] font-semibold leading-none"
+        style={{ color: accent && n > 0 ? "var(--tier-touch)" : "var(--foreground)" }}
+      >
+        {n}
+      </div>
+      <div className="text-[10px] uppercase tracking-wide text-[var(--muted)]">{label}</div>
     </div>
   );
 }

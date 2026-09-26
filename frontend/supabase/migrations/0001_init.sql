@@ -33,7 +33,7 @@ create index if not exists projects_utility_idx on projects (utility);
 -- script. Re-running the pipeline + seed script replaces this table's
 -- contents; it is not edited by hand or by the app.
 -- ---------------------------------------------------------------------
-create table if not exists overlaps (
+create table if not exists "overlaps" (
   id                bigint generated always as identity primary key,
   project_id_a      text not null references projects (project_id) on delete cascade,
   project_id_b      text not null references projects (project_id) on delete cascade,
@@ -46,8 +46,8 @@ create table if not exists overlaps (
   unique (project_id_a, project_id_b)
 );
 
-create index if not exists overlaps_tier_idx on overlaps (tier);
-create index if not exists overlaps_distance_idx on overlaps (distance_km);
+create index if not exists overlaps_tier_idx on "overlaps" (tier);
+create index if not exists overlaps_distance_idx on "overlaps" (distance_km);
 
 -- ---------------------------------------------------------------------
 -- cost_impact: the bonus cost/impact estimate. Single row for now (one
@@ -56,7 +56,7 @@ create index if not exists overlaps_distance_idx on overlaps (distance_km);
 -- ---------------------------------------------------------------------
 create table if not exists cost_impact (
   id                          bigint generated always as identity primary key,
-  overlap_id                  bigint references overlaps (id) on delete set null,
+  overlap_id                  bigint references "overlaps" (id) on delete set null,
   desc_project_title          text not null,
   gpc_project_titles          text[] not null,
   distance_mi                 numeric not null,
@@ -85,7 +85,7 @@ create table if not exists cost_impact (
 -- ---------------------------------------------------------------------
 create table if not exists planner_notes (
   id            bigint generated always as identity primary key,
-  overlap_id    bigint not null references overlaps (id) on delete cascade,
+  overlap_id    bigint not null references "overlaps" (id) on delete cascade,
   user_id       uuid not null references auth.users (id) on delete cascade,
   author_label  text not null,      -- display name/email shown with the note
   body          text not null check (char_length(body) between 1 and 1000),
@@ -98,14 +98,14 @@ create index if not exists planner_notes_overlap_idx on planner_notes (overlap_i
 -- Row Level Security
 -- ---------------------------------------------------------------------
 alter table projects enable row level security;
-alter table overlaps enable row level security;
+alter table "overlaps" enable row level security;
 alter table cost_impact enable row level security;
 alter table planner_notes enable row level security;
 
 -- Everyone (including anonymous visitors) can read the dataset -- it's a
 -- public tool built on public filings, not user data.
 create policy "public read projects" on projects for select using (true);
-create policy "public read overlaps" on overlaps for select using (true);
+create policy "public read overlaps" on "overlaps" for select using (true);
 create policy "public read cost_impact" on cost_impact for select using (true);
 create policy "public read planner_notes" on planner_notes for select using (true);
 
