@@ -48,7 +48,7 @@ export default function OverlapList({
 
   return (
     <>
-      <div className="flex gap-1.5 flex-wrap px-4 pb-3">
+      <div className="shrink-0 flex gap-1.5 flex-wrap px-4 pb-3">
         {TIERS.map((t) => {
           const active = filter === t;
           const color = t === "all" ? "var(--accent)" : TIER_COLOR[t];
@@ -68,7 +68,7 @@ export default function OverlapList({
           );
         })}
       </div>
-      <div className="flex-1 overflow-y-auto px-2.5 pb-4 flex flex-col gap-2">
+      <div className="flex-1 min-h-0 overflow-y-auto px-2.5 pb-4 flex flex-col gap-2">
         {rows.map(({ o, rank }) => {
           const a = projectsById[o.project_id_a];
           const b = projectsById[o.project_id_b];
