@@ -59,7 +59,7 @@ run_pipeline() {
   step "Running data pipeline"
   (
     cd "$ROOT/backend/pipeline"
-    for script in parse_desc_pdf.py parse_gpc_irp.py build_dataset.py cost_impact.py; do
+    for script in parse_desc_pdf.py parse_gpc_irp.py parse_sertp_pdf.py build_dataset.py cost_impact.py; do
       echo "  -> $script"
       "$VENV/bin/python" "$script"
     done

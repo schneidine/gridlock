@@ -16,35 +16,11 @@ from pathlib import Path
 
 import pdfplumber
 
+from stations import extract_stations
+
 ROOT = Path(__file__).parent.parent
 PDF_PATH = ROOT / "data_raw" / "utility-filings" / "DESC_5yr_transmission_projects.pdf"
 OUT_PATH = ROOT / "data_clean" / "desc_projects_raw.json"
-
-
-def extract_stations(name: str):
-    """Pull the named substations/stations out of a project title.
-
-    Strategy: strip a leading zone prefix (e.g. "SAV:"), strip any
-    dual-voltage class marker (e.g. "230-115kV"), then split on the
-    remaining text up to the first single voltage marker (e.g. "115 kV"),
-    using dashes as the separator between station names.
-    """
-    name2 = re.sub(r"[\x00-\x1f]", "", name)  # strip stray control chars from the PDF
-    name2 = re.sub(r"^[A-Z]{2,6}:\s*", "", name2)
-    name2 = re.sub(r"\d+(\.\d+)?\s*[/\-]\s*\d+(\.\d+)?\s*kv", " ", name2, flags=re.IGNORECASE)
-    m = re.search(r"\d+(\.\d+)?\s?kv", name2, flags=re.IGNORECASE)
-    route = name2[: m.start()] if m else name2
-    route = route.strip(" -–:,")
-    parts = re.split(r"\s*[-–]\s*", route)
-    parts = [re.sub(r"\s+", " ", p).strip() for p in parts if p.strip()]
-
-    def tidy(p):
-        p = re.split(r"[:,&]", p)[0].strip()
-        p = re.sub(r"\b(Sub|Substation|Tap|Line|Transmission)\b\.?$", "", p, flags=re.IGNORECASE).strip()
-        return p
-
-    parts = [tidy(p) for p in parts]
-    return [p for p in parts if len(p) > 1]
 
 
 def parse():

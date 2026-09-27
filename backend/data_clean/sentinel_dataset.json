@@ -2,27 +2,28 @@
  "summary": {
   "desc": {
    "projects": {
-    "confirmed": 21,
+    "low_confidence": 18,
     "unlocated": 7,
-    "low_confidence": 16
+    "confirmed": 19
    },
    "endpoints": {
     "confirmed": 38,
-    "unlocated": 22,
-    "low_confidence": 17
+    "unlocated": 24,
+    "low_confidence": 19,
+    "rejected": 1
    }
   },
   "gpc": {
    "projects": {
     "unlocated": 36,
-    "confirmed": 60,
-    "low_confidence": 42
+    "confirmed": 63,
+    "low_confidence": 39
    },
    "endpoints": {
-    "not_a_place": 30,
-    "unlocated": 73,
-    "confirmed": 97,
-    "low_confidence": 46,
+    "not_a_place": 29,
+    "unlocated": 77,
+    "confirmed": 100,
+    "low_confidence": 42,
     "rejected": 5
    }
   },
@@ -115,7 +116,8 @@
    "in_service_date": "2023-12-31",
    "stations": [
     "Queensboro",
-    "Ft Johnson"
+    "Ft Johnson",
+    "Bayfront"
    ],
    "source_project_id": "6807 B",
    "description": "Replace the Queensboro \u2013 Ft Johnson 115 kV Line and structures as they have reached the end of life.",
@@ -135,18 +137,24 @@
      [
       32.722793,
       -79.967332
+     ],
+     [
+      32.742122,
+      -79.9634237
      ]
     ],
     "center": [
-     32.722793,
-     -79.967332
+     32.7324575,
+     -79.96537785000001
     ],
-    "confidence": "confirmed",
+    "confidence": "low_confidence",
     "notes": [
-     "1 of 2 endpoints located; center uses the located one(s) only"
+     "3 named stations; center uses the route ends Queensboro and Bayfront per the organizer guide",
+     "2 of 3 endpoints located; center uses the located one(s) only"
     ],
     "geocode_notes": [
-     "1 of 2 endpoints located; center uses the located one(s) only"
+     "3 named stations; center uses the route ends Queensboro and Bayfront per the organizer guide",
+     "2 of 3 endpoints located; center uses the located one(s) only"
     ]
    },
    "endpoints": [
@@ -172,6 +180,24 @@
      "checks": {},
      "notes": [
       "no OSM substation or Nominatim place matched"
+     ],
+     "rejected_source": null
+    },
+    {
+     "name": "Bayfront",
+     "pt": [
+      32.742122,
+      -79.9634237
+     ],
+     "source": "Nominatim place: Bayfront, James Island, Charleston County, South Carolina, 29412, United States",
+     "confidence": "low_confidence",
+     "checks": {
+      "name_score": 100,
+      "town_centroid": true
+     },
+     "notes": [
+      "no substation in OSM; using the centroid of the town it is named after",
+      "low confidence: town centroid, not the substation itself"
      ],
      "rejected_source": null
     }
@@ -224,6 +250,7 @@
    "in_service_date": "2024-12-31",
    "stations": [
     "Okatie",
+    "Jasper",
     "Yemassee"
    ],
    "source_project_id": "0139 M,N",
@@ -248,6 +275,10 @@
       -81.032495
      ],
      [
+      32.35912,
+      -81.1246
+     ],
+     [
       32.6974259,
       -80.8637929
      ]
@@ -257,8 +288,12 @@
      -80.94814395
     ],
     "confidence": "confirmed",
-    "notes": [],
-    "geocode_notes": []
+    "notes": [
+     "3 named stations; center uses the route ends Okatie and Yemassee per the organizer guide"
+    ],
+    "geocode_notes": [
+     "3 named stations; center uses the route ends Okatie and Yemassee per the organizer guide"
+    ]
    },
    "endpoints": [
     {
@@ -273,6 +308,23 @@
       "organizer": true
      },
      "notes": [],
+     "rejected_source": null
+    },
+    {
+     "name": "Jasper",
+     "pt": [
+      32.35912,
+      -81.1246
+     ],
+     "source": "organizer worked example",
+     "confidence": "confirmed",
+     "checks": {
+      "organizer": true,
+      "osm_agrees_km": 0.18
+     },
+     "notes": [
+      "OSM 'Jasper Substation' (way/185380597) lands 0.18 km from the organizer point"
+     ],
      "rejected_source": null
     },
     {
@@ -610,7 +662,8 @@
    "in_service_date": "2026-12-31",
    "stations": [
     "VCS1",
-    "Denny Terrace"
+    "Denny Terrace",
+    "Pineland"
    ],
    "source_project_id": "6808 N,O",
    "description": "Replace wooden H-Frame structures with Self Supporting Steel Structures and restring with standard 1272 ACSR conductor.",
@@ -636,12 +689,16 @@
      34.0576091,
      -81.061561
     ],
-    "confidence": "confirmed",
+    "confidence": "low_confidence",
     "notes": [
-     "1 of 2 endpoints located; center uses the located one(s) only"
+     "endpoints are 161 km apart (> 160 km); at least one match is suspect",
+     "3 named stations; center uses the route ends VCS1 and Pineland per the organizer guide",
+     "1 of 3 endpoints located; center uses the located one(s) only"
     ],
     "geocode_notes": [
-     "1 of 2 endpoints located; center uses the located one(s) only"
+     "endpoints are 161 km apart (> 160 km); at least one match is suspect",
+     "3 named stations; center uses the route ends VCS1 and Pineland per the organizer guide",
+     "1 of 3 endpoints located; center uses the located one(s) only"
     ]
    },
    "endpoints": [
@@ -663,7 +720,7 @@
       -81.061561
      ],
      "source": "OSM way/185130609 'Denny Terrace Substation' [South Carolina Electric & Gas Company]",
-     "confidence": "confirmed",
+     "confidence": "low_confidence",
      "checks": {
       "name_score": 100,
       "operator_ok": true,
@@ -672,6 +729,23 @@
      },
      "notes": [],
      "rejected_source": null
+    },
+    {
+     "name": "Pineland",
+     "pt": null,
+     "source": null,
+     "confidence": "rejected",
+     "checks": {
+      "name_score": 100,
+      "operator_ok": false,
+      "operator_tagged": false,
+      "unique_site": true
+     },
+     "notes": [
+      "confirmed: exact name, only such substation in the state; OSM has no operator tag",
+      "REJECTED OSM way/917253712 'Pineland Substation' [no operator tag]: too far from Denny Terrace (operator-confirmed) to be part of the same project"
+     ],
+     "rejected_source": "OSM way/917253712 'Pineland Substation' [no operator tag]"
     }
    ]
   },
@@ -1289,7 +1363,9 @@
    "in_service_date_raw": "12/31/28",
    "in_service_date": "2028-12-31",
    "stations": [
-    "Williams St"
+    "Williams St",
+    "AM Williams",
+    "McMeekin"
    ],
    "source_project_id": "1060A, I, L",
    "description": "Replace switch house, switch house equipment, and relay panels at Williams Street substation. Replace the switch house at AM Williams substation. Add Switching House at McMeekin Substation to move relays from plant relay room.",
@@ -1308,6 +1384,28 @@
    "endpoints": [
     {
      "name": "Williams St",
+     "pt": null,
+     "source": null,
+     "confidence": "unlocated",
+     "checks": {},
+     "notes": [
+      "no OSM substation or Nominatim place matched"
+     ],
+     "rejected_source": null
+    },
+    {
+     "name": "AM Williams",
+     "pt": null,
+     "source": null,
+     "confidence": "unlocated",
+     "checks": {},
+     "notes": [
+      "no OSM substation or Nominatim place matched"
+     ],
+     "rejected_source": null
+    },
+    {
+     "name": "McMeekin",
      "pt": null,
      "source": null,
      "confidence": "unlocated",
@@ -2722,12 +2820,16 @@
      ]
     ],
     "center": [
-     32.822945233333336,
-     -80.00827806666666
+     32.80937795,
+     -80.00510505
     ],
     "confidence": "low_confidence",
-    "notes": [],
-    "geocode_notes": []
+    "notes": [
+     "3 named stations; center uses the route ends Church Creek and Charleston per the organizer guide"
+    ],
+    "geocode_notes": [
+     "3 named stations; center uses the route ends Church Creek and Charleston per the organizer guide"
+    ]
    },
    "endpoints": [
     {
@@ -3148,12 +3250,16 @@
      ]
     ],
     "center": [
-     33.59740286666667,
-     -80.7319533
+     33.61427115,
+     -80.74343200000001
     ],
     "confidence": "low_confidence",
-    "notes": [],
-    "geocode_notes": []
+    "notes": [
+     "3 named stations; center uses the route ends Cameron Jct and St Matthews per the organizer guide"
+    ],
+    "geocode_notes": [
+     "3 named stations; center uses the route ends Cameron Jct and St Matthews per the organizer guide"
+    ]
    },
    "endpoints": [
     {
@@ -3524,7 +3630,7 @@
       "operator_ok": true,
       "operator_tagged": true,
       "unique_site": true,
-      "zone_km": 17.6,
+      "zone_km": 20.4,
       "zone_ok": true
      },
      "notes": [],
@@ -3538,12 +3644,12 @@
      "checks": {
       "name_score": 100,
       "town_centroid": true,
-      "zone_km": 167.5,
+      "zone_km": 161.9,
       "zone_ok": false
      },
      "notes": [
       "no substation in OSM; using the centroid of the town it is named after",
-      "REJECTED Nominatim place: Crooked Creek, Putnam County, Georgia, United States: 167 km from the zone 211 centroid (zone radius 90 km) -- same name, wrong part of the state"
+      "REJECTED Nominatim place: Crooked Creek, Putnam County, Georgia, United States: 162 km from the zone 211 centroid (zone radius 90 km) -- same name, wrong part of the state"
      ],
      "rejected_source": "Nominatim place: Crooked Creek, Putnam County, Georgia, United States"
     }
@@ -3834,22 +3940,69 @@
    "in_service_date_raw": "6/1/2025",
    "in_service_date": "2025-06-01",
    "stations": [
-    "THALMANN AND COLERAIN 23O KV LINE RELAY PANEL UPGRADES"
+    "THALMANN",
+    "COLERAIN"
    ],
    "teams_number": "21046",
    "zone": "218",
    "sponsor": "GPC",
    "data_quality_flags": [],
-   "geo": null,
+   "geo": {
+    "points": [
+     [
+      31.2934589,
+      -81.6807807
+     ],
+     [
+      30.8330106,
+      -81.9006672
+     ]
+    ],
+    "center": [
+     31.06323475,
+     -81.79072395
+    ],
+    "confidence": "low_confidence",
+    "notes": [],
+    "geocode_notes": []
+   },
    "endpoints": [
     {
-     "name": "THALMANN AND COLERAIN 23O KV LINE RELAY PANEL UPGRADES",
-     "pt": null,
-     "source": null,
-     "confidence": "unlocated",
-     "checks": {},
+     "name": "THALMANN",
+     "pt": [
+      31.2934589,
+      -81.6807807
+     ],
+     "source": "OSM way/52068570 'Thalmann Substation' [Georgia Power]",
+     "confidence": "confirmed",
+     "checks": {
+      "name_score": 100,
+      "operator_ok": true,
+      "operator_tagged": true,
+      "unique_site": true,
+      "zone_km": 28.4,
+      "zone_ok": true
+     },
+     "notes": [],
+     "rejected_source": null
+    },
+    {
+     "name": "COLERAIN",
+     "pt": [
+      30.8330106,
+      -81.9006672
+     ],
+     "source": "Nominatim place: Colerain, Camden County, Georgia, United States",
+     "confidence": "low_confidence",
+     "checks": {
+      "name_score": 100,
+      "town_centroid": true,
+      "zone_km": 75.9,
+      "zone_ok": true
+     },
      "notes": [
-      "no OSM substation or Nominatim place matched"
+      "no substation in OSM; using the centroid of the town it is named after",
+      "low confidence: town centroid, not the substation itself"
      ],
      "rejected_source": null
     }
@@ -3898,7 +4051,7 @@
       "operator_ok": false,
       "operator_tagged": false,
       "unique_site": true,
-      "zone_km": 23.3,
+      "zone_km": 7.2,
       "zone_ok": true
      },
      "notes": [
@@ -4021,7 +4174,7 @@
       "operator_ok": true,
       "operator_tagged": true,
       "unique_site": true,
-      "zone_km": 102.3,
+      "zone_km": 93.6,
       "zone_ok": true
      },
      "notes": [],
@@ -4680,41 +4833,31 @@
    "geo": {
     "points": [
      [
-      32.9953281,
-      -83.5635642
-     ],
-     [
       33.605931,
       -84.3334617
      ]
     ],
     "center": [
-     33.30062955,
-     -83.94851295000001
+     33.605931,
+     -84.3334617
     ],
-    "confidence": "low_confidence",
-    "notes": [],
-    "geocode_notes": []
+    "confidence": "confirmed",
+    "notes": [
+     "1 of 2 endpoints located; center uses the located one(s) only"
+    ],
+    "geocode_notes": [
+     "1 of 2 endpoints located; center uses the located one(s) only"
+    ]
    },
    "endpoints": [
     {
      "name": "GRADY",
-     "pt": [
-      32.9953281,
-      -83.5635642
-     ],
-     "source": "OSM way/344331787 'Gray Substation' [Georgia Power]",
-     "confidence": "low_confidence",
-     "checks": {
-      "name_score": 89,
-      "operator_ok": true,
-      "operator_tagged": true,
-      "unique_site": true,
-      "zone_km": 88.4,
-      "zone_ok": true
-     },
+     "pt": null,
+     "source": null,
+     "confidence": "unlocated",
+     "checks": {},
      "notes": [
-      "low confidence: fuzzy name match (89)"
+      "no OSM substation or Nominatim place matched"
      ],
      "rejected_source": null
     },
@@ -4747,46 +4890,22 @@
    "in_service_date_raw": "6/1/2026",
    "in_service_date": "2026-06-01",
    "stations": [
-    "GRADY RELAY MODERNIZATION"
+    "GRADY"
    ],
    "teams_number": "20474",
    "zone": "206",
    "sponsor": "GPC",
    "data_quality_flags": [],
-   "geo": {
-    "points": [
-     [
-      32.9953281,
-      -83.5635642
-     ]
-    ],
-    "center": [
-     32.9953281,
-     -83.5635642
-    ],
-    "confidence": "low_confidence",
-    "notes": [],
-    "geocode_notes": []
-   },
+   "geo": null,
    "endpoints": [
     {
-     "name": "GRADY RELAY MODERNIZATION",
-     "pt": [
-      32.9953281,
-      -83.5635642
-     ],
-     "source": "OSM way/344331787 'Gray Substation' [Georgia Power]",
-     "confidence": "low_confidence",
-     "checks": {
-      "name_score": 89,
-      "operator_ok": true,
-      "operator_tagged": true,
-      "unique_site": true,
-      "zone_km": 88.4,
-      "zone_ok": true
-     },
+     "name": "GRADY",
+     "pt": null,
+     "source": null,
+     "confidence": "unlocated",
+     "checks": {},
      "notes": [
-      "low confidence: fuzzy name match (89)"
+      "no OSM substation or Nominatim place matched"
      ],
      "rejected_source": null
     }
@@ -4848,7 +4967,7 @@
       "operator_ok": true,
       "operator_tagged": true,
       "unique_site": false,
-      "zone_km": 10.2,
+      "zone_km": 21.0,
       "zone_ok": true
      },
      "notes": [
@@ -4906,7 +5025,7 @@
       "operator_ok": true,
       "operator_tagged": true,
       "unique_site": true,
-      "zone_km": 79.8,
+      "zone_km": 71.8,
       "zone_ok": true
      },
      "notes": [
@@ -5217,7 +5336,7 @@
    "in_service_date": "2026-06-01",
    "stations": [
     "CC",
-    "BIG OGEECHEE (CC NETWORK IMPROVEMENTS)"
+    "BIG OGEECHEE"
    ],
    "teams_number": "19966",
    "zone": "219",
@@ -5237,7 +5356,7 @@
      "rejected_source": null
     },
     {
-     "name": "BIG OGEECHEE (CC NETWORK IMPROVEMENTS)",
+     "name": "BIG OGEECHEE",
      "pt": null,
      "source": null,
      "confidence": "unlocated",
@@ -5726,41 +5845,31 @@
    "geo": {
     "points": [
      [
-      32.9953281,
-      -83.5635642
-     ],
-     [
       33.7381626,
       -84.4163167
      ]
     ],
     "center": [
-     33.36674535,
-     -83.98994045
+     33.7381626,
+     -84.4163167
     ],
     "confidence": "low_confidence",
-    "notes": [],
-    "geocode_notes": []
+    "notes": [
+     "1 of 2 endpoints located; center uses the located one(s) only"
+    ],
+    "geocode_notes": [
+     "1 of 2 endpoints located; center uses the located one(s) only"
+    ]
    },
    "endpoints": [
     {
      "name": "GRADY",
-     "pt": [
-      32.9953281,
-      -83.5635642
-     ],
-     "source": "OSM way/344331787 'Gray Substation' [Georgia Power]",
-     "confidence": "low_confidence",
-     "checks": {
-      "name_score": 89,
-      "operator_ok": true,
-      "operator_tagged": true,
-      "unique_site": true,
-      "zone_km": 88.4,
-      "zone_ok": true
-     },
+     "pt": null,
+     "source": null,
+     "confidence": "unlocated",
+     "checks": {},
      "notes": [
-      "low confidence: fuzzy name match (89)"
+      "no OSM substation or Nominatim place matched"
      ],
      "rejected_source": null
     },
@@ -6037,7 +6146,7 @@
       "operator_ok": true,
       "operator_tagged": true,
       "unique_site": true,
-      "zone_km": 17.7,
+      "zone_km": 27.6,
       "zone_ok": true
      },
      "notes": [],
@@ -6270,7 +6379,7 @@
    "in_service_date": "2027-06-01",
    "stations": [
     "DOYLE",
-    "LG"
+    "LG&E MONROE"
    ],
    "teams_number": "20234",
    "zone": "212",
@@ -6288,8 +6397,12 @@
      -83.698786
     ],
     "confidence": "confirmed",
-    "notes": [],
-    "geocode_notes": []
+    "notes": [
+     "1 of 2 endpoints located; center uses the located one(s) only"
+    ],
+    "geocode_notes": [
+     "1 of 2 endpoints located; center uses the located one(s) only"
+    ]
    },
    "endpoints": [
     {
@@ -6305,20 +6418,20 @@
       "operator_ok": true,
       "operator_tagged": true,
       "unique_site": true,
-      "zone_km": 48.4,
+      "zone_km": 33.7,
       "zone_ok": true
      },
      "notes": [],
      "rejected_source": null
     },
     {
-     "name": "LG",
+     "name": "LG&E MONROE",
      "pt": null,
      "source": null,
-     "confidence": "not_a_place",
+     "confidence": "unlocated",
      "checks": {},
      "notes": [
-      "not a place name (customer-connection / program label) -- skipped"
+      "no OSM substation or Nominatim place matched"
      ],
      "rejected_source": null
     }
@@ -6389,7 +6502,7 @@
       "operator_ok": true,
       "operator_tagged": true,
       "unique_site": true,
-      "zone_km": 28.8,
+      "zone_km": 31.0,
       "zone_ok": true
      },
      "notes": [],
@@ -6798,7 +6911,7 @@
    "in_service_date": "2027-07-15",
    "stations": [
     "CC",
-    "TOMOCHICHI SOLUTION (CC NETWORK IMPROVEMENTS)"
+    "TOMOCHICHI"
    ],
    "teams_number": "20717",
    "zone": "208",
@@ -6818,7 +6931,7 @@
      "rejected_source": null
     },
     {
-     "name": "TOMOCHICHI SOLUTION (CC NETWORK IMPROVEMENTS)",
+     "name": "TOMOCHICHI",
      "pt": null,
      "source": null,
      "confidence": "unlocated",
@@ -6961,7 +7074,7 @@
       "operator_ok": true,
       "operator_tagged": true,
       "unique_site": true,
-      "zone_km": 46.3,
+      "zone_km": 32.4,
       "zone_ok": true
      },
      "notes": [],
@@ -6980,7 +7093,7 @@
       "operator_ok": true,
       "operator_tagged": true,
       "unique_site": true,
-      "zone_km": 54.2,
+      "zone_km": 38.7,
       "zone_ok": true
      },
      "notes": [],
@@ -6998,6 +7111,7 @@
    "stations": [
     "CC",
     "HILL VIEW",
+    "GRASSY HOLLOW",
     "CC IMPROVEMENTS"
    ],
    "teams_number": "20150",
@@ -7019,6 +7133,17 @@
     },
     {
      "name": "HILL VIEW",
+     "pt": null,
+     "source": null,
+     "confidence": "unlocated",
+     "checks": {},
+     "notes": [
+      "no OSM substation or Nominatim place matched"
+     ],
+     "rejected_source": null
+    },
+    {
+     "name": "GRASSY HOLLOW",
      "pt": null,
      "source": null,
      "confidence": "unlocated",
@@ -7166,21 +7291,7 @@
    "zone": "201",
    "sponsor": "GPC",
    "data_quality_flags": [],
-   "geo": {
-    "points": [
-     [
-      33.7417954,
-      -84.9595976
-     ]
-    ],
-    "center": [
-     33.7417954,
-     -84.9595976
-    ],
-    "confidence": "low_confidence",
-    "notes": [],
-    "geocode_notes": []
-   },
+   "geo": null,
    "endpoints": [
     {
      "name": "CC",
@@ -7195,22 +7306,12 @@
     },
     {
      "name": "EAST VILLA RICA AREA SWITCHING STATION (CC IMPROVEMENT)",
-     "pt": [
-      33.7417954,
-      -84.9595976
-     ],
-     "source": "OSM way/1051878259 'West Villa Rica Substation' [no operator tag]",
-     "confidence": "low_confidence",
-     "checks": {
-      "name_score": 93,
-      "operator_ok": false,
-      "operator_tagged": false,
-      "unique_site": true,
-      "zone_km": 56.5,
-      "zone_ok": true
-     },
+     "pt": null,
+     "source": null,
+     "confidence": "unlocated",
+     "checks": {},
      "notes": [
-      "low confidence: fuzzy name match (93); OSM operator tag missing or not this utility"
+      "no OSM substation or Nominatim place matched"
      ],
      "rejected_source": null
     }
@@ -7271,7 +7372,7 @@
       "operator_ok": false,
       "operator_tagged": false,
       "unique_site": true,
-      "zone_km": 23.3,
+      "zone_km": 7.2,
       "zone_ok": true
      },
      "notes": [
@@ -7453,7 +7554,7 @@
    "in_service_date_raw": "6/1/2028",
    "in_service_date": "2028-06-01",
    "stations": [
-    "PLANT YATES BREAKER AND HALF STATION"
+    "PLANT YATES BREAKER"
    ],
    "teams_number": "20656",
    "zone": "208",
@@ -7476,7 +7577,7 @@
    },
    "endpoints": [
     {
-     "name": "PLANT YATES BREAKER AND HALF STATION",
+     "name": "PLANT YATES BREAKER",
      "pt": [
       33.463447,
       -84.8949385
@@ -8478,7 +8579,7 @@
       "operator_ok": true,
       "operator_tagged": true,
       "unique_site": true,
-      "zone_km": 16.1,
+      "zone_km": 26.3,
       "zone_ok": true
      },
      "notes": [],
@@ -8556,7 +8657,7 @@
       "operator_ok": true,
       "operator_tagged": true,
       "unique_site": true,
-      "zone_km": 50.0,
+      "zone_km": 36.8,
       "zone_ok": true
      },
      "notes": [],
@@ -9021,7 +9122,7 @@
       "operator_ok": true,
       "operator_tagged": true,
       "unique_site": true,
-      "zone_km": 79.8,
+      "zone_km": 71.8,
       "zone_ok": true
      },
      "notes": [
@@ -9200,7 +9301,7 @@
      "checks": {
       "name_score": 100,
       "town_centroid": true,
-      "zone_km": 30.9,
+      "zone_km": 42.9,
       "zone_ok": true
      },
      "notes": [
@@ -9538,7 +9639,7 @@
       "operator_ok": true,
       "operator_tagged": true,
       "unique_site": false,
-      "zone_km": 10.2,
+      "zone_km": 21.0,
       "zone_ok": true
      },
      "notes": [
@@ -9559,7 +9660,7 @@
       "operator_ok": true,
       "operator_tagged": true,
       "unique_site": true,
-      "zone_km": 16.1,
+      "zone_km": 26.3,
       "zone_ok": true
      },
      "notes": [],
@@ -9920,7 +10021,7 @@
      34.000656,
      -83.66865575
     ],
-    "confidence": "low_confidence",
+    "confidence": "confirmed",
     "notes": [],
     "geocode_notes": []
    },
@@ -9932,18 +10033,16 @@
       -83.5794808
      ],
      "source": "OSM way/1017583912 'Jefferson Rd Substation' [Georgia Power]",
-     "confidence": "low_confidence",
+     "confidence": "confirmed",
      "checks": {
-      "name_score": 92,
+      "name_score": 100,
       "operator_ok": true,
       "operator_tagged": true,
       "unique_site": true,
-      "zone_km": 34.6,
+      "zone_km": 18.6,
       "zone_ok": true
      },
-     "notes": [
-      "low confidence: fuzzy name match (92)"
-     ],
+     "notes": [],
      "rejected_source": null
     },
     {
@@ -9960,7 +10059,7 @@
       "operator_ok": true,
       "operator_tagged": true,
       "unique_site": false,
-      "zone_km": 28.3,
+      "zone_km": 16.7,
       "zone_ok": true
      },
      "notes": [
@@ -10193,7 +10292,7 @@
       "operator_ok": true,
       "operator_tagged": true,
       "unique_site": true,
-      "zone_km": 46.7,
+      "zone_km": 55.9,
       "zone_ok": true
      },
      "notes": [],
@@ -10561,23 +10660,45 @@
    "in_service_date_raw": "6/1/2031",
    "in_service_date": "2031-06-01",
    "stations": [
-    "BOWEN #10 AUTOBANK REPLACEMENT"
+    "BOWEN #10"
    ],
    "teams_number": "10811",
    "zone": "211",
    "sponsor": "GPC",
    "data_quality_flags": [],
-   "geo": null,
+   "geo": {
+    "points": [
+     [
+      34.1215849,
+      -84.9223274
+     ]
+    ],
+    "center": [
+     34.1215849,
+     -84.9223274
+    ],
+    "confidence": "confirmed",
+    "notes": [],
+    "geocode_notes": []
+   },
    "endpoints": [
     {
-     "name": "BOWEN #10 AUTOBANK REPLACEMENT",
-     "pt": null,
-     "source": null,
-     "confidence": "unlocated",
-     "checks": {},
-     "notes": [
-      "no OSM substation or Nominatim place matched"
+     "name": "BOWEN #10",
+     "pt": [
+      34.1215849,
+      -84.9223274
      ],
+     "source": "OSM way/159758323 'Bowen Substation' [Georgia Power]",
+     "confidence": "confirmed",
+     "checks": {
+      "name_score": 100,
+      "operator_ok": true,
+      "operator_tagged": true,
+      "unique_site": true,
+      "zone_km": 45.9,
+      "zone_ok": true
+     },
+     "notes": [],
      "rejected_source": null
     }
    ]
@@ -10738,7 +10859,7 @@
    "in_service_date_raw": "6/1/2033",
    "in_service_date": "2033-06-01",
    "stations": [
-    "ARKWRIGHT BUS AND JUMPER REPLACEMENT"
+    "ARKWRIGHT BUS"
    ],
    "teams_number": "20767",
    "zone": "214",
@@ -10761,7 +10882,7 @@
    },
    "endpoints": [
     {
-     "name": "ARKWRIGHT BUS AND JUMPER REPLACEMENT",
+     "name": "ARKWRIGHT BUS",
      "pt": [
       32.9272219,
       -83.698878
@@ -10778,7 +10899,7 @@
       "zone_ok": true
      },
      "notes": [
-      "2 OSM substations named like 'ARKWRIGHT BUS AND JUMPER REPLACEMENT' (32.93,-83.70, 32.92,-83.73); picked the one nearest the zone 214",
+      "2 OSM substations named like 'ARKWRIGHT BUS' (32.93,-83.70, 32.92,-83.73); picked the one nearest the zone 214",
       "low confidence: fuzzy name match (94)"
      ],
      "rejected_source": null
@@ -11051,7 +11172,7 @@
       "operator_ok": true,
       "operator_tagged": true,
       "unique_site": true,
-      "zone_km": 16.1,
+      "zone_km": 26.3,
       "zone_ok": true
      },
      "notes": [],
@@ -11118,7 +11239,7 @@
       "operator_ok": false,
       "operator_tagged": false,
       "unique_site": true,
-      "zone_km": 58.9,
+      "zone_km": 67.5,
       "zone_ok": true
      },
      "notes": [
@@ -11198,7 +11319,7 @@
    "in_service_date_raw": "6/1/2033",
    "in_service_date": "2033-06-01",
    "stations": [
-    "THOMSON PRIMARY SECOND TRANSFORMER"
+    "THOMSON PRIMARY"
    ],
    "teams_number": "14222",
    "zone": "215",
@@ -11221,7 +11342,7 @@
    },
    "endpoints": [
     {
-     "name": "THOMSON PRIMARY SECOND TRANSFORMER",
+     "name": "THOMSON PRIMARY",
      "pt": [
       33.453955,
       -82.414219
@@ -11238,7 +11359,7 @@
       "zone_ok": true
      },
      "notes": [
-      "2 OSM substations named like 'THOMSON PRIMARY SECOND TRANSFORMER' (33.45,-82.41, 33.47,-82.49); picked the one nearest the zone 215"
+      "2 OSM substations named like 'THOMSON PRIMARY' (33.45,-82.41, 33.47,-82.49); picked the one nearest the zone 215"
      ],
      "rejected_source": null
     }
@@ -11320,13 +11441,13 @@
       -83.2279869
      ],
      [
-      30.846057,
-      -83.2543359
+      30.8157571,
+      -83.3148748
      ]
     ],
     "center": [
-     30.86385275,
-     -83.24116140000001
+     30.848702799999998,
+     -83.27143085
     ],
     "confidence": "low_confidence",
     "notes": [],
@@ -11355,21 +11476,20 @@
     {
      "name": "WEST VALDOSTA",
      "pt": [
-      30.846057,
-      -83.2543359
+      30.8157571,
+      -83.3148748
      ],
-     "source": "OSM way/740574499 'East Valdosta Substation' [Georgia Power]",
+     "source": "Nominatim place: West Valdosta, Valdosta, Lowndes County, Georgia, 31603, United States",
      "confidence": "low_confidence",
      "checks": {
-      "name_score": 92,
-      "operator_ok": true,
-      "operator_tagged": true,
-      "unique_site": true,
-      "zone_km": 57.8,
+      "name_score": 100,
+      "town_centroid": true,
+      "zone_km": 52.4,
       "zone_ok": true
      },
      "notes": [
-      "low confidence: fuzzy name match (92)"
+      "no substation in OSM; using the centroid of the town it is named after",
+      "low confidence: town centroid, not the substation itself"
      ],
      "rejected_source": null
     }
@@ -11423,7 +11543,7 @@
       "operator_ok": true,
       "operator_tagged": true,
       "unique_site": true,
-      "zone_km": 41.6,
+      "zone_km": 52.7,
       "zone_ok": true
      },
      "notes": [],
@@ -11443,7 +11563,7 @@
       "operator_ok": true,
       "operator_tagged": true,
       "unique_site": false,
-      "zone_km": 10.2,
+      "zone_km": 21.0,
       "zone_ok": true
      },
      "notes": [
@@ -11461,7 +11581,7 @@
    "in_service_date_raw": "6/1/2034",
    "in_service_date": "2034-06-01",
    "stations": [
-    "LITTLE OGEECHEE BANK REPLACEMENT"
+    "LITTLE OGEECHEE"
    ],
    "teams_number": "20787",
    "zone": "219",
@@ -11484,7 +11604,7 @@
    },
    "endpoints": [
     {
-     "name": "LITTLE OGEECHEE BANK REPLACEMENT",
+     "name": "LITTLE OGEECHEE",
      "pt": [
       32.0067859,
       -81.2531513
@@ -11591,7 +11711,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 5.65,
    "distance_km": 9.09,
-   "tier": "share_crews",
+   "tier": "same_window",
+   "shared_stations": [],
    "day_gap": 152,
    "score": 0.8168,
    "confidence": "confirmed",
@@ -11607,7 +11728,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 7.36,
    "distance_km": 11.85,
-   "tier": "share_crews",
+   "tier": "same_window",
+   "shared_stations": [],
    "day_gap": 517,
    "score": 0.7088,
    "confidence": "confirmed",
@@ -11623,7 +11745,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 9.2,
    "distance_km": 14.81,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 883,
    "score": 0.5972,
    "confidence": "confirmed",
@@ -11639,7 +11762,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 11.75,
    "distance_km": 18.92,
-   "tier": "share_crews",
+   "tier": "same_window",
+   "shared_stations": [],
    "day_gap": 517,
    "score": 0.5859,
    "confidence": "confirmed",
@@ -11655,7 +11779,10 @@
    "utility_b": "Georgia Power",
    "distance_mi": 4.09,
    "distance_km": 6.58,
-   "tier": "share_logistics",
+   "tier": "shared_substation",
+   "shared_stations": [
+    "Thurmond / THURMOND DAM (USA) #5"
+   ],
    "day_gap": 3074,
    "score": 0.5855,
    "confidence": "confirmed",
@@ -11671,7 +11798,10 @@
    "utility_b": "Georgia Power",
    "distance_mi": 4.09,
    "distance_km": 6.58,
-   "tier": "share_logistics",
+   "tier": "shared_substation",
+   "shared_stations": [
+    "Thurmond / THURMOND DAM (USA) #6"
+   ],
    "day_gap": 3074,
    "score": 0.5855,
    "confidence": "confirmed",
@@ -11687,7 +11817,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 14.34,
    "distance_km": 23.08,
-   "tier": "share_crews",
+   "tier": "same_window",
+   "shared_stations": [],
    "day_gap": 365,
    "score": 0.5384,
    "confidence": "confirmed",
@@ -11703,7 +11834,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 18.08,
    "distance_km": 29.1,
-   "tier": "share_crews",
+   "tier": "same_window",
+   "shared_stations": [],
    "day_gap": 0,
    "score": 0.4936,
    "confidence": "confirmed",
@@ -11719,7 +11851,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 8.01,
    "distance_km": 12.9,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 3074,
    "score": 0.4756,
    "confidence": "confirmed",
@@ -11735,7 +11868,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 8.01,
    "distance_km": 12.9,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 3074,
    "score": 0.4756,
    "confidence": "confirmed",
@@ -11751,7 +11885,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 8.01,
    "distance_km": 12.9,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 2709,
    "score": 0.4756,
    "confidence": "confirmed",
@@ -11767,7 +11902,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 8.01,
    "distance_km": 12.9,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 2709,
    "score": 0.4756,
    "confidence": "confirmed",
@@ -11783,7 +11919,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 14.61,
    "distance_km": 23.51,
-   "tier": "share_crews",
+   "tier": "same_window",
+   "shared_stations": [],
    "day_gap": 730,
    "score": 0.471,
    "confidence": "confirmed",
@@ -11799,7 +11936,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 14.95,
    "distance_km": 24.06,
-   "tier": "share_crews",
+   "tier": "same_window",
+   "shared_stations": [],
    "day_gap": 730,
    "score": 0.4614,
    "confidence": "confirmed",
@@ -11815,7 +11953,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 18.27,
    "distance_km": 29.41,
-   "tier": "share_crews",
+   "tier": "same_window",
+   "shared_stations": [],
    "day_gap": 365,
    "score": 0.4283,
    "confidence": "confirmed",
@@ -11831,7 +11970,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 17.4,
    "distance_km": 28.0,
-   "tier": "share_crews",
+   "tier": "same_window",
+   "shared_stations": [],
    "day_gap": 517,
    "score": 0.4278,
    "confidence": "confirmed",
@@ -11847,7 +11987,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 20.23,
    "distance_km": 32.56,
-   "tier": "share_crews",
+   "tier": "same_window",
+   "shared_stations": [],
    "day_gap": 152,
    "score": 0.4086,
    "confidence": "confirmed",
@@ -11863,7 +12004,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 20.85,
    "distance_km": 33.56,
-   "tier": "share_crews",
+   "tier": "same_window",
+   "shared_stations": [],
    "day_gap": 213,
    "score": 0.3811,
    "confidence": "confirmed",
@@ -11879,7 +12021,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 12.42,
    "distance_km": 19.98,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 3652,
    "score": 0.3523,
    "confidence": "confirmed",
@@ -11895,7 +12038,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 18.21,
    "distance_km": 29.3,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 883,
    "score": 0.345,
    "confidence": "confirmed",
@@ -11911,7 +12055,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 16.38,
    "distance_km": 26.36,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 1389,
    "score": 0.313,
    "confidence": "confirmed",
@@ -11927,7 +12072,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 18.16,
    "distance_km": 29.22,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 1096,
    "score": 0.3115,
    "confidence": "confirmed",
@@ -11943,7 +12089,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 14.51,
    "distance_km": 23.35,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 3652,
    "score": 0.2937,
    "confidence": "confirmed",
@@ -11959,7 +12106,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 14.51,
    "distance_km": 23.35,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 3287,
    "score": 0.2937,
    "confidence": "confirmed",
@@ -11975,7 +12123,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 20.59,
    "distance_km": 33.13,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 882,
    "score": 0.2785,
    "confidence": "confirmed",
@@ -11991,7 +12140,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 19.93,
    "distance_km": 32.07,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 1096,
    "score": 0.2618,
    "confidence": "confirmed",
@@ -12007,7 +12157,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 17.09,
    "distance_km": 27.5,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 1613,
    "score": 0.2564,
    "confidence": "confirmed",
@@ -12023,7 +12174,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 22.37,
    "distance_km": 36.01,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 883,
    "score": 0.2284,
    "confidence": "confirmed",
@@ -12039,7 +12191,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 17.09,
    "distance_km": 27.5,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 1978,
    "score": 0.2216,
    "confidence": "confirmed",
@@ -12055,7 +12208,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 17.97,
    "distance_km": 28.92,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 2344,
    "score": 0.1969,
    "confidence": "confirmed",
@@ -12071,7 +12225,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 20.15,
    "distance_km": 32.42,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 1461,
    "score": 0.1957,
    "confidence": "confirmed",
@@ -12087,7 +12242,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 21.83,
    "distance_km": 35.14,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 1248,
    "score": 0.1835,
    "confidence": "confirmed",
@@ -12103,7 +12259,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 19.0,
    "distance_km": 30.57,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 3074,
    "score": 0.1681,
    "confidence": "confirmed",
@@ -12119,7 +12276,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 22.42,
    "distance_km": 36.08,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 1248,
    "score": 0.1671,
    "confidence": "confirmed",
@@ -12135,7 +12293,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 19.51,
    "distance_km": 31.4,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 1979,
    "score": 0.1537,
    "confidence": "confirmed",
@@ -12151,7 +12310,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 19.51,
    "distance_km": 31.4,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 1979,
    "score": 0.1537,
    "confidence": "confirmed",
@@ -12167,7 +12327,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 20.63,
    "distance_km": 33.2,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 2557,
    "score": 0.1224,
    "confidence": "confirmed",
@@ -12183,7 +12344,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 23.19,
    "distance_km": 37.32,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 1461,
    "score": 0.1106,
    "confidence": "confirmed",
@@ -12199,7 +12361,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 21.48,
    "distance_km": 34.56,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 2709,
    "score": 0.0986,
    "confidence": "confirmed",
@@ -12215,7 +12378,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 22.21,
    "distance_km": 35.75,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 3074,
    "score": 0.0781,
    "confidence": "confirmed",
@@ -12231,7 +12395,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 22.21,
    "distance_km": 35.75,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 2709,
    "score": 0.0781,
    "confidence": "confirmed",
@@ -12247,7 +12412,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 22.39,
    "distance_km": 36.04,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 2557,
    "score": 0.073,
    "confidence": "confirmed",
@@ -12263,7 +12429,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 24.01,
    "distance_km": 38.65,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 2485,
    "score": 0.0276,
    "confidence": "confirmed",
@@ -12279,7 +12446,8 @@
    "utility_b": "Georgia Power",
    "distance_mi": 24.01,
    "distance_km": 38.65,
-   "tier": "share_crews",
+   "tier": "schedules_apart",
+   "shared_stations": [],
    "day_gap": 2485,
    "score": 0.0276,
    "confidence": "confirmed",

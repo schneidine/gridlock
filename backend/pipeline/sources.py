@@ -6,6 +6,7 @@ list it should produce (under data_clean/). `parser` says what reads it:
 
   - "hand": a hand-validated pdfplumber/regex parser already in pipeline/
   - "ai":   not parsed yet -- to be read by the AI extraction step
+  - "excluded": deliberately not parsed (see the entry's "reason")
 
 To add a new source, drop the file under data_raw/ and add an entry here.
 """
@@ -36,7 +37,9 @@ SOURCES = {
         "url": "https://www.southeasternrtp.com/docs/general/2025/2025%20Regional%20Transmission%20Plan%20and%20Input%20Assumptions.pdf",
         "input": RAW / "sertp" / "SERTP_2025_Regional_Transmission_Plan.pdf",
         "output": CLEAN / "sertp_2025_regional_plan_projects_raw.json",
-        "parser": "ai",
+        "parser": "excluded",
+        "reason": "project pages carry a '(CEII)' banner and the challenge rules put anything "
+                  "marked CEII off-limits; the Non-CEII preliminary report covers the same projects",
     },
     "sertp_2025_preliminary_plan": {
         "publisher": "SERTP",
@@ -44,7 +47,7 @@ SOURCES = {
         "url": "https://www.southeasternrtp.com/docs/general/2025/2025%20SERTP%20Preliminary%20Expansion%20Plan%20Report%20(Non-CEII).pdf",
         "input": RAW / "sertp" / "SERTP_2025_Preliminary_Expansion_Plan_NonCEII.pdf",
         "output": CLEAN / "sertp_2025_preliminary_plan_projects_raw.json",
-        "parser": "ai",
+        "parser": "hand",  # pipeline/parse_sertp_pdf.py
     },
 }
 
@@ -57,4 +60,4 @@ def ai_sources():
 if __name__ == "__main__":
     for key, s in SOURCES.items():
         status = "ok" if s["input"].exists() else "MISSING"
-        print(f"{key:30s} [{s['parser']:4s}] {status:7s} {s['input'].relative_to(ROOT)} -> {s['output'].relative_to(ROOT)}")
+        print(f"{key:30s} [{s['parser']:8s}] {status:7s} {s['input'].relative_to(ROOT)} -> {s['output'].relative_to(ROOT)}")

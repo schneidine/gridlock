@@ -13,7 +13,7 @@
     "day_gap": 152,
     "desc_in_service": "2025-12-31",
     "gpc_need_date": "2026-06-01",
-    "tier": "share_crews",
+    "tier": "same_window",
     "location_note": "Savannah River 230 kV corridor near Hardeeville, SC / Purrysburg"
   },
   "known_costs": {

@@ -20,7 +20,7 @@ create table if not exists projects (
   stations          text[] not null default '{}',
   geo_points         jsonb,                  -- [[lat,lon], ...] (1 or 2 endpoints)
   geo_center         jsonb,                  -- [lat, lon]
-  geo_confidence      text,                   -- 'confirmed' | 'estimated' | 'region_only'
+  geo_confidence      text,                   -- 'confirmed' | 'low_confidence'
   geo_notes           text[],
   created_at        timestamptz not null default now()
 );
@@ -39,7 +39,7 @@ create table if not exists "overlaps" (
   project_id_b      text not null references projects (project_id) on delete cascade,
   distance_km       numeric not null,
   distance_mi       numeric not null,
-  tier              text not null,           -- 'touching_crossing' | 'share_land' | 'share_logistics' | 'share_crews'
+  tier              text not null,           -- 'shared_substation' | 'same_window' | 'schedules_apart'
   day_gap           integer,
   confidence        text not null,
   created_at        timestamptz not null default now(),

@@ -26,7 +26,8 @@
     },
     "stations": [
       "Queensboro",
-      "Ft Johnson"
+      "Ft Johnson",
+      "Bayfront"
     ],
     "data_quality_flags": []
   },
@@ -87,6 +88,7 @@
     },
     "stations": [
       "Okatie",
+      "Jasper",
       "Yemassee"
     ],
     "data_quality_flags": [
@@ -248,7 +250,8 @@
     },
     "stations": [
       "VCS1",
-      "Denny Terrace"
+      "Denny Terrace",
+      "Pineland"
     ],
     "data_quality_flags": []
   },
@@ -529,7 +532,9 @@
       "2028": 2600000
     },
     "stations": [
-      "Williams St"
+      "Williams St",
+      "AM Williams",
+      "McMeekin"
     ],
     "data_quality_flags": []
   },
