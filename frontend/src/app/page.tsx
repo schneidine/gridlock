@@ -1,4 +1,5 @@
 import { createClient } from "@/lib/supabase/server";
+import { UTILITIES } from "@/lib/utilities";
 import { getCostImpact, getOverlaps, getPlannerNotes, getProjects } from "@/lib/data";
 import Dashboard from "@/components/Dashboard";
 import HeaderAuth from "@/components/HeaderAuth";
@@ -28,20 +29,18 @@ export default async function Home() {
           <div>
             <h1 className="text-[16px] font-semibold m-0 tracking-tight">Sentinel Utilities</h1>
             <div className="text-[12px] text-[var(--muted)] leading-tight">
-              Dominion Energy South Carolina &times; Georgia Power &mdash; construction coordination
+              {Object.keys(UTILITIES).join(" \u00d7 ")} &mdash; construction coordination
             </div>
           </div>
         </div>
         <div className="flex items-center gap-5">
           <div className="flex gap-4 text-[11.5px] text-[var(--muted)] font-mono-tab">
-            <span className="flex items-center gap-1.5">
-              <i className="inline-block w-2 h-2 rounded-full" style={{ background: "var(--desc-color)" }} />
-              DESC &middot; SC
-            </span>
-            <span className="flex items-center gap-1.5">
-              <i className="inline-block w-2 h-2 rounded-full" style={{ background: "var(--gpc-color)" }} />
-              Georgia Power &middot; GA
-            </span>
+            {Object.values(UTILITIES).map((u) => (
+              <span key={u.short} className="flex items-center gap-1.5">
+                <i className="inline-block w-2 h-2 rounded-full" style={{ background: u.color }} />
+                {u.short} &middot; {u.state}
+              </span>
+            ))}
           </div>
           <HeaderAuth email={user?.email ?? null} />
         </div>

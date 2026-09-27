@@ -5,14 +5,12 @@ import { CircleMarker, MapContainer, Polyline, Popup, TileLayer, useMap } from "
 import { Fragment, useEffect, useLayoutEffect, useState, type ReactNode } from "react";
 import { createPortal } from "react-dom";
 import type { Project } from "@/lib/types";
-import { setTheme, storedTheme, useTheme } from "@/lib/theme";
+import { UTILITIES, utilityStyle } from "@/lib/utilities";
 
 // Leaflet renders these as raw SVG presentation attributes, not through the
 // CSS cascade, so we use literal hex values here rather than var(--x) --
 // custom-property resolution inside SVG presentation attributes is
 // inconsistent across browsers.
-const DESC_COLOR = "#3b82f6";
-const GPC_COLOR = "#f2762e";
 const SELECTED_COLOR = "#eb9256";
 // Overlap ring: yellow reads on the dark basemap, a darker amber on the light one.
 const FLAG_COLOR = { dark: "#facc15", light: "#b45309" };
@@ -127,7 +125,7 @@ export default function SentinelMap({
         />
         {projects.map((p) => {
           if (!p.geo_center) return null;
-          const color = p.utility.startsWith("Dominion") ? DESC_COLOR : GPC_COLOR;
+          const color = utilityStyle(p.utility).color;
           const dashed = p.geo_confidence !== "confirmed";
           const flagCount = flagCountByProject[p.project_id] ?? 0;
           return (
@@ -154,7 +152,9 @@ export default function SentinelMap({
                 <Popup>
                   <div className="gl-popup-title">{p.title}</div>
                   <div className="gl-popup-meta">{p.utility}</div>
-                  <div className="gl-popup-meta">In-service: {fmtDate(p.in_service_date)}</div>
+                  <div className="gl-popup-meta">
+                    In-service: {p.in_service_date ? fmtDate(p.in_service_date) : (p.in_service_year ?? "date n/a")}
+                  </div>
                   {flagCount > 0 && (
                     <div className="gl-popup-flag">
                       Flagged in {flagCount} overlap{flagCount === 1 ? "" : "s"}
@@ -191,8 +191,9 @@ function MapLegend({ flagColor }: { flagColor: string }) {
   return (
     <div className="absolute bottom-6 left-3 z-[1000] rounded-lg border border-[var(--border)] bg-[var(--panel)]/90 backdrop-blur-sm px-3 py-2.5 text-[11px] flex flex-col gap-1.5 shadow-lg">
       <div className="text-[9.5px] uppercase tracking-[0.1em] text-[var(--muted)] font-medium">Legend</div>
-      <LegendRow swatch={<Dot color={DESC_COLOR} />} label="DESC project" />
-      <LegendRow swatch={<Dot color={GPC_COLOR} />} label="Georgia Power project" />
+      {Object.entries(UTILITIES).map(([name, u]) => (
+        <LegendRow key={name} swatch={<Dot color={u.color} />} label={`${name} project`} />
+      ))}
       <LegendRow swatch={<Dot color="var(--muted)" dashed />} label="Estimated location" />
       <LegendRow
         swatch={<span className="block w-3.5 h-3.5 rounded-full" style={{ border: `2px solid ${flagColor}` }} />}

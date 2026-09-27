@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Sentinel Utilities — DESC × Georgia Power Coordination</title>
+<title>Sentinel Utilities — DESC × Georgia Power × Duke Energy Coordination</title>
 <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
 <style>
   :root {
     --desc-color: #3b82f6;
     --gpc-color: #f97316;
+    --duke-color: #a78bfa;
     --ring: #facc15;
     --ok: #4ade80;
     --warn: #fbbf24;
@@ -52,6 +53,7 @@
   .card .proj { font-size: 12.5px; line-height: 1.4; margin: 2px 0; }
   .tag-a { color: var(--desc-color); font-weight: 700; }
   .tag-b { color: var(--gpc-color); font-weight: 700; }
+  .tag-c { color: var(--duke-color); font-weight: 700; }
   .card .meta { font-size: 11px; color: var(--muted); margin-top: 6px; display: flex; justify-content: space-between; gap: 8px; }
   .conf-tag { font-size: 10px; padding: 1px 6px; border-radius: 4px; background: #1c2440; white-space: nowrap; }
   .conf-tag.confirmed { color: var(--ok); }
@@ -89,11 +91,12 @@
   <header>
     <div>
       <h1>Sentinel Utilities</h1>
-      <div class="sub">Dominion Energy South Carolina × Georgia Power: planned transmission work within 25 miles</div>
+      <div class="sub">Dominion Energy South Carolina × Georgia Power × Duke Energy: planned transmission work within 25 miles</div>
     </div>
     <div class="legend">
       <span><i class="dot" style="background:var(--desc-color)"></i>DESC (SC)</span>
       <span><i class="dot" style="background:var(--gpc-color)"></i>Georgia Power (GA)</span>
+      <span><i class="dot" style="background:var(--duke-color)"></i>Duke Energy (NC/SC)</span>
       <span><i class="dot" style="background:transparent;border:1.5px dashed var(--muted)"></i>low confidence</span>
       <span><i class="ring"></i>25-mi overlap ring</span>
     </div>
@@ -124,8 +127,16 @@ let DATA, BY_ID = {}, map, baseLayer, ringLayer, focusLayer;
 let filter = "all", selected = null;
 const markers = {};
 
+// short tag + CSS class per utility name, as written by backend/pipeline/build_dataset.py
+const UTIL = {
+  "Dominion Energy South Carolina": { short: "DESC", cls: "tag-a", color: "--desc-color" },
+  "Georgia Power": { short: "GPC", cls: "tag-b", color: "--gpc-color" },
+  "Duke Energy": { short: "DUKE", cls: "tag-c", color: "--duke-color" },
+};
 function isDesc(p) { return p.utility.startsWith("Dominion"); }
-function color(p) { return isDesc(p) ? css("--desc-color") : css("--gpc-color"); }
+function color(p) { return css(UTIL[p.utility].color); }
+function tag(utility) { const u = UTIL[utility]; return `<span class="${u.cls}">${u.short}</span>`; }
+function allProjects(d = DATA) { return [...d.desc_projects, ...d.gpc_projects, ...(d.duke_projects || [])]; }
 
 function initMap() {
   map = L.map("map").setView([32.9, -81.6], 8);
@@ -155,14 +166,16 @@ function endpointHtml(e) {
 }
 
 function projectHtml(p) {
-  const tag = isDesc(p) ? `<span class="tag-a">DESC</span>` : `<span class="tag-b">GPC</span>`;
+  const utag = tag(p.utility);
   const extra = isDesc(p)
     ? `${esc(p.source_project_id)} · ${esc(p.status)} · ${fmtUsd(p.total_cost_usd)}`
-    : `TEAMS ${esc(p.teams_number)} · zone ${esc(p.zone)} · ${esc(p.sponsor)} · cost redacted (CEII)`;
+    : p.balancing_authority
+      ? `${esc(p.balancing_authority)} · SERTP 2025 preliminary plan p.${p.source_page} · no cost published`
+      : `TEAMS ${esc(p.teams_number)} · zone ${esc(p.zone)} · ${esc(p.sponsor)} · cost redacted (CEII)`;
   const flags = (p.data_quality_flags || []).map(f => `<div class="note" style="color:var(--warn)">⚠ ${esc(f)}</div>`).join("");
-  return `<b class="t">${tag} ${esc(p.title)}</b>
+  return `<b class="t">${utag} ${esc(p.title)}</b>
     <div class="muted">${extra}</div>
-    <div>In service: ${fmtDate(p.in_service_date)} ${confTag(p.geo ? p.geo.confidence : "unlocated")}</div>
+    <div>In service: ${p.in_service_date ? fmtDate(p.in_service_date) : (p.in_service_year ?? "date n/a")} ${confTag(p.geo ? p.geo.confidence : "unlocated")}</div>
     ${p.description ? `<div class="muted" style="margin-top:4px">${esc(p.description)}</div>` : ""}
     ${flags}
     <div style="margin-top:4px">${p.endpoints.map(endpointHtml).join("")}</div>`;
@@ -170,7 +183,7 @@ function projectHtml(p) {
 
 function renderProjects() {
   const inOverlap = new Set(DATA.overlaps.flatMap(o => [o.project_id_a, o.project_id_b]));
-  [...DATA.desc_projects, ...DATA.gpc_projects].forEach(p => {
+  allProjects().forEach(p => {
     if (!p.geo) return;
     const c = color(p), low = p.geo.confidence !== "confirmed", hot = inOverlap.has(p.project_id);
     if (p.geo.points.length > 1) {
@@ -190,7 +203,7 @@ function renderProjects() {
 }
 
 function renderStats() {
-  const all = [...DATA.desc_projects, ...DATA.gpc_projects];
+  const all = allProjects();
   const mapped = all.filter(p => p.geo).length;
   const s = DATA.summary;
   document.getElementById("stats").innerHTML = `
@@ -237,8 +250,8 @@ function renderList() {
     card.innerHTML = `
       <div class="rank-row"><span class="rank">#${o.rank}</span><span class="score">${o.score.toFixed(3)}</span></div>
       <div class="bar" title="distance ${d.toFixed(2)} + timing ${t.toFixed(2)}"><i style="width:${d * 100}%;background:var(--ring)"></i><i style="width:${t * 100}%;background:#a78bfa"></i></div>
-      <div class="proj"><span class="tag-a">DESC</span> ${esc(o.project_a_title)}</div>
-      <div class="proj"><span class="tag-b">GPC</span> ${esc(o.project_b_title)}</div>
+      <div class="proj">${tag(o.utility_a)} ${esc(o.project_a_title)}</div>
+      <div class="proj">${tag(o.utility_b)} ${esc(o.project_b_title)}</div>
       <div class="meta"><span>${o.distance_mi} mi · ${o.day_gap != null ? o.day_gap + " days apart" : "date n/a"}</span>${confTag(o.confidence)}</div>`;
     card.onclick = () => focusOverlap(o);
     el.appendChild(card);
@@ -267,8 +280,8 @@ function focusOverlap(o) {
       <tr><td>Score = distance + timing</td><td><b>${o.score.toFixed(3)}</b> = ${d.toFixed(3)} + ${t.toFixed(3)}</td></tr>
       <tr><td>Location confidence</td><td>${confTag(o.confidence)}</td></tr>
     </table>
-    <details open><summary>DESC project</summary>${projectHtml(a)}</details>
-    <details><summary>Georgia Power project</summary>${projectHtml(b)}</details>`;
+    <details open><summary>${esc(a.utility)} project</summary>${projectHtml(a)}</details>
+    <details><summary>${esc(b.utility)} project</summary>${projectHtml(b)}</details>`;
   el.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
 
@@ -305,7 +318,7 @@ function renderMethod() {
       Distance dominates because shared right-of-way, staging and crews only exist when the work is physically close; timing gets ${w.w_time * 100}% because a schedule can be moved, geography can't. Gaps over 5 years earn no timing credit.</div>
     <details><summary>Validation</summary>
       <div class="muted">Endpoints are fuzzy-matched (rapidfuzz) to ${"OSM"} substations from one Overpass pull, filtered by operator and state, then checked against the GPC planning zone (same name, wrong county gets rejected) and the organizer's worked example.<br/>
-      DESC endpoints: ${ep("desc")}.<br/>GPC endpoints: ${ep("gpc")}.<br/>
+      DESC endpoints: ${ep("desc")}.<br/>GPC endpoints: ${ep("gpc")}.<br/>${s.duke ? `Duke endpoints: ${ep("duke")}.<br/>` : ""}
       ${s.gpc_rows_dropped_other_sponsors} non-Georgia-Power rows (GTC, MEAG, DU) excluded; SAV (Georgia Power Savannah) kept.</div>
     </details>
     <details><summary>Organizer worked example: ${s.organizer_reproduced} reproduced</summary>
@@ -315,15 +328,15 @@ function renderMethod() {
 }
 
 function renderUnmapped() {
-  const un = [...DATA.desc_projects, ...DATA.gpc_projects].filter(p => !p.geo);
+  const un = allProjects().filter(p => !p.geo);
   document.getElementById("unmapped").innerHTML = `<details><summary><b>${un.length} projects not mapped</b> (no endpoint could be located with confidence)</summary>
-    <ul class="unmapped">${un.map(p => `<li><span class="${isDesc(p) ? "tag-a" : "tag-b"}">${isDesc(p) ? "DESC" : "GPC"}</span> ${esc(p.title)}
+    <ul class="unmapped">${un.map(p => `<li>${tag(p.utility)} ${esc(p.title)}
       <div class="muted">${p.endpoints.map(e => `${esc(e.name)}: ${(e.notes || []).slice(-1).map(esc).join("")}`).join("<br/>")}</div></li>`).join("")}</ul></details>`;
 }
 
 fetch("data/sentinel_dataset.json").then(r => r.json()).then(data => {
   DATA = data;
-  [...data.desc_projects, ...data.gpc_projects].forEach(p => BY_ID[p.project_id] = p);
+  allProjects(data).forEach(p => BY_ID[p.project_id] = p);
   initMap();
   renderProjects();
   renderStats();

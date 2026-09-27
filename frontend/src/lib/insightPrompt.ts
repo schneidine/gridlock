@@ -1,5 +1,6 @@
 import type { Confidence, CostImpact, Overlap, Project } from "./types";
 import { TIER_LABEL } from "./types";
+import { utilityStyle } from "./utilities";
 
 // What each category lets the two utilities do (rules in backend/pipeline/build_dataset.py).
 const TIER_MEANING: Record<Overlap["tier"], string> = {
@@ -22,7 +23,9 @@ function describeProject(label: string, p: Project) {
     `  Utility: ${p.utility} (${p.state})`,
     p.description && `  Description: ${p.description}`,
     p.status && `  Status: ${p.status}`,
-    p.in_service_date && `  In-service date: ${p.in_service_date}`,
+    p.in_service_date
+      ? `  In-service date: ${p.in_service_date}`
+      : p.in_service_year != null && `  In-service year: ${p.in_service_year} (the source gives only the year)`,
     p.stations.length > 0 && `  Stations: ${p.stations.join(", ")}`,
     `  Location: ${p.geo_confidence ? CONF_MEANING[p.geo_confidence] : "not located"}`,
   ]
@@ -31,13 +34,15 @@ function describeProject(label: string, p: Project) {
 }
 
 export function buildPrompt(o: Overlap, a: Project, b: Project, ci: CostImpact | undefined) {
+  const yearOnly = [a, b].some((p) => !p.in_service_date && p.in_service_year != null);
   const facts = [
-    describeProject("Dominion Energy South Carolina (DESC)", a),
-    describeProject("Georgia Power (GPC)", b),
+    describeProject(`${a.utility} (${utilityStyle(a.utility).short})`, a),
+    describeProject(`${b.utility} (${utilityStyle(b.utility).short})`, b),
     `Distance between the two projects' center points: ${o.distance_mi} miles`,
     `Coordination category: ${TIER_LABEL[o.tier]} (${TIER_MEANING[o.tier]})`,
     o.day_gap != null
-      ? `Gap between in-service dates: ${o.day_gap} days (about ${(o.day_gap / 365.25).toFixed(1)} years)`
+      ? `Gap between in-service dates: ${yearOnly ? "at least " : ""}${o.day_gap} days (about ${(o.day_gap / 365.25).toFixed(1)} years)` +
+        (yearOnly ? "; one project lists only its in-service year, so this is the smallest gap that year allows" : "")
       : "Gap between in-service dates: unknown",
     ci?.narrative && `Cost analysis notes: ${ci.narrative}`,
     ci?.savings_usd_low != null &&
@@ -47,7 +52,7 @@ export function buildPrompt(o: Overlap, a: Project, b: Project, ci: CostImpact |
     .filter(Boolean)
     .join("\n");
 
-  return `You advise transmission planners at DESC and Georgia Power. Geographic closeness is the main reason to coordinate; similar build dates (within about two years) make it much stronger; build dates years apart make it weak unless one schedule could move.
+  return `You advise transmission planners at ${a.utility} and ${b.utility}. Geographic closeness is the main reason to coordinate; similar build dates (within about two years) make it much stronger; build dates years apart make it weak unless one schedule could move.
 
 A flagged pair of planned projects:
 

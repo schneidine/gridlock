@@ -19,7 +19,7 @@ const plexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: "Sentinel Utilities",
-  description: "DESC x Georgia Power planned construction coordination",
+  description: "DESC x Georgia Power x Duke Energy planned construction coordination",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -46,6 +46,7 @@ function projectRow(p) {
     description: p.description ?? null,
     status: p.status ?? null,
     in_service_date: p.in_service_date ? p.in_service_date.slice(0, 10) : null,
+    in_service_year: p.in_service_year ?? null, // needs migration 0003_in_service_year.sql
     stations: p.stations ?? [],
     geo_points: p.geo ? p.geo.points : null,
     geo_center: p.geo ? p.geo.center : null,
@@ -58,7 +59,7 @@ async function main() {
   const dataset = readJson("sentinel_dataset.json");
   const costImpact = readJson("cost_impact_estimate.json");
 
-  const allProjects = [...dataset.desc_projects, ...dataset.gpc_projects].map(projectRow);
+  const allProjects = [...dataset.desc_projects, ...dataset.gpc_projects, ...(dataset.duke_projects ?? [])].map(projectRow);
   console.log(`Upserting ${allProjects.length} projects...`);
   {
     const { error } = await supabase.from("projects").upsert(allProjects, { onConflict: "project_id" });

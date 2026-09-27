@@ -1,45 +1,62 @@
 overlap_id,rank,score,distance_mi,day_gap,tier,confidence,project_id_a,project_a_title,project_id_b,project_b_title
-OVL_1,1,0.8168,5.65,152,same_window,confirmed,DESC_23,Jasper – Okatie 230 kV #2: Construct,GPC_38,SAV: MCINTOSH - PURRYSBURG 230KV REACTORS
-OVL_2,2,0.7088,7.36,517,same_window,confirmed,DESC_23,Jasper – Okatie 230 kV #2: Construct,GPC_61,SAV: GOSHEN (SAV) - MCINTOSH 115KV LINE REBUILD
-OVL_3,3,0.5972,9.2,883,schedules_apart,confirmed,DESC_43,Urquhart – Aiken PSA 46 kV: Rebuild,GPC_111,GOSHEN AREA STRATEGIC SOLUTION
-OVL_4,4,0.5859,11.75,517,same_window,confirmed,DESC_23,Jasper – Okatie 230 kV #2: Construct,GPC_60,SAV: GOSHEN (SAV) - KRAFT 115KV LINE REBUILD
-OVL_5,5,0.5855,4.09,3074,shared_substation,confirmed,DESC_31,Hooks - Thurmond 115kV Tie: Rebuild,GPC_128,EVANS PRIMARY - THURMOND DAM (USA) #5 115KV REBUILD
-OVL_6,6,0.5855,4.09,3074,shared_substation,confirmed,DESC_31,Hooks - Thurmond 115kV Tie: Rebuild,GPC_129,EVANS PRIMARY - THURMOND DAM (USA) #6 115KV REBUILD
-OVL_7,7,0.5384,14.34,365,same_window,confirmed,DESC_10,Okatie-Bluffton 115kV: Rebuild,GPC_38,SAV: MCINTOSH - PURRYSBURG 230KV REACTORS
-OVL_8,8,0.4936,18.08,0,same_window,confirmed,DESC_10,Okatie-Bluffton 115kV: Rebuild,GPC_9,SAV: DEPTFORD - MAGNOLIA 115KV RECONDUCTOR
-OVL_9,9,0.4756,8.01,3074,schedules_apart,confirmed,DESC_14,Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV Rebuilds,GPC_128,EVANS PRIMARY - THURMOND DAM (USA) #5 115KV REBUILD
-OVL_10,10,0.4756,8.01,3074,schedules_apart,confirmed,DESC_14,Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV Rebuilds,GPC_129,EVANS PRIMARY - THURMOND DAM (USA) #6 115KV REBUILD
-OVL_11,11,0.4756,8.01,2709,schedules_apart,confirmed,DESC_15,Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV,GPC_128,EVANS PRIMARY - THURMOND DAM (USA) #5 115KV REBUILD
-OVL_12,12,0.4756,8.01,2709,schedules_apart,confirmed,DESC_15,Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV,GPC_129,EVANS PRIMARY - THURMOND DAM (USA) #6 115KV REBUILD
-OVL_13,13,0.471,14.61,730,same_window,confirmed,DESC_10,Okatie-Bluffton 115kV: Rebuild,GPC_61,SAV: GOSHEN (SAV) - MCINTOSH 115KV LINE REBUILD
-OVL_14,14,0.4614,14.95,730,same_window,confirmed,DESC_10,Okatie-Bluffton 115kV: Rebuild,GPC_60,SAV: GOSHEN (SAV) - KRAFT 115KV LINE REBUILD
-OVL_15,15,0.4283,18.27,365,same_window,confirmed,DESC_10,Okatie-Bluffton 115kV: Rebuild,GPC_36,SAV: BOULEVARD - DEPTFORD 115KV RECONDUCTOR
-OVL_16,16,0.4278,17.4,517,same_window,confirmed,DESC_3,"Okatie 230-115kV Substation, Jasper – Yemassee 230kV #1 Fold-in",GPC_38,SAV: MCINTOSH - PURRYSBURG 230KV REACTORS
-OVL_17,17,0.4086,20.23,152,same_window,confirmed,DESC_23,Jasper – Okatie 230 kV #2: Construct,GPC_36,SAV: BOULEVARD - DEPTFORD 115KV RECONDUCTOR
-OVL_18,18,0.3811,20.85,213,same_window,confirmed,DESC_23,Jasper – Okatie 230 kV #2: Construct,GPC_9,SAV: DEPTFORD - MAGNOLIA 115KV RECONDUCTOR
-OVL_19,19,0.3523,12.42,3652,schedules_apart,confirmed,DESC_31,Hooks - Thurmond 115kV Tie: Rebuild,GPC_138,EVANS PRIMARY - THOMSON PRIMARY 115KV REBUILD
-OVL_20,20,0.345,18.21,883,schedules_apart,confirmed,DESC_23,Jasper – Okatie 230 kV #2: Construct,GPC_74,SAV: COLEMAN - DEAN FOREST 115KV LINE REBUILD
-OVL_21,21,0.313,16.38,1389,schedules_apart,confirmed,DESC_35,Urquhart – Toolebeck 115kV line: Rebuild,GPC_111,GOSHEN AREA STRATEGIC SOLUTION
-OVL_22,22,0.3115,18.16,1096,schedules_apart,confirmed,DESC_10,Okatie-Bluffton 115kV: Rebuild,GPC_74,SAV: COLEMAN - DEAN FOREST 115KV LINE REBUILD
-OVL_23,23,0.2937,14.51,3652,schedules_apart,confirmed,DESC_14,Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV Rebuilds,GPC_138,EVANS PRIMARY - THOMSON PRIMARY 115KV REBUILD
-OVL_24,24,0.2937,14.51,3287,schedules_apart,confirmed,DESC_15,Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV,GPC_138,EVANS PRIMARY - THOMSON PRIMARY 115KV REBUILD
-OVL_25,25,0.2785,20.59,882,schedules_apart,confirmed,DESC_3,"Okatie 230-115kV Substation, Jasper – Yemassee 230kV #1 Fold-in",GPC_61,SAV: GOSHEN (SAV) - MCINTOSH 115KV LINE REBUILD
-OVL_26,26,0.2618,19.93,1096,schedules_apart,confirmed,DESC_10,Okatie-Bluffton 115kV: Rebuild,GPC_75,SAV: MAGNOLIA - TRUMAN PARKWAY 115KV REBUILD
-OVL_27,27,0.2564,17.09,1613,schedules_apart,confirmed,DESC_15,Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV,GPC_111,GOSHEN AREA STRATEGIC SOLUTION
-OVL_28,28,0.2284,22.37,883,schedules_apart,confirmed,DESC_23,Jasper – Okatie 230 kV #2: Construct,GPC_75,SAV: MAGNOLIA - TRUMAN PARKWAY 115KV REBUILD
-OVL_29,29,0.2216,17.09,1978,schedules_apart,confirmed,DESC_14,Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV Rebuilds,GPC_111,GOSHEN AREA STRATEGIC SOLUTION
-OVL_30,30,0.1969,17.97,2344,schedules_apart,confirmed,DESC_23,Jasper – Okatie 230 kV #2: Construct,GPC_125,SAV: COLEMAN - MELDRIM 115KV LINE REBUILD
-OVL_31,31,0.1957,20.15,1461,schedules_apart,confirmed,DESC_10,Okatie-Bluffton 115kV: Rebuild,GPC_92,SAV: BOULEVARD - MAGNOLIA 115 KV LINE REBUILD
-OVL_32,32,0.1835,21.83,1248,schedules_apart,confirmed,DESC_23,Jasper – Okatie 230 kV #2: Construct,GPC_92,SAV: BOULEVARD - MAGNOLIA 115 KV LINE REBUILD
-OVL_33,33,0.1681,19.0,3074,schedules_apart,confirmed,DESC_31,Hooks - Thurmond 115kV Tie: Rebuild,GPC_133,THOMSON PRIMARY 230/115KV SECOND TRANSFORMER
-OVL_34,34,0.1671,22.42,1248,schedules_apart,confirmed,DESC_23,Jasper – Okatie 230 kV #2: Construct,GPC_93,SAV: DEAN FOREST - LITTLE OGEECHEE 230 KV REBUILD
-OVL_35,35,0.1537,19.51,1979,schedules_apart,confirmed,DESC_43,Urquhart – Aiken PSA 46 kV: Rebuild,GPC_128,EVANS PRIMARY - THURMOND DAM (USA) #5 115KV REBUILD
-OVL_36,36,0.1537,19.51,1979,schedules_apart,confirmed,DESC_43,Urquhart – Aiken PSA 46 kV: Rebuild,GPC_129,EVANS PRIMARY - THURMOND DAM (USA) #6 115KV REBUILD
-OVL_37,37,0.1224,20.63,2557,schedules_apart,confirmed,DESC_10,Okatie-Bluffton 115kV: Rebuild,GPC_125,SAV: COLEMAN - MELDRIM 115KV LINE REBUILD
-OVL_38,38,0.1106,23.19,1461,schedules_apart,confirmed,DESC_10,Okatie-Bluffton 115kV: Rebuild,GPC_93,SAV: DEAN FOREST - LITTLE OGEECHEE 230 KV REBUILD
-OVL_39,39,0.0986,21.48,2709,schedules_apart,confirmed,DESC_23,Jasper – Okatie 230 kV #2: Construct,GPC_132,SAV: MELDRIM BANK D REPLACEMENT
-OVL_40,40,0.0781,22.21,3074,schedules_apart,confirmed,DESC_14,Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV Rebuilds,GPC_133,THOMSON PRIMARY 230/115KV SECOND TRANSFORMER
-OVL_41,41,0.0781,22.21,2709,schedules_apart,confirmed,DESC_15,Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV,GPC_133,THOMSON PRIMARY 230/115KV SECOND TRANSFORMER
-OVL_42,42,0.073,22.39,2557,schedules_apart,confirmed,DESC_43,Urquhart – Aiken PSA 46 kV: Rebuild,GPC_138,EVANS PRIMARY - THOMSON PRIMARY 115KV REBUILD
-OVL_43,43,0.0276,24.01,2485,schedules_apart,confirmed,DESC_35,Urquhart – Toolebeck 115kV line: Rebuild,GPC_128,EVANS PRIMARY - THURMOND DAM (USA) #5 115KV REBUILD
-OVL_44,44,0.0276,24.01,2485,schedules_apart,confirmed,DESC_35,Urquhart – Toolebeck 115kV line: Rebuild,GPC_129,EVANS PRIMARY - THURMOND DAM (USA) #6 115KV REBUILD
+OVL_1,1,1.0,0.0,0,shared_substation,low_confidence,DESC_40,Eastover – Sumter 115kV DEP Tie: Rebuild with 1272 ACSR,DUKE_75,"SUMTER - DESC EASTOVER 115 KV TRANSMISSION LINE (KINGS HWY - SHAW FIELD - EASTOVER), REBUILD"
+OVL_2,2,0.9647,0.0,215,shared_substation,low_confidence,DESC_40,Eastover – Sumter 115kV DEP Tie: Rebuild with 1272 ACSR,DUKE_79,"SUMTER - DESC EASTOVER 115 KV TRANSMISSION LINE (SUMTER GOLD KIST TAP - SUMTER KINGS HWY SECTION), REBUILD"
+OVL_3,3,0.8168,5.65,152,same_window,confirmed,DESC_23,Jasper – Okatie 230 kV #2: Construct,GPC_38,SAV: MCINTOSH - PURRYSBURG 230KV REACTORS
+OVL_4,4,0.7088,7.36,517,same_window,confirmed,DESC_23,Jasper – Okatie 230 kV #2: Construct,GPC_61,SAV: GOSHEN (SAV) - MCINTOSH 115KV LINE REBUILD
+OVL_5,5,0.6084,10.59,579,shared_substation,low_confidence,DESC_5,Eastover - Square D 115kV: Rebuild,DUKE_75,"SUMTER - DESC EASTOVER 115 KV TRANSMISSION LINE (KINGS HWY - SHAW FIELD - EASTOVER), REBUILD"
+OVL_6,6,0.5972,9.2,883,schedules_apart,confirmed,DESC_43,Urquhart – Aiken PSA 46 kV: Rebuild,GPC_111,GOSHEN AREA STRATEGIC SOLUTION
+OVL_7,7,0.5859,11.75,517,same_window,confirmed,DESC_23,Jasper – Okatie 230 kV #2: Construct,GPC_60,SAV: GOSHEN (SAV) - KRAFT 115KV LINE REBUILD
+OVL_8,8,0.5855,4.09,3074,shared_substation,confirmed,DESC_31,Hooks - Thurmond 115kV Tie: Rebuild,GPC_128,EVANS PRIMARY - THURMOND DAM (USA) #5 115KV REBUILD
+OVL_9,9,0.5855,4.09,3074,shared_substation,confirmed,DESC_31,Hooks - Thurmond 115kV Tie: Rebuild,GPC_129,EVANS PRIMARY - THURMOND DAM (USA) #6 115KV REBUILD
+OVL_10,10,0.5484,10.59,944,shared_substation,low_confidence,DESC_5,Eastover - Square D 115kV: Rebuild,DUKE_79,"SUMTER - DESC EASTOVER 115 KV TRANSMISSION LINE (SUMTER GOLD KIST TAP - SUMTER KINGS HWY SECTION), REBUILD"
+OVL_11,11,0.5384,14.34,365,same_window,confirmed,DESC_10,Okatie-Bluffton 115kV: Rebuild,GPC_38,SAV: MCINTOSH - PURRYSBURG 230KV REACTORS
+OVL_12,12,0.531,12.46,731,schedules_apart,low_confidence,DESC_9,Wateree-Killian 230kV: Rebuild,DUKE_66,"CAMDEN JUNCTION - DPC WATEREE 115 KV TRANSMISSION LINE, REBUILD"
+OVL_13,13,0.4936,18.08,0,same_window,confirmed,DESC_10,Okatie-Bluffton 115kV: Rebuild,GPC_9,SAV: DEPTFORD - MAGNOLIA 115KV RECONDUCTOR
+OVL_14,14,0.4756,8.01,3074,schedules_apart,confirmed,DESC_14,Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV Rebuilds,GPC_128,EVANS PRIMARY - THURMOND DAM (USA) #5 115KV REBUILD
+OVL_15,15,0.4756,8.01,3074,schedules_apart,confirmed,DESC_14,Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV Rebuilds,GPC_129,EVANS PRIMARY - THURMOND DAM (USA) #6 115KV REBUILD
+OVL_16,16,0.4756,8.01,2709,schedules_apart,confirmed,DESC_15,Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV,GPC_128,EVANS PRIMARY - THURMOND DAM (USA) #5 115KV REBUILD
+OVL_17,17,0.4756,8.01,2709,schedules_apart,confirmed,DESC_15,Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV,GPC_129,EVANS PRIMARY - THURMOND DAM (USA) #6 115KV REBUILD
+OVL_18,18,0.471,14.61,730,same_window,confirmed,DESC_10,Okatie-Bluffton 115kV: Rebuild,GPC_61,SAV: GOSHEN (SAV) - MCINTOSH 115KV LINE REBUILD
+OVL_19,19,0.4614,14.95,730,same_window,confirmed,DESC_10,Okatie-Bluffton 115kV: Rebuild,GPC_60,SAV: GOSHEN (SAV) - KRAFT 115KV LINE REBUILD
+OVL_20,20,0.4283,18.27,365,same_window,confirmed,DESC_10,Okatie-Bluffton 115kV: Rebuild,GPC_36,SAV: BOULEVARD - DEPTFORD 115KV RECONDUCTOR
+OVL_21,21,0.4278,17.4,517,same_window,confirmed,DESC_3,"Okatie 230-115kV Substation, Jasper – Yemassee 230kV #1 Fold-in",GPC_38,SAV: MCINTOSH - PURRYSBURG 230KV REACTORS
+OVL_22,22,0.4086,20.23,152,same_window,confirmed,DESC_23,Jasper – Okatie 230 kV #2: Construct,GPC_36,SAV: BOULEVARD - DEPTFORD 115KV RECONDUCTOR
+OVL_23,23,0.4065,21.19,1,same_window,low_confidence,DESC_11,Hopkins-CIP 230kV: Rebuild,DUKE_75,"SUMTER - DESC EASTOVER 115 KV TRANSMISSION LINE (KINGS HWY - SHAW FIELD - EASTOVER), REBUILD"
+OVL_24,24,0.3811,20.85,213,same_window,confirmed,DESC_23,Jasper – Okatie 230 kV #2: Construct,GPC_9,SAV: DEPTFORD - MAGNOLIA 115KV RECONDUCTOR
+OVL_25,25,0.3523,12.42,3652,schedules_apart,confirmed,DESC_31,Hooks - Thurmond 115kV Tie: Rebuild,GPC_138,EVANS PRIMARY - THOMSON PRIMARY 115KV REBUILD
+OVL_26,26,0.3465,21.19,366,same_window,low_confidence,DESC_11,Hopkins-CIP 230kV: Rebuild,DUKE_79,"SUMTER - DESC EASTOVER 115 KV TRANSMISSION LINE (SUMTER GOLD KIST TAP - SUMTER KINGS HWY SECTION), REBUILD"
+OVL_27,27,0.345,18.21,883,schedules_apart,confirmed,DESC_23,Jasper – Okatie 230 kV #2: Construct,GPC_74,SAV: COLEMAN - DEAN FOREST 115KV LINE REBUILD
+OVL_28,28,0.3314,21.19,458,same_window,low_confidence,DESC_13,Square D - Hopkins 115kV: Rebuild,DUKE_75,"SUMTER - DESC EASTOVER 115 KV TRANSMISSION LINE (KINGS HWY - SHAW FIELD - EASTOVER), REBUILD"
+OVL_29,29,0.3248,24.11,1,shared_substation,low_confidence,DESC_29,St George - Sumter 230kV Tie: Rebuild Line from Santee Substation - Duke/Progress Energy Tie,DUKE_75,"SUMTER - DESC EASTOVER 115 KV TRANSMISSION LINE (KINGS HWY - SHAW FIELD - EASTOVER), REBUILD"
+OVL_30,30,0.313,16.38,1389,schedules_apart,confirmed,DESC_35,Urquhart – Toolebeck 115kV line: Rebuild,GPC_111,GOSHEN AREA STRATEGIC SOLUTION
+OVL_31,31,0.3115,18.16,1096,schedules_apart,confirmed,DESC_10,Okatie-Bluffton 115kV: Rebuild,GPC_74,SAV: COLEMAN - DEAN FOREST 115KV LINE REBUILD
+OVL_32,32,0.3078,24.72,0,same_window,low_confidence,DESC_41,Cameron Jct – Elloree 46 kV Rebuild,DUKE_75,"SUMTER - DESC EASTOVER 115 KV TRANSMISSION LINE (KINGS HWY - SHAW FIELD - EASTOVER), REBUILD"
+OVL_33,33,0.3077,24.72,1,same_window,low_confidence,DESC_41,Cameron Jct – Elloree 46 kV Rebuild,DUKE_79,"SUMTER - DESC EASTOVER 115 KV TRANSMISSION LINE (SUMTER GOLD KIST TAP - SUMTER KINGS HWY SECTION), REBUILD"
+OVL_34,34,0.3036,24.87,0,same_window,low_confidence,DESC_42,Elloree – Santee City 46 kV: Rebuild,DUKE_79,"SUMTER - DESC EASTOVER 115 KV TRANSMISSION LINE (SUMTER GOLD KIST TAP - SUMTER KINGS HWY SECTION), REBUILD"
+OVL_35,35,0.2937,14.51,3652,schedules_apart,confirmed,DESC_14,Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV Rebuilds,GPC_138,EVANS PRIMARY - THOMSON PRIMARY 115KV REBUILD
+OVL_36,36,0.2937,14.51,3287,schedules_apart,confirmed,DESC_15,Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV,GPC_138,EVANS PRIMARY - THOMSON PRIMARY 115KV REBUILD
+OVL_37,37,0.2899,23.21,366,same_window,low_confidence,DESC_44,Cameron Jct – Cameron – St Matthews 46 kV Rebuild,DUKE_79,"SUMTER - DESC EASTOVER 115 KV TRANSMISSION LINE (SUMTER GOLD KIST TAP - SUMTER KINGS HWY SECTION), REBUILD"
+OVL_38,38,0.2785,20.59,882,schedules_apart,confirmed,DESC_3,"Okatie 230-115kV Substation, Jasper – Yemassee 230kV #1 Fold-in",GPC_61,SAV: GOSHEN (SAV) - MCINTOSH 115KV LINE REBUILD
+OVL_39,39,0.2714,21.19,823,schedules_apart,low_confidence,DESC_13,Square D - Hopkins 115kV: Rebuild,DUKE_79,"SUMTER - DESC EASTOVER 115 KV TRANSMISSION LINE (SUMTER GOLD KIST TAP - SUMTER KINGS HWY SECTION), REBUILD"
+OVL_40,40,0.2648,24.11,366,shared_substation,low_confidence,DESC_29,St George - Sumter 230kV Tie: Rebuild Line from Santee Substation - Duke/Progress Energy Tie,DUKE_79,"SUMTER - DESC EASTOVER 115 KV TRANSMISSION LINE (SUMTER GOLD KIST TAP - SUMTER KINGS HWY SECTION), REBUILD"
+OVL_41,41,0.2618,19.93,1096,schedules_apart,confirmed,DESC_10,Okatie-Bluffton 115kV: Rebuild,GPC_75,SAV: MAGNOLIA - TRUMAN PARKWAY 115KV REBUILD
+OVL_42,42,0.2564,17.09,1613,schedules_apart,confirmed,DESC_15,Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV,GPC_111,GOSHEN AREA STRATEGIC SOLUTION
+OVL_43,43,0.2436,24.87,365,same_window,low_confidence,DESC_42,Elloree – Santee City 46 kV: Rebuild,DUKE_75,"SUMTER - DESC EASTOVER 115 KV TRANSMISSION LINE (KINGS HWY - SHAW FIELD - EASTOVER), REBUILD"
+OVL_44,44,0.2299,23.21,731,schedules_apart,low_confidence,DESC_44,Cameron Jct – Cameron – St Matthews 46 kV Rebuild,DUKE_75,"SUMTER - DESC EASTOVER 115 KV TRANSMISSION LINE (KINGS HWY - SHAW FIELD - EASTOVER), REBUILD"
+OVL_45,45,0.2284,22.37,883,schedules_apart,confirmed,DESC_23,Jasper – Okatie 230 kV #2: Construct,GPC_75,SAV: MAGNOLIA - TRUMAN PARKWAY 115KV REBUILD
+OVL_46,46,0.2216,17.09,1978,schedules_apart,confirmed,DESC_14,Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV Rebuilds,GPC_111,GOSHEN AREA STRATEGIC SOLUTION
+OVL_47,47,0.1969,17.97,2344,schedules_apart,confirmed,DESC_23,Jasper – Okatie 230 kV #2: Construct,GPC_125,SAV: COLEMAN - MELDRIM 115KV LINE REBUILD
+OVL_48,48,0.1957,20.15,1461,schedules_apart,confirmed,DESC_10,Okatie-Bluffton 115kV: Rebuild,GPC_92,SAV: BOULEVARD - MAGNOLIA 115 KV LINE REBUILD
+OVL_49,49,0.1835,21.83,1248,schedules_apart,confirmed,DESC_23,Jasper – Okatie 230 kV #2: Construct,GPC_92,SAV: BOULEVARD - MAGNOLIA 115 KV LINE REBUILD
+OVL_50,50,0.1681,19.0,3074,schedules_apart,confirmed,DESC_31,Hooks - Thurmond 115kV Tie: Rebuild,GPC_133,THOMSON PRIMARY 230/115KV SECOND TRANSFORMER
+OVL_51,51,0.1671,22.42,1248,schedules_apart,confirmed,DESC_23,Jasper – Okatie 230 kV #2: Construct,GPC_93,SAV: DEAN FOREST - LITTLE OGEECHEE 230 KV REBUILD
+OVL_52,52,0.1537,19.51,1979,schedules_apart,confirmed,DESC_43,Urquhart – Aiken PSA 46 kV: Rebuild,GPC_128,EVANS PRIMARY - THURMOND DAM (USA) #5 115KV REBUILD
+OVL_53,53,0.1537,19.51,1979,schedules_apart,confirmed,DESC_43,Urquhart – Aiken PSA 46 kV: Rebuild,GPC_129,EVANS PRIMARY - THURMOND DAM (USA) #6 115KV REBUILD
+OVL_54,54,0.1224,20.63,2557,schedules_apart,confirmed,DESC_10,Okatie-Bluffton 115kV: Rebuild,GPC_125,SAV: COLEMAN - MELDRIM 115KV LINE REBUILD
+OVL_55,55,0.1106,23.19,1461,schedules_apart,confirmed,DESC_10,Okatie-Bluffton 115kV: Rebuild,GPC_93,SAV: DEAN FOREST - LITTLE OGEECHEE 230 KV REBUILD
+OVL_56,56,0.0986,21.48,2709,schedules_apart,confirmed,DESC_23,Jasper – Okatie 230 kV #2: Construct,GPC_132,SAV: MELDRIM BANK D REPLACEMENT
+OVL_57,57,0.0781,22.21,3074,schedules_apart,confirmed,DESC_14,Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV Rebuilds,GPC_133,THOMSON PRIMARY 230/115KV SECOND TRANSFORMER
+OVL_58,58,0.0781,22.21,2709,schedules_apart,confirmed,DESC_15,Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV,GPC_133,THOMSON PRIMARY 230/115KV SECOND TRANSFORMER
+OVL_59,59,0.073,22.39,2557,schedules_apart,confirmed,DESC_43,Urquhart – Aiken PSA 46 kV: Rebuild,GPC_138,EVANS PRIMARY - THOMSON PRIMARY 115KV REBUILD
+OVL_60,60,0.0276,24.01,2485,schedules_apart,confirmed,DESC_35,Urquhart – Toolebeck 115kV line: Rebuild,GPC_128,EVANS PRIMARY - THURMOND DAM (USA) #5 115KV REBUILD
+OVL_61,61,0.0276,24.01,2485,schedules_apart,confirmed,DESC_35,Urquhart – Toolebeck 115kV line: Rebuild,GPC_129,EVANS PRIMARY - THURMOND DAM (USA) #6 115KV REBUILD

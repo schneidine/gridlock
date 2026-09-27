@@ -5,6 +5,7 @@ import { useMemo, useState } from "react";
 import type { CostImpact, Overlap, PlannerNote, Project } from "@/lib/types";
 import OverlapList from "@/components/OverlapList";
 import CostImpactPanel from "@/components/CostImpactPanel";
+import { utilityStyle } from "@/lib/utilities";
 
 // Leaflet touches `window` on import, so the map must never render on the
 // server -- ssr:false is required here, not just an optimization.
@@ -81,7 +82,7 @@ export default function Dashboard({
               {unlocated.map((p) => (
                 <li key={p.project_id} className="leading-snug">
                   <span className="font-mono-tab text-[10px] mr-1.5">
-                    {p.utility.startsWith("Dominion") ? "DESC" : "GPC"}
+                    {utilityStyle(p.utility).short}
                   </span>
                   {p.title}
                 </li>
