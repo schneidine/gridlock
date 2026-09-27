@@ -64,14 +64,14 @@ export default function Dashboard({
       <div className="h-full w-full">
         <GridlockMap projects={projects} flagCountByProject={flagCountByProject} selectedOverlap={selectedPair} />
       </div>
-      <div className="border-l border-[var(--border)] bg-[var(--panel)] overflow-y-auto flex flex-col">
-        <div className="grid grid-cols-3 gap-px bg-[var(--border)] border-b border-[var(--border)]">
+      <div className="border-l border-[var(--border)] bg-[var(--panel)] overflow-hidden min-h-0 flex flex-col">
+        <div className="shrink-0 grid grid-cols-3 gap-px bg-[var(--border)] border-b border-[var(--border)]">
           <Stat n={projects.length} label="Projects" />
           <Stat n={overlaps.length} label="Flagged" />
           <Stat n={highPriorityCount} label="High-priority" accent />
         </div>
         {costImpact[0] && <CostImpactPanel ci={costImpact[0]} />}
-        <div className="px-4 pt-4 pb-2.5 flex flex-col gap-1">
+        <div className="shrink-0 px-4 pt-4 pb-2.5 flex flex-col gap-1">
           <h2 className="text-[12px] uppercase tracking-[0.08em] text-[var(--muted)] font-medium m-0">
             Coordination Opportunities
           </h2>

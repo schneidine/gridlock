@@ -1,0 +1,1275 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_1",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Queensboro - Ft Johnson 115 kV & Queensboro-Bayfront 115kV (Queensboro-James Island Sect)",
+    "in_service_date": "2023-12-31",
+    "zone": null,
+    "total_cost_usd": 5404301,
+    "source_project_id": "6807 B",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.967332,
+     32.722793
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_3",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Okatie 230-115kV Substation, Jasper \u2013 Yemassee 230kV #1 Fold-in",
+    "in_service_date": "2024-12-31",
+    "zone": null,
+    "total_cost_usd": 11116933,
+    "source_project_id": "0139 M,N",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.032495,
+      32.333758
+     ],
+     [
+      -80.8637929,
+      32.6974259
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_3",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Okatie 230-115kV Substation, Jasper \u2013 Yemassee 230kV #1 Fold-in",
+    "in_service_date": "2024-12-31",
+    "zone": null,
+    "total_cost_usd": 11116933,
+    "source_project_id": "0139 M,N",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.94814395,
+     32.51559195
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_4",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Cainhoy - Hamlin 115kV: Rebuild Line and Cainhoy \u2013 Hamlin 115 kV #2: Construct New 115 kV Line",
+    "in_service_date": "2025-12-01",
+    "zone": null,
+    "total_cost_usd": 19890850,
+    "source_project_id": "6341 A-F",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.8422757,
+      32.941402
+     ],
+     [
+      -79.7884409,
+      32.859937
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_4",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Cainhoy - Hamlin 115kV: Rebuild Line and Cainhoy \u2013 Hamlin 115 kV #2: Construct New 115 kV Line",
+    "in_service_date": "2025-12-01",
+    "zone": null,
+    "total_cost_usd": 19890850,
+    "source_project_id": "6341 A-F",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.8153583,
+     32.9006695
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_5",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Eastover - Square D 115kV: Rebuild",
+    "in_service_date": "2024-06-01",
+    "zone": null,
+    "total_cost_usd": 11700000,
+    "source_project_id": "6808 J",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.6922594,
+     33.8771147
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_6",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Burton-St Helena 115kV: Rebuild Burton-Frogmore Transmission Section",
+    "in_service_date": "2024-12-31",
+    "zone": null,
+    "total_cost_usd": 8580000,
+    "source_project_id": "6808 K",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.7210159,
+     32.4364883
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_7",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Burton-St Helena 115kV: Frogmore Distribution - St Helena",
+    "in_service_date": "2025-12-31",
+    "zone": null,
+    "total_cost_usd": 6925000,
+    "source_project_id": "6808 L",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.7210159,
+     32.4364883
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_8",
+    "utility": "Dominion Energy South Carolina",
+    "title": "VCS1-Denny Terrace 230kV & VCS1-Pineland 230kV: Rebuild Single Circuit Sections",
+    "in_service_date": "2026-12-31",
+    "zone": null,
+    "total_cost_usd": 4912096,
+    "source_project_id": "6808 N,O",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.061561,
+     34.0576091
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_9",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Wateree-Killian 230kV: Rebuild",
+    "in_service_date": "2028-12-31",
+    "zone": null,
+    "total_cost_usd": 48224719,
+    "source_project_id": "6808 R",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.7023194,
+      34.3346578
+     ],
+     [
+      -80.9281468,
+      34.1359182
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_9",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Wateree-Killian 230kV: Rebuild",
+    "in_service_date": "2028-12-31",
+    "zone": null,
+    "total_cost_usd": 48224719,
+    "source_project_id": "6808 R",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.8152331,
+     34.235288
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_10",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Okatie-Bluffton 115kV: Rebuild",
+    "in_service_date": "2025-06-01",
+    "zone": null,
+    "total_cost_usd": 40660000,
+    "source_project_id": "6808 S",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.032495,
+      32.333758
+     ],
+     [
+      -80.853384,
+      32.235027
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_10",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Okatie-Bluffton 115kV: Rebuild",
+    "in_service_date": "2025-06-01",
+    "zone": null,
+    "total_cost_usd": 40660000,
+    "source_project_id": "6808 S",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.9429395,
+     32.2843925
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_11",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Hopkins-CIP 230kV: Rebuild",
+    "in_service_date": "2025-12-31",
+    "zone": null,
+    "total_cost_usd": 2600000,
+    "source_project_id": "6808 U",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.8770342,
+     33.9043212
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_12",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Faber Place-Bayfront 115kV: Rebuild North Bridge Terrace to Bayfront Section",
+    "in_service_date": "2028-12-31",
+    "zone": null,
+    "total_cost_usd": 10200000,
+    "source_project_id": "6808 V",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.0146241,
+      32.8500798
+     ],
+     [
+      -79.9634237,
+      32.742122
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_12",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Faber Place-Bayfront 115kV: Rebuild North Bridge Terrace to Bayfront Section",
+    "in_service_date": "2028-12-31",
+    "zone": null,
+    "total_cost_usd": 10200000,
+    "source_project_id": "6808 V",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.9890239,
+     32.7961009
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_13",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Square D - Hopkins 115kV: Rebuild",
+    "in_service_date": "2024-09-30",
+    "zone": null,
+    "total_cost_usd": 4300000,
+    "source_project_id": "6808 W",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.8770342,
+     33.9043212
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_14",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV Rebuilds",
+    "in_service_date": "2024-12-31",
+    "zone": null,
+    "total_cost_usd": 11745543,
+    "source_project_id": "6809 E",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.051362,
+     33.562599
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_15",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Stevens Creek - Hooks 115kV/LR Plumb Branch 46kV",
+    "in_service_date": "2025-12-31",
+    "zone": null,
+    "total_cost_usd": 7800000,
+    "source_project_id": "6809 G",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.051362,
+     33.562599
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_16",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Edenwood Sub: #1 & #2 230-115kV Autobanks, Replace with 336MVA",
+    "in_service_date": "2024-12-25",
+    "zone": null,
+    "total_cost_usd": 10833462,
+    "source_project_id": "6805 G",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.0598155,
+     33.953765
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_18",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Harleyville 115KV Transmission Tap \u2013 Construct (1.4 miles)",
+    "in_service_date": "2027-03-31",
+    "zone": null,
+    "total_cost_usd": 2750000,
+    "source_project_id": "06005 B",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.4511658,
+     33.2099069
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_19",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Summerville: Replace and Spare 230-115kV 336MVA Auto Bank",
+    "in_service_date": "2024-12-31",
+    "zone": null,
+    "total_cost_usd": 3982052,
+    "source_project_id": "05004 P",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.1762704,
+     33.0186699
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_20",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Canadys-Ritter 115KV-Rebld SPDC 230/115KV 1272 (Approx 18 Miles)",
+    "in_service_date": "2026-06-01",
+    "zone": null,
+    "total_cost_usd": 40000000,
+    "source_project_id": "06076A",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.6205999,
+      33.0640963
+     ],
+     [
+      -80.6303822,
+      32.7896202
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_20",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Canadys-Ritter 115KV-Rebld SPDC 230/115KV 1272 (Approx 18 Miles)",
+    "in_service_date": "2026-06-01",
+    "zone": null,
+    "total_cost_usd": 40000000,
+    "source_project_id": "06076A",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.62549105,
+     32.92685825
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_21",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Yemassee\u2013 Ritter 230kV #1 & #2: Construct SPDC with B-1272",
+    "in_service_date": "2026-06-01",
+    "zone": null,
+    "total_cost_usd": 40611419,
+    "source_project_id": "6359",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.8637929,
+      32.6974259
+     ],
+     [
+      -80.6303822,
+      32.7896202
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_21",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Yemassee\u2013 Ritter 230kV #1 & #2: Construct SPDC with B-1272",
+    "in_service_date": "2026-06-01",
+    "zone": null,
+    "total_cost_usd": 40611419,
+    "source_project_id": "6359",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.74708755,
+     32.74352305
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_23",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Jasper \u2013 Okatie 230 kV #2: Construct",
+    "in_service_date": "2025-12-31",
+    "zone": null,
+    "total_cost_usd": 23787423,
+    "source_project_id": "06367 D - G",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.1246,
+      32.35912
+     ],
+     [
+      -81.032495,
+      32.333758
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_23",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Jasper \u2013 Okatie 230 kV #2: Construct",
+    "in_service_date": "2025-12-31",
+    "zone": null,
+    "total_cost_usd": 23787423,
+    "source_project_id": "06367 D - G",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.0785475,
+     32.346439000000004
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_24",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Wagener 115kV Tap: Construct Tap",
+    "in_service_date": "2025-12-31",
+    "zone": null,
+    "total_cost_usd": 6005000,
+    "source_project_id": "06371 D",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.3605659,
+     33.6501119
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_25",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Church Creek - Ritter 230kV - Replace 38 Large Angles and Dead Ends",
+    "in_service_date": "2024-06-01",
+    "zone": null,
+    "total_cost_usd": 10850000,
+    "source_project_id": "06372 A",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.0702792,
+      32.8303196
+     ],
+     [
+      -80.6303822,
+      32.7896202
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_25",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Church Creek - Ritter 230kV - Replace 38 Large Angles and Dead Ends",
+    "in_service_date": "2024-06-01",
+    "zone": null,
+    "total_cost_usd": 10850000,
+    "source_project_id": "06372 A",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.3503307,
+     32.8099699
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_26",
+    "utility": "Dominion Energy South Carolina",
+    "title": "VCS2-Ward 230kV: Rebuild Line",
+    "in_service_date": "2029-12-31",
+    "zone": null,
+    "total_cost_usd": 30000000,
+    "source_project_id": "06810 F",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.6977228,
+     33.87218
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_28",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Summerville 115kV Loop: Rebuild",
+    "in_service_date": "2024-12-31",
+    "zone": null,
+    "total_cost_usd": 12475000,
+    "source_project_id": "06810 H",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.1762704,
+     33.0186699
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_29",
+    "utility": "Dominion Energy South Carolina",
+    "title": "St George - Sumter 230kV Tie: Rebuild Line from Santee Substation - Duke/Progress Energy Tie",
+    "in_service_date": "2025-12-31",
+    "zone": null,
+    "total_cost_usd": 4000000,
+    "source_project_id": "6809 M",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5756534,
+      33.1859958
+     ],
+     [
+      -80.3239761,
+      33.8976611
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_29",
+    "utility": "Dominion Energy South Carolina",
+    "title": "St George - Sumter 230kV Tie: Rebuild Line from Santee Substation - Duke/Progress Energy Tie",
+    "in_service_date": "2025-12-31",
+    "zone": null,
+    "total_cost_usd": 4000000,
+    "source_project_id": "6809 M",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.44981475,
+     33.54182845
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_31",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Hooks - Thurmond 115kV Tie: Rebuild",
+    "in_service_date": "2024-12-31",
+    "zone": null,
+    "total_cost_usd": 2200080,
+    "source_project_id": "6810 A",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.195931,
+     33.660127
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_32",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Batesburg - Saluda County 115kV: Rebuild",
+    "in_service_date": "2025-12-31",
+    "zone": null,
+    "total_cost_usd": 8750000,
+    "source_project_id": "6809 N",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.5644353,
+     33.9134867
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_35",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Urquhart \u2013 Toolebeck 115kV line: Rebuild",
+    "in_service_date": "2026-08-12",
+    "zone": null,
+    "total_cost_usd": 17520000,
+    "source_project_id": "6852",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.9110807,
+      33.4328703
+     ],
+     [
+      -81.6693272,
+      33.5346321
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_35",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Urquhart \u2013 Toolebeck 115kV line: Rebuild",
+    "in_service_date": "2026-08-12",
+    "zone": null,
+    "total_cost_usd": 17520000,
+    "source_project_id": "6852",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.79020395,
+     33.4837512
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_36",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Williams-Summerville 230kV: Upgrade to SPDC B1272 ACSR",
+    "in_service_date": "2027-05-01",
+    "zone": null,
+    "total_cost_usd": 19300000,
+    "source_project_id": "6388 A",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.9321678,
+      33.0176985
+     ],
+     [
+      -80.1762704,
+      33.0186699
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_36",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Williams-Summerville 230kV: Upgrade to SPDC B1272 ACSR",
+    "in_service_date": "2027-05-01",
+    "zone": null,
+    "total_cost_usd": 19300000,
+    "source_project_id": "6388 A",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.05421910000001,
+     33.0181842
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_37",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Cainhoy 115 kV Tap: Construct",
+    "in_service_date": "2027-12-31",
+    "zone": null,
+    "total_cost_usd": 21850000,
+    "source_project_id": "0147 C, K",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.8422757,
+     32.941402
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_38",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Jack Primus 115 kV Tap: Construct",
+    "in_service_date": "2027-12-31",
+    "zone": null,
+    "total_cost_usd": 18000000,
+    "source_project_id": "0147 B, J",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.9044954,
+     32.9193841
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_39",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Church Creek \u2013 Faber Place \u2013 Charleston Transmission: Add 230kV Line",
+    "in_service_date": "2027-05-01",
+    "zone": null,
+    "total_cost_usd": 34174682,
+    "source_project_id": "6847 A-B, D-H",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.0702792,
+      32.8303196
+     ],
+     [
+      -80.0146241,
+      32.8500798
+     ],
+     [
+      -79.9399309,
+      32.7884363
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_39",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Church Creek \u2013 Faber Place \u2013 Charleston Transmission: Add 230kV Line",
+    "in_service_date": "2027-05-01",
+    "zone": null,
+    "total_cost_usd": 34174682,
+    "source_project_id": "6847 A-B, D-H",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.00827806666666,
+     32.822945233333336
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_40",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Eastover \u2013 Sumter 115kV DEP Tie: Rebuild with 1272 ACSR",
+    "in_service_date": "2026-05-31",
+    "zone": null,
+    "total_cost_usd": 1100000,
+    "source_project_id": "6846 A",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.6922594,
+      33.8771147
+     ],
+     [
+      -80.3239761,
+      33.8976611
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_40",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Eastover \u2013 Sumter 115kV DEP Tie: Rebuild with 1272 ACSR",
+    "in_service_date": "2026-05-31",
+    "zone": null,
+    "total_cost_usd": 1100000,
+    "source_project_id": "6846 A",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.50811775,
+     33.8873879
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_41",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Cameron Jct \u2013 Elloree 46 kV Rebuild",
+    "in_service_date": "2026-12-31",
+    "zone": null,
+    "total_cost_usd": 4500000,
+    "source_project_id": "6810 U",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.7089959,
+      33.5636663
+     ],
+     [
+      -80.5797245,
+      33.5323844
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_41",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Cameron Jct \u2013 Elloree 46 kV Rebuild",
+    "in_service_date": "2026-12-31",
+    "zone": null,
+    "total_cost_usd": 4500000,
+    "source_project_id": "6810 U",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.6443602,
+     33.54802535
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_42",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Elloree \u2013 Santee City 46 kV: Rebuild",
+    "in_service_date": "2027-12-31",
+    "zone": null,
+    "total_cost_usd": 4500000,
+    "source_project_id": "6810 J",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.5797245,
+     33.5323844
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_43",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Urquhart \u2013 Aiken PSA 46 kV: Rebuild",
+    "in_service_date": "2027-12-31",
+    "zone": null,
+    "total_cost_usd": 3000000,
+    "source_project_id": "6810 O",
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.9110807,
+     33.4328703
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_44",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Cameron Jct \u2013 Cameron \u2013 St Matthews 46 kV Rebuild",
+    "in_service_date": "2028-12-31",
+    "zone": null,
+    "total_cost_usd": 5900000,
+    "source_project_id": "6810 T",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.7089959,
+      33.5636663
+     ],
+     [
+      -80.7089959,
+      33.5636663
+     ],
+     [
+      -80.7778681,
+      33.664876
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_44",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Cameron Jct \u2013 Cameron \u2013 St Matthews 46 kV Rebuild",
+    "in_service_date": "2028-12-31",
+    "zone": null,
+    "total_cost_usd": 5900000,
+    "source_project_id": "6810 T",
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.7319533,
+     33.59740286666667
+    ]
+   }
+  }
+ ]
+}
