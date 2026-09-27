@@ -1,7 +1,8 @@
 import { cookies } from "next/headers";
 import { mockSignOut } from "@/app/actions/mock-auth";
-import { getOverlaps, getProjects } from "@/lib/data";
+import { getCostImpact, getOverlaps, getProjects } from "@/lib/data";
 import CompanyMap from "@/components/CompanyMap";
+import CostImpactPanel from "@/components/CostImpactPanel";
 
 const ORG_NAMES: Record<string, string> = {
   desc: "Dominion Energy South Carolina (DESC)",
@@ -49,6 +50,16 @@ export default async function DashboardPage() {
   }
   const mapProjects = allProjects.filter((p) => mapProjectIds.has(p.project_id));
 
+  const highPriorityCount = myOverlaps.filter(
+    (o) => o.tier === "touching_crossing" || o.tier === "share_land"
+  ).length;
+
+  // Only show a cost/impact estimate row if it's for one of this company's
+  // own flagged overlaps.
+  const myOverlapIds = new Set(myOverlaps.map((o) => o.id));
+  const allCostImpact = utilityName ? await getCostImpact() : [];
+  const myCostImpact = allCostImpact.filter((ci) => ci.overlap_id != null && myOverlapIds.has(ci.overlap_id));
+
   return (
     <div className="flex flex-col h-screen">
       <header className="flex items-center justify-between px-5 py-3 border-b border-[var(--border)] bg-[var(--panel)]">
@@ -76,13 +87,50 @@ export default async function DashboardPage() {
       </header>
       <div className="flex-1 min-h-0">
         {companyName ? (
-          <CompanyMap projects={mapProjects} myUtilityName={utilityName!} flagCountByProject={flagCountByProject} />
+          <div className="grid grid-cols-[1fr_360px] grid-rows-[1fr] h-full">
+            <div className="h-full w-full">
+              <CompanyMap
+                projects={mapProjects}
+                myUtilityName={utilityName!}
+                flagCountByProject={flagCountByProject}
+              />
+            </div>
+            <div className="border-l border-[var(--border)] bg-[var(--panel)] overflow-y-auto flex flex-col">
+              <div className="grid grid-cols-3 gap-px bg-[var(--border)] border-b border-[var(--border)]">
+                <Stat n={projects.length} label="Total Projects" />
+                <Stat n={myOverlaps.length} label="Flagged Overlaps" />
+                <Stat n={highPriorityCount} label="High-Priority" accent />
+              </div>
+              {myCostImpact.map((ci) => (
+                <CostImpactPanel key={ci.id} ci={ci} />
+              ))}
+              {myCostImpact.length === 0 && (
+                <div className="px-4 py-3 text-[12.5px] text-[var(--muted)]">
+                  No cost/impact estimate for your flagged overlaps yet.
+                </div>
+              )}
+            </div>
+          </div>
         ) : (
           <div className="h-full flex items-center justify-center text-[var(--muted)]">
             Sign in to see your company&apos;s sites.
           </div>
         )}
       </div>
+    </div>
+  );
+}
+
+function Stat({ n, label, accent }: { n: number; label: string; accent?: boolean }) {
+  return (
+    <div className="bg-[var(--panel)] px-3 py-3 flex flex-col items-center gap-0.5">
+      <div
+        className="font-mono-tab text-[20px] font-semibold leading-none"
+        style={{ color: accent && n > 0 ? "var(--tier-touch)" : "var(--foreground)" }}
+      >
+        {n}
+      </div>
+      <div className="text-[10px] uppercase tracking-wide text-[var(--muted)] text-center">{label}</div>
     </div>
   );
 }
