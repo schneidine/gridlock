@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import { inkColor } from "@/lib/theme";
 import { generateInsight, getCachedInsight } from "@/app/actions/insights";
 
 const PRIORITY_COLOR: Record<string, string> = {
@@ -27,7 +28,7 @@ function InsightText({ text }: { text: string }) {
               {level && (
                 <span
                   className="inline-block mr-1.5 px-1.5 rounded text-[10px] font-semibold uppercase tracking-wide align-[1px]"
-                  style={{ color: PRIORITY_COLOR[level], background: `color-mix(in srgb, ${PRIORITY_COLOR[level]} 15%, transparent)` }}
+                  style={{ color: inkColor(PRIORITY_COLOR[level]), background: `color-mix(in srgb, ${PRIORITY_COLOR[level]} 15%, transparent)` }}
                 >
                   {level} priority
                 </span>
