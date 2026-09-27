@@ -1,11 +1,26 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { Overlap, PlannerNote, Project, Tier } from "@/lib/types";
+import type { Confidence, Overlap, PlannerNote, Project, Tier } from "@/lib/types";
 import { TIER_COLOR, TIER_LABEL, TIER_ORDER } from "@/lib/types";
 import NoteThread from "@/components/NoteThread";
 
 const TIERS: (Tier | "all")[] = ["all", "touching_crossing", "share_land", "share_logistics", "share_crews"];
+
+const CONF_RANK: Record<Confidence, number> = { confirmed: 0, estimated: 1, region_only: 2 };
+
+// A pair is only as trustworthy as its least-certain location, so flag the
+// weaker of the two. Confirmed pairs get no tag to keep the list quiet.
+const CONF_TAG: Partial<Record<Confidence, { label: string; title: string }>> = {
+  estimated: { label: "est. location", title: "At least one project's location is estimated, not confirmed on a map" },
+  region_only: { label: "approx. region", title: "At least one project is only placed by its region, so the distance is rough" },
+};
+
+function weakerConfidence(a: Project, b: Project): Confidence {
+  const ca = a.geo_confidence ?? "region_only";
+  const cb = b.geo_confidence ?? "region_only";
+  return CONF_RANK[ca] >= CONF_RANK[cb] ? ca : cb;
+}
 
 export default function OverlapList({
   overlaps,
@@ -75,6 +90,7 @@ export default function OverlapList({
           if (!a || !b) return null;
           const isSelected = selectedId === o.id;
           const isExpanded = expandedId === o.id;
+          const confTag = CONF_TAG[weakerConfidence(a, b)];
           const notes = notesByOverlap[o.id] ?? [];
           return (
             <div
@@ -98,6 +114,11 @@ export default function OverlapList({
                       #{rank}
                     </span>
                     <span className="font-mono-tab text-[16px] font-semibold">{o.distance_mi} mi</span>
+                    {confTag && (
+                      <span className="text-[10.5px] text-[var(--muted)] italic" title={confTag.title}>
+                        {confTag.label}
+                      </span>
+                    )}
                   </div>
                   <span
                     className="text-[10px] px-2 py-0.5 rounded-full font-semibold uppercase tracking-wide"
