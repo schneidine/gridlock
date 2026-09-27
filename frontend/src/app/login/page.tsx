@@ -38,7 +38,7 @@ export default function LoginPage() {
         >
           ← Back
         </button>
-        <h1 className="text-lg font-semibold mb-1 tracking-tight">Sign in to Gridlock</h1>
+        <h1 className="text-lg font-semibold mb-1 tracking-tight">Sign in to Sentinel Utilities</h1>
         <p className="text-sm text-[var(--muted)] mb-5">
           Sign in to leave coordination notes on flagged overlaps. Viewing the map and ranked list needs no
           account.

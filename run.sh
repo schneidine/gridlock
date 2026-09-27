@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# One-command runner for Gridlock.
+# One-command runner for Sentinel Utilities.
 #
 #   ./run.sh app        Next.js + Supabase dashboard on http://localhost:3000 (default)
 #   ./run.sh web        static Leaflet demo on http://localhost:8000
@@ -13,7 +13,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 VENV="$ROOT/.venv"
 DATA_CLEAN="$ROOT/backend/data_clean"
-OUTPUTS=("gridlock_dataset.json" "cost_impact_estimate.json")
+OUTPUTS=("sentinel_dataset.json" "cost_impact_estimate.json")
 
 MODE="app"
 REBUILD=0

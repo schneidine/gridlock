@@ -26,7 +26,7 @@ export default async function Home() {
             </svg>
           </div>
           <div>
-            <h1 className="text-[16px] font-semibold m-0 tracking-tight">Gridlock</h1>
+            <h1 className="text-[16px] font-semibold m-0 tracking-tight">Sentinel Utilities</h1>
             <div className="text-[12px] text-[var(--muted)] leading-tight">
               Dominion Energy South Carolina &times; Georgia Power &mdash; construction coordination
             </div>

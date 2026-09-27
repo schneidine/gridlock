@@ -1,7 +1,7 @@
 """
 Bonus deliverable: rough cost/impact estimate for the top-ranked overlap.
 
-Reads the ranked overlap table (data_clean/gridlock_dataset.json), takes the
+Reads the ranked overlap table (data_clean/sentinel_dataset.json), takes the
 highest-scoring confirmed pair whose DESC side has a public cost, and frames
 the saving as "one mobilization instead of two".
 
@@ -17,7 +17,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
-DATASET = ROOT / "data_clean" / "gridlock_dataset.json"
+DATASET = ROOT / "data_clean" / "sentinel_dataset.json"
 OUT = ROOT / "data_clean" / "cost_impact_estimate.json"
 
 # Assumption: mobilization/demobilization (crew travel, equipment haul, staging

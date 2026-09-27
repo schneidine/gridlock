@@ -1,6 +1,6 @@
-# Gridlock — Web App
+# Sentinel Utilities — Web App
 
-Next.js 16 + Supabase (Postgres + Auth) + Vercel deployment of the Gridlock
+Next.js 16 + Supabase (Postgres + Auth) + Vercel deployment of the Sentinel Utilities
 dashboard: an interactive map and ranked list of geographic/timeline overlaps
 between Dominion Energy South Carolina (DESC) and Georgia Power (GPC) planned
 transmission construction projects, built for the ShellHacks 2026 Sperry
@@ -90,7 +90,7 @@ node scripts/seed.mjs
 ```
 
 The seed script reads the pipeline's output JSON from
-`../backend/data_clean/{gridlock_dataset.json,cost_impact_estimate.json}` and
+`../backend/data_clean/{sentinel_dataset.json,cost_impact_estimate.json}` and
 upserts it into your Supabase tables using the service-role key (bypasses
 RLS, so it must only ever be run from a trusted machine — never in the
 browser). Re-run it any time the underlying data pipeline output changes.
@@ -130,7 +130,7 @@ frontend/
 │   │   └── actions/auth.ts     # sign-out server action
 │   ├── components/
 │   │   ├── Dashboard.tsx       # client orchestrator (map + list + panel)
-│   │   ├── GridlockMap.tsx     # react-leaflet map (dynamically imported, ssr:false)
+│   │   ├── SentinelMap.tsx     # react-leaflet map (dynamically imported, ssr:false)
 │   │   ├── OverlapList.tsx     # ranked, tier-filterable overlap list
 │   │   ├── NoteThread.tsx      # planner notes (insert requires auth)
 │   │   ├── CostImpactPanel.tsx # bonus cost/impact estimate panel

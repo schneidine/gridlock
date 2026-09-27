@@ -1,5 +1,5 @@
 """
-Gridlock overlap-detection pipeline.
+Sentinel Utilities overlap-detection pipeline.
 
 Loads the parsed DESC + GPC project lists, geocodes every named endpoint
 against OpenStreetMap (pipeline/geocode.py, with validation + confidence
@@ -11,7 +11,7 @@ flags), and builds the overlap table exactly as the challenge defines it:
   - ranked by score = 0.7 * (1 - dist/25) + 0.3 * (1 - min(gap, 1825)/1825)
 
 Outputs (data_clean/):
-  gridlock_dataset.json        what the web UI reads
+  sentinel_dataset.json        what the web UI reads
   Projects_Overlaps.xlsx       projects / overlaps sheets in the organizer's format,
                                plus endpoint_validation and data_quality sheets
   projects.csv, overlaps.csv
@@ -336,7 +336,7 @@ def main():
     }
     out = {"summary": summary, "organizer_check": regression,
            "desc_projects": desc, "gpc_projects": gpc, "overlaps": overlaps}
-    json.dump(out, open(CLEAN / "gridlock_dataset.json", "w"), indent=1)
+    json.dump(out, open(CLEAN / "sentinel_dataset.json", "w"), indent=1)
     write_xlsx(desc, gpc, overlaps, regression, CLEAN / "Projects_Overlaps.xlsx")
     write_geojson(desc, CLEAN / "desc_projects.geojson")
     write_geojson(gpc, CLEAN / "gpc_projects.geojson")

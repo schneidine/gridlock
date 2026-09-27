@@ -30,7 +30,7 @@ function FocusController({ pair }: { pair: [[number, number], [number, number]] 
   return null;
 }
 
-export default function GridlockMap({
+export default function SentinelMap({
   projects,
   flagCountByProject,
   selectedOverlap,

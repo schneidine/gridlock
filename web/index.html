@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Gridlock — DESC × Georgia Power Coordination</title>
+<title>Sentinel Utilities — DESC × Georgia Power Coordination</title>
 <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
 <style>
   :root {
@@ -88,7 +88,7 @@
 <div id="app">
   <header>
     <div>
-      <h1>Gridlock</h1>
+      <h1>Sentinel Utilities</h1>
       <div class="sub">Dominion Energy South Carolina × Georgia Power: planned transmission work within 25 miles</div>
     </div>
     <div class="legend">
@@ -321,7 +321,7 @@ function renderUnmapped() {
       <div class="muted">${p.endpoints.map(e => `${esc(e.name)}: ${(e.notes || []).slice(-1).map(esc).join("")}`).join("<br/>")}</div></li>`).join("")}</ul></details>`;
 }
 
-fetch("data/gridlock_dataset.json").then(r => r.json()).then(data => {
+fetch("data/sentinel_dataset.json").then(r => r.json()).then(data => {
   DATA = data;
   [...data.desc_projects, ...data.gpc_projects].forEach(p => BY_ID[p.project_id] = p);
   initMap();

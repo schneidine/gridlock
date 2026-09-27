@@ -17,7 +17,7 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Gridlock",
+  title: "Sentinel Utilities",
   description: "DESC x Georgia Power planned construction coordination",
 };
 

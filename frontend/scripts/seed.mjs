@@ -55,7 +55,7 @@ function projectRow(p) {
 }
 
 async function main() {
-  const dataset = readJson("gridlock_dataset.json");
+  const dataset = readJson("sentinel_dataset.json");
   const costImpact = readJson("cost_impact_estimate.json");
 
   const allProjects = [...dataset.desc_projects, ...dataset.gpc_projects].map(projectRow);

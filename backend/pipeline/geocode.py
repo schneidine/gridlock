@@ -48,7 +48,7 @@ OVERPASS_MIRRORS = [
     "https://overpass.kumi.systems/api/interpreter",
     "https://overpass.private.coffee/api/interpreter",
 ]
-USER_AGENT = "gridlock-shellhacks/1.0 (hackathon project)"
+USER_AGENT = "sentinel-utilities-shellhacks/1.0 (hackathon project)"
 
 STRONG, FUZZY = 95, 88
 ZONE_KM = 90          # min allowed distance from a GPC zone's anchor centroid

@@ -8,7 +8,7 @@ import CostImpactPanel from "@/components/CostImpactPanel";
 
 // Leaflet touches `window` on import, so the map must never render on the
 // server -- ssr:false is required here, not just an optimization.
-const GridlockMap = dynamic(() => import("@/components/GridlockMap"), { ssr: false });
+const SentinelMap = dynamic(() => import("@/components/SentinelMap"), { ssr: false });
 
 export default function Dashboard({
   projects,
@@ -62,7 +62,7 @@ export default function Dashboard({
   return (
     <div className="grid grid-cols-[1fr_420px] grid-rows-[1fr] h-full">
       <div className="h-full w-full">
-        <GridlockMap projects={projects} flagCountByProject={flagCountByProject} selectedOverlap={selectedPair} />
+        <SentinelMap projects={projects} flagCountByProject={flagCountByProject} selectedOverlap={selectedPair} />
       </div>
       <div className="border-l border-[var(--border)] bg-[var(--panel)] overflow-hidden min-h-0 flex flex-col">
         <div className="shrink-0 grid grid-cols-3 gap-px bg-[var(--border)] border-b border-[var(--border)]">

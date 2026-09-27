@@ -1,4 +1,4 @@
--- Gridlock schema: DESC x Georgia Power construction overlap detector.
+-- Sentinel Utilities schema: DESC x Georgia Power construction overlap detector.
 --
 -- Run this in the Supabase SQL Editor (or via `supabase db push`) against
 -- a fresh Supabase project before running the seed script.

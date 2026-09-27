@@ -1,4 +1,4 @@
-# Gridlock — DESC × Georgia Power Coordination Tool
+# Sentinel Utilities — DESC × Georgia Power Coordination Tool
 
 ShellHacks 2026 — Sperry Tech Gridlock Challenge
 
@@ -57,10 +57,10 @@ python3 -m pip install -r requirements.txt
 cd pipeline
 python3 parse_desc_pdf.py     # data_raw/utility-filings/*.pdf -> ../data_clean/desc_projects_raw.json
 python3 parse_gpc_irp.py      # data_raw/utility-filings/*.txt -> ../data_clean/gpc_projects_raw.json
-python3 build_dataset.py      # -> ../data_clean/gridlock_dataset.json (the overlap engine)
+python3 build_dataset.py      # -> ../data_clean/sentinel_dataset.json (the overlap engine)
 python3 cost_impact.py        # -> ../data_clean/cost_impact_estimate.json (bonus estimate)
 
-cp ../data_clean/gridlock_dataset.json ../data_clean/cost_impact_estimate.json ../../web/data/
+cp ../data_clean/sentinel_dataset.json ../data_clean/cost_impact_estimate.json ../../web/data/
 cd ../../web && python3 -m http.server 8000    # then open http://localhost:8000
 ```
 
