@@ -1,23 +1,89 @@
 "use client";
 
+import L from "leaflet";
 import { CircleMarker, MapContainer, Polyline, Popup, TileLayer, useMap } from "react-leaflet";
-import { Fragment, useEffect, type ReactNode } from "react";
+import { Fragment, useEffect, useLayoutEffect, useState, type ReactNode } from "react";
+import { createPortal } from "react-dom";
 import type { Project } from "@/lib/types";
+import { UTILITIES, utilityStyle } from "@/lib/utilities";
+import { setTheme, storedTheme, useTheme } from "@/lib/theme";
 
 // Leaflet renders these as raw SVG presentation attributes, not through the
 // CSS cascade, so we use literal hex values here rather than var(--x) --
 // custom-property resolution inside SVG presentation attributes is
 // inconsistent across browsers.
-const DESC_COLOR = "#3b82f6";
-const GPC_COLOR = "#f2762e";
 const SELECTED_COLOR = "#eb9256";
-const FLAG_COLOR = "#facc15";
+// Overlap ring: yellow reads on the dark basemap, a darker amber on the light one.
+const FLAG_COLOR = { dark: "#facc15", light: "#b45309" };
+
+// The pipeline notes "1 of 2 endpoints located; center uses the located one(s) only" when a
+// project's position rests on only some of its stations.
+function partialNote(p: Project) {
+  const m = p.geo_notes?.map((n) => n.match(/(\d+) of (\d+) endpoints located/)).find(Boolean);
+  return m ? `${m[1]} of ${m[2]} stations located; position is approximate` : null;
+}
 
 function fmtDate(iso: string | null) {
   if (!iso) return "date n/a";
   const d = new Date(iso);
   if (isNaN(d.getTime())) return "date n/a";
   return d.toLocaleDateString("en-US", { year: "numeric", month: "short" });
+}
+
+/** Sun/moon button stacked under Leaflet's zoom +/- in the top-left corner. */
+function ThemeToggleControl() {
+  const map = useMap();
+  const theme = useTheme();
+  const [host] = useState(() => L.DomUtil.create("div", "leaflet-control leaflet-bar"));
+
+  // React's dev-mode remount resets <html>'s attributes, clearing the one the
+  // layout's inline script set; put it back before paint. No-op in production.
+  useLayoutEffect(() => {
+    document.documentElement.setAttribute("data-theme", storedTheme());
+  }, []);
+
+  useEffect(() => {
+    const corner = map.getContainer().querySelector(".leaflet-top.leaflet-left");
+    if (!corner) return;
+    corner.appendChild(host);
+    L.DomEvent.disableClickPropagation(host); // clicks shouldn't pan or zoom the map
+    return () => host.remove();
+  }, [map, host]);
+
+  const next = theme === "dark" ? "light" : "dark";
+  return createPortal(
+    <a
+      href="#"
+      role="button"
+      className="gl-theme-toggle"
+      title={`Switch to ${next} mode`}
+      aria-label={`Switch to ${next} mode`}
+      onClick={(e) => {
+        e.preventDefault();
+        setTheme(next);
+      }}
+    >
+      {theme === "dark" ? <SunIcon /> : <MoonIcon />}
+    </a>,
+    host
+  );
+}
+
+function SunIcon() {
+  return (
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden>
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+    </svg>
+  );
+}
+
+function MoonIcon() {
+  return (
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" />
+    </svg>
+  );
 }
 
 /** Recenters/zooms the map to fit two points whenever the selected overlap changes. */
@@ -30,7 +96,7 @@ function FocusController({ pair }: { pair: [[number, number], [number, number]] 
   return null;
 }
 
-export default function GridlockMap({
+export default function SentinelMap({
   projects,
   flagCountByProject,
   selectedOverlap,
@@ -43,6 +109,7 @@ export default function GridlockMap({
    *  where only that company's projects are ever shown on the map anyway. */
   hideUtility?: string;
 }) {
+  const flagColor = FLAG_COLOR[useTheme()];
   const pair: [[number, number], [number, number]] | null = selectedOverlap
     ? [selectedOverlap.a.geo_center as [number, number], selectedOverlap.b.geo_center as [number, number]]
     : null;
@@ -63,7 +130,7 @@ export default function GridlockMap({
         />
         {projects.map((p) => {
           if (!p.geo_center) return null;
-          const color = p.utility.startsWith("Dominion") ? DESC_COLOR : GPC_COLOR;
+          const color = utilityStyle(p.utility).color;
           const dashed = p.geo_confidence !== "confirmed";
           const flagCount = flagCountByProject[p.project_id] ?? 0;
           return (
@@ -73,7 +140,7 @@ export default function GridlockMap({
                   center={p.geo_center}
                   radius={10}
                   interactive={false}
-                  pathOptions={{ color: FLAG_COLOR, weight: 2, opacity: 0.9, fill: false }}
+                  pathOptions={{ color: flagColor, weight: 2, opacity: 0.9, fill: false }}
                 />
               )}
               <CircleMarker
@@ -90,13 +157,16 @@ export default function GridlockMap({
                 <Popup>
                   <div className="gl-popup-title">{p.title}</div>
                   <div className="gl-popup-meta">{p.utility}</div>
-                  <div className="gl-popup-meta">In-service: {fmtDate(p.in_service_date)}</div>
+                  <div className="gl-popup-meta">
+                    In-service: {p.in_service_date ? fmtDate(p.in_service_date) : (p.in_service_year ?? "date n/a")}
+                  </div>
                   {flagCount > 0 && (
                     <div className="gl-popup-flag">
                       Flagged in {flagCount} overlap{flagCount === 1 ? "" : "s"}
                     </div>
                   )}
                   <div className="gl-popup-conf">{p.geo_confidence?.replace("_", " ")}</div>
+                  {partialNote(p) && <div className="gl-popup-meta">{partialNote(p)}</div>}
                 </Popup>
               </CircleMarker>
               {p.geo_points && p.geo_points.length === 2 && (
@@ -115,23 +185,23 @@ export default function GridlockMap({
           />
         )}
         <FocusController pair={pair} />
+        <ThemeToggleControl />
       </MapContainer>
-      <MapLegend hideUtility={hideUtility} />
+      <MapLegend flagColor={flagColor} hideUtility={hideUtility} />
     </div>
   );
 }
 
-function MapLegend({ hideUtility }: { hideUtility?: string }) {
-  const showDesc = hideUtility !== "Dominion Energy South Carolina";
-  const showGpc = hideUtility !== "Georgia Power";
+function MapLegend({ flagColor, hideUtility }: { flagColor: string; hideUtility?: string }) {
   return (
     <div className="absolute bottom-6 left-3 z-[1000] rounded-lg border border-[var(--border)] bg-[var(--panel)]/90 backdrop-blur-sm px-3 py-2.5 text-[11px] flex flex-col gap-1.5 shadow-lg">
       <div className="text-[9.5px] uppercase tracking-[0.1em] text-[var(--muted)] font-medium">Legend</div>
-      {showDesc && <LegendRow swatch={<Dot color={DESC_COLOR} />} label="DESC project" />}
-      {showGpc && <LegendRow swatch={<Dot color={GPC_COLOR} />} label="Georgia Power project" />}
+      {Object.entries(UTILITIES).filter(([name]) => name !== hideUtility).map(([name, u]) => (
+        <LegendRow key={name} swatch={<Dot color={u.color} />} label={`${name} project`} />
+      ))}
       <LegendRow swatch={<Dot color="var(--muted)" dashed />} label="Estimated location" />
       <LegendRow
-        swatch={<span className="block w-3.5 h-3.5 rounded-full" style={{ border: `2px solid ${FLAG_COLOR}` }} />}
+        swatch={<span className="block w-3.5 h-3.5 rounded-full" style={{ border: `2px solid ${flagColor}` }} />}
         label="In a flagged overlap"
       />
       <LegendRow

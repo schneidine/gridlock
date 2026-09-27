@@ -8,10 +8,28 @@
     "in_service_date": "12/31/23",
     "total_cost_raw": "$5,404,301",
     "total_cost_usd": 5404301,
+    "yearly_cost_raw": {
+      "Previous": "$4,604,301",
+      "2024": "$800,000",
+      "2025": "$0",
+      "2026": "$0",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 4604301,
+      "2024": 800000,
+      "2025": 0,
+      "2026": 0,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Queensboro",
-      "Ft Johnson"
-    ]
+      "Ft Johnson",
+      "Bayfront"
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "0167C-D",
@@ -22,9 +40,26 @@
     "in_service_date": "12/31/27",
     "total_cost_raw": "$5,300,000",
     "total_cost_usd": 5300000,
+    "yearly_cost_raw": {
+      "Previous": "$0",
+      "2024": "$0",
+      "2025": "$100,000",
+      "2026": "$100,000",
+      "2027": "$5,100,000",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 0,
+      "2024": 0,
+      "2025": 100000,
+      "2026": 100000,
+      "2027": 5100000,
+      "2028": 0
+    },
     "stations": [
       "Union Pier"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "0139 M,N",
@@ -35,9 +70,29 @@
     "in_service_date": "12/31/2024",
     "total_cost_raw": "$11,116,933",
     "total_cost_usd": 11116933,
+    "yearly_cost_raw": {
+      "Previous": "$2,717,933",
+      "2024": "$6,631,000",
+      "2025": "$1,181,000",
+      "2026": "$0",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 2717933,
+      "2024": 6631000,
+      "2025": 1181000,
+      "2026": 0,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Okatie",
+      "Jasper",
       "Yemassee"
+    ],
+    "data_quality_flags": [
+      "yearly figures sum to $10,529,933 but listed total is $11,116,933 ($587,000 unaccounted for, likely spend beyond the 5-year window); listed total kept"
     ]
   },
   {
@@ -49,10 +104,27 @@
     "in_service_date": "12/01/25",
     "total_cost_raw": "$19,890,850",
     "total_cost_usd": 19890850,
+    "yearly_cost_raw": {
+      "Previous": "$1,189,020",
+      "2024": "$6,601,830",
+      "2025": "$11,800,000",
+      "2026": "$300,000",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 1189020,
+      "2024": 6601830,
+      "2025": 11800000,
+      "2026": 300000,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Cainhoy",
       "Hamlin"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "6808 J",
@@ -63,10 +135,27 @@
     "in_service_date": "06/01/24",
     "total_cost_raw": "$11,700,000",
     "total_cost_usd": 11700000,
+    "yearly_cost_raw": {
+      "Previous": "$9,900,000",
+      "2024": "$1,800,000",
+      "2025": "$0",
+      "2026": "$0",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 9900000,
+      "2024": 1800000,
+      "2025": 0,
+      "2026": 0,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Eastover",
       "Square D"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "6808 K",
@@ -77,9 +166,28 @@
     "in_service_date": "12/31/24",
     "total_cost_raw": "$8,580,000",
     "total_cost_usd": 8580000,
+    "yearly_cost_raw": {
+      "Previous": "$4,330,000",
+      "2024": "$4,250,000",
+      "2025": "$0",
+      "2026": "$0",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 4330000,
+      "2024": 4250000,
+      "2025": 0,
+      "2026": 0,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Burton",
       "St Helena"
+    ],
+    "data_quality_flags": [
+      "same named endpoints as project 6808 L (different scope/ID) -- kept as separate rows"
     ]
   },
   {
@@ -91,9 +199,28 @@
     "in_service_date": "12/31/25",
     "total_cost_raw": "$6,925,000",
     "total_cost_usd": 6925000,
+    "yearly_cost_raw": {
+      "Previous": "$50,000",
+      "2024": "$50,000",
+      "2025": "$6,825,000",
+      "2026": "$0",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 50000,
+      "2024": 50000,
+      "2025": 6825000,
+      "2026": 0,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Burton",
       "St Helena"
+    ],
+    "data_quality_flags": [
+      "same named endpoints as project 6808 K (different scope/ID) -- kept as separate rows"
     ]
   },
   {
@@ -105,10 +232,28 @@
     "in_service_date": "12/31/26",
     "total_cost_raw": "$4,912,096",
     "total_cost_usd": 4912096,
+    "yearly_cost_raw": {
+      "Previous": "$332,096",
+      "2024": "$80,000",
+      "2025": "$100,000",
+      "2026": "$4,400,000",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 332096,
+      "2024": 80000,
+      "2025": 100000,
+      "2026": 4400000,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "VCS1",
-      "Denny Terrace"
-    ]
+      "Denny Terrace",
+      "Pineland"
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "6808 R",
@@ -119,10 +264,27 @@
     "in_service_date": "12/31/28",
     "total_cost_raw": "$48,224,719",
     "total_cost_usd": 48224719,
+    "yearly_cost_raw": {
+      "Previous": "$174,719",
+      "2024": "$0",
+      "2025": "$100,000",
+      "2026": "$450,000",
+      "2027": "$25,000,000",
+      "2028": "$22,500,000"
+    },
+    "yearly_cost_usd": {
+      "Previous": 174719,
+      "2024": 0,
+      "2025": 100000,
+      "2026": 450000,
+      "2027": 25000000,
+      "2028": 22500000
+    },
     "stations": [
       "Wateree",
       "Killian"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "6808 S",
@@ -133,10 +295,27 @@
     "in_service_date": "06/01/2025",
     "total_cost_raw": "$40,660,000",
     "total_cost_usd": 40660000,
+    "yearly_cost_raw": {
+      "Previous": "$6,660,000",
+      "2024": "$26,800,000",
+      "2025": "$7,200,000",
+      "2026": "$0",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 6660000,
+      "2024": 26800000,
+      "2025": 7200000,
+      "2026": 0,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Okatie",
       "Bluffton"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "6808 U",
@@ -147,10 +326,27 @@
     "in_service_date": "12/31/25",
     "total_cost_raw": "$2,600,000",
     "total_cost_usd": 2600000,
+    "yearly_cost_raw": {
+      "Previous": "$0",
+      "2024": "$1,000,000",
+      "2025": "$1,600,000",
+      "2026": "$0",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 0,
+      "2024": 1000000,
+      "2025": 1600000,
+      "2026": 0,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Hopkins",
       "CIP"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "6808 V",
@@ -161,10 +357,27 @@
     "in_service_date": "12/31/28",
     "total_cost_raw": "$10,200,000",
     "total_cost_usd": 10200000,
+    "yearly_cost_raw": {
+      "Previous": "$0",
+      "2024": "$0",
+      "2025": "$0",
+      "2026": "$200,000",
+      "2027": "$5,000,000",
+      "2028": "$5,000,000"
+    },
+    "yearly_cost_usd": {
+      "Previous": 0,
+      "2024": 0,
+      "2025": 0,
+      "2026": 200000,
+      "2027": 5000000,
+      "2028": 5000000
+    },
     "stations": [
       "Faber Place",
       "Bayfront"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "6808 W",
@@ -175,10 +388,27 @@
     "in_service_date": "9/30/2024",
     "total_cost_raw": "$4,300,000",
     "total_cost_usd": 4300000,
+    "yearly_cost_raw": {
+      "Previous": "$1,300,000",
+      "2024": "$3,000,000",
+      "2025": "$0",
+      "2026": "$0",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 1300000,
+      "2024": 3000000,
+      "2025": 0,
+      "2026": 0,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Square D",
       "Hopkins"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "6809 E",
@@ -189,9 +419,28 @@
     "in_service_date": "12/31/24",
     "total_cost_raw": "$11,745,543",
     "total_cost_usd": 11745543,
+    "yearly_cost_raw": {
+      "Previous": "$8,195,543",
+      "2024": "$3,550,000",
+      "2025": "$0",
+      "2026": "$0",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 8195543,
+      "2024": 3550000,
+      "2025": 0,
+      "2026": 0,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Stevens Creek",
       "Hooks"
+    ],
+    "data_quality_flags": [
+      "same named endpoints as project 6809 G (different scope/ID) -- kept as separate rows"
     ]
   },
   {
@@ -203,9 +452,28 @@
     "in_service_date": "12/31/25",
     "total_cost_raw": "$7,800,000",
     "total_cost_usd": 7800000,
+    "yearly_cost_raw": {
+      "Previous": "$0",
+      "2024": "$50,000",
+      "2025": "$200,000",
+      "2026": "$7,550,000",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 0,
+      "2024": 50000,
+      "2025": 200000,
+      "2026": 7550000,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Stevens Creek",
       "Hooks"
+    ],
+    "data_quality_flags": [
+      "same named endpoints as project 6809 E (different scope/ID) -- kept as separate rows"
     ]
   },
   {
@@ -217,9 +485,26 @@
     "in_service_date": "12/25/24",
     "total_cost_raw": "$10,833,462",
     "total_cost_usd": 10833462,
+    "yearly_cost_raw": {
+      "Previous": "$3,300,432",
+      "2024": "$7,533,030",
+      "2025": "$0",
+      "2026": "$0",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 3300432,
+      "2024": 7533030,
+      "2025": 0,
+      "2026": 0,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Edenwood"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "1060A, I, L",
@@ -230,9 +515,28 @@
     "in_service_date": "12/31/28",
     "total_cost_raw": "$9,898,924",
     "total_cost_usd": 9898924,
+    "yearly_cost_raw": {
+      "Previous": "$709,124",
+      "2024": "$1,689,800",
+      "2025": "$1,200,000",
+      "2026": "$2,300,000",
+      "2027": "$1,400,000",
+      "2028": "$2,600,000"
+    },
+    "yearly_cost_usd": {
+      "Previous": 709124,
+      "2024": 1689800,
+      "2025": 1200000,
+      "2026": 2300000,
+      "2027": 1400000,
+      "2028": 2600000
+    },
     "stations": [
-      "Williams St"
-    ]
+      "Williams St",
+      "AM Williams",
+      "McMeekin"
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "06005 B",
@@ -243,9 +547,26 @@
     "in_service_date": "3/31/2027",
     "total_cost_raw": "$2,750,000",
     "total_cost_usd": 2750000,
+    "yearly_cost_raw": {
+      "Previous": "$0",
+      "2024": "$0",
+      "2025": "$250,000",
+      "2026": "$1,500,000",
+      "2027": "$1,000,000",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 0,
+      "2024": 0,
+      "2025": 250000,
+      "2026": 1500000,
+      "2027": 1000000,
+      "2028": 0
+    },
     "stations": [
       "Harleyville"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "05004 P",
@@ -256,8 +577,27 @@
     "in_service_date": "12/31/2024",
     "total_cost_raw": "$3,982,052",
     "total_cost_usd": 3982052,
+    "yearly_cost_raw": {
+      "Previous": "$782,052",
+      "2024": "$3,200,000",
+      "2025": "$0",
+      "2026": "$0",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 782052,
+      "2024": 3200000,
+      "2025": 0,
+      "2026": 0,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Summerville"
+    ],
+    "data_quality_flags": [
+      "same named endpoints as project 06810 H (different scope/ID) -- kept as separate rows"
     ]
   },
   {
@@ -269,10 +609,27 @@
     "in_service_date": "6/1/2026",
     "total_cost_raw": "$40,000,000",
     "total_cost_usd": 40000000,
+    "yearly_cost_raw": {
+      "Previous": "$100,000",
+      "2024": "$400,000",
+      "2025": "$19,500,000",
+      "2026": "$20,000,000",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 100000,
+      "2024": 400000,
+      "2025": 19500000,
+      "2026": 20000000,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Canadys",
       "Ritter"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "6359",
@@ -283,10 +640,27 @@
     "in_service_date": "6/1/2026",
     "total_cost_raw": "$40,611,419",
     "total_cost_usd": 40611419,
+    "yearly_cost_raw": {
+      "Previous": "$100,000",
+      "2024": "$1,300,000",
+      "2025": "$18,700,000",
+      "2026": "$20,511,419",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 100000,
+      "2024": 1300000,
+      "2025": 18700000,
+      "2026": 20511419,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Yemassee",
       "Ritter"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "06367 A - C, H",
@@ -297,8 +671,27 @@
     "in_service_date": "12/31/25",
     "total_cost_raw": "$34,877,427",
     "total_cost_usd": 34877427,
+    "yearly_cost_raw": {
+      "Previous": "$4,337,401",
+      "2024": "$19,00,181",
+      "2025": "$11,489,845",
+      "2026": "$50,000",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 4337401,
+      "2024": 19000181,
+      "2025": 11489845,
+      "2026": 50000,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Riverport"
+    ],
+    "data_quality_flags": [
+      "malformed cost cell 2024=$19,00,181; repaired to $19,000,181 (the only value consistent with the listed total $34,877,427)"
     ]
   },
   {
@@ -310,10 +703,27 @@
     "in_service_date": "12/31/25",
     "total_cost_raw": "$23,787,423",
     "total_cost_usd": 23787423,
+    "yearly_cost_raw": {
+      "Previous": "$9,591,713",
+      "2024": "$5,087,710",
+      "2025": "$9,108,000",
+      "2026": "$0",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 9591713,
+      "2024": 5087710,
+      "2025": 9108000,
+      "2026": 0,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Jasper",
       "Okatie"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "06371 D",
@@ -324,9 +734,26 @@
     "in_service_date": "12/31/25",
     "total_cost_raw": "$6,005,000",
     "total_cost_usd": 6005000,
+    "yearly_cost_raw": {
+      "Previous": "$5,000",
+      "2024": "$2,800,000",
+      "2025": "$3,200,000",
+      "2026": "$0",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 5000,
+      "2024": 2800000,
+      "2025": 3200000,
+      "2026": 0,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Wagener"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "06372 A",
@@ -337,10 +764,27 @@
     "in_service_date": "6/1/2024",
     "total_cost_raw": "$10,850,000",
     "total_cost_usd": 10850000,
+    "yearly_cost_raw": {
+      "Previous": "$3,850,000",
+      "2024": "$7,000,000",
+      "2025": "$0",
+      "2026": "$0",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 3850000,
+      "2024": 7000000,
+      "2025": 0,
+      "2026": 0,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Church Creek",
       "Ritter"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "06810 F",
@@ -351,9 +795,28 @@
     "in_service_date": "12/31/29",
     "total_cost_raw": "$30,000,000",
     "total_cost_usd": 30000000,
+    "yearly_cost_raw": {
+      "Previous": "$0",
+      "2024": "$0",
+      "2025": "$0",
+      "2026": "$500,000",
+      "2027": "$9,500,000",
+      "2028": "$10,000,000"
+    },
+    "yearly_cost_usd": {
+      "Previous": 0,
+      "2024": 0,
+      "2025": 0,
+      "2026": 500000,
+      "2027": 9500000,
+      "2028": 10000000
+    },
     "stations": [
       "VCS2",
       "Ward"
+    ],
+    "data_quality_flags": [
+      "yearly figures sum to $20,000,000 but listed total is $30,000,000 ($10,000,000 unaccounted for, likely spend beyond the 5-year window); listed total kept"
     ]
   },
   {
@@ -365,9 +828,26 @@
     "in_service_date": "12/31/24",
     "total_cost_raw": "$9,655,669",
     "total_cost_usd": 9655669,
+    "yearly_cost_raw": {
+      "Previous": "$255,669",
+      "2024": "$9,400,000",
+      "2025": "$0",
+      "2026": "$0",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 255669,
+      "2024": 9400000,
+      "2025": 0,
+      "2026": 0,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Goose Creek Reservoir"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "06810 H",
@@ -378,8 +858,27 @@
     "in_service_date": "12/31/24",
     "total_cost_raw": "$12,475,000",
     "total_cost_usd": 12475000,
+    "yearly_cost_raw": {
+      "Previous": "$2,475,000",
+      "2024": "$6,000,000",
+      "2025": "$4,000,000",
+      "2026": "$0",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 2475000,
+      "2024": 6000000,
+      "2025": 4000000,
+      "2026": 0,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Summerville"
+    ],
+    "data_quality_flags": [
+      "same named endpoints as project 05004 P (different scope/ID) -- kept as separate rows"
     ]
   },
   {
@@ -391,10 +890,27 @@
     "in_service_date": "12/31/2025",
     "total_cost_raw": "$4,000,000",
     "total_cost_usd": 4000000,
+    "yearly_cost_raw": {
+      "Previous": "$0",
+      "2024": "$300,000",
+      "2025": "$3,700,000",
+      "2026": "$0",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 0,
+      "2024": 300000,
+      "2025": 3700000,
+      "2026": 0,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "St George",
       "Sumter"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "5392 A-C",
@@ -405,10 +921,27 @@
     "in_service_date": "12/31/2024",
     "total_cost_raw": "$2,509,602",
     "total_cost_usd": 2509602,
+    "yearly_cost_raw": {
+      "Previous": "$330,954",
+      "2024": "$2,178,648",
+      "2025": "$0",
+      "2026": "$0",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 330954,
+      "2024": 2178648,
+      "2025": 0,
+      "2026": 0,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Coit",
       "Gills Creek"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "6810 A",
@@ -419,10 +952,27 @@
     "in_service_date": "12/31/2024",
     "total_cost_raw": "$2,200,080",
     "total_cost_usd": 2200080,
+    "yearly_cost_raw": {
+      "Previous": "$50,080",
+      "2024": "$2,150,000",
+      "2025": "$0",
+      "2026": "$0",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 50080,
+      "2024": 2150000,
+      "2025": 0,
+      "2026": 0,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Hooks",
       "Thurmond"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "6809 N",
@@ -433,10 +983,27 @@
     "in_service_date": "12/31/2025",
     "total_cost_raw": "$8,750,000",
     "total_cost_usd": 8750000,
+    "yearly_cost_raw": {
+      "Previous": "$50,000",
+      "2024": "$200,000",
+      "2025": "$8,500,000",
+      "2026": "$0",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 50000,
+      "2024": 200000,
+      "2025": 8500000,
+      "2026": 0,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Batesburg",
       "Saluda County"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "6853 B-F",
@@ -447,9 +1014,26 @@
     "in_service_date": "3/31/2026",
     "total_cost_raw": "$23,685,000",
     "total_cost_usd": 23685000,
+    "yearly_cost_raw": {
+      "Previous": "$65,000",
+      "2024": "$360,000",
+      "2025": "$22,975,000",
+      "2026": "$285,000",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 65000,
+      "2024": 360000,
+      "2025": 22975000,
+      "2026": 285000,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Scout"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "6859",
@@ -460,9 +1044,26 @@
     "in_service_date": "10/1/2025 (phase 1) and 10/1/2026 (phase 2)",
     "total_cost_raw": "$93,538,207",
     "total_cost_usd": 93538207,
+    "yearly_cost_raw": {
+      "Previous": "$284,366",
+      "2024": "$8,014,000",
+      "2025": "$45,475,000",
+      "2026": "$39,764,841",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 284366,
+      "2024": 8014000,
+      "2025": 45475000,
+      "2026": 39764841,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Dawson"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "6852",
@@ -473,10 +1074,27 @@
     "in_service_date": "8/12/2026",
     "total_cost_raw": "$17,520,000",
     "total_cost_usd": 17520000,
+    "yearly_cost_raw": {
+      "Previous": "$100,000",
+      "2024": "$100,000",
+      "2025": "$8,660,000",
+      "2026": "$8,660,000",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 100000,
+      "2024": 100000,
+      "2025": 8660000,
+      "2026": 8660000,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Urquhart",
       "Toolebeck"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "6388 A",
@@ -487,10 +1105,27 @@
     "in_service_date": "5/1/2027",
     "total_cost_raw": "$19,300,000",
     "total_cost_usd": 19300000,
+    "yearly_cost_raw": {
+      "Previous": "$0",
+      "2024": "$50,000",
+      "2025": "$250,000",
+      "2026": "$9,000,000",
+      "2027": "$10,000,000",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 0,
+      "2024": 50000,
+      "2025": 250000,
+      "2026": 9000000,
+      "2027": 10000000,
+      "2028": 0
+    },
     "stations": [
       "Williams",
       "Summerville"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "0147 C, K",
@@ -501,9 +1136,26 @@
     "in_service_date": "12/31/2027",
     "total_cost_raw": "$21,850,000",
     "total_cost_usd": 21850000,
+    "yearly_cost_raw": {
+      "Previous": "$0",
+      "2024": "$50,000",
+      "2025": "$900,000",
+      "2026": "$10,250,000",
+      "2027": "$10,650,000",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 0,
+      "2024": 50000,
+      "2025": 900000,
+      "2026": 10250000,
+      "2027": 10650000,
+      "2028": 0
+    },
     "stations": [
       "Cainhoy"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "0147 B, J",
@@ -514,9 +1166,26 @@
     "in_service_date": "12/31/2027",
     "total_cost_raw": "$18,000,000",
     "total_cost_usd": 18000000,
+    "yearly_cost_raw": {
+      "Previous": "$0",
+      "2024": "$50,000",
+      "2025": "$550,000",
+      "2026": "$8,500,000",
+      "2027": "$8,900,000",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 0,
+      "2024": 50000,
+      "2025": 550000,
+      "2026": 8500000,
+      "2027": 8900000,
+      "2028": 0
+    },
     "stations": [
       "Jack Primus"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "6847 A-B, D-H",
@@ -527,11 +1196,28 @@
     "in_service_date": "05/01/2027",
     "total_cost_raw": "$34,174,682",
     "total_cost_usd": 34174682,
+    "yearly_cost_raw": {
+      "Previous": "$1,772,338",
+      "2024": "$975,000",
+      "2025": "$4,250,000",
+      "2026": "$21,063,338",
+      "2027": "$6,114,006",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 1772338,
+      "2024": 975000,
+      "2025": 4250000,
+      "2026": 21063338,
+      "2027": 6114006,
+      "2028": 0
+    },
     "stations": [
       "Church Creek",
       "Faber Place",
       "Charleston"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "6846 A",
@@ -542,10 +1228,27 @@
     "in_service_date": "05/31/2026",
     "total_cost_raw": "$1,100,000",
     "total_cost_usd": 1100000,
+    "yearly_cost_raw": {
+      "Previous": "$0",
+      "2024": "$75,000",
+      "2025": "$175,000",
+      "2026": "$850,000",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 0,
+      "2024": 75000,
+      "2025": 175000,
+      "2026": 850000,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Eastover",
       "Sumter"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "6810 U",
@@ -556,10 +1259,27 @@
     "in_service_date": "12/31/2026",
     "total_cost_raw": "$4,500,000",
     "total_cost_usd": 4500000,
+    "yearly_cost_raw": {
+      "Previous": "$0",
+      "2024": "$0",
+      "2025": "$200,000",
+      "2026": "$4,300,000",
+      "2027": "$0",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 0,
+      "2024": 0,
+      "2025": 200000,
+      "2026": 4300000,
+      "2027": 0,
+      "2028": 0
+    },
     "stations": [
       "Cameron Jct",
       "Elloree"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "6810 J",
@@ -570,10 +1290,27 @@
     "in_service_date": "12/31/2027",
     "total_cost_raw": "$4,500,000",
     "total_cost_usd": 4500000,
+    "yearly_cost_raw": {
+      "Previous": "$0",
+      "2024": "$0",
+      "2025": "$0",
+      "2026": "$0",
+      "2027": "$4,500,000",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 0,
+      "2024": 0,
+      "2025": 0,
+      "2026": 0,
+      "2027": 4500000,
+      "2028": 0
+    },
     "stations": [
       "Elloree",
       "Santee City"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "6810 O",
@@ -584,10 +1321,27 @@
     "in_service_date": "12/31/2027",
     "total_cost_raw": "$3,000,000",
     "total_cost_usd": 3000000,
+    "yearly_cost_raw": {
+      "Previous": "$0",
+      "2024": "$0",
+      "2025": "$0",
+      "2026": "$0",
+      "2027": "$3,000,000",
+      "2028": "$0"
+    },
+    "yearly_cost_usd": {
+      "Previous": 0,
+      "2024": 0,
+      "2025": 0,
+      "2026": 0,
+      "2027": 3000000,
+      "2028": 0
+    },
     "stations": [
       "Urquhart",
       "Aiken PSA"
-    ]
+    ],
+    "data_quality_flags": []
   },
   {
     "project_id_raw": "6810 T",
@@ -598,10 +1352,27 @@
     "in_service_date": "12/31/2028",
     "total_cost_raw": "$5,900,000",
     "total_cost_usd": 5900000,
+    "yearly_cost_raw": {
+      "Previous": "$0",
+      "2024": "$0",
+      "2025": "$0",
+      "2026": "$0",
+      "2027": "$0",
+      "2028": "$5,900,000"
+    },
+    "yearly_cost_usd": {
+      "Previous": 0,
+      "2024": 0,
+      "2025": 0,
+      "2026": 0,
+      "2027": 0,
+      "2028": 5900000
+    },
     "stations": [
       "Cameron Jct",
       "Cameron",
       "St Matthews"
-    ]
+    ],
+    "data_quality_flags": []
   }
 ]

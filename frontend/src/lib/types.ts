@@ -1,5 +1,7 @@
-export type Tier = "touching_crossing" | "share_land" | "share_logistics" | "share_crews";
-export type Confidence = "confirmed" | "estimated" | "region_only";
+// What a flagged pair could share; set by backend/pipeline/build_dataset.py (opportunity()).
+export type Tier = "shared_substation" | "same_window" | "schedules_apart";
+// Location confidence written by the pipeline's geocoder.
+export type Confidence = "confirmed" | "low_confidence";
 
 export interface Project {
   project_id: string;
@@ -9,6 +11,7 @@ export interface Project {
   description: string | null;
   status: string | null;
   in_service_date: string | null;
+  in_service_year: number | null; // set alone when the source gives only a year (SERTP/Duke)
   stations: string[];
   geo_points: [number, number][] | null;
   geo_center: [number, number] | null;
@@ -58,23 +61,23 @@ export interface PlannerNote {
 }
 
 export const TIER_LABEL: Record<Tier, string> = {
-  touching_crossing: "Touching / Crossing",
-  share_land: "Share Right-of-Way",
-  share_logistics: "Share Logistics",
-  share_crews: "Share Crews",
-};
-
-// Closest (must coordinate) first -- the primary ranking signal from the challenge brief.
-export const TIER_ORDER: Record<Tier, number> = {
-  touching_crossing: 0,
-  share_land: 1,
-  share_logistics: 2,
-  share_crews: 3,
+  shared_substation: "Shared Substation",
+  same_window: "Same Build Window",
+  schedules_apart: "Conflicting Schedules",
 };
 
 export const TIER_COLOR: Record<Tier, string> = {
-  touching_crossing: "#ef4444",
-  share_land: "#f59e0b",
-  share_logistics: "#eab308",
-  share_crews: "#84cc16",
+  shared_substation: "#ef4444",
+  same_window: "#f59e0b",
+  schedules_apart: "#84cc16",
 };
+
+// Same ranking score as backend/pipeline/build_dataset.py score(): distance is the
+// primary signal (70%), the in-service day gap the secondary one (30%), per the brief.
+const THRESHOLD_MI = 25;
+const MAX_GAP_DAYS = 1825;
+
+export function overlapScore(o: Pick<Overlap, "distance_mi" | "day_gap">): number {
+  const gap = Math.min(o.day_gap ?? MAX_GAP_DAYS, MAX_GAP_DAYS);
+  return 0.7 * (1 - o.distance_mi / THRESHOLD_MI) + 0.3 * (1 - gap / MAX_GAP_DAYS);
+}

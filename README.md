@@ -1,4 +1,4 @@
-# Gridlock — DESC × Georgia Power Coordination Tool
+# Sentinel Utilities — DESC × Georgia Power Coordination Tool
 
 ShellHacks 2026 — Sperry Tech Gridlock Challenge
 
@@ -25,17 +25,42 @@ web/                    static Leaflet demo, reads the JSON directly (open web/i
 
 ## Running it
 
+### Quick start
+
+`run.sh` at the repo root does everything in one command:
+
+```bash
+./run.sh            # Next.js + Supabase dashboard -> http://localhost:3000
+./run.sh web        # static Leaflet demo          -> http://localhost:8000
+./run.sh pipeline   # only build the dataset JSON
+```
+
+It creates `.venv` and installs the Python requirements. If the dataset JSON in
+`backend/data_clean/` is missing, it runs the pipeline to build it. Then it
+starts the mode you chose. In `app` mode it also runs `npm install` when needed
+and seeds Supabase before running `npm run dev`. App mode needs
+`frontend/.env.local`; see `frontend/README.md` for how to create it.
+
+Flags:
+- `--rebuild` re-runs the pipeline even when its output already exists.
+- `--no-seed` skips seeding Supabase in app mode.
+
+### Manual steps
+
 ```bash
 cd backend
 pip install -r requirements.txt
 
+mac:
+python3 -m pip install -r requirements.txt
+
 cd pipeline
 python3 parse_desc_pdf.py     # data_raw/utility-filings/*.pdf -> ../data_clean/desc_projects_raw.json
 python3 parse_gpc_irp.py      # data_raw/utility-filings/*.txt -> ../data_clean/gpc_projects_raw.json
-python3 build_dataset.py      # -> ../data_clean/gridlock_dataset.json (the overlap engine)
+python3 build_dataset.py      # -> ../data_clean/sentinel_dataset.json (the overlap engine)
 python3 cost_impact.py        # -> ../data_clean/cost_impact_estimate.json (bonus estimate)
 
-cp ../data_clean/gridlock_dataset.json ../data_clean/cost_impact_estimate.json ../../web/data/
+cp ../data_clean/sentinel_dataset.json ../data_clean/cost_impact_estimate.json ../../web/data/
 cd ../../web && python3 -m http.server 8000    # then open http://localhost:8000
 ```
 
@@ -58,8 +83,8 @@ as a cached JSON file.
 
 ## Methodology
 
-1. **Parse** both PDFs into structured project rows (`pipeline` scripts read
-   `data_raw/*.pdf` / `*.pdf.txt` directly).
+1. **Parse** both filings into structured project rows (`parse_desc_pdf.py`,
+   `parse_gpc_irp.py`).
 2. **Extract station names** from each project title using the voltage marker
    (e.g. "115 kV") as the split point between the two named substations —
    validated exactly against the organizers' own worked example
@@ -97,24 +122,31 @@ coordinates, currently scheduled 8.4 years apart). Every number is either
 pulled directly from a real public filing or an industry-documented figure
 applied as a range, never invented:
 
-- DESC's real project cost ($2,200,080) comes straight from their public
-  budget filing.
-- Georgia Power's cost for the same facility is CEII-redacted in their
-  filing — the tool says so explicitly rather than guessing a number.
-- The savings range (10-25%, ~$220K-$550K) is a conservative application of
-  a cited public benchmark (NYC DDC's 2025 Utility Coordination Report,
-  which found coordinated utility projects saw ~74% lower delay-driven cost
-  overruns than uncoordinated ones), not an invented percentage.
+The saving is framed as "one mobilization instead of two":
 
-This shows up as a highlighted panel at the top of the app's sidebar, with
-an expandable "Methodology & sources" note.
+- DESC's cost ($23,787,423, 6.5 mi of line, ~$3.7M/mi) comes straight from
+  its public budget filing.
+- Georgia Power's cost is CEII-redacted in the IRP; the tool says so and never
+  estimates it. DESC's cost is used only as a proxy for job scale.
+- Mobilization (crew travel, equipment haul, staging yard, site setup, access,
+  safety stand-up) is assumed to be 3–5% of contract cost, a conservative
+  range under the ~10% cap many state DOT specs put on that pay item. That
+  gives **~$0.7M–$1.2M**, before any shared right-of-way or outage-window
+  savings.
+- The NYC DDC 2025 Utility Coordination Report (coordinated projects saw ~74%
+  lower utility-delay cost) is cited only as context that this is a floor. It
+  covers urban underground work, so it isn't applied directly.
+
+This appears as a highlighted panel at the top of the app's sidebar, with an
+expandable methodology note.
 
 ## Known limitations / next steps
 
-- Full-state geocoding coverage is intentionally shallow outside the SC/GA
-  border corridor (Atlanta-metro and central-SC projects are geographically
-  ruled out via `region_only` city-level stand-ins rather than precisely
-  geocoded, since they cannot possibly be within 40 km of the border).
+- Not every substation is in OpenStreetMap: 7 DESC and 36 GPC projects have
+  no located endpoint and can't be placed, and 16 DESC / 42 GPC projects rest
+  on `low_confidence` matches. The UI and xlsx flag these rather than hiding them.
+- The SERTP 2025 regional and preliminary plans are downloaded and registered
+  in `pipeline/sources.py` but not parsed yet.
 - No backend API yet — the UI reads the static generated JSON directly;
   fine for a hackathon demo, easy to swap for a FastAPI endpoint later.
 - Leaflet is vendored locally under `web/vendor/leaflet/` (not loaded from a

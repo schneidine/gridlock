@@ -50,9 +50,7 @@ export default async function DashboardPage() {
   }
   const mapProjects = allProjects.filter((p) => mapProjectIds.has(p.project_id));
 
-  const highPriorityCount = myOverlaps.filter(
-    (o) => o.tier === "touching_crossing" || o.tier === "share_land"
-  ).length;
+  const highPriorityCount = myOverlaps.filter((o) => o.tier !== "schedules_apart").length;
 
   // Only show a cost/impact estimate row if it's for one of this company's
   // own flagged overlaps.

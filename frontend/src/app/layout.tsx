@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
+import { DEFAULT_THEME, THEME_INIT_SCRIPT } from "@/lib/theme-init";
 
 const plexSans = IBM_Plex_Sans({
   subsets: ["latin"],
@@ -17,13 +18,21 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Gridlock",
-  description: "DESC x Georgia Power planned construction coordination",
+  title: "Sentinel Utilities",
+  description: "DESC x Georgia Power x Duke Energy planned construction coordination",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`h-full antialiased ${plexSans.variable} ${plexMono.variable}`}>
+    <html
+      lang="en"
+      data-theme={DEFAULT_THEME}
+      suppressHydrationWarning
+      className={`h-full antialiased ${plexSans.variable} ${plexMono.variable}`}
+    >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

@@ -46,6 +46,7 @@ function projectRow(p) {
     description: p.description ?? null,
     status: p.status ?? null,
     in_service_date: p.in_service_date ? p.in_service_date.slice(0, 10) : null,
+    in_service_year: p.in_service_year ?? null, // needs migration 0003_in_service_year.sql
     stations: p.stations ?? [],
     geo_points: p.geo ? p.geo.points : null,
     geo_center: p.geo ? p.geo.center : null,
@@ -55,10 +56,10 @@ function projectRow(p) {
 }
 
 async function main() {
-  const dataset = readJson("gridlock_dataset.json");
+  const dataset = readJson("sentinel_dataset.json");
   const costImpact = readJson("cost_impact_estimate.json");
 
-  const allProjects = [...dataset.desc_projects, ...dataset.gpc_projects].map(projectRow);
+  const allProjects = [...dataset.desc_projects, ...dataset.gpc_projects, ...(dataset.duke_projects ?? [])].map(projectRow);
   console.log(`Upserting ${allProjects.length} projects...`);
   {
     const { error } = await supabase.from("projects").upsert(allProjects, { onConflict: "project_id" });
@@ -97,8 +98,8 @@ async function main() {
     const { data: matchedOverlap } = await supabase
       .from("overlaps")
       .select("id")
-      .eq("distance_mi", costImpact.overlap.distance_mi)
-      .in("project_id_b", ["GPC_128", "GPC_129"]) // Evans Primary - Thurmond Dam #5/#6
+      .eq("project_id_a", costImpact.overlap.desc_project_id)
+      .eq("project_id_b", costImpact.overlap.gpc_project_id)
       .limit(1)
       .maybeSingle();
 

@@ -1,30 +1,41 @@
 {
   "overlap": {
-    "desc_project": "Hooks - Thurmond 115kV Tie: Rebuild",
+    "rank": 3,
+    "score": 0.8168,
+    "desc_project": "Jasper \u2013 Okatie 230 kV #2: Construct",
+    "desc_project_id": "DESC_23",
+    "gpc_project": "SAV: MCINTOSH - PURRYSBURG 230KV REACTORS",
     "gpc_projects": [
-      "Evans Primary - Thurmond Dam (USA) #5 115KV Rebuild",
-      "Evans Primary - Thurmond Dam (USA) #6 115KV Rebuild"
+      "SAV: MCINTOSH - PURRYSBURG 230KV REACTORS"
     ],
-    "distance_mi": 0.0,
-    "tier": "touching_crossing",
-    "day_gap": 3074,
-    "location_note": "Thurmond Dam, Savannah River (SC/GA border) -- coordinate confirmed by the challenge organizers' own validated example, not our estimate."
+    "gpc_project_id": "GPC_38",
+    "distance_mi": 5.65,
+    "day_gap": 152,
+    "desc_in_service": "2025-12-31",
+    "gpc_need_date": "2026-06-01",
+    "tier": "same_window",
+    "location_note": "Savannah River 230 kV corridor near Hardeeville, SC / Purrysburg"
   },
   "known_costs": {
-    "desc_total_project_cost_usd": 2200080,
+    "desc_total_project_cost_usd": 23787423,
+    "desc_line_miles": 6.5,
+    "desc_cost_per_mile_usd": 3659604,
     "desc_cost_source": "DESC 'Planned Transmission Projects $2M and Above' 5-Year Budget filing",
     "gpc_total_project_cost_usd": null,
-    "gpc_cost_note": "Georgia Power's project cost for this line item is redacted as CEII in their public IRP filing (per FERC 18 CFR 388.113). We do not estimate or invent a figure for it."
+    "gpc_cost_note": "Georgia Power's cost for this project is redacted as CEII in the public IRP filing. We do not estimate it; DESC's public cost is used only as a proxy for job scale."
   },
   "illustrative_savings_estimate": {
-    "basis": "shared mobilization / site access / overhead avoided by coordinating timing at the same facility, applied only to DESC's known, public project cost (Georgia Power's two projects at the same site would add further avoided cost we can't quantify without their redacted figures)",
+    "framing": "one mobilization instead of two",
+    "assumption": "mobilization = 3%-5% of contract cost, proxied by DESC's public $23,787,423 for this job",
     "savings_pct_range": [
-      0.1,
-      0.25
+      0.03,
+      0.05
     ],
-    "savings_usd_low": 220008,
-    "savings_usd_high": 550020,
-    "benchmark_source": "NYC DDC 2025 Utility Coordination Report -- coordinated ('Joint Bidding') projects saw ~74% lower utility-delay-driven cost overruns than uncoordinated ('Section U') projects (avg $1.5M vs. $5.8M additional cost per project). We apply a conservative 10-25% range to DESC's own project cost as an illustrative, not literal, translation of that finding."
+    "savings_usd_low": 713623,
+    "savings_usd_high": 1189371,
+    "timing_feasible": true,
+    "benchmark_source": "Context: NYC DDC 2025 Utility Coordination Report found coordinated ('Joint Bidding') projects averaged ~$1.5M in utility-delay cost vs ~$5.8M for uncoordinated ones (~74% less). That is urban underground work, so we do not apply it directly; it only suggests our 3-5% mobilization-only figure is a floor, not a ceiling."
   },
-  "the_actual_problem_this_illustrates": "DESC's rebuild at this exact facility is scheduled for 2024. Georgia Power's two rebuilds at the same facility aren't scheduled until 2033 -- 3074 days (8.4 years) later. Under the status quo, that's two separate crew mobilizations to the same dam, eight years apart, each planned with zero visibility into the other. Even a modest timing conversation between the two utilities -- not a shared build, just synchronized scheduling -- is the coordination FERC Order 1920 is meant to produce."
+  "narrative": "Jasper \u2013 Okatie 230 kV #2: Construct (DESC, $23,787,423, 6.5 mi of new 230 kV line, ~$3.7M/mi) and SAV: MCINTOSH - PURRYSBURG 230KV REACTORS (Georgia Power) are 5.65 mi apart and due 152 days apart. Both touch the same 230 kV corridor across the Savannah River near Hardeeville/Purrysburg, so they can share a staging yard, crews, equipment haul and, most importantly, one coordinated outage window, instead of each utility mobilizing separately. Avoiding one mobilization is worth roughly $0.7M-$1.2M before any shared right-of-way or outage-planning savings.",
+  "the_actual_problem_this_illustrates": "Jasper \u2013 Okatie 230 kV #2: Construct (DESC, $23,787,423, 6.5 mi of new 230 kV line, ~$3.7M/mi) and SAV: MCINTOSH - PURRYSBURG 230KV REACTORS (Georgia Power) are 5.65 mi apart and due 152 days apart. Both touch the same 230 kV corridor across the Savannah River near Hardeeville/Purrysburg, so they can share a staging yard, crews, equipment haul and, most importantly, one coordinated outage window, instead of each utility mobilizing separately. Avoiding one mobilization is worth roughly $0.7M-$1.2M before any shared right-of-way or outage-planning savings."
 }

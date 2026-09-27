@@ -18,6 +18,8 @@ import json
 import re
 from pathlib import Path
 
+from stations import extract_stations
+
 ROOT = Path(__file__).parent.parent
 TXT_PATH = ROOT / "data_raw" / "utility-filings" / "GPC_2025_IRP_Volume3_transmission_plan.txt"
 OUT_PATH = ROOT / "data_clean" / "gpc_projects_raw.json"
@@ -41,28 +43,6 @@ JUNK_PATTERNS = [
 
 ROW_START_RE = re.compile(r"^(\d{3})\s+(\d{4})\s+(\d+)\s+(.*)$")
 ROW_END_RE = re.compile(r"^(.*?)\s*(\d{1,2}/\d{1,2}/\d{4})\s+([A-Z]+)\s+REDACTED.*$")
-
-
-def extract_stations(name: str):
-    """Same station-extraction heuristic as the DESC parser (see
-    parse_desc_pdf.py) so both utilities' project titles are handled
-    consistently."""
-    name2 = re.sub(r"[\x00-\x1f]", "", name)
-    name2 = re.sub(r"^[A-Z]{2,6}:\s*", "", name2)
-    name2 = re.sub(r"\d+(\.\d+)?\s*[/\-]\s*\d+(\.\d+)?\s*kv", " ", name2, flags=re.IGNORECASE)
-    m = re.search(r"\d+(\.\d+)?\s?kv", name2, flags=re.IGNORECASE)
-    route = name2[: m.start()] if m else name2
-    route = route.strip(" -–:,")
-    parts = re.split(r"\s*[-–]\s*", route)
-    parts = [re.sub(r"\s+", " ", p).strip() for p in parts if p.strip()]
-
-    def tidy(p):
-        p = re.split(r"[:,&]", p)[0].strip()
-        p = re.sub(r"\b(Sub|Substation|Tap|Line|Transmission)\b\.?$", "", p, flags=re.IGNORECASE).strip()
-        return p
-
-    parts = [tidy(p) for p in parts]
-    return [p for p in parts if len(p) > 1]
 
 
 def parse():

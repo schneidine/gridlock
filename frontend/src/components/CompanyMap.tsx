@@ -5,7 +5,7 @@ import type { Project } from "@/lib/types";
 
 // Leaflet touches `window` on import, so the map must never render on the
 // server -- ssr:false is required here, not just an optimization.
-const GridlockMap = dynamic(() => import("@/components/GridlockMap"), { ssr: false });
+const SentinelMap = dynamic(() => import("@/components/SentinelMap"), { ssr: false });
 
 export default function CompanyMap({
   projects,
@@ -18,5 +18,5 @@ export default function CompanyMap({
   // Both utilities' colors are meaningful here now -- a flagged overlap
   // pulls in the other company's counterpart project too -- so the legend
   // is left showing both, unlike the earlier own-projects-only view.
-  return <GridlockMap projects={projects} flagCountByProject={flagCountByProject} selectedOverlap={null} />;
+  return <SentinelMap projects={projects} flagCountByProject={flagCountByProject} selectedOverlap={null} />;
 }

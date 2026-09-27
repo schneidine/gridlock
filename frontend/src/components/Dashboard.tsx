@@ -5,10 +5,11 @@ import { useMemo, useState } from "react";
 import type { CostImpact, Overlap, PlannerNote, Project } from "@/lib/types";
 import OverlapList from "@/components/OverlapList";
 import CostImpactPanel from "@/components/CostImpactPanel";
+import { utilityStyle } from "@/lib/utilities";
 
 // Leaflet touches `window` on import, so the map must never render on the
 // server -- ssr:false is required here, not just an optimization.
-const GridlockMap = dynamic(() => import("@/components/GridlockMap"), { ssr: false });
+const SentinelMap = dynamic(() => import("@/components/SentinelMap"), { ssr: false });
 
 export default function Dashboard({
   projects,
@@ -42,6 +43,9 @@ export default function Dashboard({
     return counts;
   }, [overlaps]);
 
+  // No station could be found in public map data, so these are off the map and out of matching.
+  const unlocated = useMemo(() => projects.filter((p) => !p.geo_center), [projects]);
+
   const notesByOverlap = useMemo(() => {
     const map: Record<number, PlannerNote[]> = {};
     for (const n of notes) {
@@ -55,29 +59,45 @@ export default function Dashboard({
       ? { a: projectsById[selectedOverlap.project_id_a], b: projectsById[selectedOverlap.project_id_b] }
       : null;
 
-  const highPriorityCount = overlaps.filter(
-    (o) => o.tier === "touching_crossing" || o.tier === "share_land"
-  ).length;
+  // Pairs with something concrete to coordinate now: a shared substation or overlapping build windows.
+  const actionableCount = overlaps.filter((o) => o.tier !== "schedules_apart").length;
 
   return (
     <div className="grid grid-cols-[1fr_420px] grid-rows-[1fr] h-full">
       <div className="h-full w-full">
-        <GridlockMap projects={projects} flagCountByProject={flagCountByProject} selectedOverlap={selectedPair} />
+        <SentinelMap projects={projects} flagCountByProject={flagCountByProject} selectedOverlap={selectedPair} />
       </div>
-      <div className="border-l border-[var(--border)] bg-[var(--panel)] overflow-y-auto flex flex-col">
-        <div className="grid grid-cols-3 gap-px bg-[var(--border)] border-b border-[var(--border)]">
+      <div className="border-l border-[var(--border)] bg-[var(--panel)] overflow-hidden min-h-0 flex flex-col">
+        <div className="shrink-0 grid grid-cols-3 gap-px bg-[var(--border)] border-b border-[var(--border)]">
           <Stat n={projects.length} label="Projects" />
           <Stat n={overlaps.length} label="Flagged" />
-          <Stat n={highPriorityCount} label="High-priority" accent />
+          <Stat n={actionableCount} label="Actionable" accent />
         </div>
+        {unlocated.length > 0 && (
+          <details className="shrink-0 border-b border-[var(--border)] px-4 py-2 text-[11.5px] text-[var(--muted)]">
+            <summary className="cursor-pointer">
+              {unlocated.length} projects couldn&apos;t be located, so they aren&apos;t on the map or matched
+            </summary>
+            <ul className="mt-1.5 max-h-40 overflow-y-auto flex flex-col gap-0.5 pl-1">
+              {unlocated.map((p) => (
+                <li key={p.project_id} className="leading-snug">
+                  <span className="font-mono-tab text-[10px] mr-1.5">
+                    {utilityStyle(p.utility).short}
+                  </span>
+                  {p.title}
+                </li>
+              ))}
+            </ul>
+          </details>
+        )}
         {costImpact[0] && <CostImpactPanel ci={costImpact[0]} />}
-        <div className="px-4 pt-4 pb-2.5 flex flex-col gap-1">
+        <div className="shrink-0 px-4 pt-4 pb-2.5 flex flex-col gap-1">
           <h2 className="text-[12px] uppercase tracking-[0.08em] text-[var(--muted)] font-medium m-0">
             Coordination Opportunities
           </h2>
           <p className="text-[11.5px] text-[var(--muted)] leading-snug m-0">
-            Ranked by how close the projects are (tier), then how close their build schedules are, then exact
-            distance.
+            Ranked by distance between project centers (primary) and gap between in-service dates
+            (secondary). Tags show what each pair could share.
           </p>
         </div>
         <OverlapList

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { mockSignIn } from "@/app/actions/mock-auth";
 
 const ORG_OPTIONS = [
@@ -9,7 +10,13 @@ export default function LoginPage() {
   return (
     <div className="h-screen flex items-center justify-center bg-[var(--background)] px-4">
       <div className="w-full max-w-sm p-6 border border-[var(--border)] rounded-lg bg-[var(--panel)]">
-        <h1 className="text-lg font-semibold mb-1 tracking-tight">Sign in to Gridlock</h1>
+        <Link
+          href="/"
+          className="mb-4 text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors flex items-center gap-1"
+        >
+          ← Back
+        </Link>
+        <h1 className="text-lg font-semibold mb-1 tracking-tight">Sign in to Sentinel Utilities</h1>
         <p className="text-sm text-[var(--muted)] mb-5">
           Pick your company to see a dashboard focused on your own projects and the overlaps that involve you.
         </p>
