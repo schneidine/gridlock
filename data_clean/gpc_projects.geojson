@@ -1,0 +1,3397 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_2",
+    "utility": "Georgia Power",
+    "title": "MITCHELL - NORTH TIFTON 230KV RECONDUCTOR",
+    "in_service_date": "2025-05-01",
+    "zone": "216",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "18492",
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.133843,
+      31.447121
+     ],
+     [
+      -83.54913,
+      31.478089
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_2",
+    "utility": "Georgia Power",
+    "title": "MITCHELL - NORTH TIFTON 230KV RECONDUCTOR",
+    "in_service_date": "2025-05-01",
+    "zone": "216",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "18492",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.8414865,
+     31.462605
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_3",
+    "utility": "Georgia Power",
+    "title": "ADAMSVILLE - JACK MCDONOUGH 230KV LINE REBUILD",
+    "in_service_date": "2025-06-01",
+    "zone": "206",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "19676",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.505209,
+     33.7592737
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_4",
+    "utility": "Georgia Power",
+    "title": "ECHECONNEE-WELLSTON 115KV REBUILD",
+    "in_service_date": "2025-06-01",
+    "zone": "214",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "18800",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.700462,
+     32.6851436
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_5",
+    "utility": "Georgia Power",
+    "title": "GRID - BREMEN - CROOKED CREEK (APC) 115 KV PROJECT",
+    "in_service_date": "2025-06-01",
+    "zone": "211",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "19187",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -85.1427159,
+     33.7091924
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_6",
+    "utility": "Georgia Power",
+    "title": "JESUP - LUDOWICI PRIMARY 115KV REBUILD",
+    "in_service_date": "2025-06-01",
+    "zone": "218",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "11821",
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.924947,
+      31.603106
+     ],
+     [
+      -81.743703,
+      31.721597
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_6",
+    "utility": "Georgia Power",
+    "title": "JESUP - LUDOWICI PRIMARY 115KV REBUILD",
+    "in_service_date": "2025-06-01",
+    "zone": "218",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "11821",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.834325,
+     31.6623515
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_7",
+    "utility": "Georgia Power",
+    "title": "NORCROSS 230KV BUS 1-3 SERIES BUS TIE BREAKER INSTALLATION",
+    "in_service_date": "2025-06-01",
+    "zone": "202",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20464",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.2134303,
+     33.9325571
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_8",
+    "utility": "Georgia Power",
+    "title": "PINE GROVE PRIMARY 115 KV DUAL STAGE CAPACITOR BANK",
+    "in_service_date": "2025-06-01",
+    "zone": "216",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "19631",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.2279869,
+     30.8816485
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_9",
+    "utility": "Georgia Power",
+    "title": "SAV: DEPTFORD - MAGNOLIA 115KV RECONDUCTOR",
+    "in_service_date": "2025-06-01",
+    "zone": "219",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20067",
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.0483845,
+      32.0668279
+     ],
+     [
+      -81.0861807,
+      32.0226869
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_9",
+    "utility": "Georgia Power",
+    "title": "SAV: DEPTFORD - MAGNOLIA 115KV RECONDUCTOR",
+    "in_service_date": "2025-06-01",
+    "zone": "219",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20067",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.0672826,
+     32.044757399999995
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_12",
+    "utility": "Georgia Power",
+    "title": "VILLA RICA LOW SIDE BREAKER",
+    "in_service_date": "2025-06-01",
+    "zone": "211",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20431",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.8548652,
+     33.7410224
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_15",
+    "utility": "Georgia Power",
+    "title": "ANTHONY SHOALS STATCOM SYSTEM",
+    "in_service_date": "2025-12-31",
+    "zone": "212",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20326",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.6362788,
+     34.0018324
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_18",
+    "utility": "Georgia Power",
+    "title": "SAV: LITTLE OGEECHEE 230- 115KV: RELAY MODERNIZATION",
+    "in_service_date": "2025-12-31",
+    "zone": "219",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "17075",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.2531513,
+     32.0067859
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_20",
+    "utility": "Georgia Power",
+    "title": "ADAMSVILLE - BUZZARD ROOST 230KV REBUILD AND JUMPER UPGRADE",
+    "in_service_date": "2026-06-01",
+    "zone": "208",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "19597",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.505209,
+     33.7592737
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_21",
+    "utility": "Georgia Power",
+    "title": "BLANKETS CREEK \u2013 WOODSTOCK 115KV LINE REBUILD",
+    "in_service_date": "2026-06-01",
+    "zone": "201",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "18960",
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.5080123,
+      34.1857567
+     ],
+     [
+      -84.5134557,
+      34.0852701
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_21",
+    "utility": "Georgia Power",
+    "title": "BLANKETS CREEK \u2013 WOODSTOCK 115KV LINE REBUILD",
+    "in_service_date": "2026-06-01",
+    "zone": "201",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "18960",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.510734,
+     34.1355134
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_24",
+    "utility": "Georgia Power",
+    "title": "EAST POINT RELAY MODERNIZATION",
+    "in_service_date": "2026-06-01",
+    "zone": "208",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20491",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.4629659,
+     33.6763499
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_26",
+    "utility": "Georgia Power",
+    "title": "GOAT ROCK 230KV SWITCH, JUMPER, & LINE TRAP REPLACEMENT",
+    "in_service_date": "2026-06-01",
+    "zone": "213",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20516",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -85.0824629,
+     32.6082662
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_27",
+    "utility": "Georgia Power",
+    "title": "GORDON-N DUBLIN 115KV (GORDON-ENGL MCI J) REBUILD",
+    "in_service_date": "2026-06-01",
+    "zone": "214",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "19618",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.3169141,
+     32.8824706
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_28",
+    "utility": "Georgia Power",
+    "title": "GRADY - MORROW (WHITE) 115KV REBUILD",
+    "in_service_date": "2026-06-01",
+    "zone": "206",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "21139",
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.5635642,
+      32.9953281
+     ],
+     [
+      -84.3334617,
+      33.605931
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_28",
+    "utility": "Georgia Power",
+    "title": "GRADY - MORROW (WHITE) 115KV REBUILD",
+    "in_service_date": "2026-06-01",
+    "zone": "206",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "21139",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.94851295000001,
+     33.30062955
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_29",
+    "utility": "Georgia Power",
+    "title": "GRADY 230/115KV RELAY MODERNIZATION",
+    "in_service_date": "2026-06-01",
+    "zone": "206",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20474",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.5635642,
+     32.9953281
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_30",
+    "utility": "Georgia Power",
+    "title": "GRID - GAINESVILLE #2 EQUIPMENT REPLACEMENT",
+    "in_service_date": "2026-06-01",
+    "zone": "212",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "19706",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.8096728,
+     34.263022
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_31",
+    "utility": "Georgia Power",
+    "title": "HAMMOND - WEISS DAM 115KV LINE REBUILD",
+    "in_service_date": "2026-06-01",
+    "zone": "211",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "19636",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -85.34558,
+     34.2512064
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_32",
+    "utility": "Georgia Power",
+    "title": "KATHLEEN AREA IMPROVEMENTS",
+    "in_service_date": "2026-06-01",
+    "zone": "214",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20512",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.6099696,
+     32.495294
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_33",
+    "utility": "Georgia Power",
+    "title": "KLONDIKE RELAY MODERNIZATION",
+    "in_service_date": "2026-06-01",
+    "zone": "206",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20490",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.124487,
+     33.6369768
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_34",
+    "utility": "Georgia Power",
+    "title": "MORROW 115KV RELAY UPGRADE",
+    "in_service_date": "2026-06-01",
+    "zone": "208",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20300",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.3334617,
+     33.605931
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_35",
+    "utility": "Georgia Power",
+    "title": "PALMYRA REACTOR REMOVAL",
+    "in_service_date": "2026-06-01",
+    "zone": "216",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "18690",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.1943534,
+     31.6376726
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_36",
+    "utility": "Georgia Power",
+    "title": "SAV: BOULEVARD - DEPTFORD 115KV RECONDUCTOR",
+    "in_service_date": "2026-06-01",
+    "zone": "219",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20066",
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.1444637,
+      32.0412308
+     ],
+     [
+      -81.0483845,
+      32.0668279
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_36",
+    "utility": "Georgia Power",
+    "title": "SAV: BOULEVARD - DEPTFORD 115KV RECONDUCTOR",
+    "in_service_date": "2026-06-01",
+    "zone": "219",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20066",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.09642410000001,
+     32.05402935
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_38",
+    "utility": "Georgia Power",
+    "title": "SAV: MCINTOSH - PURRYSBURG 230KV REACTORS",
+    "in_service_date": "2026-06-01",
+    "zone": "219",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20277",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.175112,
+     32.352116
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_39",
+    "utility": "Georgia Power",
+    "title": "SCOTTDALE RELAY MODERNIZATION",
+    "in_service_date": "2026-06-01",
+    "zone": "206",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20489",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.2640889,
+     33.7898269
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_40",
+    "utility": "Georgia Power",
+    "title": "UNION CITY - YATES 230 KV WHITE LINE REBUILD",
+    "in_service_date": "2026-04-01",
+    "zone": "208",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "17900",
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.5424299,
+      33.5870558
+     ],
+     [
+      -84.8949385,
+      33.463447
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_40",
+    "utility": "Georgia Power",
+    "title": "UNION CITY - YATES 230 KV WHITE LINE REBUILD",
+    "in_service_date": "2026-04-01",
+    "zone": "208",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "17900",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.7186842,
+     33.5252514
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_41",
+    "utility": "Georgia Power",
+    "title": "UNION CITY - YATES 230KV (WHITE) SWITCH AND TRAP REPLACEMENT",
+    "in_service_date": "2026-06-01",
+    "zone": "208",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20691",
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.5424299,
+      33.5870558
+     ],
+     [
+      -84.8949385,
+      33.463447
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_41",
+    "utility": "Georgia Power",
+    "title": "UNION CITY - YATES 230KV (WHITE) SWITCH AND TRAP REPLACEMENT",
+    "in_service_date": "2026-06-01",
+    "zone": "208",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20691",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.7186842,
+     33.5252514
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_43",
+    "utility": "Georgia Power",
+    "title": "OHARA BREAKER REPLACEMENT",
+    "in_service_date": "2026-10-01",
+    "zone": "208",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "21022",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.3673898,
+     33.4819007
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_46",
+    "utility": "Georgia Power",
+    "title": "GRADY-WEST END 115KV REBUILD",
+    "in_service_date": "2026-12-31",
+    "zone": "206",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "19287",
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.5635642,
+      32.9953281
+     ],
+     [
+      -84.4163167,
+      33.7381626
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_46",
+    "utility": "Georgia Power",
+    "title": "GRADY-WEST END 115KV REBUILD",
+    "in_service_date": "2026-12-31",
+    "zone": "206",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "19287",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.98994045,
+     33.36674535
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_47",
+    "utility": "Georgia Power",
+    "title": "MORROW - MOUNTAIN VIEW 115 KV REBUILD",
+    "in_service_date": "2026-12-31",
+    "zone": "208",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "19363",
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.3334617,
+      33.605931
+     ],
+     [
+      -84.3902038,
+      33.6417761
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_47",
+    "utility": "Georgia Power",
+    "title": "MORROW - MOUNTAIN VIEW 115 KV REBUILD",
+    "in_service_date": "2026-12-31",
+    "zone": "208",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "19363",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.36183274999999,
+     33.62385355
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_49",
+    "utility": "Georgia Power",
+    "title": "MORROW - YATES COMMON 115KV LINE UPGRADE",
+    "in_service_date": "2027-05-01",
+    "zone": "208",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "19601",
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.3334617,
+      33.605931
+     ],
+     [
+      -84.9041978,
+      33.4616412
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_49",
+    "utility": "Georgia Power",
+    "title": "MORROW - YATES COMMON 115KV LINE UPGRADE",
+    "in_service_date": "2027-05-01",
+    "zone": "208",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "19601",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.61882975,
+     33.5337861
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_50",
+    "utility": "Georgia Power",
+    "title": "POSSUM BRANCH - YATES COMMON 115KV REBUILD (YATES TO CLEM)",
+    "in_service_date": "2027-05-01",
+    "zone": "211",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "15879",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.9041978,
+     33.4616412
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_53",
+    "utility": "Georgia Power",
+    "title": "CC - SUMMER LAKE - VILLA RICA 230KV REBUILD (CC IMPROVMNT)",
+    "in_service_date": "2027-06-01",
+    "zone": "201",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20781",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.8548652,
+     33.7410224
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_55",
+    "utility": "Georgia Power",
+    "title": "DOYLE - LG&E MONROE 230KV - JACKS CREEK LOOP IN",
+    "in_service_date": "2027-06-01",
+    "zone": "212",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20234",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.698786,
+     33.8379245
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_56",
+    "utility": "Georgia Power",
+    "title": "JESUP - OFFERMAN 115KV REBUILD",
+    "in_service_date": "2027-06-01",
+    "zone": "218",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "18668",
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.924947,
+      31.603106
+     ],
+     [
+      -82.1436621,
+      31.4230725
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_56",
+    "utility": "Georgia Power",
+    "title": "JESUP - OFFERMAN 115KV REBUILD",
+    "in_service_date": "2027-06-01",
+    "zone": "218",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "18668",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.03430455,
+     31.51308925
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_57",
+    "utility": "Georgia Power",
+    "title": "LAWRENCEVILLE - WINDER 115KV LINE REBUILD",
+    "in_service_date": "2027-06-01",
+    "zone": "202",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "10143",
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.0198792,
+      33.9581487
+     ],
+     [
+      -83.7531307,
+      33.9954594
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_57",
+    "utility": "Georgia Power",
+    "title": "LAWRENCEVILLE - WINDER 115KV LINE REBUILD",
+    "in_service_date": "2027-06-01",
+    "zone": "202",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "10143",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.88650495,
+     33.97680405
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_58",
+    "utility": "Georgia Power",
+    "title": "LAWRENCEVILLE - WINDER PRIMARY 230KV LINE REBUILD",
+    "in_service_date": "2027-06-01",
+    "zone": "202",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "10481",
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.0198792,
+      33.9581487
+     ],
+     [
+      -83.7531307,
+      33.9954594
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_58",
+    "utility": "Georgia Power",
+    "title": "LAWRENCEVILLE - WINDER PRIMARY 230KV LINE REBUILD",
+    "in_service_date": "2027-06-01",
+    "zone": "202",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "10481",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.88650495,
+     33.97680405
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_59",
+    "utility": "Georgia Power",
+    "title": "SANDERSVILLE #1 - WADLEY PRI. 115KV REBUILD/RECONDUCTOR",
+    "in_service_date": "2027-06-01",
+    "zone": "214",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "19248",
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -82.8327291,
+      33.0018214
+     ],
+     [
+      -82.4158724,
+      32.8846571
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_59",
+    "utility": "Georgia Power",
+    "title": "SANDERSVILLE #1 - WADLEY PRI. 115KV REBUILD/RECONDUCTOR",
+    "in_service_date": "2027-06-01",
+    "zone": "214",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "19248",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.62430075,
+     32.94323925
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_60",
+    "utility": "Georgia Power",
+    "title": "SAV: GOSHEN (SAV) - KRAFT 115KV LINE REBUILD",
+    "in_service_date": "2027-06-01",
+    "zone": "219",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20785",
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.209472,
+      32.248701
+     ],
+     [
+      -81.1459835,
+      32.1481353
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_60",
+    "utility": "Georgia Power",
+    "title": "SAV: GOSHEN (SAV) - KRAFT 115KV LINE REBUILD",
+    "in_service_date": "2027-06-01",
+    "zone": "219",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20785",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.17772775,
+     32.198418149999995
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_61",
+    "utility": "Georgia Power",
+    "title": "SAV: GOSHEN (SAV) - MCINTOSH 115KV LINE REBUILD",
+    "in_service_date": "2027-06-01",
+    "zone": "219",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20065",
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.209472,
+      32.248701
+     ],
+     [
+      -81.175112,
+      32.352116
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_61",
+    "utility": "Georgia Power",
+    "title": "SAV: GOSHEN (SAV) - MCINTOSH 115KV LINE REBUILD",
+    "in_service_date": "2027-06-01",
+    "zone": "219",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20065",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.19229200000001,
+     32.3004085
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_63",
+    "utility": "Georgia Power",
+    "title": "GRID - ARKWRIGHT - LLOYD SHOALS 115KV",
+    "in_service_date": "2027-07-30",
+    "zone": "214",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "18573",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.698878,
+     32.9272219
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_64",
+    "utility": "Georgia Power",
+    "title": "ATHENA - EAST WATKINSVILLE 115 KV (REBUILD)",
+    "in_service_date": "2027-12-31",
+    "zone": "212",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "17977",
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.3461189,
+      33.9764031
+     ],
+     [
+      -83.3847649,
+      33.8605463
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_64",
+    "utility": "Georgia Power",
+    "title": "ATHENA - EAST WATKINSVILLE 115 KV (REBUILD)",
+    "in_service_date": "2027-12-31",
+    "zone": "212",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "17977",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.3654419,
+     33.918474700000004
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_67",
+    "utility": "Georgia Power",
+    "title": "AULTMAN ROAD-PERRY 115KV LINE REBUILD",
+    "in_service_date": "2028-06-01",
+    "zone": "214",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "19997",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.7020208,
+     32.4553814
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_68",
+    "utility": "Georgia Power",
+    "title": "CC - EAST VILLA RICA AREA SWITCHING STATION (CC IMPROVEMENT)",
+    "in_service_date": "2028-06-01",
+    "zone": "201",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20797",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.9595976,
+     33.7417954
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_69",
+    "utility": "Georgia Power",
+    "title": "CC - VILLA RICA UPGRADES (CC NETWORK IMPROVEMENTS)",
+    "in_service_date": "2028-06-01",
+    "zone": "211",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20774",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.8548652,
+     33.7410224
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_72",
+    "utility": "Georgia Power",
+    "title": "PITTMAN ROAD - WEST POINT DAM (USA) 115KV REBUILD",
+    "in_service_date": "2028-06-01",
+    "zone": "213",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20482",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -85.1903899,
+     32.9186235
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_73",
+    "utility": "Georgia Power",
+    "title": "PLANT YATES BREAKER AND HALF STATION",
+    "in_service_date": "2028-06-01",
+    "zone": "208",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20656",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.8949385,
+     33.463447
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_74",
+    "utility": "Georgia Power",
+    "title": "SAV: COLEMAN - DEAN FOREST 115KV LINE REBUILD",
+    "in_service_date": "2028-06-01",
+    "zone": "219",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20783",
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.116077,
+      32.0973197
+     ],
+     [
+      -81.1887223,
+      32.0835097
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_74",
+    "utility": "Georgia Power",
+    "title": "SAV: COLEMAN - DEAN FOREST 115KV LINE REBUILD",
+    "in_service_date": "2028-06-01",
+    "zone": "219",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20783",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.15239965,
+     32.0904147
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_75",
+    "utility": "Georgia Power",
+    "title": "SAV: MAGNOLIA - TRUMAN PARKWAY 115KV REBUILD",
+    "in_service_date": "2028-06-01",
+    "zone": "219",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20407",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.0861807,
+     32.0226869
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_77",
+    "utility": "Georgia Power",
+    "title": "SOUTH MACON 115KV BUSES 1 & 2 REPLACEMENT",
+    "in_service_date": "2028-06-01",
+    "zone": "214",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20768",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.6261978,
+     32.8203492
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_78",
+    "utility": "Georgia Power",
+    "title": "UNION CITY - YATES 230KV (BLACK) LINE REBUILD",
+    "in_service_date": "2028-06-01",
+    "zone": "208",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20274",
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.5424299,
+      33.5870558
+     ],
+     [
+      -84.8949385,
+      33.463447
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_78",
+    "utility": "Georgia Power",
+    "title": "UNION CITY - YATES 230KV (BLACK) LINE REBUILD",
+    "in_service_date": "2028-06-01",
+    "zone": "208",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20274",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.7186842,
+     33.5252514
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_80",
+    "utility": "Georgia Power",
+    "title": "ASHLEY PARK-WANSLEY 500KV",
+    "in_service_date": "2029-06-01",
+    "zone": "208",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "21062",
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.4768716,
+      33.5073355
+     ],
+     [
+      -85.030769,
+      33.4109556
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_80",
+    "utility": "Georgia Power",
+    "title": "ASHLEY PARK-WANSLEY 500KV",
+    "in_service_date": "2029-06-01",
+    "zone": "208",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "21062",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.7538203,
+     33.45914555
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_81",
+    "utility": "Georgia Power",
+    "title": "BLAKELY PRIMARY - HUCKLEBERRY 115KV REBUILD",
+    "in_service_date": "2029-06-01",
+    "zone": "216",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "10222",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.9059802,
+     31.371554
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_82",
+    "utility": "Georgia Power",
+    "title": "BROADWAY - ECHECONNEE 115 KV LINE REBUILD",
+    "in_service_date": "2029-06-01",
+    "zone": "214",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "21047",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.700462,
+     32.6851436
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_83",
+    "utility": "Georgia Power",
+    "title": "BUTLER - THOMASTON 230KV LINE CONVERSION",
+    "in_service_date": "2029-06-01",
+    "zone": "213",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "16887",
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.2897288,
+      32.5710217
+     ],
+     [
+      -84.3125168,
+      32.8999225
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_83",
+    "utility": "Georgia Power",
+    "title": "BUTLER - THOMASTON 230KV LINE CONVERSION",
+    "in_service_date": "2029-06-01",
+    "zone": "213",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "16887",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.3011228,
+     32.7354721
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_85",
+    "utility": "Georgia Power",
+    "title": "CONYERS - KLONDIKE 230 KV SECOND LINE",
+    "in_service_date": "2029-06-01",
+    "zone": "206",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "21142",
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.0176904,
+      33.6676103
+     ],
+     [
+      -84.124487,
+      33.6369768
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_85",
+    "utility": "Georgia Power",
+    "title": "CONYERS - KLONDIKE 230 KV SECOND LINE",
+    "in_service_date": "2029-06-01",
+    "zone": "206",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "21142",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.0710887,
+     33.652293549999996
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_86",
+    "utility": "Georgia Power",
+    "title": "GLENWOOD SPRINGS - PORTERDALE PRIMARY 230KV LINE SWITCH REPL",
+    "in_service_date": "2029-06-01",
+    "zone": "206",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "21138",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.8937954,
+     33.5751146
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_87",
+    "utility": "Georgia Power",
+    "title": "LLOYD SHOALS - PORTERDALE PRIMARY 115KV REBUILD",
+    "in_service_date": "2029-06-01",
+    "zone": "206",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "21141",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.8937954,
+     33.5751146
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_89",
+    "utility": "Georgia Power",
+    "title": "MCEVER ROAD - SHOAL CREEK 115KV REBUILD",
+    "in_service_date": "2029-06-01",
+    "zone": "212",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "19621",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.8738012,
+     34.2728832
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_90",
+    "utility": "Georgia Power",
+    "title": "MCMANUS - WEST BRUNSWICK 115KV REBUILD",
+    "in_service_date": "2029-06-01",
+    "zone": "218",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20346",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.5586568,
+     31.2799089
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_91",
+    "utility": "Georgia Power",
+    "title": "NORCROSS - NORTH DRUID HILLS 115KV REBUILD",
+    "in_service_date": "2029-06-01",
+    "zone": "202",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20757",
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.2134303,
+      33.9325571
+     ],
+     [
+      -84.3132574,
+      33.8167711
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_91",
+    "utility": "Georgia Power",
+    "title": "NORCROSS - NORTH DRUID HILLS 115KV REBUILD",
+    "in_service_date": "2029-06-01",
+    "zone": "202",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20757",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.26334385,
+     33.8746641
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_92",
+    "utility": "Georgia Power",
+    "title": "SAV: BOULEVARD - MAGNOLIA 115 KV LINE REBUILD",
+    "in_service_date": "2029-06-01",
+    "zone": "219",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "21006",
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.1444637,
+      32.0412308
+     ],
+     [
+      -81.0861807,
+      32.0226869
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_92",
+    "utility": "Georgia Power",
+    "title": "SAV: BOULEVARD - MAGNOLIA 115 KV LINE REBUILD",
+    "in_service_date": "2029-06-01",
+    "zone": "219",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "21006",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.11532220000001,
+     32.031958849999995
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_93",
+    "utility": "Georgia Power",
+    "title": "SAV: DEAN FOREST - LITTLE OGEECHEE 230 KV REBUILD",
+    "in_service_date": "2029-06-01",
+    "zone": "219",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "21023",
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.1887223,
+      32.0835097
+     ],
+     [
+      -81.2531513,
+      32.0067859
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_93",
+    "utility": "Georgia Power",
+    "title": "SAV: DEAN FOREST - LITTLE OGEECHEE 230 KV REBUILD",
+    "in_service_date": "2029-06-01",
+    "zone": "219",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "21023",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.2209368,
+     32.045147799999995
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_95",
+    "utility": "Georgia Power",
+    "title": "SOUTH BAINBRIDGE - SINAI (FPL) 115KV LINE RECONDUCTOR",
+    "in_service_date": "2029-06-01",
+    "zone": "216",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "13628",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.4889211,
+     30.8396079
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_96",
+    "utility": "Georgia Power",
+    "title": "BAY CREEK - CONYERS 230KV REBUILD",
+    "in_service_date": "2029-12-31",
+    "zone": "202",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20248",
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.8823506,
+      33.8681196
+     ],
+     [
+      -84.0176904,
+      33.6676103
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_96",
+    "utility": "Georgia Power",
+    "title": "BAY CREEK - CONYERS 230KV REBUILD",
+    "in_service_date": "2029-12-31",
+    "zone": "202",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20248",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.9500205,
+     33.76786495
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_97",
+    "utility": "Georgia Power",
+    "title": "ANNISTON - HAMMOND 230KV LINE",
+    "in_service_date": "2030-06-01",
+    "zone": "211",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "21129",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -85.34558,
+     34.2512064
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_101",
+    "utility": "Georgia Power",
+    "title": "CORNELIA - TALLULAH LODGE 115KV REBUILD",
+    "in_service_date": "2030-06-01",
+    "zone": "212",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "10478",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.5271166,
+     34.5114883
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_102",
+    "utility": "Georgia Power",
+    "title": "EAST POINT - TRIBUTARY 230KV REBUILD",
+    "in_service_date": "2030-06-01",
+    "zone": "201",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "21097",
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.4629659,
+      33.6763499
+     ],
+     [
+      -84.6426467,
+      33.7129313
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_102",
+    "utility": "Georgia Power",
+    "title": "EAST POINT - TRIBUTARY 230KV REBUILD",
+    "in_service_date": "2030-06-01",
+    "zone": "201",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "21097",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.5528063,
+     33.6946406
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_103",
+    "utility": "Georgia Power",
+    "title": "EAST POINT - UNION CITY 230KV BLACK LINE RECONDUCTOR",
+    "in_service_date": "2030-06-01",
+    "zone": "208",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20480",
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.4629659,
+      33.6763499
+     ],
+     [
+      -84.5424299,
+      33.5870558
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_103",
+    "utility": "Georgia Power",
+    "title": "EAST POINT - UNION CITY 230KV BLACK LINE RECONDUCTOR",
+    "in_service_date": "2030-06-01",
+    "zone": "208",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20480",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.5026979,
+     33.631702849999996
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_104",
+    "utility": "Georgia Power",
+    "title": "ECHECONNEE-WELLSTON 115KV LINE REBUILD",
+    "in_service_date": "2030-06-01",
+    "zone": "214",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "19627",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.700462,
+     32.6851436
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_106",
+    "utility": "Georgia Power",
+    "title": "GAINESVILLE #2 - MCEVER ROAD 115 KV REBUILD",
+    "in_service_date": "2030-06-01",
+    "zone": "212",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "12120",
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.8096728,
+      34.263022
+     ],
+     [
+      -83.8738012,
+      34.2728832
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_106",
+    "utility": "Georgia Power",
+    "title": "GAINESVILLE #2 - MCEVER ROAD 115 KV REBUILD",
+    "in_service_date": "2030-06-01",
+    "zone": "212",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "12120",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.841737,
+     34.2679526
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_107",
+    "utility": "Georgia Power",
+    "title": "GLENWOOD SPRINGS - LAKE OCONEE 115KV LINE REBUILD",
+    "in_service_date": "2030-06-01",
+    "zone": "214",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20298",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.247451,
+     33.4595297
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_108",
+    "utility": "Georgia Power",
+    "title": "GOAT ROCK REACTORS INSTALLATION",
+    "in_service_date": "2030-06-01",
+    "zone": "213",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "21128",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -85.0824629,
+     32.6082662
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_109",
+    "utility": "Georgia Power",
+    "title": "GOLDENS CREEK - WARRENTON PRIMARY 230KV REBUILD",
+    "in_service_date": "2030-06-01",
+    "zone": "215",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "19996",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.6708417,
+     33.4064479
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_110",
+    "utility": "Georgia Power",
+    "title": "GORDON-SANDERSVILLE #1 115KV LINE REBUILD (DEEPSTEP-SAND #6)",
+    "in_service_date": "2030-06-01",
+    "zone": "214",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20428",
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.3169141,
+      32.8824706
+     ],
+     [
+      -82.8327291,
+      33.0018214
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_110",
+    "utility": "Georgia Power",
+    "title": "GORDON-SANDERSVILLE #1 115KV LINE REBUILD (DEEPSTEP-SAND #6)",
+    "in_service_date": "2030-06-01",
+    "zone": "214",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20428",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.0748216,
+     32.942145999999994
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_111",
+    "utility": "Georgia Power",
+    "title": "GOSHEN AREA STRATEGIC SOLUTION",
+    "in_service_date": "2030-06-01",
+    "zone": "215",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "21116",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.9953118,
+     33.3197599
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_112",
+    "utility": "Georgia Power",
+    "title": "JEFFERSON ROAD - WINDER PRIMARY 115KV REBUILD",
+    "in_service_date": "2030-06-01",
+    "zone": "212",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20789",
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.5794808,
+      33.977796
+     ],
+     [
+      -83.7578307,
+      34.023516
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_112",
+    "utility": "Georgia Power",
+    "title": "JEFFERSON ROAD - WINDER PRIMARY 115KV REBUILD",
+    "in_service_date": "2030-06-01",
+    "zone": "212",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20789",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.66865575,
+     34.000656
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_113",
+    "utility": "Georgia Power",
+    "title": "KETTLE CREEK PRIMARY - PINE GROVE PRIMARY 115KV REBUILD",
+    "in_service_date": "2030-06-01",
+    "zone": "216",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20284",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.2279869,
+     30.8816485
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_114",
+    "utility": "Georgia Power",
+    "title": "NEW CAVENDER DRIVE - TRIBUTARY 230KV LINE",
+    "in_service_date": "2030-06-01",
+    "zone": "201",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20857",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.6426467,
+     33.7129313
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_116",
+    "utility": "Georgia Power",
+    "title": "TALLULAH LODGE - TOCCOA 115 KV REBUILD",
+    "in_service_date": "2030-06-01",
+    "zone": "212",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "19995",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.3527341,
+     34.5809462
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_117",
+    "utility": "Georgia Power",
+    "title": "TRIBUTARY - THORNTON RD 230KV REBUILD",
+    "in_service_date": "2030-06-01",
+    "zone": "201",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "21098",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.6426467,
+     33.7129313
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_118",
+    "utility": "Georgia Power",
+    "title": "THOMASTON 230 NEW BUILD SUB",
+    "in_service_date": "2030-11-01",
+    "zone": "213",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20160",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.3125168,
+     32.8999225
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_119",
+    "utility": "Georgia Power",
+    "title": "BAINBRIDGE TRANSMISSION: EAST RIVER ROAD, EAST BAINBRIDGE",
+    "in_service_date": "2030-12-31",
+    "zone": "216",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "18848",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.5669923,
+     30.9125521
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_121",
+    "utility": "Georgia Power",
+    "title": "EAST POINT - UNION CITY (WHITE) 230KV REBUILD",
+    "in_service_date": "2031-05-01",
+    "zone": "208",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20690",
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.4629659,
+      33.6763499
+     ],
+     [
+      -84.5424299,
+      33.5870558
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_121",
+    "utility": "Georgia Power",
+    "title": "EAST POINT - UNION CITY (WHITE) 230KV REBUILD",
+    "in_service_date": "2031-05-01",
+    "zone": "208",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20690",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.5026979,
+     33.631702849999996
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_122",
+    "utility": "Georgia Power",
+    "title": "AVERY - HOPEWELL 115KV RECONDUCTOR",
+    "in_service_date": "2031-06-01",
+    "zone": "202",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "19632",
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.3857643,
+      34.2169889
+     ],
+     [
+      -84.2834055,
+      34.1741923
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_122",
+    "utility": "Georgia Power",
+    "title": "AVERY - HOPEWELL 115KV RECONDUCTOR",
+    "in_service_date": "2031-06-01",
+    "zone": "202",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "19632",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.33458490000001,
+     34.1955906
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_124",
+    "utility": "Georgia Power",
+    "title": "HATCH - WADLEY 500 KV LINE STRATEGIC PROJECT",
+    "in_service_date": "2031-06-01",
+    "zone": "215",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20756",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.4158724,
+     32.8846571
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_125",
+    "utility": "Georgia Power",
+    "title": "SAV: COLEMAN - MELDRIM 115KV LINE REBUILD",
+    "in_service_date": "2032-06-01",
+    "zone": "219",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20784",
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.116077,
+      32.0973197
+     ],
+     [
+      -81.368377,
+      32.1552821
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_125",
+    "utility": "Georgia Power",
+    "title": "SAV: COLEMAN - MELDRIM 115KV LINE REBUILD",
+    "in_service_date": "2032-06-01",
+    "zone": "219",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20784",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.242227,
+     32.126300900000004
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_126",
+    "utility": "Georgia Power",
+    "title": "ARKWRIGHT BUS AND JUMPER REPLACEMENT",
+    "in_service_date": "2033-06-01",
+    "zone": "214",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20767",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.698878,
+     32.9272219
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_127",
+    "utility": "Georgia Power",
+    "title": "BAY CREEK - CONYERS 230KV LIMITING ELEMENT REPLACEMENT",
+    "in_service_date": "2033-06-01",
+    "zone": "202",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20758",
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.8823506,
+      33.8681196
+     ],
+     [
+      -84.0176904,
+      33.6676103
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_127",
+    "utility": "Georgia Power",
+    "title": "BAY CREEK - CONYERS 230KV LIMITING ELEMENT REPLACEMENT",
+    "in_service_date": "2033-06-01",
+    "zone": "202",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20758",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.9500205,
+     33.76786495
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_128",
+    "utility": "Georgia Power",
+    "title": "EVANS PRIMARY - THURMOND DAM (USA) #5 115KV REBUILD",
+    "in_service_date": "2033-06-01",
+    "zone": "215",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20793",
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -82.168648,
+      33.543994
+     ],
+     [
+      -82.195931,
+      33.660127
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_128",
+    "utility": "Georgia Power",
+    "title": "EVANS PRIMARY - THURMOND DAM (USA) #5 115KV REBUILD",
+    "in_service_date": "2033-06-01",
+    "zone": "215",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20793",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.1822895,
+     33.6020605
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_129",
+    "utility": "Georgia Power",
+    "title": "EVANS PRIMARY - THURMOND DAM (USA) #6 115KV REBUILD",
+    "in_service_date": "2033-06-01",
+    "zone": "215",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20794",
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -82.168648,
+      33.543994
+     ],
+     [
+      -82.195931,
+      33.660127
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_129",
+    "utility": "Georgia Power",
+    "title": "EVANS PRIMARY - THURMOND DAM (USA) #6 115KV REBUILD",
+    "in_service_date": "2033-06-01",
+    "zone": "215",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20794",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.1822895,
+     33.6020605
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_130",
+    "utility": "Georgia Power",
+    "title": "MCEVER ROAD - SHOAL CREEK 115KV REBUILD PHASE III",
+    "in_service_date": "2033-06-01",
+    "zone": "212",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "21053",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.8738012,
+     34.2728832
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_131",
+    "utility": "Georgia Power",
+    "title": "MCGRAU FORD - MIDDLE FORK 500KV LINE PROJECT",
+    "in_service_date": "2033-06-01",
+    "zone": "212",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "09661",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.3370065,
+     34.3264526
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_132",
+    "utility": "Georgia Power",
+    "title": "SAV: MELDRIM BANK D REPLACEMENT",
+    "in_service_date": "2033-06-01",
+    "zone": "219",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20796",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.368377,
+     32.1552821
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_133",
+    "utility": "Georgia Power",
+    "title": "THOMSON PRIMARY 230/115KV SECOND TRANSFORMER",
+    "in_service_date": "2033-06-01",
+    "zone": "215",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "14222",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.414219,
+     33.453955
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_134",
+    "utility": "Georgia Power",
+    "title": "WINDER PRIMARY 230KV BUS 1-2 PARALLEL BUS-TIE INSTALLATION",
+    "in_service_date": "2033-06-01",
+    "zone": "202",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20759",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.7531307,
+     33.9954594
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_135",
+    "utility": "Georgia Power",
+    "title": "PINE GROVE PRIMARY - WEST VALDOSTA 115 KV RECONDUCTOR",
+    "in_service_date": "2033-12-31",
+    "zone": "216",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "10487",
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.2279869,
+      30.8816485
+     ],
+     [
+      -83.2543359,
+      30.846057
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_135",
+    "utility": "Georgia Power",
+    "title": "PINE GROVE PRIMARY - WEST VALDOSTA 115 KV RECONDUCTOR",
+    "in_service_date": "2033-12-31",
+    "zone": "216",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "10487",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.24116140000001,
+     30.86385275
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_136",
+    "utility": "Georgia Power",
+    "title": "DAWSON CROSSING - GAINESVILLE #1 115 KV",
+    "in_service_date": "2034-06-01",
+    "zone": "212",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "18700",
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.1335754,
+      34.3781185
+     ],
+     [
+      -83.8096728,
+      34.263022
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_136",
+    "utility": "Georgia Power",
+    "title": "DAWSON CROSSING - GAINESVILLE #1 115 KV",
+    "in_service_date": "2034-06-01",
+    "zone": "212",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "18700",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.9716241,
+     34.32057025
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_137",
+    "utility": "Georgia Power",
+    "title": "SAV: LITTLE OGEECHEE 230/115KV BANK REPLACEMENT",
+    "in_service_date": "2034-06-01",
+    "zone": "219",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20787",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.2531513,
+     32.0067859
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_138",
+    "utility": "Georgia Power",
+    "title": "EVANS PRIMARY - THOMSON PRIMARY 115KV REBUILD",
+    "in_service_date": "2034-12-31",
+    "zone": "215",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "17993",
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -82.168648,
+      33.543994
+     ],
+     [
+      -82.414219,
+      33.453955
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_138",
+    "utility": "Georgia Power",
+    "title": "EVANS PRIMARY - THOMSON PRIMARY 115KV REBUILD",
+    "in_service_date": "2034-12-31",
+    "zone": "215",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "17993",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.29143350000001,
+     33.4989745
+    ]
+   }
+  }
+ ]
+}

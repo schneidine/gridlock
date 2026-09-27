@@ -69,12 +69,15 @@ def parse():
             date = lines[idx_date + 1].strip()
 
             # cost table: header row then a values row; Total is the last $ figure
+            header = lines[idx_cost + 1].replace("*", "").split()
             values_line = lines[idx_cost + 2]
             dollar_amounts = re.findall(r"\$[\d,]+", values_line)
             total_cost_raw = dollar_amounts[-1] if dollar_amounts else None
             total_cost_usd = (
                 int(total_cost_raw.replace("$", "").replace(",", "")) if total_cost_raw else None
             )
+            yearly_raw = dict(zip(header[:-1], dollar_amounts[:-1]))
+            yearly, flags = validate_costs(yearly_raw, total_cost_usd)
 
             projects.append(
                 {
@@ -86,10 +89,61 @@ def parse():
                     "in_service_date": date,
                     "total_cost_raw": total_cost_raw,
                     "total_cost_usd": total_cost_usd,
+                    "yearly_cost_raw": yearly_raw,
+                    "yearly_cost_usd": yearly,
                     "stations": extract_stations(title),
+                    "data_quality_flags": flags,
                 }
             )
+
+    # same endpoints, different scope (e.g. 6809 E vs 6809 G) -- keep both, but say so
+    by_route = {}
+    for p in projects:
+        by_route.setdefault(tuple(p["stations"]), []).append(p["project_id_raw"])
+    for p in projects:
+        twins = [t for t in by_route[tuple(p["stations"])] if t != p["project_id_raw"]]
+        if twins:
+            p["data_quality_flags"].append(
+                f"same named endpoints as project {', '.join(twins)} (different scope/ID) -- kept as separate rows"
+            )
     return projects
+
+
+WELL_FORMED = re.compile(r"^\$\d{1,3}(,\d{3})*$")
+
+
+def validate_costs(yearly_raw, total):
+    """Parse the yearly cost cells and cross-check them against the listed total.
+
+    Catches malformed thousands grouping (e.g. "$19,00,181") and repairs it only
+    when the total pins down the value exactly; otherwise it just flags.
+    """
+    flags = []
+    yearly = {}
+    bad = []
+    for year, raw in yearly_raw.items():
+        yearly[year] = int(raw.replace("$", "").replace(",", ""))
+        if not WELL_FORMED.match(raw):
+            bad.append(year)
+    if total is None:
+        return yearly, ["no total cost parsed"]
+    if len(bad) == 1:
+        year = bad[0]
+        implied = total - sum(v for y, v in yearly.items() if y != year)
+        flags.append(
+            f"malformed cost cell {year}={yearly_raw[year]}; repaired to ${implied:,} "
+            f"(the only value consistent with the listed total ${total:,})"
+        )
+        yearly[year] = implied
+    elif bad:
+        flags.append(f"malformed cost cells {bad}; not repaired")
+    diff = total - sum(yearly.values())
+    if diff:
+        flags.append(
+            f"yearly figures sum to ${sum(yearly.values()):,} but listed total is ${total:,} "
+            f"(${diff:,} unaccounted for, likely spend beyond the 5-year window); listed total kept"
+        )
+    return yearly, flags
 
 
 def main():
@@ -100,6 +154,9 @@ def main():
     missing_cost = [p for p in projects if p["total_cost_usd"] is None]
     if missing_cost:
         print(f"WARNING: {len(missing_cost)} projects missing a parsed cost")
+    for i, p in enumerate(projects, 1):
+        for f in p["data_quality_flags"]:
+            print(f"  DESC project {i} ({p['project_id_raw']}): {f}")
 
 
 if __name__ == "__main__":
