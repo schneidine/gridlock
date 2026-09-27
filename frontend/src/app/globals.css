@@ -2,16 +2,17 @@
 @import "leaflet/dist/leaflet.css";
 
 :root {
-  /* Base surfaces -- a control-room dark, not a generic SaaS-dashboard dark:
-     the panel tones lean slightly blue-slate rather than pure neutral grey. */
-  --background: #0a0e1a;
-  --panel: #101524;
-  --panel-2: #161c33;
-  --panel-3: #1c2340;
-  --foreground: #e7e9f3;
-  --muted: #8890ac;
-  --border: #262d4c;
-  --border-strong: #3a4372;
+  /* Base surfaces -- a control-room dark in neutral greys. Light mode below
+     redefines the same tokens; the toggle sets data-theme on <html>. */
+  color-scheme: dark;
+  --background: #0e0f11;
+  --panel: #16171a;
+  --panel-2: #1d1f23;
+  --panel-3: #25272c;
+  --foreground: #e8e8ea;
+  --muted: #8e9098;
+  --border: #2b2d33;
+  --border-strong: #43464e;
 
   /* Interactive accent -- copper/amber, deliberately distinct from the
      semantic utility and tier colors below so it never competes with them. */
@@ -28,8 +29,37 @@
   --tier-logistics: #eab308;
   --tier-crews: #84cc16;
 
+  /* Map "in a flagged overlap" ring and popup flag text. */
+  --flag: #facc15;
+  /* How strongly semantic colors are used as text: full strength on dark
+     surfaces, mixed toward black on light ones so amber/lime stay readable. */
+  --ink-strength: 100%;
+  --popup-shadow: rgba(0, 0, 0, 0.45);
+
   --font-sans: var(--font-plex-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, Helvetica, sans-serif;
   --font-mono: var(--font-plex-mono), ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --background: #f4f4f5;
+  --panel: #ffffff;
+  --panel-2: #f6f6f7;
+  --panel-3: #e8e8eb;
+  --foreground: #18181b;
+  --muted: #62646c;
+  --border: #e1e1e5;
+  --border-strong: #c9cad0;
+
+  --accent: #c2621f;
+  --accent-strong: #a8521a;
+
+  --desc-color: #2563eb;
+  --gpc-color: #c2410c;
+
+  --flag: #b45309;
+  --ink-strength: 62%;
+  --popup-shadow: rgba(0, 0, 0, 0.15);
 }
 
 @theme inline {
@@ -54,17 +84,21 @@ body {
   font-family: var(--font-sans);
 }
 
-/* OpenStreetMap only serves light tiles; invert them into a dark basemap.
+/* OpenStreetMap only serves light tiles; invert them into a grey dark basemap.
    Applied to the tile layer alone so project markers keep their true colors. */
-.gl-dark-tiles {
-  filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9) saturate(0.4);
+:root:not([data-theme="light"]) .gl-dark-tiles {
+  filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9) saturate(0.12);
+}
+/* Light mode keeps OSM's own colors, muted a little so the markers stand out. */
+[data-theme="light"] .gl-dark-tiles {
+  filter: saturate(0.55);
 }
 .leaflet-popup-content-wrapper,
 .leaflet-popup-tip {
   background: var(--panel-2);
   color: var(--foreground);
   border: 1px solid var(--border-strong);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 8px 24px var(--popup-shadow);
 }
 .leaflet-popup-content-wrapper {
   border-radius: 8px;
@@ -87,7 +121,7 @@ body {
 }
 .gl-popup-flag {
   margin-top: 4px;
-  color: #facc15;
+  color: var(--flag);
   font-weight: 500;
 }
 .gl-popup-conf {
@@ -100,7 +134,14 @@ body {
   font-size: 10.5px;
   color: var(--muted);
 }
-.leaflet-control-zoom a {
+.gl-theme-toggle {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+/* Zoom +/- and the theme toggle share Leaflet's .leaflet-bar button styling. */
+.leaflet-bar a {
   background: var(--panel) !important;
   color: var(--foreground) !important;
   border-color: var(--border) !important;

@@ -71,7 +71,7 @@ export default function OverlapList({
               className="text-[11px] font-medium px-2.5 py-1 rounded-full border transition-colors"
               style={
                 active
-                  ? { borderColor: color, background: `color-mix(in srgb, ${color} 12%, transparent)`, color }
+                  ? { borderColor: color, background: `color-mix(in srgb, ${color} 12%, transparent)`, color: inkColor(color) }
                   : { borderColor: "var(--border)", background: "var(--panel-2)", color: "var(--muted)" }
               }
             >
@@ -120,7 +120,7 @@ export default function OverlapList({
                   </div>
                   <span
                     className="text-[10px] px-2 py-0.5 rounded-full font-semibold uppercase tracking-wide"
-                    style={{ background: `${TIER_COLOR[o.tier]}22`, color: TIER_COLOR[o.tier] }}
+                    style={{ background: `${TIER_COLOR[o.tier]}22`, color: inkColor(TIER_COLOR[o.tier]) }}
                   >
                     {TIER_LABEL[o.tier]}
                   </span>
