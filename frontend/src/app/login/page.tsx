@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 
 export default function LoginPage() {
+  const router = useRouter();
   const [email, setEmail] = useState("");
   const [sent, setSent] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -29,6 +31,13 @@ export default function LoginPage() {
   return (
     <div className="h-screen flex items-center justify-center bg-[var(--background)] px-4">
       <div className="w-full max-w-sm p-6 border border-[var(--border)] rounded-lg bg-[var(--panel)]">
+        <button
+          type="button"
+          onClick={() => router.back()}
+          className="mb-4 text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors flex items-center gap-1"
+        >
+          ← Back
+        </button>
         <h1 className="text-lg font-semibold mb-1 tracking-tight">Sign in to Gridlock</h1>
         <p className="text-sm text-[var(--muted)] mb-5">
           Sign in to leave coordination notes on flagged overlaps. Viewing the map and ranked list needs no
