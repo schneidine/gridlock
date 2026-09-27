@@ -6,6 +6,7 @@ import { Fragment, useEffect, useLayoutEffect, useState, type ReactNode } from "
 import { createPortal } from "react-dom";
 import type { Project } from "@/lib/types";
 import { UTILITIES, utilityStyle } from "@/lib/utilities";
+import { setTheme, storedTheme, useTheme } from "@/lib/theme";
 
 // Leaflet renders these as raw SVG presentation attributes, not through the
 // CSS cascade, so we use literal hex values here rather than var(--x) --

@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import type { Confidence, Overlap, PlannerNote, Project, Tier } from "@/lib/types";
 import { TIER_COLOR, TIER_LABEL, overlapScore } from "@/lib/types";
 import { utilityStyle } from "@/lib/utilities";
+import { inkColor } from "@/lib/theme";
 import NoteThread from "@/components/NoteThread";
 import InsightPanel from "@/components/InsightPanel";
 

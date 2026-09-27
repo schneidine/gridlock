@@ -29,7 +29,7 @@ export default async function Home() {
           <div>
             <h1 className="text-[16px] font-semibold m-0 tracking-tight">Sentinel Utilities</h1>
             <div className="text-[12px] text-[var(--muted)] leading-tight">
-              {Object.keys(UTILITIES).join(" \u00d7 ")} &mdash; construction coordination
+              Coordinating planned transmission work across neighboring utilities
             </div>
           </div>
         </div>
