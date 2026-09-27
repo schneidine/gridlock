@@ -25,6 +25,28 @@ web/                    static Leaflet demo, reads the JSON directly (open web/i
 
 ## Running it
 
+### Quick start
+
+`run.sh` at the repo root does everything in one command:
+
+```bash
+./run.sh            # Next.js + Supabase dashboard -> http://localhost:3000
+./run.sh web        # static Leaflet demo          -> http://localhost:8000
+./run.sh pipeline   # only build the dataset JSON
+```
+
+It creates `.venv` and installs the Python requirements. If the dataset JSON in
+`backend/data_clean/` is missing, it runs the pipeline to build it. Then it
+starts the mode you chose. In `app` mode it also runs `npm install` when needed
+and seeds Supabase before running `npm run dev`. App mode needs
+`frontend/.env.local`; see `frontend/README.md` for how to create it.
+
+Flags:
+- `--rebuild` re-runs the pipeline even when its output already exists.
+- `--no-seed` skips seeding Supabase in app mode.
+
+### Manual steps
+
 ```bash
 cd backend
 pip install -r requirements.txt
