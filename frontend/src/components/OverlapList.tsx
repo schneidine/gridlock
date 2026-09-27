@@ -2,24 +2,23 @@
 
 import { useMemo, useState } from "react";
 import type { Confidence, Overlap, PlannerNote, Project, Tier } from "@/lib/types";
-import { TIER_COLOR, TIER_LABEL, TIER_ORDER } from "@/lib/types";
+import { TIER_COLOR, TIER_LABEL, overlapScore } from "@/lib/types";
 import NoteThread from "@/components/NoteThread";
 import InsightPanel from "@/components/InsightPanel";
 
-const TIERS: (Tier | "all")[] = ["all", "touching_crossing", "share_land", "share_logistics", "share_crews"];
+const TIERS: (Tier | "all")[] = ["all", "shared_substation", "same_window", "schedules_apart"];
 
-const CONF_RANK: Record<Confidence, number> = { confirmed: 0, estimated: 1, region_only: 2 };
+const CONF_RANK: Record<Confidence, number> = { confirmed: 0, low_confidence: 1 };
 
 // A pair is only as trustworthy as its least-certain location, so flag the
 // weaker of the two. Confirmed pairs get no tag to keep the list quiet.
 const CONF_TAG: Partial<Record<Confidence, { label: string; title: string }>> = {
-  estimated: { label: "est. location", title: "At least one project's location is estimated, not confirmed on a map" },
-  region_only: { label: "approx. region", title: "At least one project is only placed by its region, so the distance is rough" },
+  low_confidence: { label: "est. location", title: "At least one project's location could not be fully confirmed, so the distance is approximate" },
 };
 
 function weakerConfidence(a: Project, b: Project): Confidence {
-  const ca = a.geo_confidence ?? "region_only";
-  const cb = b.geo_confidence ?? "region_only";
+  const ca = a.geo_confidence ?? "low_confidence";
+  const cb = b.geo_confidence ?? "low_confidence";
   return CONF_RANK[ca] >= CONF_RANK[cb] ? ca : cb;
 }
 
@@ -43,17 +42,12 @@ export default function OverlapList({
   const [expandedId, setExpandedId] = useState<number | null>(null);
   const [insightId, setInsightId] = useState<number | null>(null);
 
-  // Rank over the full list (tier, then build-date gap, then distance) so a
-  // pair keeps its rank number when the tier filter is applied.
+  // Rank over the full list by the pipeline's score so a pair keeps its rank
+  // number when a category filter is applied.
   const ranked = useMemo(
     () =>
       [...overlaps]
-        .sort(
-          (x, y) =>
-            TIER_ORDER[x.tier] - TIER_ORDER[y.tier] ||
-            (x.day_gap ?? Infinity) - (y.day_gap ?? Infinity) ||
-            x.distance_km - y.distance_km
-        )
+        .sort((x, y) => overlapScore(y) - overlapScore(x) || x.distance_km - y.distance_km)
         .map((o, i) => ({ o, rank: i + 1 })),
     [overlaps]
   );

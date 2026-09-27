@@ -14,7 +14,9 @@ Pipeline for every named endpoint (substation) in a project title:
 
 Then each match is validated:
 
-  - name score        exact-ish (>= 95) vs fuzzy (88-95)
+  - name score        exact-ish (>= 95) vs fuzzy (88-95); a fuzzy name must be the
+                      same name up to one typo, not a different word ("Gray" for
+                      "Grady", "East Valdosta" for "West Valdosta")
   - operator          OSM operator tag belongs to the right utility
   - ambiguity         several same-named substations -> pick by context and say so
   - zone (GPC)        match must sit near the other confirmed stations in the
@@ -35,6 +37,7 @@ from pathlib import Path
 
 import requests
 from rapidfuzz import fuzz
+from rapidfuzz.distance import Levenshtein
 
 ROOT = Path(__file__).parent.parent
 OSM_DIR = ROOT / "data_raw" / "osm"
@@ -118,8 +121,16 @@ def normalize(name: str) -> str:
         s = re.sub(pat, " ", s)
     s = re.sub(r"\bst\b\.?", "st", s)
     s = re.sub(r"\bft\b\.?", "fort", s)
+    s = re.sub(r"\brd\b\.?", "road", s)
     s = re.sub(r"[^a-z0-9 ]", " ", s)
     return re.sub(r"\s+", " ", s).strip()
+
+
+def typo_match(a, b):
+    """Same name up to one typo in a long name ("Hammod" for "Hammond", "O Hara" for "Ohara").
+    A changed short name or a changed word is a different substation, not a typo."""
+    a, b = a.replace(" ", ""), b.replace(" ", "")
+    return a == b or (min(len(a), len(b)) >= 6 and Levenshtein.distance(a, b) <= 1)
 
 
 def haversine_km(a, b):
@@ -258,7 +269,7 @@ class Geocoder:
             if not in_box(f["pt"], box):
                 continue
             score = fuzz.ratio(norm, f["norm"])
-            if score < FUZZY:
+            if score < FUZZY or not typo_match(norm, f["norm"]):
                 continue
             op = f["operator"].lower()
             op_ok = any(o in op for o in ops)
@@ -343,7 +354,7 @@ class Geocoder:
                 if kind == "place" and r.get("addresstype", r.get("type")) not in PLACE_TYPES:
                     continue
                 score = fuzz.ratio(norm, normalize(r.get("name", "")))
-                if score < FUZZY:
+                if score < FUZZY or not typo_match(norm, normalize(r.get("name", ""))):
                     continue
                 ep.update(pt=pt, source=f"Nominatim {kind}: {r.get('display_name', '')[:80]}")
                 ep["checks"]["name_score"] = round(score)
@@ -419,6 +430,12 @@ class Geocoder:
         return {z: len(v) for z, v in anchors.items()}
 
 
+def route_ends(eps):
+    """The project's two named sub-points: first and last real place (just one if it names one)."""
+    places = [e for e in eps if e["confidence"] != "not_a_place"]
+    return places[:1] + places[-1:] if len(places) > 1 else places
+
+
 def geocode_project(stations, utility, geocoder, zone=None):
     """Locate every endpoint, then compute the center point and project confidence."""
     eps = []
@@ -432,6 +449,16 @@ def geocode_project(stations, utility, geocoder, zone=None):
         span = max(haversine_km(a["pt"], b["pt"]) for a in located for b in located)
         if span > LINE_SPAN_KM:
             notes.append(f"endpoints are {span:.0f} km apart (> {LINE_SPAN_KM} km); at least one match is suspect")
+            # keep the ends backed by the organizer or the utility's own operator tag, drop the rest
+            strong = [e for e in located if e["checks"].get("organizer") or e["checks"].get("operator_ok")]
+            if strong and len(strong) < len(located):
+                for e in located:
+                    if e not in strong:
+                        e["notes"].append(f"REJECTED {e['source']}: too far from {strong[0]['name']} "
+                                          f"(operator-confirmed) to be part of the same project")
+                        e["rejected_source"], e["rejected_pt"] = e["source"], e["pt"]
+                        e.update(pt=None, source=None, confidence="rejected")
+                located = strong
             for e in located:
                 if e["confidence"] == "confirmed" and not e["checks"].get("organizer"):
                     e["confidence"] = "low_confidence"
@@ -439,7 +466,14 @@ def geocode_project(stations, utility, geocoder, zone=None):
         return {"endpoints": eps, "center": None, "confidence": "unlocated", "notes": notes}
 
     places = [e for e in eps if e["confidence"] != "not_a_place"]
-    center = (sum(e["pt"][0] for e in located) / len(located), sum(e["pt"][1] for e in located) / len(located))
+    # organizer guide: center = midpoint of the project's two named sub-points (one if only one is
+    # located). For an A - B - C route those are the two ends, A and C.
+    ends = route_ends(eps)
+    used = [e for e in ends if e["pt"]] or located
+    if len(places) > 2:
+        notes.append(f"{len(places)} named stations; center uses the route ends "
+                     f"{' and '.join(e['name'] for e in ends)} per the organizer guide")
+    center = (sum(e["pt"][0] for e in used) / len(used), sum(e["pt"][1] for e in used) / len(used))
     conf = "confirmed" if all(e["confidence"] == "confirmed" for e in located) else "low_confidence"
     if len(located) < len(places):
         notes.append(f"{len(located)} of {len(places)} endpoints located; center uses the located one(s) only")

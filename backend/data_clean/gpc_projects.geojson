@@ -264,6 +264,56 @@
   {
    "type": "Feature",
    "properties": {
+    "project_id": "GPC_11",
+    "utility": "Georgia Power",
+    "title": "THALMANN AND COLERAIN 23O KV LINE RELAY PANEL UPGRADES",
+    "in_service_date": "2025-06-01",
+    "zone": "218",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "21046",
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.6807807,
+      31.2934589
+     ],
+     [
+      -81.9006672,
+      30.8330106
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_11",
+    "utility": "Georgia Power",
+    "title": "THALMANN AND COLERAIN 23O KV LINE RELAY PANEL UPGRADES",
+    "in_service_date": "2025-06-01",
+    "zone": "218",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "21046",
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.79072395,
+     31.06323475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
     "project_id": "GPC_12",
     "utility": "Georgia Power",
     "title": "VILLA RICA LOW SIDE BREAKER",
@@ -476,64 +526,14 @@
     "total_cost_usd": null,
     "source_project_id": null,
     "teams_number": "21139",
-    "confidence": "low_confidence",
-    "role": "line"
-   },
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -83.5635642,
-      32.9953281
-     ],
-     [
-      -84.3334617,
-      33.605931
-     ]
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "properties": {
-    "project_id": "GPC_28",
-    "utility": "Georgia Power",
-    "title": "GRADY - MORROW (WHITE) 115KV REBUILD",
-    "in_service_date": "2026-06-01",
-    "zone": "206",
-    "total_cost_usd": null,
-    "source_project_id": null,
-    "teams_number": "21139",
-    "confidence": "low_confidence",
+    "confidence": "confirmed",
     "role": "center"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -83.94851295000001,
-     33.30062955
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "properties": {
-    "project_id": "GPC_29",
-    "utility": "Georgia Power",
-    "title": "GRADY 230/115KV RELAY MODERNIZATION",
-    "in_service_date": "2026-06-01",
-    "zone": "206",
-    "total_cost_usd": null,
-    "source_project_id": null,
-    "teams_number": "20474",
-    "confidence": "low_confidence",
-    "role": "center"
-   },
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -83.5635642,
-     32.9953281
+     -84.3334617,
+     33.605931
     ]
    }
   },
@@ -897,41 +897,13 @@
     "source_project_id": null,
     "teams_number": "19287",
     "confidence": "low_confidence",
-    "role": "line"
-   },
-   "geometry": {
-    "type": "LineString",
-    "coordinates": [
-     [
-      -83.5635642,
-      32.9953281
-     ],
-     [
-      -84.4163167,
-      33.7381626
-     ]
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "properties": {
-    "project_id": "GPC_46",
-    "utility": "Georgia Power",
-    "title": "GRADY-WEST END 115KV REBUILD",
-    "in_service_date": "2026-12-31",
-    "zone": "206",
-    "total_cost_usd": null,
-    "source_project_id": null,
-    "teams_number": "19287",
-    "confidence": "low_confidence",
     "role": "center"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -83.98994045,
-     33.36674535
+     -84.4163167,
+     33.7381626
     ]
    }
   },
@@ -1492,28 +1464,6 @@
     "coordinates": [
      -83.7020208,
      32.4553814
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "properties": {
-    "project_id": "GPC_68",
-    "utility": "Georgia Power",
-    "title": "CC - EAST VILLA RICA AREA SWITCHING STATION (CC IMPROVEMENT)",
-    "in_service_date": "2028-06-01",
-    "zone": "201",
-    "total_cost_usd": null,
-    "source_project_id": null,
-    "teams_number": "20797",
-    "confidence": "low_confidence",
-    "role": "center"
-   },
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -84.9595976,
-     33.7417954
     ]
    }
   },
@@ -2596,7 +2546,7 @@
     "total_cost_usd": null,
     "source_project_id": null,
     "teams_number": "20789",
-    "confidence": "low_confidence",
+    "confidence": "confirmed",
     "role": "line"
    },
    "geometry": {
@@ -2624,7 +2574,7 @@
     "total_cost_usd": null,
     "source_project_id": null,
     "teams_number": "20789",
-    "confidence": "low_confidence",
+    "confidence": "confirmed",
     "role": "center"
    },
    "geometry": {
@@ -2864,6 +2814,28 @@
     "coordinates": [
      -84.33458490000001,
      34.1955906
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_123",
+    "utility": "Georgia Power",
+    "title": "BOWEN #10 500/230KV AUTOBANK REPLACEMENT",
+    "in_service_date": "2031-06-01",
+    "zone": "211",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "10811",
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.9223274,
+     34.1215849
     ]
    }
   },
@@ -3243,8 +3215,8 @@
       30.8816485
      ],
      [
-      -83.2543359,
-      30.846057
+      -83.3148748,
+      30.8157571
      ]
     ]
    }
@@ -3266,8 +3238,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -83.24116140000001,
-     30.86385275
+     -83.27143085,
+     30.848702799999998
     ]
    }
   },

@@ -91,7 +91,7 @@
     "need_date": "6/1/2025",
     "sponsor": "GTC",
     "stations": [
-      "CAMDEN INDUSTRIAL PARK NEW"
+      "CAMDEN INDUSTRIAL PARK"
     ]
   },
   {
@@ -195,7 +195,8 @@
     "need_date": "6/1/2025",
     "sponsor": "GPC",
     "stations": [
-      "THALMANN AND COLERAIN 23O KV LINE RELAY PANEL UPGRADES"
+      "THALMANN",
+      "COLERAIN"
     ]
   },
   {
@@ -454,7 +455,7 @@
     "need_date": "6/1/2026",
     "sponsor": "GPC",
     "stations": [
-      "GRADY RELAY MODERNIZATION"
+      "GRADY"
     ]
   },
   {
@@ -501,7 +502,7 @@
     "need_date": "6/1/2026",
     "sponsor": "GTC",
     "stations": [
-      "MORNING HORNET 2ND BANK"
+      "MORNING HORNET 2ND"
     ]
   },
   {
@@ -640,7 +641,7 @@
     "sponsor": "SAV",
     "stations": [
       "CC",
-      "BIG OGEECHEE (CC NETWORK IMPROVEMENTS)"
+      "BIG OGEECHEE"
     ]
   },
   {
@@ -914,7 +915,7 @@
     "sponsor": "GPC",
     "stations": [
       "DOYLE",
-      "LG"
+      "LG&E MONROE"
     ]
   },
   {
@@ -973,7 +974,7 @@
     "need_date": "6/1/2027",
     "sponsor": "GTC",
     "stations": [
-      "EAST WALTON PROJECT"
+      "EAST WALTON"
     ]
   },
   {
@@ -1127,7 +1128,7 @@
     "sponsor": "GPC",
     "stations": [
       "CC",
-      "TOMOCHICHI SOLUTION (CC NETWORK IMPROVEMENTS)"
+      "TOMOCHICHI"
     ]
   },
   {
@@ -1177,6 +1178,7 @@
     "stations": [
       "CC",
       "HILL VIEW",
+      "GRASSY HOLLOW",
       "CC IMPROVEMENTS"
     ]
   },
@@ -1272,7 +1274,7 @@
     "need_date": "6/1/2028",
     "sponsor": "GTC",
     "stations": [
-      "BONAIRE PRIMARY XFMR REPLCMNT"
+      "BONAIRE PRIMARY"
     ]
   },
   {
@@ -1319,7 +1321,7 @@
     "need_date": "6/1/2028",
     "sponsor": "MEAG",
     "stations": [
-      "THOMASVILLE AUTOBANK REPLACEMENT"
+      "THOMASVILLE"
     ]
   },
   {
@@ -1342,7 +1344,7 @@
     "need_date": "6/1/2028",
     "sponsor": "GPC",
     "stations": [
-      "PLANT YATES BREAKER AND HALF STATION"
+      "PLANT YATES BREAKER"
     ]
   },
   {
@@ -1423,8 +1425,7 @@
     "need_date": "12/1/2028",
     "sponsor": "GTC",
     "stations": [
-      "NORTH DUBLIN TRANSFORMERS AND BUS",
-      "TIE BREAKER"
+      "NORTH DUBLIN"
     ]
   },
   {
@@ -1531,7 +1532,7 @@
     "need_date": "6/1/2029",
     "sponsor": "GTC",
     "stations": [
-      "BAY CREEK SECOND AUTO TRANSFORMER"
+      "BAY CREEK"
     ]
   },
   {
@@ -1578,7 +1579,7 @@
     "need_date": "6/1/2029",
     "sponsor": "GTC",
     "stations": [
-      "HOPEWELL BANK A"
+      "HOPEWELL"
     ]
   },
   {
@@ -1958,7 +1959,7 @@
     "need_date": "6/1/2030",
     "sponsor": "GTC",
     "stations": [
-      "CAVENDER DRIVE AUTOBANK"
+      "CAVENDER DRIVE"
     ]
   },
   {
@@ -2193,7 +2194,7 @@
     "need_date": "6/1/2031",
     "sponsor": "GPC",
     "stations": [
-      "BOWEN #10 AUTOBANK REPLACEMENT"
+      "BOWEN #10"
     ]
   },
   {
@@ -2216,7 +2217,7 @@
     "need_date": "6/1/2031",
     "sponsor": "MEAG",
     "stations": [
-      "PIO NONO AREA SOLUTION"
+      "PIO NONO"
     ]
   },
   {
@@ -2227,7 +2228,7 @@
     "need_date": "6/1/2032",
     "sponsor": "MEAG",
     "stations": [
-      "SOUTH GRIFFIN BANK #5"
+      "SOUTH GRIFFIN"
     ]
   },
   {
@@ -2250,7 +2251,7 @@
     "need_date": "6/1/2033",
     "sponsor": "GPC",
     "stations": [
-      "ARKWRIGHT BUS AND JUMPER REPLACEMENT"
+      "ARKWRIGHT BUS"
     ]
   },
   {
@@ -2392,7 +2393,7 @@
     "need_date": "6/1/2033",
     "sponsor": "GPC",
     "stations": [
-      "THOMSON PRIMARY SECOND TRANSFORMER"
+      "THOMSON PRIMARY"
     ]
   },
   {
@@ -2438,7 +2439,7 @@
     "need_date": "6/1/2034",
     "sponsor": "SAV",
     "stations": [
-      "LITTLE OGEECHEE BANK REPLACEMENT"
+      "LITTLE OGEECHEE"
     ]
   },
   {

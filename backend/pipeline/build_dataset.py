@@ -5,10 +5,23 @@ Loads the parsed DESC + GPC project lists, geocodes every named endpoint
 against OpenStreetMap (pipeline/geocode.py, with validation + confidence
 flags), and builds the overlap table exactly as the challenge defines it:
 
-  - center point = midpoint of the located endpoints (one point -> that point)
+  - center point = midpoint of the project's two named sub-points, i.e. the route
+    ends (one located point -> that point), per Finding_Real_Locations_Guide.docx
   - haversine distance between every DESC center and every GPC center
   - every pair under 25 miles is one overlap row, with the in-service day gap
   - ranked by score = 0.7 * (1 - dist/25) + 0.3 * (1 - min(gap, 1825)/1825)
+
+Each overlap also gets an "opportunity" category saying what the two projects
+could realistically share. The challenge only defines the 25 mi / day-gap
+overlap; these rules are ours, based on evidence rather than distance bands:
+
+  - shared_substation: both projects work at the same substation (located
+    endpoints within 0.5 km), so the work there has to be coordinated
+  - same_window:       in-service dates within 2 years, so crews, equipment,
+                       staging yards and deliveries could be shared
+  - schedules_apart:   within 25 mi but built more than 2 years apart (or a date
+                       is unknown), so there is little to share beyond planning
+It is stored in the "tier" field, the column the Supabase schema already has.
 
 Outputs (data_clean/):
   sentinel_dataset.json        what the web UI reads
@@ -25,7 +38,7 @@ from datetime import datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from geocode import Geocoder, geocode_project, haversine_km
+from geocode import Geocoder, geocode_project, haversine_km, route_ends
 
 ROOT = Path(__file__).parent.parent
 CLEAN = ROOT / "data_clean"
@@ -37,6 +50,8 @@ MAX_GAP_DAYS = 1825  # 5 years: beyond this, timing no longer helps coordination
 W_DIST, W_TIME = 0.7, 0.3
 KEEP_SPONSORS = ("GPC", "SAV")  # SAV = Georgia Power's Savannah division
 CONF_RANK = {"confirmed": 0, "low_confidence": 1}
+SHARED_STATION_KM = 0.5    # endpoints this close are the same substation
+BUILD_WINDOW_DAYS = 730    # our assumption: builds within 2 years can share crews and equipment
 
 
 def parse_date(s):
@@ -54,15 +69,22 @@ def parse_date(s):
     return None
 
 
-def tier_for(dist_km):
-    """Distance tier the frontend/Supabase schema expects (overlaps.tier is NOT NULL)."""
-    if dist_km <= 0.05:
-        return "touching_crossing"
-    if dist_km < 1.6:
-        return "share_land"
-    if dist_km < 8:
-        return "share_logistics"
-    return "share_crews"
+def shared_stations(pa, pb):
+    """Names of substations both projects touch, matched by location (names differ across utilities)."""
+    return [
+        f"{ea['name']} / {eb['name']}"
+        for ea in pa["endpoints"] if ea["pt"]
+        for eb in pb["endpoints"] if eb["pt"] and haversine_km(ea["pt"], eb["pt"]) <= SHARED_STATION_KM
+    ]
+
+
+def opportunity(shared, gap_days):
+    """What the pair could realistically share (see module docstring)."""
+    if shared:
+        return "shared_substation"
+    if gap_days is not None and gap_days <= BUILD_WINDOW_DAYS:
+        return "same_window"
+    return "schedules_apart"
 
 
 def score(dist_mi, gap_days):
@@ -155,12 +177,14 @@ def build_overlaps(desc, gpc):
             dd, gd = parse_date(dp["in_service_date_raw"]), parse_date(gp["in_service_date_raw"])
             gap = abs((dd - gd).days) if dd and gd else None
             conf = max(dp["geo"]["confidence"], gp["geo"]["confidence"], key=CONF_RANK.get)
+            shared = shared_stations(dp, gp)
             overlaps.append({
                 "project_id_a": dp["project_id"], "project_a_title": dp["title"], "utility_a": dp["utility"],
                 "project_id_b": gp["project_id"], "project_b_title": gp["title"], "utility_b": gp["utility"],
                 "distance_mi": round(dist_mi, 2),
                 "distance_km": round(dist_mi * KM_PER_MI, 2),
-                "tier": tier_for(dist_mi * KM_PER_MI),
+                "tier": opportunity(shared, gap),
+                "shared_stations": shared,
                 "day_gap": gap,
                 "score": score(dist_mi, gap),
                 "confidence": conf,
@@ -200,7 +224,7 @@ def check_against_organizer(desc, gpc, overlaps):
 # ------------------------------------------------------------------- writers
 
 def endpoint_cols(p, i):
-    eps = [e for e in p["endpoints"] if e["confidence"] != "not_a_place"]
+    eps = route_ends(p["endpoints"])  # same two sub-points the center is computed from
     if i >= len(eps):
         return None, None, None, None
     e = eps[i]
@@ -239,11 +263,12 @@ def write_xlsx(desc, gpc, overlaps, regression, path):
 
     ws = wb.create_sheet("overlaps")
     ws.append(["overlap_id", "distance_mi", "time_gap (day)", "utility_a", "project_id_a", "project_name_a",
-               "utility_b", "project_id_b", "project_name_b", "rank", "score", "confidence"])
+               "utility_b", "project_id_b", "project_name_b", "rank", "score", "confidence", "opportunity",
+               "shared_stations"])
     for o in overlaps:
         ws.append([o["overlap_id"], o["distance_mi"], o["day_gap"], o["utility_a"], o["project_id_a"],
                    o["project_a_title"], o["utility_b"], o["project_id_b"], o["project_b_title"], o["rank"],
-                   o["score"], o["confidence"]])
+                   o["score"], o["confidence"], o["tier"], " | ".join(o["shared_stations"])])
 
     ws = wb.create_sheet("endpoint_validation")
     ws.append(["project_id", "project_name", "endpoint", "confidence", "lat", "lon", "source", "name_score",
@@ -297,7 +322,7 @@ def write_geojson(projects, path):
 
 def write_csvs(desc, gpc, overlaps):
     with open(CLEAN / "overlaps.csv", "w", newline="") as f:
-        cols = ["overlap_id", "rank", "score", "distance_mi", "day_gap", "confidence", "project_id_a",
+        cols = ["overlap_id", "rank", "score", "distance_mi", "day_gap", "tier", "confidence", "project_id_a",
                 "project_a_title", "project_id_b", "project_b_title"]
         w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore")
         w.writeheader()

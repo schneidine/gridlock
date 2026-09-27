@@ -13,6 +13,13 @@ const GPC_COLOR = "#f2762e";
 const SELECTED_COLOR = "#eb9256";
 const FLAG_COLOR = "#facc15";
 
+// The pipeline notes "1 of 2 endpoints located; center uses the located one(s) only" when a
+// project's position rests on only some of its stations.
+function partialNote(p: Project) {
+  const m = p.geo_notes?.map((n) => n.match(/(\d+) of (\d+) endpoints located/)).find(Boolean);
+  return m ? `${m[1]} of ${m[2]} stations located; position is approximate` : null;
+}
+
 function fmtDate(iso: string | null) {
   if (!iso) return "date n/a";
   const d = new Date(iso);
@@ -93,6 +100,7 @@ export default function SentinelMap({
                     </div>
                   )}
                   <div className="gl-popup-conf">{p.geo_confidence?.replace("_", " ")}</div>
+                  {partialNote(p) && <div className="gl-popup-meta">{partialNote(p)}</div>}
                 </Popup>
               </CircleMarker>
               {p.geo_points && p.geo_points.length === 2 && (

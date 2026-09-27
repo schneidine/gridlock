@@ -12,14 +12,42 @@
     "total_cost_usd": 5404301,
     "source_project_id": "6807 B",
     "teams_number": null,
-    "confidence": "confirmed",
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.967332,
+      32.722793
+     ],
+     [
+      -79.9634237,
+      32.742122
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DESC_1",
+    "utility": "Dominion Energy South Carolina",
+    "title": "Queensboro - Ft Johnson 115 kV & Queensboro-Bayfront 115kV (Queensboro-James Island Sect)",
+    "in_service_date": "2023-12-31",
+    "zone": null,
+    "total_cost_usd": 5404301,
+    "source_project_id": "6807 B",
+    "teams_number": null,
+    "confidence": "low_confidence",
     "role": "center"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -79.967332,
-     32.722793
+     -79.96537785000001,
+     32.7324575
     ]
    }
   },
@@ -43,6 +71,10 @@
      [
       -81.032495,
       32.333758
+     ],
+     [
+      -81.1246,
+      32.35912
      ],
      [
       -80.8637929,
@@ -200,7 +232,7 @@
     "total_cost_usd": 4912096,
     "source_project_id": "6808 N,O",
     "teams_number": null,
-    "confidence": "confirmed",
+    "confidence": "low_confidence",
     "role": "center"
    },
    "geometry": {
@@ -1068,8 +1100,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -80.00827806666666,
-     32.822945233333336
+     -80.00510505,
+     32.80937795
     ]
    }
   },
@@ -1266,8 +1298,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -80.7319533,
-     33.59740286666667
+     -80.74343200000001,
+     33.61427115
     ]
    }
   }
