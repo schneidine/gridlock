@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import type { Confidence, Overlap, PlannerNote, Project, Tier } from "@/lib/types";
 import { TIER_COLOR, TIER_LABEL, TIER_ORDER } from "@/lib/types";
 import NoteThread from "@/components/NoteThread";
+import InsightPanel from "@/components/InsightPanel";
 
 const TIERS: (Tier | "all")[] = ["all", "touching_crossing", "share_land", "share_logistics", "share_crews"];
 
@@ -40,6 +41,7 @@ export default function OverlapList({
   const [filter, setFilter] = useState<Tier | "all">("all");
   const [selectedId, setSelectedId] = useState<number | null>(null);
   const [expandedId, setExpandedId] = useState<number | null>(null);
+  const [insightId, setInsightId] = useState<number | null>(null);
 
   // Rank over the full list (tier, then build-date gap, then distance) so a
   // pair keeps its rank number when the tier filter is applied.
@@ -90,6 +92,7 @@ export default function OverlapList({
           if (!a || !b) return null;
           const isSelected = selectedId === o.id;
           const isExpanded = expandedId === o.id;
+          const showInsight = insightId === o.id;
           const confTag = CONF_TAG[weakerConfidence(a, b)];
           const notes = notesByOverlap[o.id] ?? [];
           return (
@@ -148,15 +151,40 @@ export default function OverlapList({
                   </div>
                 </div>
               </div>
-              <button
-                className="w-full text-left text-[11px] text-[var(--muted)] px-3 py-1.5 border-t border-[var(--border)] hover:text-[var(--foreground)] transition-colors"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setExpandedId(isExpanded ? null : o.id);
-                }}
-              >
-                {isExpanded ? "Hide notes" : `Notes (${notes.length})`}
-              </button>
+              <div className="flex border-t border-[var(--border)]">
+                <button
+                  className="flex-1 text-left text-[11px] text-[var(--muted)] px-3 py-1.5 hover:text-[var(--foreground)] transition-colors"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setExpandedId(isExpanded ? null : o.id);
+                  }}
+                >
+                  {isExpanded ? "Hide notes" : `Notes (${notes.length})`}
+                </button>
+                <button
+                  className="flex items-center gap-1 text-[11px] font-semibold px-3 py-1.5 border-l border-[var(--border)] transition-colors hover:brightness-125"
+                  style={{
+                    color: "var(--accent-strong)",
+                    background: showInsight
+                      ? "color-mix(in srgb, var(--accent) 22%, transparent)"
+                      : "color-mix(in srgb, var(--accent) 10%, transparent)",
+                  }}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setInsightId(showInsight ? null : o.id);
+                  }}
+                >
+                  <svg width="11" height="11" viewBox="0 0 16 16" fill="currentColor" aria-hidden>
+                    <path d="M8 0l1.8 5.2L15 7l-5.2 1.8L8 14l-1.8-5.2L1 7l5.2-1.8z" />
+                  </svg>
+                  {showInsight ? "Hide AI Insights" : "Generate AI Insights"}
+                </button>
+              </div>
+              {showInsight && (
+                <div className="px-3 pb-3">
+                  <InsightPanel overlapId={o.id} />
+                </div>
+              )}
               {isExpanded && (
                 <div className="px-3 pb-3">
                   <NoteThread
