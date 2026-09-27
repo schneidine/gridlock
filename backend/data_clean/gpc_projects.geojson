@@ -785,8 +785,8 @@
       33.5870558
      ],
      [
-      -84.8949385,
-      33.463447
+      -84.8965275,
+      33.461186
      ]
     ]
    }
@@ -808,8 +808,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -84.7186842,
-     33.5252514
+     -84.7194787,
+     33.5241209
     ]
    }
   },
@@ -835,8 +835,8 @@
       33.5870558
      ],
      [
-      -84.8949385,
-      33.463447
+      -84.8965275,
+      33.461186
      ]
     ]
    }
@@ -858,8 +858,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -84.7186842,
-     33.5252514
+     -84.7194787,
+     33.5241209
     ]
    }
   },
@@ -1522,14 +1522,14 @@
     "total_cost_usd": null,
     "source_project_id": null,
     "teams_number": "20656",
-    "confidence": "low_confidence",
+    "confidence": "confirmed",
     "role": "center"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -84.8949385,
-     33.463447
+     -84.8965275,
+     33.461186
     ]
    }
   },
@@ -1649,8 +1649,8 @@
       33.5870558
      ],
      [
-      -84.8949385,
-      33.463447
+      -84.8965275,
+      33.461186
      ]
     ]
    }
@@ -1672,8 +1672,8 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -84.7186842,
-     33.5252514
+     -84.7194787,
+     33.5241209
     ]
    }
   },
@@ -1949,13 +1949,41 @@
     "source_project_id": null,
     "teams_number": "20346",
     "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.5452676,
+      31.213065
+     ],
+     [
+      -81.5586568,
+      31.2799089
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "GPC_90",
+    "utility": "Georgia Power",
+    "title": "MCMANUS - WEST BRUNSWICK 115KV REBUILD",
+    "in_service_date": "2029-06-01",
+    "zone": "218",
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": "20346",
+    "confidence": "confirmed",
     "role": "center"
    },
    "geometry": {
     "type": "Point",
     "coordinates": [
-     -81.5586568,
-     31.2799089
+     -81.55196219999999,
+     31.246486949999998
     ]
    }
   },

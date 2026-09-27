@@ -11,8 +11,8 @@
 -- ---------------------------------------------------------------------
 create table if not exists projects (
   project_id        text primary key,       -- e.g. "DESC_1", "GPC_42"
-  utility           text not null,          -- "Dominion Energy South Carolina" | "Georgia Power"
-  state             text not null,          -- "SC" | "GA"
+  utility           text not null,          -- "Dominion Energy South Carolina" | "Georgia Power" | "Duke Energy"
+  state             text not null,          -- "SC" | "GA" | "NC/SC"
   title             text not null,
   description       text,
   status            text,

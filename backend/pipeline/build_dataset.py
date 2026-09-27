@@ -1,13 +1,15 @@
 """
 Sentinel Utilities overlap-detection pipeline.
 
-Loads the parsed DESC + GPC project lists, geocodes every named endpoint
+Loads the parsed DESC, GPC and Duke Energy project lists (Duke from the SERTP
+Non-CEII preliminary plan), geocodes every named endpoint
 against OpenStreetMap (pipeline/geocode.py, with validation + confidence
 flags), and builds the overlap table exactly as the challenge defines it:
 
   - center point = midpoint of the project's two named sub-points, i.e. the route
     ends (one located point -> that point), per Finding_Real_Locations_Guide.docx
-  - haversine distance between every DESC center and every GPC center
+  - haversine distance between every pair of projects from two different utilities
+    (DESC x GPC, DESC x Duke, GPC x Duke)
   - every pair under 25 miles is one overlap row, with the in-service day gap
   - ranked by score = 0.7 * (1 - dist/25) + 0.3 * (1 - min(gap, 1825)/1825)
 
@@ -28,7 +30,7 @@ Outputs (data_clean/):
   Projects_Overlaps.xlsx       projects / overlaps sheets in the organizer's format,
                                plus endpoint_validation and data_quality sheets
   projects.csv, overlaps.csv
-  desc_projects.geojson, gpc_projects.geojson
+  desc_projects.geojson, gpc_projects.geojson, duke_projects.geojson
 """
 import csv
 import json
@@ -42,6 +44,7 @@ from geocode import Geocoder, geocode_project, haversine_km, route_ends
 
 ROOT = Path(__file__).parent.parent
 CLEAN = ROOT / "data_clean"
+SERTP_RAW = CLEAN / "sertp_2025_preliminary_plan_projects_raw.json"
 ORGANIZER_XLSX = ROOT / "data_raw" / "challenge-brief" / "Projects_Overlaps_organizer_example.xlsx"
 
 KM_PER_MI = 1.609344
@@ -70,11 +73,14 @@ def parse_date(s):
 
 
 def shared_stations(pa, pb):
-    """Names of substations both projects touch, matched by location (names differ across utilities)."""
+    """Names of substations both projects touch, matched by location (names differ across utilities).
+    An endpoint placed by an unresolved same-name guess is not evidence of a shared station."""
+    def solid(e):
+        return e["pt"] and (e["checks"] or {}).get("ambiguous_resolved", True)
     return [
         f"{ea['name']} / {eb['name']}"
-        for ea in pa["endpoints"] if ea["pt"]
-        for eb in pb["endpoints"] if eb["pt"] and haversine_km(ea["pt"], eb["pt"]) <= SHARED_STATION_KM
+        for ea in pa["endpoints"] if solid(ea)
+        for eb in pb["endpoints"] if solid(eb) and haversine_km(ea["pt"], eb["pt"]) <= SHARED_STATION_KM
     ]
 
 
@@ -92,6 +98,28 @@ def score(dist_mi, gap_days):
     return round(W_DIST * (1 - dist_mi / THRESHOLD_MI) + W_TIME * (1 - gap / MAX_GAP_DAYS), 4)
 
 
+def service_window(raw):
+    """(earliest, latest) in-service date the source allows: one day for a full date,
+    Jan 1 - Dec 31 when the source gives only a year (SERTP lists Duke projects that way)."""
+    if re.fullmatch(r"\s*\d{4}\s*", str(raw or "")):
+        year = int(raw)
+        return datetime(year, 1, 1), datetime(year, 12, 31)
+    d = parse_date(raw)
+    return (d, d) if d else None
+
+
+def day_gap(raw_a, raw_b):
+    """Days between two in-service dates; for a year-only date, the smallest gap that year allows."""
+    wa, wb = service_window(raw_a), service_window(raw_b)
+    if not wa or not wb:
+        return None
+    if wa[1] < wb[0]:
+        return (wb[0] - wa[1]).days
+    if wb[1] < wa[0]:
+        return (wa[0] - wb[1]).days
+    return 0
+
+
 def date_note(raw, parsed):
     if parsed is None:
         return f"unparseable in-service date '{raw}'"
@@ -101,9 +129,13 @@ def date_note(raw, parsed):
 
 
 def make_project(pid, utility, state, title, raw_date, stations, geo, **extra):
-    d = parse_date(raw_date)
+    year_only = bool(re.fullmatch(r"\s*\d{4}\s*", str(raw_date or "")))
+    d = None if year_only else parse_date(raw_date)
     notes = list(extra.pop("data_quality_flags", []))
-    if date_note(raw_date, d):
+    if year_only:
+        notes.append("source gives only the in-service year; day gaps to this project are the "
+                     "smallest gap that year allows")
+    elif date_note(raw_date, d):
         notes.append(date_note(raw_date, d))
     located = [e for e in geo["endpoints"] if e["pt"]]
     return {
@@ -113,6 +145,7 @@ def make_project(pid, utility, state, title, raw_date, stations, geo, **extra):
         "title": title,
         "in_service_date_raw": raw_date,
         "in_service_date": d.date().isoformat() if d else None,
+        "in_service_year": int(raw_date) if year_only else (d.year if d else None),
         "stations": stations,
         **extra,
         "data_quality_flags": notes,
@@ -134,10 +167,11 @@ def build_projects():
     desc_raw = json.load(open(CLEAN / "desc_projects_raw.json"))
     gpc_all = json.load(open(CLEAN / "gpc_projects_raw.json"))
     gpc_raw = [p for p in gpc_all if p.get("sponsor") in KEEP_SPONSORS]
+    duke_raw = [p for p in json.load(open(SERTP_RAW)) if (p["balancing_authority"] or "").startswith("DUKE")]
 
     geocoder = Geocoder()
     anchors = geocoder.build_zone_centroids(gpc_raw)
-    print(f"OSM: {len(geocoder.osm)} named substations in GA/SC")
+    print(f"OSM: {len(geocoder.osm)} named substations in GA/SC/NC")
     print(f"GPC zone centroids from unambiguous OSM anchors: "
           f"{ {z: anchors[z] for z in sorted(geocoder.zone_centroids)} }")
 
@@ -159,36 +193,52 @@ def build_projects():
             p["need_date"], p["stations"], geo,
             teams_number=p["teams_number"], zone=p["zone"], sponsor=p["sponsor"],
         ))
+    duke = []
+    for i, p in enumerate(duke_raw, 1):
+        geo = geocode_project(p["stations"], "DUKE", geocoder)
+        duke.append(make_project(
+            f"DUKE_{i}", "Duke Energy", "NC/SC", p["project_name"], str(p["in_service_year"]),
+            p["stations"], geo,
+            description=p["description"], balancing_authority=p["balancing_authority"],
+            source_page=p["page"],
+            data_quality_flags=p["data_quality_flags"],
+        ))
     geocoder.nom.save()
-    return desc, gpc, len(gpc_all) - len(gpc_raw)
+    return desc, gpc, duke, len(gpc_all) - len(gpc_raw)
 
 
-def build_overlaps(desc, gpc):
+def overlap_row(pa, pb):
+    """The overlap-table row for two projects, or None if either is unlocated or they are >= 25 mi apart."""
+    if not pa["geo"] or not pb["geo"]:
+        return None
+    dist_mi = haversine_km(pa["geo"]["center"], pb["geo"]["center"]) / KM_PER_MI
+    if dist_mi >= THRESHOLD_MI:
+        return None
+    gap = day_gap(pa["in_service_date_raw"], pb["in_service_date_raw"])
+    shared = shared_stations(pa, pb)
+    return {
+        "project_id_a": pa["project_id"], "project_a_title": pa["title"], "utility_a": pa["utility"],
+        "project_id_b": pb["project_id"], "project_b_title": pb["title"], "utility_b": pb["utility"],
+        "distance_mi": round(dist_mi, 2),
+        "distance_km": round(dist_mi * KM_PER_MI, 2),
+        "tier": opportunity(shared, gap),
+        "shared_stations": shared,
+        "day_gap": gap,
+        "score": score(dist_mi, gap),
+        "confidence": max(pa["geo"]["confidence"], pb["geo"]["confidence"], key=CONF_RANK.get),
+    }
+
+
+def build_overlaps(*utilities):
+    """Every cross-utility pair under the threshold, e.g. build_overlaps(desc, gpc, duke)."""
     overlaps = []
-    for dp in desc:
-        if not dp["geo"]:
-            continue
-        for gp in gpc:
-            if not gp["geo"]:
-                continue
-            dist_mi = haversine_km(dp["geo"]["center"], gp["geo"]["center"]) / KM_PER_MI
-            if dist_mi >= THRESHOLD_MI:
-                continue
-            dd, gd = parse_date(dp["in_service_date_raw"]), parse_date(gp["in_service_date_raw"])
-            gap = abs((dd - gd).days) if dd and gd else None
-            conf = max(dp["geo"]["confidence"], gp["geo"]["confidence"], key=CONF_RANK.get)
-            shared = shared_stations(dp, gp)
-            overlaps.append({
-                "project_id_a": dp["project_id"], "project_a_title": dp["title"], "utility_a": dp["utility"],
-                "project_id_b": gp["project_id"], "project_b_title": gp["title"], "utility_b": gp["utility"],
-                "distance_mi": round(dist_mi, 2),
-                "distance_km": round(dist_mi * KM_PER_MI, 2),
-                "tier": opportunity(shared, gap),
-                "shared_stations": shared,
-                "day_gap": gap,
-                "score": score(dist_mi, gap),
-                "confidence": conf,
-            })
+    for i, group_a in enumerate(utilities):
+        for group_b in utilities[i + 1:]:
+            for pa in group_a:
+                for pb in group_b:
+                    o = overlap_row(pa, pb)
+                    if o:
+                        overlaps.append(o)
     overlaps.sort(key=lambda o: -o["score"])
     for i, o in enumerate(overlaps, 1):
         o["rank"] = i
@@ -231,7 +281,7 @@ def endpoint_cols(p, i):
     return e["name"], e["pt"][0] if e["pt"] else None, e["pt"][1] if e["pt"] else None, e["confidence"]
 
 
-def write_xlsx(desc, gpc, overlaps, regression, path):
+def write_xlsx(projects, overlaps, regression, path):
     import openpyxl
     from openpyxl.styles import Font, PatternFill
 
@@ -246,7 +296,7 @@ def write_xlsx(desc, gpc, overlaps, regression, path):
     for o in overlaps:
         partners.setdefault(o["project_id_a"], []).append(o["project_id_b"])
         partners.setdefault(o["project_id_b"], []).append(o["project_id_a"])
-    for r, p in enumerate(desc + gpc, 2):
+    for r, p in enumerate(projects, 2):
         na, la, oa, ca = endpoint_cols(p, 0)
         nb, lb, ob, cb = endpoint_cols(p, 1)
         mine = partners.get(p["project_id"], [])
@@ -255,7 +305,7 @@ def write_xlsx(desc, gpc, overlaps, regression, path):
             p["project_id"], p["utility"], p["state"], p["title"], na, la, oa, nb, lb, ob,
             f"=IF(ISBLANK(I{r}), F{r}, IF(ISBLANK(F{r}), I{r}, (F{r}+I{r})/2))",
             f"=IF(ISBLANK(J{r}), G{r}, IF(ISBLANK(G{r}), J{r}, (G{r}+J{r})/2))",
-            p["in_service_date"], len(mine), *(mine + [None] * 3)[:3],
+            p["in_service_date"] or p["in_service_year"], len(mine), *(mine + [None] * 3)[:3],
             p["geo"]["confidence"] if p["geo"] else "unlocated", ca, cb,
             p.get("source_project_id") or p.get("teams_number"), p.get("zone"), p.get("total_cost_usd"),
             " | ".join(notes),
@@ -274,7 +324,7 @@ def write_xlsx(desc, gpc, overlaps, regression, path):
     ws.append(["project_id", "project_name", "endpoint", "confidence", "lat", "lon", "source", "name_score",
                "operator_ok", "zone_km", "osm_vs_organizer_km", "notes"])
     fills = {"confirmed": "D9F2D9", "low_confidence": "FFF2CC", "rejected": "F8CBAD", "unlocated": "EDEDED"}
-    for p in desc + gpc:
+    for p in projects:
         for e in p["endpoints"]:
             c = e["checks"] or {}
             ws.append([p["project_id"], p["title"], e["name"], e["confidence"],
@@ -286,7 +336,7 @@ def write_xlsx(desc, gpc, overlaps, regression, path):
 
     ws = wb.create_sheet("data_quality")
     ws.append(["project_id", "project_name", "issue"])
-    for p in desc + gpc:
+    for p in projects:
         for f in p["data_quality_flags"]:
             ws.append([p["project_id"], p["title"], f])
 
@@ -320,7 +370,7 @@ def write_geojson(projects, path):
     json.dump({"type": "FeatureCollection", "features": feats}, open(path, "w"), indent=1)
 
 
-def write_csvs(desc, gpc, overlaps):
+def write_csvs(projects, overlaps):
     with open(CLEAN / "overlaps.csv", "w", newline="") as f:
         cols = ["overlap_id", "rank", "score", "distance_mi", "day_gap", "tier", "confidence", "project_id_a",
                 "project_a_title", "project_id_b", "project_b_title"]
@@ -330,9 +380,9 @@ def write_csvs(desc, gpc, overlaps):
     with open(CLEAN / "projects.csv", "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["project_id", "utility", "title", "in_service_date", "lat_center", "lon_center", "confidence"])
-        for p in desc + gpc:
+        for p in projects:
             c = p["geo"]["center"] if p["geo"] else (None, None)
-            w.writerow([p["project_id"], p["utility"], p["title"], p["in_service_date"], *c,
+            w.writerow([p["project_id"], p["utility"], p["title"], p["in_service_date"] or p["in_service_year"], *c,
                         p["geo"]["confidence"] if p["geo"] else "unlocated"])
 
 
@@ -346,12 +396,13 @@ def summarize(projects):
 
 
 def main():
-    desc, gpc, dropped = build_projects()
-    overlaps = build_overlaps(desc, gpc)
+    desc, gpc, duke, dropped = build_projects()
+    overlaps = build_overlaps(desc, gpc, duke)
     regression = check_against_organizer(desc, gpc, overlaps)
     summary = {
         "desc": summarize(desc),
         "gpc": summarize(gpc),
+        "duke": summarize(duke),
         "gpc_rows_dropped_other_sponsors": dropped,
         "threshold_mi": THRESHOLD_MI,
         "scoring": {"w_distance": W_DIST, "w_time": W_TIME, "max_gap_days": MAX_GAP_DAYS},
@@ -360,12 +411,13 @@ def main():
         "organizer_reproduced": f"{sum(r['reproduced'] for r in regression)}/{len(regression)}",
     }
     out = {"summary": summary, "organizer_check": regression,
-           "desc_projects": desc, "gpc_projects": gpc, "overlaps": overlaps}
+           "desc_projects": desc, "gpc_projects": gpc, "duke_projects": duke, "overlaps": overlaps}
     json.dump(out, open(CLEAN / "sentinel_dataset.json", "w"), indent=1)
-    write_xlsx(desc, gpc, overlaps, regression, CLEAN / "Projects_Overlaps.xlsx")
+    write_xlsx(desc + gpc + duke, overlaps, regression, CLEAN / "Projects_Overlaps.xlsx")
     write_geojson(desc, CLEAN / "desc_projects.geojson")
     write_geojson(gpc, CLEAN / "gpc_projects.geojson")
-    write_csvs(desc, gpc, overlaps)
+    write_geojson(duke, CLEAN / "duke_projects.geojson")
+    write_csvs(desc + gpc + duke, overlaps)
 
     print(json.dumps(summary, indent=1))
     print("\nOrganizer worked example:")

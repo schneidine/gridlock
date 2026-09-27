@@ -1,0 +1,1929 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_1",
+    "utility": "Duke Energy",
+    "title": "BUSH RIVER TIE - LAURENS TIE 100 KV TRANSMISSION LINES, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.0014998,
+     34.5106473
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_4",
+    "utility": "Duke Energy",
+    "title": "LEE STEAM STATION - SHADY GROVE TIE 100 KV TRANSMISSION LINE (LEE CIRCUITS), REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.4249437,
+     34.7606461
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_5",
+    "utility": "Duke Energy",
+    "title": "LEE STEAM STATION - SHADY GROVE TIE 100 KV TRANSMISSION LINE (PIEDMONT CIRCUITS), REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.4249437,
+     34.7606461
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_7",
+    "utility": "Duke Energy",
+    "title": "PEACH VALLEY TIE - CLIFFSIDE 5 SWITCHING STATION 100 KV TRANSMISSION LINES, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.8964882,
+      35.0064629
+     ],
+     [
+      -81.7671527,
+      35.219813
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_7",
+    "utility": "Duke Energy",
+    "title": "PEACH VALLEY TIE - CLIFFSIDE 5 SWITCHING STATION 100 KV TRANSMISSION LINES, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.83182045,
+     35.11313795
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_8",
+    "utility": "Duke Energy",
+    "title": "SHELBY TIE - HILLTOP TIE 100 KV TRANSMISSION LINES, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.5440935,
+      35.2578916
+     ],
+     [
+      -81.3194833,
+      35.2676803
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_8",
+    "utility": "Duke Energy",
+    "title": "SHELBY TIE - HILLTOP TIE 100 KV TRANSMISSION LINES, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.4317884,
+     35.26278595
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_9",
+    "utility": "Duke Energy",
+    "title": "WYLIE SWITCHING STATION - WOODLAWN TIE 100 KV TRANSMISSION LINE",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.8839132,
+     35.1745506
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_17",
+    "utility": "Duke Energy",
+    "title": "NORTH GREENVILLE TIE - PISGAH TIE 100 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -82.4375894,
+      34.8901831
+     ],
+     [
+      -82.6829278,
+      35.2585707
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_17",
+    "utility": "Duke Energy",
+    "title": "NORTH GREENVILLE TIE - PISGAH TIE 100 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.5602586,
+     35.074376900000004
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_21",
+    "utility": "Duke Energy",
+    "title": "HARRISBURG TIE 230/100/44 KV AUTOTRANSFORMER, REPLACE",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.6924895,
+     35.3128807
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_22",
+    "utility": "Duke Energy",
+    "title": "N GREENVILLE TIE AUTOTRANSFORMER 230/100/44 KV, REPLACE",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.3655009,
+     35.6257881
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_23",
+    "utility": "Duke Energy",
+    "title": "SHELBY TIE 230/100/44 KV AUTOTRANSFORMER, REPLACE",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.5440935,
+     35.2578916
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_25",
+    "utility": "Duke Energy",
+    "title": "LONGVIEW TIE - LYLE CREEK SWITCHING STATION 100 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.4098541,
+     35.7212017
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_26",
+    "utility": "Duke Energy",
+    "title": "NORTH GREENSBORO TIE - GREENSBORO MAIN 100 KV TRANSMISSION LINES, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.7806685,
+     36.1224181
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_27",
+    "utility": "Duke Energy",
+    "title": "OAKBORO TIE - LILESVILLE TIE (DEP) 230 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.338207,
+     35.2190797
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_28",
+    "utility": "Duke Energy",
+    "title": "STATESVILLE TIE - MOORESVILLE TIE 44 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.8936737,
+     35.7654083
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_29",
+    "utility": "Duke Energy",
+    "title": "LEE CC - BELTON TIE 100 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.4910369,
+     34.5311772
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_31",
+    "utility": "Duke Energy",
+    "title": "CENTRAL TIE 230 KV, INSTALL",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.7919045,
+     34.7144353
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_32",
+    "utility": "Duke Energy",
+    "title": "ENO TIE - CREST STREET SWITCHING STATION 100 KV",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.0166026,
+     36.0446014
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_33",
+    "utility": "Duke Energy",
+    "title": "LEE CC - LEE STEAM 100 KV TRANSMISSION LINE, CONSTRUCT",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -78.0888702,
+     35.3797262
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_35",
+    "utility": "Duke Energy",
+    "title": "PEACOCK TIE - CLOVER TIE 44 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.1903774,
+     35.2240328
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_36",
+    "utility": "Duke Energy",
+    "title": "NEWPORT TIE - MORNING STAR TIE 230 KV TRANSMISSION LINE",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.1212684,
+     34.9978887
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_37",
+    "utility": "Duke Energy",
+    "title": "ASHE ST SWITCHING STATION - PARKWOOD TIE 100 KV TRANSMISSION LINE, RECONDUCTOR",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -78.930529,
+     35.871497
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_38",
+    "utility": "Duke Energy",
+    "title": "CLIFFSIDE STEAM - SHELBY TIE 100 KV TRANSMISSION LINES, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.5440935,
+     35.2578916
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_39",
+    "utility": "Duke Energy",
+    "title": "DAN RIVER CC - DAN RIVER STEAM 100 KV TRANSMISSION LINES, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.7196132,
+     36.4866489
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_40",
+    "utility": "Duke Energy",
+    "title": "DAN RIVER STEAM - NORTH GREENSBORO TIE 100 KV TRANSMISSION LINES, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.7196132,
+     36.4866489
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_41",
+    "utility": "Duke Energy",
+    "title": "DAN RIVER STEAM - SADLER TIE 100 KV TRANSMISSION LINES, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.7196132,
+      36.4866489
+     ],
+     [
+      -79.6354611,
+      36.3902913
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_41",
+    "utility": "Duke Energy",
+    "title": "DAN RIVER STEAM - SADLER TIE 100 KV TRANSMISSION LINES, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.67753715,
+     36.4384701
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_42",
+    "utility": "Duke Energy",
+    "title": "DURHAM MAIN - ASHE ST SWITCHING STATION 100 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -78.7500597,
+     35.9506199
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_44",
+    "utility": "Duke Energy",
+    "title": "HARRISBURG TIE - AMITY SWITCHING STATION 100 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.6924895,
+     35.3128807
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_45",
+    "utility": "Duke Energy",
+    "title": "HARRISBURG TIE - CONCORD MAIN 100 KV TRANSMISSION LINES, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.6924895,
+      35.3128807
+     ],
+     [
+      -80.5958571,
+      35.4088155
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_45",
+    "utility": "Duke Energy",
+    "title": "HARRISBURG TIE - CONCORD MAIN 100 KV TRANSMISSION LINES, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.6441733,
+     35.3608481
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_46",
+    "utility": "Duke Energy",
+    "title": "HARRISBURG TIE - MINE SHAFT RETAIL 100 KV TRANSMISSION LINE, CONVERSION",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.6924895,
+     35.3128807
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_47",
+    "utility": "Duke Energy",
+    "title": "LAKEWOOD TIE - WOODLAWN TIE 100 KV TRANSMISSION LINES, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.8760798,
+      35.2499737
+     ],
+     [
+      -80.8839132,
+      35.1745506
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_47",
+    "utility": "Duke Energy",
+    "title": "LAKEWOOD TIE - WOODLAWN TIE 100 KV TRANSMISSION LINES, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.8799965,
+     35.21226215
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_49",
+    "utility": "Duke Energy",
+    "title": "LOOKOUT TIE - MARSHALL STEAM 44 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.967272,
+     35.5965997
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_50",
+    "utility": "Duke Energy",
+    "title": "MADISON TIE 100/44 KV, INSTALL",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.9534386,
+     36.4058671
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_51",
+    "utility": "Duke Energy",
+    "title": "MARSHALL STEAM - BECKERDITE TIE 230 KV TRANSMISSION LINE, UPRATE",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.967272,
+      35.5965997
+     ],
+     [
+      -80.2221995,
+      36.0114281
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_51",
+    "utility": "Duke Energy",
+    "title": "MARSHALL STEAM - BECKERDITE TIE 230 KV TRANSMISSION LINE, UPRATE",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.59473575,
+     35.8040139
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_52",
+    "utility": "Duke Energy",
+    "title": "MARSHALL STEAM STATION - BOYD SWITCHING STATION 230 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.967272,
+     35.5965997
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_53",
+    "utility": "Duke Energy",
+    "title": "MCGUIRE NUCLEAR STATION - MARSHALL STEAM STATION 230 KV TRANSMISSION LINES, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.967272,
+     35.5965997
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_55",
+    "utility": "Duke Energy",
+    "title": "ORCHARD TIE - HICKORY TIE 100 KV TRANSMISSION LINES, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.2763599,
+      35.5976413
+     ],
+     [
+      -81.3415599,
+      35.7145385
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_55",
+    "utility": "Duke Energy",
+    "title": "ORCHARD TIE - HICKORY TIE 100 KV TRANSMISSION LINES, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.30895989999999,
+     35.6560899
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_56",
+    "utility": "Duke Energy",
+    "title": "PARKWOOD TIE - CUSTOMER STATION 100 KV TRANSMISSION LINE",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -78.930529,
+     35.871497
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_57",
+    "utility": "Duke Energy",
+    "title": "PLEASANT GARDEN TIE - MEBANE TIE 100 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.7538162,
+     35.9413876
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_58",
+    "utility": "Duke Energy",
+    "title": "RURAL HALL TIE- SHATTALON SWITCHING STATION 100 KV TRANSMISSION LINES, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.3070052,
+     36.2447779
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_59",
+    "utility": "Duke Energy",
+    "title": "STAMEY TIE - LOOKOUT TIE 100 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.9891432,
+     35.7799106
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_60",
+    "utility": "Duke Energy",
+    "title": "STAMEY TIE - STATESVILLE TIE 100 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.9891432,
+      35.7799106
+     ],
+     [
+      -80.8936737,
+      35.7654083
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_60",
+    "utility": "Duke Energy",
+    "title": "STAMEY TIE - STATESVILLE TIE 100 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.94140845,
+     35.77265945
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_62",
+    "utility": "Duke Energy",
+    "title": "TIGER TIE - CAMPOBELLO TIE 100 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -82.1554737,
+      34.9527475
+     ],
+     [
+      -82.1625583,
+      35.1212339
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_62",
+    "utility": "Duke Energy",
+    "title": "TIGER TIE - CAMPOBELLO TIE 100 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.15901600000001,
+     35.036990700000004
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_63",
+    "utility": "Duke Energy",
+    "title": "TIGER TIE AUTOTRANSFORMER, REPLACE",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.1554737,
+     34.9527475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_64",
+    "utility": "Duke Energy",
+    "title": "WINECOFF TIE - CONCORD MAIN 100 KV TRANSMISSION LINE, RECONDUCTOR",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.5958571,
+     35.4088155
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_66",
+    "utility": "Duke Energy",
+    "title": "CAMDEN JUNCTION - DPC WATEREE 115 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.5410011,
+      34.3023075
+     ],
+     [
+      -80.7023194,
+      34.3346578
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_66",
+    "utility": "Duke Energy",
+    "title": "CAMDEN JUNCTION - DPC WATEREE 115 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.62166024999999,
+     34.31848265
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_67",
+    "utility": "Duke Energy",
+    "title": "CAPE FEAR PLANT - WEST END 230 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.0490285,
+      35.5920188
+     ],
+     [
+      -79.5302689,
+      35.2195791
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_67",
+    "utility": "Duke Energy",
+    "title": "CAPE FEAR PLANT - WEST END 230 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.2896487,
+     35.40579895
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_69",
+    "utility": "Duke Energy",
+    "title": "ERWIN - FAYETTEVILLE EAST 230 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.6584524,
+      35.3369928
+     ],
+     [
+      -78.8278265,
+      35.098895
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_69",
+    "utility": "Duke Energy",
+    "title": "ERWIN - FAYETTEVILLE EAST 230 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -78.74313945,
+     35.217943899999995
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_70",
+    "utility": "Duke Energy",
+    "title": "FAYETTEVILLE - FAYETTEVILLE DUPONT 115 KV TRANSMISSION LINE, FAYETTEVILLE - HOPE MILLS CHURCH ST. SECTION, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -78.9168025,
+     35.0211085
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_71",
+    "utility": "Duke Energy",
+    "title": "GREENVILLE - DVP EVERETTS 230 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.3655009,
+      35.6257881
+     ],
+     [
+      -77.105953,
+      35.8384478
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_71",
+    "utility": "Duke Energy",
+    "title": "GREENVILLE - DVP EVERETTS 230 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.23572695,
+     35.73211795
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_72",
+    "utility": "Duke Energy",
+    "title": "HILL CREST (CARTHAGE AREA) 230 KV SUBSTATION, CAPE FEAR-WEST END 230 KV AND WEST END - SOUTHERN PINES 115 KV FEEDERS, CONSTRUCT AND LOOP-IN",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.0490285,
+      35.5920188
+     ],
+     [
+      -79.5302689,
+      35.2195791
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_72",
+    "utility": "Duke Energy",
+    "title": "HILL CREST (CARTHAGE AREA) 230 KV SUBSTATION, CAPE FEAR-WEST END 230 KV AND WEST END - SOUTHERN PINES 115 KV FEEDERS, CONSTRUCT AND LOOP-IN",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.2896487,
+     35.40579895
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_74",
+    "utility": "Duke Energy",
+    "title": "ROBINSON - ROCKINGHAM 230 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.1575117,
+      34.4015551
+     ],
+     [
+      -79.7586597,
+      34.9039029
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_74",
+    "utility": "Duke Energy",
+    "title": "ROBINSON - ROCKINGHAM 230 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.9580857,
+     34.652729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_75",
+    "utility": "Duke Energy",
+    "title": "SUMTER - DESC EASTOVER 115 KV TRANSMISSION LINE (KINGS HWY - SHAW FIELD - EASTOVER), REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.3239761,
+      33.8976611
+     ],
+     [
+      -80.6922594,
+      33.8771147
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_75",
+    "utility": "Duke Energy",
+    "title": "SUMTER - DESC EASTOVER 115 KV TRANSMISSION LINE (KINGS HWY - SHAW FIELD - EASTOVER), REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.50811775,
+     33.8873879
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_78",
+    "utility": "Duke Energy",
+    "title": "ROBINSON PLANT - ROCKINGHAM 115 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.1575117,
+      34.4015551
+     ],
+     [
+      -79.7586597,
+      34.9039029
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_78",
+    "utility": "Duke Energy",
+    "title": "ROBINSON PLANT - ROCKINGHAM 115 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.9580857,
+     34.652729
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_79",
+    "utility": "Duke Energy",
+    "title": "SUMTER - DESC EASTOVER 115 KV TRANSMISSION LINE (SUMTER GOLD KIST TAP - SUMTER KINGS HWY SECTION), REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.3239761,
+      33.8976611
+     ],
+     [
+      -80.6922594,
+      33.8771147
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_79",
+    "utility": "Duke Energy",
+    "title": "SUMTER - DESC EASTOVER 115 KV TRANSMISSION LINE (SUMTER GOLD KIST TAP - SUMTER KINGS HWY SECTION), REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.50811775,
+     33.8873879
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_80",
+    "utility": "Duke Energy",
+    "title": "WEATHERSPOON - LOF 115 KV TRANSMISSION LINE (MAXTON - PEMBROKE), REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -78.9744395,
+     34.5894501
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_81",
+    "utility": "Duke Energy",
+    "title": "ASHEBORO - SILER CITY 115 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "line"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.755093,
+      35.7239254
+     ],
+     [
+      -79.4755251,
+      35.7210709
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_81",
+    "utility": "Duke Energy",
+    "title": "ASHEBORO - SILER CITY 115 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.61530905000001,
+     35.72249815
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_83",
+    "utility": "Duke Energy",
+    "title": "DURHAM - RTP 230 KV TRANSMISSION LINE (DURHAM - BRIER CREEK), REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -78.7500597,
+     35.9506199
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_84",
+    "utility": "Duke Energy",
+    "title": "GOLDSBORO 115 KV SWITCHING STATION, UPGRADE",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.913922,
+     35.3683614
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_85",
+    "utility": "Duke Energy",
+    "title": "LILESVILLE - OAKBORO 230 KV BLACK AND WHITE LINES, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.338207,
+     35.2190797
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_87",
+    "utility": "Duke Energy",
+    "title": "ROCKY MOUNT - WILSON 115 KV TRANSMISSION LINE, UPGRADE",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.8332273,
+     35.9517413
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_88",
+    "utility": "Duke Energy",
+    "title": "LEE - MILBURNIE 230 KV TRANSMISSION LINE, REBUILD",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "low_confidence",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -78.0947209,
+     35.376998
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "project_id": "DUKE_90",
+    "utility": "Duke Energy",
+    "title": "ASHEVILLE PLANT - OTEEN 115 KV WEST TRANSMISSION LINE, ARDEN TAP, CONSTRUCT",
+    "in_service_date": null,
+    "zone": null,
+    "total_cost_usd": null,
+    "source_project_id": null,
+    "teams_number": null,
+    "confidence": "confirmed",
+    "role": "center"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.50191,
+     35.5690099
+    ]
+   }
+  }
+ ]
+}

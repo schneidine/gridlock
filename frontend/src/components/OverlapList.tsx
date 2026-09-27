@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import type { Confidence, Overlap, PlannerNote, Project, Tier } from "@/lib/types";
 import { TIER_COLOR, TIER_LABEL, overlapScore } from "@/lib/types";
+import { utilityStyle } from "@/lib/utilities";
 import NoteThread from "@/components/NoteThread";
 import InsightPanel from "@/components/InsightPanel";
 
@@ -125,24 +126,8 @@ export default function OverlapList({
                   </span>
                 </div>
                 <div className="flex flex-col gap-1">
-                  <div className="text-[12.5px] leading-snug flex gap-1.5">
-                    <span
-                      className="shrink-0 font-mono-tab text-[10px] font-semibold px-1.5 rounded leading-[18px]"
-                      style={{ background: "color-mix(in srgb, var(--desc-color) 15%, transparent)", color: "var(--desc-color)" }}
-                    >
-                      DESC
-                    </span>
-                    <span>{a.title}</span>
-                  </div>
-                  <div className="text-[12.5px] leading-snug flex gap-1.5">
-                    <span
-                      className="shrink-0 font-mono-tab text-[10px] font-semibold px-1.5 rounded leading-[18px]"
-                      style={{ background: "color-mix(in srgb, var(--gpc-color) 15%, transparent)", color: "var(--gpc-color)" }}
-                    >
-                      GPC
-                    </span>
-                    <span>{b.title}</span>
-                  </div>
+                  <ProjectLine p={a} />
+                  <ProjectLine p={b} />
                 </div>
               </div>
               <div className="flex border-t border-[var(--border)]">
@@ -194,5 +179,20 @@ export default function OverlapList({
         })}
       </div>
     </>
+  );
+}
+
+function ProjectLine({ p }: { p: Project }) {
+  const { short, color } = utilityStyle(p.utility);
+  return (
+    <div className="text-[12.5px] leading-snug flex gap-1.5">
+      <span
+        className="shrink-0 font-mono-tab text-[10px] font-semibold px-1.5 rounded leading-[18px]"
+        style={{ background: `color-mix(in srgb, ${color} 15%, transparent)`, color }}
+      >
+        {short}
+      </span>
+      <span>{p.title}</span>
+    </div>
   );
 }

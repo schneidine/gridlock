@@ -11,6 +11,7 @@ export interface Project {
   description: string | null;
   status: string | null;
   in_service_date: string | null;
+  in_service_year: number | null; // set alone when the source gives only a year (SERTP/Duke)
   stations: string[];
   geo_points: [number, number][] | null;
   geo_center: [number, number] | null;

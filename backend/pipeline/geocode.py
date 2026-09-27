@@ -21,7 +21,7 @@ Then each match is validated:
   - ambiguity         several same-named substations -> pick by context and say so
   - zone (GPC)        match must sit near the other confirmed stations in the
                       same GPC planning zone (the "same name, wrong county" trap)
-  - state box (DESC)  match must be in/adjacent to South Carolina
+  - state box (DESC, DUKE)  match must be in/adjacent to the Carolinas (not Georgia)
   - endpoint span     both ends of one line should be within LINE_SPAN_KM
 
 A match that fails zone/state is REJECTED (endpoint left unlocated) rather than
@@ -42,10 +42,12 @@ from rapidfuzz.distance import Levenshtein
 ROOT = Path(__file__).parent.parent
 OSM_DIR = ROOT / "data_raw" / "osm"
 OVERPASS_CACHE = OSM_DIR / "overpass_substations_ga_sc.json"
+OVERPASS_CACHE_NC = OSM_DIR / "overpass_substations_nc.json"  # Duke's North Carolina territory
 NOMINATIM_CACHE = OSM_DIR / "nominatim_cache.json"
 
 BBOX = (30.3, -85.7, 35.3, -78.5)  # GA + SC
-OVERPASS_QUERY = f'[out:json][timeout:120];nwr["power"="substation"]["name"]{BBOX};out center tags;'
+BBOX_NC = (35.0, -84.4, 36.7, -75.4)
+OVERPASS_QUERY = '[out:json][timeout:120];nwr["power"="substation"]["name"]{};out center tags;'
 OVERPASS_MIRRORS = [
     "https://overpass-api.de/api/interpreter",
     "https://overpass.kumi.systems/api/interpreter",
@@ -62,10 +64,21 @@ SAME_PLACE_KM = 2
 UTILITY_OPERATORS = {
     "DESC": ("dominion", "south carolina electric", "south carolina gas", "sce&g", "scana"),
     "GPC": ("georgia power",),
+    "DUKE": ("duke energy", "progress energy", "carolina power"),
 }
+# Tie lines legitimately end at a neighbour's station: DESC ties into Georgia Power
+# along the river, and Duke ties into DESC (e.g. "SUMTER - DESC EASTOVER").
+TIE_OPERATORS = {"DESC": ("georgia power",), "GPC": (), "DUKE": UTILITY_OPERATORS["DESC"]}
 # DESC is an SC utility, but its tie lines end at GA substations along the river
 DESC_BOX = (31.9, -83.5, 35.3, -78.5)
 GPC_BOX = (30.3, -85.7, 35.05, -80.8)
+# Duke's service area: NC plus SC's Upstate, Midlands-north, Sumter and Pee Dee. It does not
+# reach the SC Lowcountry, where a same-named town (e.g. Boyd, Jasper Co.) is a false match.
+DUKE_BOX = (33.4, -84.4, 36.7, -75.4)
+BOXES = {"DESC": DESC_BOX, "GPC": GPC_BOX, "DUKE": DUKE_BOX}
+# Town-name fallback per utility. None for Duke: its territory spans two states full of
+# same-named hamlets (Boyd, Eastover, ...), so a bare town match can't be tied to Duke's station.
+NOMINATIM_STATE = {"DESC": "South Carolina", "GPC": "Georgia", "DUKE": None}
 
 # Organizer worked example (Projects_Overlaps.xlsx) -- treated as ground truth.
 ORGANIZER = {
@@ -100,6 +113,8 @@ NOISE = [
     r"\bsecond transformer\b", r"\btransmission\b", r"\bpower\b", r"\belectric\b",
     r"\bplant\b", r"\bstation\b", r"\bjct\b", r"\bjunction\b", r"\blow side breaker\b",
     r"\bbreaker\b.*", r"\bstrategic\b.*", r"\barea\b",
+    r"^(desc|dpc|dep|dvp) ",  # owner prefix on a tie-line end: "DESC EASTOVER", "DPC WATEREE"
+    r"\btie\b", r"\bmain\b", r"\bswitchyard\b",  # Duke station suffixes: "BUSH RIVER TIE", "DURHAM MAIN"
 ]
 # Endpoints that are not places at all (customer-connection prefixes, programs)
 NOT_A_PLACE = re.compile(
@@ -188,27 +203,34 @@ def state_ok(pt, utility, operator_ok):
     on_border = km_to_border(pt) <= BORDER_TOLERANCE_KM
     if utility == "GPC":
         return in_box(pt, GPC_BOX) and (in_georgia(pt) or operator_ok or on_border)
-    return in_box(pt, DESC_BOX) and (not in_georgia(pt) or operator_ok or on_border)
+    return in_box(pt, BOXES[utility]) and (not in_georgia(pt) or operator_ok or on_border)
 
 
 # ---------------------------------------------------------------- data sources
 
+def fetch_overpass(cache, bbox):
+    if cache.exists():
+        return json.loads(cache.read_text())["elements"]
+    OSM_DIR.mkdir(parents=True, exist_ok=True)
+    for url in OVERPASS_MIRRORS:
+        try:
+            r = requests.post(url, data={"data": OVERPASS_QUERY.format(bbox)},
+                              headers={"User-Agent": USER_AGENT}, timeout=180)
+            if r.ok and r.text.lstrip().startswith("{"):
+                cache.write_text(r.text)
+                return json.loads(r.text)["elements"]
+        except requests.RequestException:
+            continue
+    raise RuntimeError("every Overpass mirror failed; retry later")
+
+
 def load_osm_substations():
-    if not OVERPASS_CACHE.exists():
-        OSM_DIR.mkdir(parents=True, exist_ok=True)
-        for url in OVERPASS_MIRRORS:
-            try:
-                r = requests.post(url, data={"data": OVERPASS_QUERY},
-                                  headers={"User-Agent": USER_AGENT}, timeout=180)
-                if r.ok and r.text.lstrip().startswith("{"):
-                    OVERPASS_CACHE.write_text(r.text)
-                    break
-            except requests.RequestException:
-                continue
-        else:
-            raise RuntimeError("every Overpass mirror failed; retry later")
-    feats = []
-    for e in json.loads(OVERPASS_CACHE.read_text())["elements"]:
+    elements = fetch_overpass(OVERPASS_CACHE, BBOX) + fetch_overpass(OVERPASS_CACHE_NC, BBOX_NC)
+    feats, seen = [], set()
+    for e in elements:
+        if (e["type"], e["id"]) in seen:  # the two pulls overlap along the SC/NC line
+            continue
+        seen.add((e["type"], e["id"]))
         tags = e.get("tags", {})
         lat = e.get("lat", e.get("center", {}).get("lat"))
         lon = e.get("lon", e.get("center", {}).get("lon"))
@@ -262,7 +284,7 @@ class Geocoder:
         self.zone_radius = {}
 
     def osm_candidates(self, norm, utility):
-        box = DESC_BOX if utility == "DESC" else GPC_BOX
+        box = BOXES[utility]
         ops = UTILITY_OPERATORS[utility]
         out = []
         for f in self.osm:
@@ -273,8 +295,8 @@ class Geocoder:
                 continue
             op = f["operator"].lower()
             op_ok = any(o in op for o in ops)
-            tie_end = utility == "DESC" and "georgia power" in op
-            # DESC tie lines legitimately end at Georgia Power stations; anything
+            tie_end = any(o in op for o in TIE_OPERATORS[utility])
+            # a tie line may end at its neighbour's station (TIE_OPERATORS); anything
             # else tagged with a third utility is somebody else's substation.
             if op and not op_ok and not tie_end:
                 continue
@@ -286,6 +308,8 @@ class Geocoder:
 
     def locate(self, raw_name, utility, zone=None, anchor=None):
         """Return an endpoint dict (always), with pt=None when unlocated."""
+        if utility == "DUKE" and raw_name.lower().startswith("desc "):
+            utility = "DESC"  # a tie line's far end named as DESC's station ("DESC EASTOVER")
         norm = normalize(raw_name)
         ep = {"name": raw_name, "norm": norm, "pt": None, "source": None,
               "confidence": None, "checks": {}, "notes": []}
@@ -319,7 +343,7 @@ class Geocoder:
                     ep["notes"].append(f"{len(sites)} same-named OSM substations and no context to choose")
                     ep["checks"]["ambiguous_resolved"] = False
 
-        org = ORGANIZER[utility].get(norm)
+        org = ORGANIZER.get(utility, {}).get(norm)
         if org:
             ep.update(pt=org, source="organizer worked example")
             ep["checks"]["organizer"] = True
@@ -342,8 +366,9 @@ class Geocoder:
         return ep
 
     def _nominatim(self, ep, norm, utility):
-        state = "South Carolina" if utility == "DESC" else "Georgia"
-        box = DESC_BOX if utility == "DESC" else GPC_BOX
+        state = NOMINATIM_STATE[utility]
+        if state is None:
+            return
         for q, kind in ((f"{norm} substation, {state}", "power"), (f"{norm}, {state}", "place")):
             for r in self.nom.search(q):
                 pt = (float(r["lat"]), float(r["lon"]))

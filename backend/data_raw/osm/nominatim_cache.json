@@ -6656,5 +6656,5732 @@
     "-83.3048748"
    ]
   }
+ ],
+ "bush river substation, North Carolina": [],
+ "bush river substation, South Carolina": [],
+ "bush river, North Carolina": [],
+ "bush river, South Carolina": [
+  {
+   "place_id": 340408463,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 154155813,
+   "lat": "34.3218009",
+   "lon": "-81.7606651",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.13336833524071104,
+   "addresstype": "hamlet",
+   "name": "Bush River",
+   "display_name": "Bush River, Newberry County, South Carolina, United States",
+   "boundingbox": [
+    "34.3018009",
+    "34.3418009",
+    "-81.7806651",
+    "-81.7406651"
+   ]
+  },
+  {
+   "place_id": 338761616,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 38009311,
+   "lat": "34.4654276",
+   "lon": "-81.8888378",
+   "category": "waterway",
+   "type": "stream",
+   "place_rank": 22,
+   "importance": 0.10671657663843745,
+   "addresstype": "stream",
+   "name": "Bush River",
+   "display_name": "Bush River, Clinton, Laurens County, South Carolina, 29325, United States",
+   "boundingbox": [
+    "34.4607900",
+    "34.4697210",
+    "-81.8914120",
+    "-81.8856000"
+   ]
+  },
+  {
+   "place_id": 340415436,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 38035998,
+   "lat": "34.4577516",
+   "lon": "-81.8939677",
+   "category": "waterway",
+   "type": "stream",
+   "place_rank": 22,
+   "importance": 0.10671657663843745,
+   "addresstype": "stream",
+   "name": "Bush River",
+   "display_name": "Bush River, Laurens County, South Carolina, 29325, United States",
+   "boundingbox": [
+    "34.4563660",
+    "34.4593450",
+    "-81.8949320",
+    "-81.8929590"
+   ]
+  },
+  {
+   "place_id": 340414738,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 38011043,
+   "lat": "34.4119751",
+   "lon": "-81.8403886",
+   "category": "waterway",
+   "type": "stream",
+   "place_rank": 22,
+   "importance": 0.10670529106584266,
+   "addresstype": "stream",
+   "name": "Bush River",
+   "display_name": "Bush River, Laurens County, South Carolina, 29351, United States",
+   "boundingbox": [
+    "34.4097060",
+    "34.4123000",
+    "-81.8439820",
+    "-81.8377640"
+   ]
+  },
+  {
+   "place_id": 338755209,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 38019177,
+   "lat": "34.3972148",
+   "lon": "-81.8157407",
+   "category": "waterway",
+   "type": "stream",
+   "place_rank": 22,
+   "importance": 0.10670529106584266,
+   "addresstype": "stream",
+   "name": "Bush River",
+   "display_name": "Bush River, Joanna, Laurens County, South Carolina, 29351, United States",
+   "boundingbox": [
+    "34.3954210",
+    "34.3984430",
+    "-81.8179210",
+    "-81.8144580"
+   ]
+  }
+ ],
+ "clover substation, North Carolina": [],
+ "clover substation, South Carolina": [],
+ "clover, North Carolina": [
+  {
+   "place_id": 340923145,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 154369955,
+   "lat": "35.4073637",
+   "lon": "-80.1956116",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.13339187075608452,
+   "addresstype": "hamlet",
+   "name": "Clover Fork Acres",
+   "display_name": "Clover Fork Acres, Albemarle, Stanly County, North Carolina, United States",
+   "boundingbox": [
+    "35.3873637",
+    "35.4273637",
+    "-80.2156116",
+    "-80.1756116"
+   ]
+  },
+  {
+   "place_id": 346423587,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 158599626,
+   "lat": "36.1884686",
+   "lon": "-79.4628007",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.13336833524071104,
+   "addresstype": "hamlet",
+   "name": "Clover Garden",
+   "display_name": "Clover Garden, Alamance County, North Carolina, 27202, United States",
+   "boundingbox": [
+    "36.1684686",
+    "36.2084686",
+    "-79.4828007",
+    "-79.4428007"
+   ]
+  },
+  {
+   "place_id": 340441613,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 853508601,
+   "lat": "35.7647161",
+   "lon": "-81.5501583",
+   "category": "waterway",
+   "type": "stream",
+   "place_rank": 22,
+   "importance": 0.1067078698405432,
+   "addresstype": "stream",
+   "name": "Clover Creek",
+   "display_name": "Clover Creek, Valdese, Burke County, North Carolina, 28671, United States",
+   "boundingbox": [
+    "35.7639566",
+    "35.7658554",
+    "-81.5509569",
+    "-81.5489138"
+   ]
+  },
+  {
+   "place_id": 341936910,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 43593591,
+   "lat": "35.9286647",
+   "lon": "-82.8871549",
+   "category": "waterway",
+   "type": "stream",
+   "place_rank": 22,
+   "importance": 0.10670166857404438,
+   "addresstype": "stream",
+   "name": "Clover Branch",
+   "display_name": "Clover Branch, Paint Rock, Madison County, North Carolina, United States",
+   "boundingbox": [
+    "35.9276305",
+    "35.9295910",
+    "-82.8881066",
+    "-82.8860068"
+   ]
+  },
+  {
+   "place_id": 341514430,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 43609914,
+   "lat": "35.9157238",
+   "lon": "-82.8924459",
+   "category": "waterway",
+   "type": "stream",
+   "place_rank": 22,
+   "importance": 0.10670166857404438,
+   "addresstype": "stream",
+   "name": "Clover Branch",
+   "display_name": "Clover Branch, Antioch, Madison County, North Carolina, United States",
+   "boundingbox": [
+    "35.9150610",
+    "35.9165250",
+    "-82.8924480",
+    "-82.8919430"
+   ]
+  }
+ ],
+ "clover, South Carolina": [
+  {
+   "place_id": 340449708,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 194086,
+   "lat": "35.1112478",
+   "lon": "-81.2264646",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 16,
+   "importance": 0.37222067481901694,
+   "addresstype": "town",
+   "name": "Clover",
+   "display_name": "Clover, York County, South Carolina, United States",
+   "boundingbox": [
+    "35.0934610",
+    "35.1318280",
+    "-81.2425390",
+    "-81.2058030"
+   ]
+  }
+ ],
+ "customer substation, North Carolina": [],
+ "customer substation, South Carolina": [],
+ "customer, North Carolina": [
+  {
+   "place_id": 340771950,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1100943939,
+   "lat": "35.3273009",
+   "lon": "-80.7553068",
+   "category": "building",
+   "type": "commercial",
+   "place_rank": 30,
+   "importance": 7.101625085827447e-05,
+   "addresstype": "building",
+   "name": "Duke Energy Customer Service Center",
+   "display_name": "Duke Energy Customer Service Center, David Taylor Drive, University City, Charlotte, Mecklenburg County, North Carolina, 28262, United States",
+   "boundingbox": [
+    "35.3269354",
+    "35.3275810",
+    "-80.7560767",
+    "-80.7546224"
+   ]
+  },
+  {
+   "place_id": 417316649,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 4406134493,
+   "lat": "35.2191624",
+   "lon": "-80.9427028",
+   "category": "tourism",
+   "type": "information",
+   "place_rank": 30,
+   "importance": 7.101625085827447e-05,
+   "addresstype": "tourism",
+   "name": "American Airlines Customer Assistance",
+   "display_name": "American Airlines Customer Assistance, Rideshare, Charlotte, Mecklenburg County, North Carolina, 28208, United States",
+   "boundingbox": [
+    "35.2191124",
+    "35.2192124",
+    "-80.9427528",
+    "-80.9426528"
+   ]
+  },
+  {
+   "place_id": 340776992,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 5141557825,
+   "lat": "35.2186339",
+   "lon": "-80.9451027",
+   "category": "tourism",
+   "type": "information",
+   "place_rank": 30,
+   "importance": 7.101625085827447e-05,
+   "addresstype": "tourism",
+   "name": "American Airlines Customer Assistance",
+   "display_name": "American Airlines Customer Assistance, Rental Car Road, Charlotte, Mecklenburg County, North Carolina, 28208, United States",
+   "boundingbox": [
+    "35.2185839",
+    "35.2186839",
+    "-80.9451527",
+    "-80.9450527"
+   ]
+  },
+  {
+   "place_id": 340814896,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 5141643546,
+   "lat": "35.2230668",
+   "lon": "-80.9405621",
+   "category": "information",
+   "type": "office",
+   "place_rank": 30,
+   "importance": 7.101625085827447e-05,
+   "addresstype": "information",
+   "name": "American Airlines Customer Assistance",
+   "display_name": "American Airlines Customer Assistance, Josh Birmingham Parkway, Charlotte, Mecklenburg County, North Carolina, 28208, United States",
+   "boundingbox": [
+    "35.2230168",
+    "35.2231168",
+    "-80.9406121",
+    "-80.9405121"
+   ]
+  },
+  {
+   "place_id": 343834487,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 266848058,
+   "lat": "35.8747091",
+   "lon": "-78.8382559",
+   "category": "building",
+   "type": "commercial",
+   "place_rank": 30,
+   "importance": 6.708247501330613e-05,
+   "addresstype": "building",
+   "name": "Regtional Transit Center customer service window",
+   "display_name": "Regtional Transit Center customer service window, Imperial Center Greenway, Imperial Center, Nelson, Durham, Durham County, North Carolina, 27560, United States",
+   "boundingbox": [
+    "35.8746439",
+    "35.8747743",
+    "-78.8383552",
+    "-78.8381648"
+   ]
+  }
+ ],
+ "customer, South Carolina": [
+  {
+   "place_id": 340026856,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 7162120031,
+   "lat": "32.7907303",
+   "lon": "-80.0247447",
+   "category": "craft",
+   "type": "hvac",
+   "place_rank": 30,
+   "importance": 7.015716792549046e-05,
+   "addresstype": "craft",
+   "name": "Customer's Preference",
+   "display_name": "Customer's Preference, 632, Dupont Road, Orleans Estates, Charleston, Charleston County, South Carolina, 29407, United States",
+   "boundingbox": [
+    "32.7906803",
+    "32.7907803",
+    "-80.0247947",
+    "-80.0246947"
+   ]
+  },
+  {
+   "place_id": 343595207,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1393007445,
+   "lat": "33.8278757",
+   "lon": "-78.6854069",
+   "category": "amenity",
+   "type": "police",
+   "place_rank": 30,
+   "importance": 3.750133516437045e-05,
+   "addresstype": "amenity",
+   "name": "North Myrtle Beach Police Department - Customer Service",
+   "display_name": "North Myrtle Beach Police Department - Customer Service, 1018, 2nd Ave South, Ocean Drive Beach, North Myrtle Beach, Horry County, South Carolina, 29582, United States",
+   "boundingbox": [
+    "33.8277424",
+    "33.8280627",
+    "-78.6856650",
+    "-78.6851533"
+   ]
+  },
+  {
+   "place_id": 343197153,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 11998034001,
+   "lat": "33.0269292",
+   "lon": "-80.1349486",
+   "category": "amenity",
+   "type": "post_depot",
+   "place_rank": 30,
+   "importance": 3.750133516437045e-05,
+   "addresstype": "amenity",
+   "name": "UPS Customer Service",
+   "display_name": "UPS Customer Service, Farmington Road, Woodbridge, Berkeley County, South Carolina, 29483, United States",
+   "boundingbox": [
+    "33.0268792",
+    "33.0269792",
+    "-80.1349986",
+    "-80.1348986"
+   ]
+  }
+ ],
+ "creto substation, North Carolina": [],
+ "creto substation, South Carolina": [],
+ "creto, North Carolina": [],
+ "creto, South Carolina": [],
+ "coronaca substation, North Carolina": [],
+ "coronaca substation, South Carolina": [],
+ "coronaca, North Carolina": [
+  {
+   "place_id": 341974743,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 38008709,
+   "lat": "34.2600206",
+   "lon": "-82.1697024",
+   "category": "waterway",
+   "type": "stream",
+   "place_rank": 22,
+   "importance": 0.10670166857404438,
+   "addresstype": "stream",
+   "name": "Coronaca Creek",
+   "display_name": "Coronaca Creek, North Hills Estates, Greenwood County, South Carolina, 29695, United States",
+   "boundingbox": [
+    "34.2597380",
+    "34.2609470",
+    "-82.1724870",
+    "-82.1670510"
+   ]
+  },
+  {
+   "place_id": 342588823,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 38013904,
+   "lat": "34.2587297",
+   "lon": "-82.1864453",
+   "category": "waterway",
+   "type": "stream",
+   "place_rank": 22,
+   "importance": 0.10670166857404438,
+   "addresstype": "stream",
+   "name": "Coronaca Creek",
+   "display_name": "Coronaca Creek, Roman Acres, Greenwood County, South Carolina, 29695, United States",
+   "boundingbox": [
+    "34.2574470",
+    "34.2600580",
+    "-82.1924940",
+    "-82.1807563"
+   ]
+  },
+  {
+   "place_id": 342531630,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 919985148,
+   "lat": "34.2586230",
+   "lon": "-82.0891494",
+   "category": "amenity",
+   "type": "doctors",
+   "place_rank": 30,
+   "importance": 3.500190737769158e-05,
+   "addresstype": "amenity",
+   "name": "Family Healthcare Coronaca",
+   "display_name": "Family Healthcare Coronaca, 110, State Highway 246 North, Greenwood, Greenwood County, South Carolina, 29649, United States",
+   "boundingbox": [
+    "34.2585007",
+    "34.2587609",
+    "-82.0893307",
+    "-82.0889681"
+   ]
+  },
+  {
+   "place_id": 341977505,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 880035679,
+   "lat": "34.2577433",
+   "lon": "-82.0897541",
+   "category": "amenity",
+   "type": "fuel",
+   "place_rank": 30,
+   "importance": 3.500190737769158e-05,
+   "addresstype": "amenity",
+   "name": "One Stop of Coronaca",
+   "display_name": "One Stop of Coronaca, 101, State Highway 246 North, Greenwood, Greenwood County, South Carolina, 29649, United States",
+   "boundingbox": [
+    "34.2576188",
+    "34.2578595",
+    "-82.0899065",
+    "-82.0895797"
+   ]
+  }
+ ],
+ "coronaca, South Carolina": [
+  {
+   "place_id": 339037756,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 194729,
+   "lat": "34.2606955",
+   "lon": "-82.0911911",
+   "category": "boundary",
+   "type": "census",
+   "place_rank": 25,
+   "importance": 0.2954185985350713,
+   "addresstype": "locality",
+   "name": "Coronaca",
+   "display_name": "Coronaca, Greenwood County, South Carolina, United States",
+   "boundingbox": [
+    "34.2425630",
+    "34.2787930",
+    "-82.1164920",
+    "-82.0835440"
+   ]
+  },
+  {
+   "place_id": 339025538,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 154080321,
+   "lat": "34.2598459",
+   "lon": "-82.0942855",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.13336833524071104,
+   "addresstype": "hamlet",
+   "name": "Coronaca",
+   "display_name": "Coronaca, Greenwood County, South Carolina, 29648, United States",
+   "boundingbox": [
+    "34.2398459",
+    "34.2798459",
+    "-82.1142855",
+    "-82.0742855"
+   ]
+  }
+ ],
+ "oakvale substation, North Carolina": [],
+ "oakvale substation, South Carolina": [],
+ "oakvale, North Carolina": [
+  {
+   "place_id": 347920346,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 16596311,
+   "lat": "36.0273031",
+   "lon": "-79.8672402",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05340000686655982,
+   "addresstype": "road",
+   "name": "Oakvale Street",
+   "display_name": "Oakvale Street, Sedge-Town, Greensboro, Guilford County, North Carolina, 27407, United States",
+   "boundingbox": [
+    "36.0268424",
+    "36.0277998",
+    "-79.8682414",
+    "-79.8662216"
+   ]
+  },
+  {
+   "place_id": 339217684,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 16629516,
+   "lat": "35.3583527",
+   "lon": "-82.4991698",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.053374174868390904,
+   "addresstype": "road",
+   "name": "Oakvale Place",
+   "display_name": "Oakvale Place, Foxwood, Mountain Home, Henderson County, North Carolina, 28791, United States",
+   "boundingbox": [
+    "35.3582970",
+    "35.3592790",
+    "-82.4995380",
+    "-82.4979150"
+   ]
+  },
+  {
+   "place_id": 346062530,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 16712616,
+   "lat": "34.3200551",
+   "lon": "-77.7531371",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Oakvale Drive",
+   "display_name": "Oakvale Drive, Pender County, North Carolina, 28411, United States",
+   "boundingbox": [
+    "34.3191418",
+    "34.3212010",
+    "-77.7539534",
+    "-77.7527620"
+   ]
+  },
+  {
+   "place_id": 344315705,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 700748008,
+   "lat": "35.6577337",
+   "lon": "-78.7063309",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Oakvale Street",
+   "display_name": "Oakvale Street, McCuller's Crossroads, Wake County, North Carolina, 26703, United States",
+   "boundingbox": [
+    "35.6574376",
+    "35.6580297",
+    "-78.7074231",
+    "-78.7052388"
+   ]
+  },
+  {
+   "place_id": 352357026,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 16481804,
+   "lat": "35.3617403",
+   "lon": "-81.5139512",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05335933394369417,
+   "addresstype": "road",
+   "name": "Oakvale Drive",
+   "display_name": "Oakvale Drive, Cleveland County, North Carolina, 28150, United States",
+   "boundingbox": [
+    "35.3609190",
+    "35.3618880",
+    "-81.5208930",
+    "-81.5070889"
+   ]
+  }
+ ],
+ "oakvale, South Carolina": [
+  {
+   "place_id": 341685137,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 232279525,
+   "lat": "34.1830936",
+   "lon": "-80.9573018",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05337333409628439,
+   "addresstype": "road",
+   "name": "Oakvale Court",
+   "display_name": "Oakvale Court, Willow Lake, Sharp, Richland County, South Carolina, 29016, United States",
+   "boundingbox": [
+    "34.1826064",
+    "34.1836270",
+    "-80.9573670",
+    "-80.9570769"
+   ]
+  },
+  {
+   "place_id": 341968891,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12504425,
+   "lat": "34.8375317",
+   "lon": "-82.5699697",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Oakvale Drive",
+   "display_name": "Oakvale Drive, Elaine Heights, Easley, Pickens County, South Carolina, 29640, United States",
+   "boundingbox": [
+    "34.8336245",
+    "34.8431116",
+    "-82.5737590",
+    "-82.5679200"
+   ]
+  },
+  {
+   "place_id": 338948115,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12435761,
+   "lat": "34.7875740",
+   "lon": "-82.4312006",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Oakvale Road",
+   "display_name": "Oakvale Road, Lakeside, Gantt, Greenville County, South Carolina, 29611, United States",
+   "boundingbox": [
+    "34.7823960",
+    "34.7879970",
+    "-82.4385470",
+    "-82.4290370"
+   ]
+  },
+  {
+   "place_id": 343335769,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12409540,
+   "lat": "34.7790184",
+   "lon": "-82.4275329",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Oakvale Drive",
+   "display_name": "Oakvale Drive, Lakeside, Gantt, Greenville County, South Carolina, 29673, United States",
+   "boundingbox": [
+    "34.7769600",
+    "34.7811200",
+    "-82.4283050",
+    "-82.4269490"
+   ]
+  },
+  {
+   "place_id": 340606272,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12407538,
+   "lat": "34.7780209",
+   "lon": "-82.4270009",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Oakvale Circle",
+   "display_name": "Oakvale Circle, Lakeside, Gantt, Greenville County, South Carolina, 29673, United States",
+   "boundingbox": [
+    "34.7769890",
+    "34.7785080",
+    "-82.4277260",
+    "-82.4269850"
+   ]
+  }
+ ],
+ "east greenville substation, North Carolina": [],
+ "east greenville substation, South Carolina": [],
+ "east greenville, North Carolina": [
+  {
+   "place_id": 344016897,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 6394844645,
+   "lat": "35.6023405",
+   "lon": "-77.3620873",
+   "category": "amenity",
+   "type": "charging_station",
+   "place_rank": 30,
+   "importance": 6.179522392610082e-05,
+   "addresstype": "amenity",
+   "name": "Greenville NC East Carolina 2",
+   "display_name": "Greenville NC East Carolina 2, Green Mill Run Greenway, University Park, The Grid, Greenville, Pitt County, North Carolina, 27658, United States",
+   "boundingbox": [
+    "35.6022905",
+    "35.6023905",
+    "-77.3621373",
+    "-77.3620373"
+   ]
+  },
+  {
+   "place_id": 344100619,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 13313474881,
+   "lat": "35.5852572",
+   "lon": "-77.3640535",
+   "category": "amenity",
+   "type": "university",
+   "place_rank": 30,
+   "importance": 6.179522392610082e-05,
+   "addresstype": "amenity",
+   "name": "East Carolina University Greenville Centre",
+   "display_name": "East Carolina University Greenville Centre, 2200, South Charles Boulevard, Sheraton Place, Greenville, Pitt County, North Carolina, 27858, United States",
+   "boundingbox": [
+    "35.5852072",
+    "35.5853072",
+    "-77.3641035",
+    "-77.3640035"
+   ]
+  },
+  {
+   "place_id": 343974207,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 485251248,
+   "lat": "35.5862585",
+   "lon": "-77.6012962",
+   "category": "building",
+   "type": "yes",
+   "place_rank": 30,
+   "importance": 4.321431296249359e-05,
+   "addresstype": "building",
+   "name": "East Coast Glass Of Greenville",
+   "display_name": "East Coast Glass Of Greenville, 8724, West Marlboro Road, Marlboro, Farmville, Pitt County, North Carolina, 27828, United States",
+   "boundingbox": [
+    "35.5859436",
+    "35.5865324",
+    "-77.6017168",
+    "-77.6010087"
+   ]
+  },
+  {
+   "place_id": 344031857,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 631685373,
+   "lat": "35.6034377",
+   "lon": "-77.3404607",
+   "category": "amenity",
+   "type": "police",
+   "place_rank": 30,
+   "importance": 6.179522392610082e-05,
+   "addresstype": "amenity",
+   "name": "North Carolina State Highway Patrol - Troop A Headquarters",
+   "display_name": "North Carolina State Highway Patrol - Troop A Headquarters, 2815, East 10th Street, College Park Apartments, Hartington and Williams, Greenville, Pitt County, North Carolina, 27858, United States",
+   "boundingbox": [
+    "35.6032630",
+    "35.6036125",
+    "-77.3406743",
+    "-77.3402470"
+   ]
+  },
+  {
+   "place_id": 344073043,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 631685371,
+   "lat": "35.6032733",
+   "lon": "-77.3402296",
+   "category": "amenity",
+   "type": "parking",
+   "place_rank": 30,
+   "importance": 6.179522392610082e-05,
+   "addresstype": "amenity",
+   "name": "North Carolina State Highway Patrol",
+   "display_name": "North Carolina State Highway Patrol, East 5th Street, Speight, Greenville, Pitt County, North Carolina, 27858, United States",
+   "boundingbox": [
+    "35.6031160",
+    "35.6034306",
+    "-77.3404217",
+    "-77.3400375"
+   ]
+  }
+ ],
+ "east greenville, South Carolina": [
+  {
+   "place_id": 341437120,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12099295,
+   "lat": "34.5261020",
+   "lon": "-82.6390489",
+   "category": "highway",
+   "type": "secondary",
+   "place_rank": 26,
+   "importance": 0.05338893492027157,
+   "addresstype": "road",
+   "name": "East Greenville Street",
+   "display_name": "East Greenville Street, Allen Hills, Anderson, Anderson County, South Carolina, 29621, United States",
+   "boundingbox": [
+    "34.5174694",
+    "34.5347240",
+    "-82.6449970",
+    "-82.6315737"
+   ]
+  },
+  {
+   "place_id": 344026103,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 749824167,
+   "lat": "34.5449639",
+   "lon": "-82.6313461",
+   "category": "highway",
+   "type": "secondary",
+   "place_rank": 26,
+   "importance": 0.05338893492027157,
+   "addresstype": "road",
+   "name": "East Greenville Street",
+   "display_name": "East Greenville Street, Autumn Oaks, Anderson, Anderson County, South Carolina, 29621, United States",
+   "boundingbox": [
+    "34.5428914",
+    "34.5470660",
+    "-82.6314169",
+    "-82.6309291"
+   ]
+  },
+  {
+   "place_id": 341247617,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 761398736,
+   "lat": "34.5356377",
+   "lon": "-82.6310489",
+   "category": "highway",
+   "type": "secondary",
+   "place_rank": 26,
+   "importance": 0.05338893492027157,
+   "addresstype": "road",
+   "name": "East Greenville Street",
+   "display_name": "East Greenville Street, Holly Creek, Anderson, Anderson County, South Carolina, 29621, United States",
+   "boundingbox": [
+    "34.5347240",
+    "34.5365542",
+    "-82.6315737",
+    "-82.6305304"
+   ]
+  }
+ ],
+ "wylie substation, North Carolina": [],
+ "wylie substation, South Carolina": [],
+ "wylie, North Carolina": [
+  {
+   "place_id": 341750219,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 194732,
+   "lat": "35.1104220",
+   "lon": "-81.0538064",
+   "category": "boundary",
+   "type": "statistical",
+   "place_rank": 25,
+   "importance": 0.33749181912886295,
+   "addresstype": "statistical",
+   "name": "Lake Wylie",
+   "display_name": "Lake Wylie, York County, South Carolina, United States",
+   "boundingbox": [
+    "35.0872640",
+    "35.1334935",
+    "-81.0773840",
+    "-81.0324700"
+   ]
+  },
+  {
+   "place_id": 339530032,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 299167,
+   "lat": "35.1313023",
+   "lon": "-81.0468383",
+   "category": "water",
+   "type": "reservoir",
+   "place_rank": 20,
+   "importance": 0.24930035976498935,
+   "addresstype": "reservoir",
+   "name": "Lake Wylie",
+   "display_name": "Lake Wylie, Charlotte, Mecklenburg County, North Carolina, United States",
+   "boundingbox": [
+    "35.0124940",
+    "35.2501448",
+    "-81.1122920",
+    "-80.9826852"
+   ]
+  },
+  {
+   "place_id": 341799121,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 302213,
+   "lat": "35.1870233",
+   "lon": "-81.0361651",
+   "category": "water",
+   "type": "lake",
+   "place_rank": 20,
+   "importance": 0.13336833524071104,
+   "addresstype": "lake",
+   "name": "Lake Wylie",
+   "display_name": "Lake Wylie, Belmont, Gaston County, North Carolina, United States",
+   "boundingbox": [
+    "35.1510534",
+    "35.2229966",
+    "-81.0645902",
+    "-81.0118782"
+   ]
+  },
+  {
+   "place_id": 343502510,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 16673608,
+   "lat": "35.2253679",
+   "lon": "-81.0010838",
+   "category": "landuse",
+   "type": "residential",
+   "place_rank": 24,
+   "importance": 0.08003500190737771,
+   "addresstype": "residential",
+   "name": "The Vineyard on Lake Wylie",
+   "display_name": "The Vineyard on Lake Wylie, Catawba Colony, Mecklenburg County, North Carolina, United States",
+   "boundingbox": [
+    "35.2164542",
+    "35.2342739",
+    "-81.0096700",
+    "-80.9846779"
+   ]
+  },
+  {
+   "place_id": 341479850,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1182225075,
+   "lat": "35.0549871",
+   "lon": "-81.0433016",
+   "category": "landuse",
+   "type": "residential",
+   "place_rank": 24,
+   "importance": 0.08003500190737771,
+   "addresstype": "residential",
+   "name": "Saybrooke at Lake Wylie",
+   "display_name": "Saybrooke at Lake Wylie, Mecklenburg County, North Carolina, United States",
+   "boundingbox": [
+    "35.0531693",
+    "35.0564723",
+    "-81.0454034",
+    "-81.0413732"
+   ]
+  }
+ ],
+ "wylie, South Carolina": [
+  {
+   "place_id": 339966400,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 194732,
+   "lat": "35.1104220",
+   "lon": "-81.0538064",
+   "category": "boundary",
+   "type": "statistical",
+   "place_rank": 25,
+   "importance": 0.33749181912886295,
+   "addresstype": "statistical",
+   "name": "Lake Wylie",
+   "display_name": "Lake Wylie, York County, South Carolina, United States",
+   "boundingbox": [
+    "35.0872640",
+    "35.1334935",
+    "-81.0773840",
+    "-81.0324700"
+   ]
+  },
+  {
+   "place_id": 339951833,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 5321373825,
+   "lat": "35.1085916",
+   "lon": "-81.0424965",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.33749181912886295,
+   "addresstype": "hamlet",
+   "name": "Lake Wylie",
+   "display_name": "Lake Wylie, York County, South Carolina, 28278, United States",
+   "boundingbox": [
+    "35.0885916",
+    "35.1285916",
+    "-81.0624965",
+    "-81.0224965"
+   ]
+  },
+  {
+   "place_id": 341282566,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 299167,
+   "lat": "35.1313023",
+   "lon": "-81.0468383",
+   "category": "water",
+   "type": "reservoir",
+   "place_rank": 20,
+   "importance": 0.24930035976498935,
+   "addresstype": "reservoir",
+   "name": "Lake Wylie",
+   "display_name": "Lake Wylie, Charlotte, Mecklenburg County, North Carolina, United States",
+   "boundingbox": [
+    "35.0124940",
+    "35.2501448",
+    "-81.1122920",
+    "-80.9826852"
+   ]
+  },
+  {
+   "place_id": 338303711,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 22309103,
+   "lat": "35.0204812",
+   "lon": "-81.0077859",
+   "category": "waterway",
+   "type": "dam",
+   "place_rank": 20,
+   "importance": 0.13336203326466772,
+   "addresstype": "dam",
+   "name": "Wylie Dam",
+   "display_name": "Wylie Dam, York County, South Carolina, United States",
+   "boundingbox": [
+    "35.0187668",
+    "35.0221827",
+    "-81.0081069",
+    "-81.0062720"
+   ]
+  },
+  {
+   "place_id": 342698510,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 864719327,
+   "lat": "34.6990655",
+   "lon": "-81.2227133",
+   "category": "leisure",
+   "type": "park",
+   "place_rank": 24,
+   "importance": 0.08004906614785989,
+   "addresstype": "park",
+   "name": "Wylie Park",
+   "display_name": "Wylie Park, Brooklyn, Chester, Chester County, South Carolina, United States",
+   "boundingbox": [
+    "34.6972286",
+    "34.7015993",
+    "-81.2263173",
+    "-81.2197164"
+   ]
+  }
+ ],
+ "boyd substation, North Carolina": [],
+ "boyd substation, South Carolina": [],
+ "boyd, North Carolina": [
+  {
+   "place_id": 345190308,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 160280102,
+   "lat": "35.8556169",
+   "lon": "-79.0221149",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.053370834668497714,
+   "addresstype": "road",
+   "name": "Boyd",
+   "display_name": "Boyd, Carolina Meadows, Chatham County, North Carolina, 27517, United States",
+   "boundingbox": [
+    "35.8555018",
+    "35.8557408",
+    "-79.0223893",
+    "-79.0218438"
+   ]
+  },
+  {
+   "place_id": 345552941,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 157636670,
+   "lat": "35.5307184",
+   "lon": "-77.1885689",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.13336833524071104,
+   "addresstype": "hamlet",
+   "name": "Boyd Crossroads",
+   "display_name": "Boyd Crossroads, Pitt County, North Carolina, 27837, United States",
+   "boundingbox": [
+    "35.5107184",
+    "35.5507184",
+    "-77.2085689",
+    "-77.1685689"
+   ]
+  },
+  {
+   "place_id": 344150271,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 44852116,
+   "lat": "34.8940388",
+   "lon": "-79.6785030",
+   "category": "waterway",
+   "type": "dam",
+   "place_rank": 20,
+   "importance": 0.13336833524071104,
+   "addresstype": "dam",
+   "name": "Boyds Lake Dam",
+   "display_name": "Boyds Lake Dam, Richmond County, North Carolina, 28345, United States",
+   "boundingbox": [
+    "34.8936818",
+    "34.8944158",
+    "-79.6794221",
+    "-79.6775757"
+   ]
+  }
+ ],
+ "boyd, South Carolina": [
+  {
+   "place_id": 343364051,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 153999661,
+   "lat": "32.4454683",
+   "lon": "-80.8962189",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.13336833524071104,
+   "addresstype": "hamlet",
+   "name": "Boyd",
+   "display_name": "Boyd, Jasper County, South Carolina, United States",
+   "boundingbox": [
+    "32.4254683",
+    "32.4654683",
+    "-80.9162189",
+    "-80.8762189"
+   ]
+  },
+  {
+   "place_id": 341944111,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 154171411,
+   "lat": "34.2362517",
+   "lon": "-81.5614944",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.13336833524071104,
+   "addresstype": "hamlet",
+   "name": "Boyd",
+   "display_name": "Boyd, Newberry County, South Carolina, United States",
+   "boundingbox": [
+    "34.2162517",
+    "34.2562517",
+    "-81.5814944",
+    "-81.5414944"
+   ]
+  },
+  {
+   "place_id": 342237454,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1075419331,
+   "lat": "34.0076447",
+   "lon": "-81.0628906",
+   "category": "place",
+   "type": "islet",
+   "place_rank": 20,
+   "importance": 0.1333839436942092,
+   "addresstype": "islet",
+   "name": "Boyd Island",
+   "display_name": "Boyd Island, Riverbanks, Columbia, Richland County, South Carolina, United States",
+   "boundingbox": [
+    "34.0061573",
+    "34.0092008",
+    "-81.0639907",
+    "-81.0621541"
+   ]
+  }
+ ],
+ "dixon school road substation, North Carolina": [],
+ "dixon school road substation, South Carolina": [],
+ "dixon school road, North Carolina": [
+  {
+   "place_id": 344635809,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 16698377,
+   "lat": "34.5868038",
+   "lon": "-77.4796376",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05337333409628439,
+   "addresstype": "road",
+   "name": "Dixon School Road",
+   "display_name": "Dixon School Road, Dixon, Onslow County, North Carolina, 28445, United States",
+   "boundingbox": [
+    "34.5850543",
+    "34.5887830",
+    "-77.4807953",
+    "-77.4790432"
+   ]
+  },
+  {
+   "place_id": 337093234,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 16487340,
+   "lat": "35.1816057",
+   "lon": "-81.3870001",
+   "category": "highway",
+   "type": "tertiary",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Dixon School Road",
+   "display_name": "Dixon School Road, Dixon, Cleveland County, North Carolina, 28073, United States",
+   "boundingbox": [
+    "35.1674170",
+    "35.1982789",
+    "-81.4070526",
+    "-81.3697178"
+   ]
+  },
+  {
+   "place_id": 341333022,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1382888003,
+   "lat": "35.2028849",
+   "lon": "-81.3706932",
+   "category": "highway",
+   "type": "secondary",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Dixon School Road",
+   "display_name": "Dixon School Road, Cleveland County, North Carolina, 28086, United States",
+   "boundingbox": [
+    "35.2009589",
+    "35.2047249",
+    "-81.3719116",
+    "-81.3696139"
+   ]
+  },
+  {
+   "place_id": 341324937,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1257483514,
+   "lat": "35.2029102",
+   "lon": "-81.3708499",
+   "category": "highway",
+   "type": "secondary",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Dixon School Road",
+   "display_name": "Dixon School Road, Cleveland County, North Carolina, 28066, United States",
+   "boundingbox": [
+    "35.2010587",
+    "35.2046157",
+    "-81.3720482",
+    "-81.3698815"
+   ]
+  },
+  {
+   "place_id": 339750694,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1257483524,
+   "lat": "35.1987727",
+   "lon": "-81.3695286",
+   "category": "highway",
+   "type": "tertiary",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Dixon School Road",
+   "display_name": "Dixon School Road, Cleveland County, North Carolina, 28066, United States",
+   "boundingbox": [
+    "35.1986334",
+    "35.1989055",
+    "-81.3695812",
+    "-81.3694952"
+   ]
+  }
+ ],
+ "dixon school road, South Carolina": [],
+ "customer delivery substation, North Carolina": [],
+ "customer delivery substation, South Carolina": [],
+ "customer delivery, North Carolina": [],
+ "customer delivery, South Carolina": [],
+ "haas creek substation, North Carolina": [],
+ "haas creek substation, South Carolina": [],
+ "haas creek, North Carolina": [
+  {
+   "place_id": 341138333,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 43093402,
+   "lat": "35.5987658",
+   "lon": "-81.3316961",
+   "category": "waterway",
+   "type": "stream",
+   "place_rank": 22,
+   "importance": 0.10670166857404438,
+   "addresstype": "stream",
+   "name": "Haas Creek",
+   "display_name": "Haas Creek, Catawba County, North Carolina, United States",
+   "boundingbox": [
+    "35.5949720",
+    "35.6048620",
+    "-81.3335750",
+    "-81.3266770"
+   ]
+  },
+  {
+   "place_id": 341938108,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 43076770,
+   "lat": "35.6173051",
+   "lon": "-81.3384027",
+   "category": "waterway",
+   "type": "stream",
+   "place_rank": 22,
+   "importance": 0.10670166857404438,
+   "addresstype": "stream",
+   "name": "Haas Creek",
+   "display_name": "Haas Creek, Blackburn, Catawba County, North Carolina, United States",
+   "boundingbox": [
+    "35.6128730",
+    "35.6194180",
+    "-81.3440900",
+    "-81.3347520"
+   ]
+  }
+ ],
+ "haas creek, South Carolina": [],
+ "hands mill substation, North Carolina": [],
+ "hands mill substation, South Carolina": [],
+ "hands mill, North Carolina": [],
+ "hands mill, South Carolina": [
+  {
+   "place_id": 341168567,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 264033030,
+   "lat": "35.0708911",
+   "lon": "-81.0917646",
+   "category": "highway",
+   "type": "primary",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Hands Mill Highway",
+   "display_name": "Hands Mill Highway, Five Points, York County, South Carolina, 29745, United States",
+   "boundingbox": [
+    "35.0551354",
+    "35.0864677",
+    "-81.0974455",
+    "-81.0910890"
+   ]
+  },
+  {
+   "place_id": 340756435,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1118475029,
+   "lat": "35.0046528",
+   "lon": "-81.1001847",
+   "category": "highway",
+   "type": "primary",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Hands Mill Highway",
+   "display_name": "Hands Mill Highway, York County, South Carolina, 29745, United States",
+   "boundingbox": [
+    "35.0013806",
+    "35.0079250",
+    "-81.1016270",
+    "-81.0987423"
+   ]
+  },
+  {
+   "place_id": 343792240,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12556825,
+   "lat": "34.9937383",
+   "lon": "-81.0995708",
+   "category": "highway",
+   "type": "primary",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Hands Mill Highway",
+   "display_name": "Hands Mill Highway, Newport, York County, South Carolina, 29745, United States",
+   "boundingbox": [
+    "34.9910625",
+    "34.9964100",
+    "-81.1003573",
+    "-81.0987700"
+   ]
+  }
+ ],
+ "lancaster substation, North Carolina": [],
+ "lancaster substation, South Carolina": [],
+ "lancaster, North Carolina": [
+  {
+   "place_id": 344268413,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 158237126,
+   "lat": "35.8582119",
+   "lon": "-77.6930312",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.13336833524071104,
+   "addresstype": "hamlet",
+   "name": "Lancaster",
+   "display_name": "Lancaster, Edgecombe County, North Carolina, United States",
+   "boundingbox": [
+    "35.8382119",
+    "35.8782119",
+    "-77.7130312",
+    "-77.6730312"
+   ]
+  }
+ ],
+ "lancaster, South Carolina": [
+  {
+   "place_id": 340878400,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 2532512,
+   "lat": "34.6628067",
+   "lon": "-80.7005460",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 12,
+   "importance": 0.5068262505825378,
+   "addresstype": "county",
+   "name": "Lancaster County",
+   "display_name": "Lancaster County, South Carolina, United States",
+   "boundingbox": [
+    "34.4577760",
+    "35.0761262",
+    "-80.9095528",
+    "-80.4083730"
+   ]
+  },
+  {
+   "place_id": 340915873,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 194093,
+   "lat": "34.7204257",
+   "lon": "-80.7709015",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 16,
+   "importance": 0.4402686161245203,
+   "addresstype": "city",
+   "name": "Lancaster",
+   "display_name": "Lancaster, Lancaster County, South Carolina, United States",
+   "boundingbox": [
+    "34.6870170",
+    "34.7609950",
+    "-80.8120520",
+    "-80.7457880"
+   ]
+  }
+ ],
+ "monroe substation, North Carolina": [],
+ "monroe substation, South Carolina": [],
+ "monroe, North Carolina": [
+  {
+   "place_id": 340999686,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 179931,
+   "lat": "34.9854275",
+   "lon": "-80.5495112",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 16,
+   "importance": 0.513928573184937,
+   "addresstype": "city",
+   "name": "Monroe",
+   "display_name": "Monroe, Union County, North Carolina, United States",
+   "boundingbox": [
+    "34.9443790",
+    "35.0866210",
+    "-80.6479440",
+    "-80.4752490"
+   ]
+  }
+ ],
+ "monroe, South Carolina": [
+  {
+   "place_id": 345180306,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 158602227,
+   "lat": "34.5451589",
+   "lon": "-79.6550577",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.13336833524071104,
+   "addresstype": "hamlet",
+   "name": "Monroe Crossroads",
+   "display_name": "Monroe Crossroads, Marlboro County, South Carolina, United States",
+   "boundingbox": [
+    "34.5251589",
+    "34.5651589",
+    "-79.6750577",
+    "-79.6350577"
+   ]
+  },
+  {
+   "place_id": 345180232,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 44916138,
+   "lat": "34.5522795",
+   "lon": "-79.6639252",
+   "category": "waterway",
+   "type": "stream",
+   "place_rank": 22,
+   "importance": 0.10670166857404438,
+   "addresstype": "stream",
+   "name": "Monroe Branch",
+   "display_name": "Monroe Branch, Monroe Crossroads, Marlboro County, South Carolina, United States",
+   "boundingbox": [
+    "34.5521080",
+    "34.5551700",
+    "-79.6661880",
+    "-79.6599798"
+   ]
+  },
+  {
+   "place_id": 344891993,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 44911808,
+   "lat": "34.5552805",
+   "lon": "-79.6661715",
+   "category": "waterway",
+   "type": "stream",
+   "place_rank": 22,
+   "importance": 0.10670166857404438,
+   "addresstype": "stream",
+   "name": "Monroe Branch",
+   "display_name": "Monroe Branch, Marlboro County, South Carolina, United States",
+   "boundingbox": [
+    "34.5551700",
+    "34.5553910",
+    "-79.6661750",
+    "-79.6661680"
+   ]
+  }
+ ],
+ "lawsons fork substation, North Carolina": [],
+ "lawsons fork substation, South Carolina": [],
+ "lawsons fork, North Carolina": [],
+ "lawsons fork, South Carolina": [
+  {
+   "place_id": 340068656,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 730421869,
+   "lat": "34.9950453",
+   "lon": "-81.9243313",
+   "category": "place",
+   "type": "neighbourhood",
+   "place_rank": 24,
+   "importance": 0.08003500190737771,
+   "addresstype": "neighbourhood",
+   "name": "Lawsons Fork",
+   "display_name": "Lawsons Fork, Spartanburg County, South Carolina, United States",
+   "boundingbox": [
+    "34.9926019",
+    "34.9971370",
+    "-81.9270551",
+    "-81.9215512"
+   ]
+  }
+ ],
+ "west spartanburg substation, North Carolina": [],
+ "west spartanburg substation, South Carolina": [],
+ "west spartanburg, North Carolina": [
+  {
+   "place_id": 341355718,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 16729885,
+   "lat": "35.1959102",
+   "lon": "-82.0332679",
+   "category": "highway",
+   "type": "tertiary",
+   "place_rank": 26,
+   "importance": 0.0533433333333333,
+   "addresstype": "road",
+   "name": "West Melvin Hill Road",
+   "display_name": "West Melvin Hill Road, Polk County, North Carolina, 29322, United States",
+   "boundingbox": [
+    "35.1894483",
+    "35.2025040",
+    "-82.0405811",
+    "-82.0252289"
+   ]
+  }
+ ],
+ "west spartanburg, South Carolina": [
+  {
+   "place_id": 337764775,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 38299060,
+   "lat": "34.7799014",
+   "lon": "-81.8000938",
+   "category": "waterway",
+   "type": "stream",
+   "place_rank": 22,
+   "importance": 0.10670166857404438,
+   "addresstype": "stream",
+   "name": "West Springs Branch",
+   "display_name": "West Springs Branch, Spartanburg County, South Carolina, United States",
+   "boundingbox": [
+    "34.7784060",
+    "34.7813420",
+    "-81.8019160",
+    "-81.7979920"
+   ]
+  },
+  {
+   "place_id": 337564807,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1482736268,
+   "lat": "34.9477644",
+   "lon": "-81.9337099",
+   "category": "landuse",
+   "type": "construction",
+   "place_rank": 24,
+   "importance": 0.08006016861219192,
+   "addresstype": "construction",
+   "name": "Haven at West Broad apartments",
+   "display_name": "Haven at West Broad apartments, Spartanburg, Spartanburg County, South Carolina, United States",
+   "boundingbox": [
+    "34.9471668",
+    "34.9482951",
+    "-81.9345393",
+    "-81.9328605"
+   ]
+  },
+  {
+   "place_id": 340328768,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 723570339,
+   "lat": "34.9953814",
+   "lon": "-82.0719480",
+   "category": "place",
+   "type": "neighbourhood",
+   "place_rank": 24,
+   "importance": 0.0800452559700923,
+   "addresstype": "neighbourhood",
+   "name": "Jordan West",
+   "display_name": "Jordan West, Spartanburg County, South Carolina, United States",
+   "boundingbox": [
+    "34.9940960",
+    "34.9963504",
+    "-82.0729566",
+    "-82.0708752"
+   ]
+  },
+  {
+   "place_id": 341701539,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 724033388,
+   "lat": "35.0347744",
+   "lon": "-82.0855510",
+   "category": "place",
+   "type": "neighbourhood",
+   "place_rank": 24,
+   "importance": 0.0800452559700923,
+   "addresstype": "neighbourhood",
+   "name": "West Clark Glen",
+   "display_name": "West Clark Glen, Spartanburg County, South Carolina, United States",
+   "boundingbox": [
+    "35.0342989",
+    "35.0353970",
+    "-82.0865634",
+    "-82.0845035"
+   ]
+  },
+  {
+   "place_id": 344056740,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 726971798,
+   "lat": "34.8925423",
+   "lon": "-81.9712705",
+   "category": "place",
+   "type": "neighbourhood",
+   "place_rank": 24,
+   "importance": 0.08004289692530706,
+   "addresstype": "neighbourhood",
+   "name": "Arbours West",
+   "display_name": "Arbours West, Spartanburg County, South Carolina, United States",
+   "boundingbox": [
+    "34.8900804",
+    "34.8962756",
+    "-81.9722718",
+    "-81.9695950"
+   ]
+  }
+ ],
+ "lyle creek substation, North Carolina": [],
+ "lyle creek substation, South Carolina": [],
+ "lyle creek, North Carolina": [
+  {
+   "place_id": 341066642,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 42815087,
+   "lat": "35.7319977",
+   "lon": "-81.2824578",
+   "category": "waterway",
+   "type": "stream",
+   "place_rank": 22,
+   "importance": 0.10672653467612724,
+   "addresstype": "stream",
+   "name": "Lyle Creek",
+   "display_name": "Lyle Creek, Hickory, Catawba County, North Carolina, 28603, United States",
+   "boundingbox": [
+    "35.7305470",
+    "35.7368820",
+    "-81.2886280",
+    "-81.2747500"
+   ]
+  },
+  {
+   "place_id": 340656971,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 42848391,
+   "lat": "35.7271040",
+   "lon": "-81.2421750",
+   "category": "waterway",
+   "type": "stream",
+   "place_rank": 22,
+   "importance": 0.10672226825360492,
+   "addresstype": "stream",
+   "name": "Lyle Creek",
+   "display_name": "Lyle Creek, Conover, Catawba County, North Carolina, 28613, United States",
+   "boundingbox": [
+    "35.7269750",
+    "35.7291180",
+    "-81.2466480",
+    "-81.2383810"
+   ]
+  },
+  {
+   "place_id": 337223353,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 42814466,
+   "lat": "35.7122532",
+   "lon": "-81.0694717",
+   "category": "waterway",
+   "type": "stream",
+   "place_rank": 22,
+   "importance": 0.10670416800183105,
+   "addresstype": "stream",
+   "name": "Lyle Creek",
+   "display_name": "Lyle Creek, Catawba, Catawba County, North Carolina, 28609, United States",
+   "boundingbox": [
+    "35.7118353",
+    "35.7161556",
+    "-81.0741916",
+    "-81.0637513"
+   ]
+  }
+ ],
+ "lyle creek, South Carolina": [
+  {
+   "place_id": 341459140,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12137473,
+   "lat": "32.9905343",
+   "lon": "-80.0328802",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Lyle Road",
+   "display_name": "Lyle Road, Highlands, Goose Creek, Berkeley County, South Carolina, 29445, United States",
+   "boundingbox": [
+    "32.9902285",
+    "32.9908401",
+    "-80.0342282",
+    "-80.0315321"
+   ]
+  }
+ ],
+ "shattalon substation, North Carolina": [],
+ "shattalon substation, South Carolina": [],
+ "shattalon, North Carolina": [
+  {
+   "place_id": 340191480,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 40971960,
+   "lat": "36.1448853",
+   "lon": "-80.3450207",
+   "category": "water",
+   "type": "reservoir",
+   "place_rank": 20,
+   "importance": 0.13336203326466772,
+   "addresstype": "reservoir",
+   "name": "Shattalon Lake",
+   "display_name": "Shattalon Lake, Winston-Salem, Forsyth County, North Carolina, United States",
+   "boundingbox": [
+    "36.1434525",
+    "36.1463231",
+    "-80.3468343",
+    "-80.3437155"
+   ]
+  },
+  {
+   "place_id": 340226677,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 357795151,
+   "lat": "36.1434349",
+   "lon": "-80.3464174",
+   "category": "waterway",
+   "type": "dam",
+   "place_rank": 20,
+   "importance": 0.13336203326466772,
+   "addresstype": "dam",
+   "name": "Shattalon Lake Dam",
+   "display_name": "Shattalon Lake Dam, Winston-Salem, Forsyth County, North Carolina, 27106, United States",
+   "boundingbox": [
+    "36.1433849",
+    "36.1434849",
+    "-80.3464674",
+    "-80.3463674"
+   ]
+  },
+  {
+   "place_id": 340224632,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 11789769636,
+   "lat": "36.1739767",
+   "lon": "-80.3103283",
+   "category": "place",
+   "type": "neighbourhood",
+   "place_rank": 24,
+   "importance": 0.08006560692759591,
+   "addresstype": "neighbourhood",
+   "name": "Shattalon Oaks",
+   "display_name": "Shattalon Oaks, Winston-Salem, Forsyth County, North Carolina, 27010, United States",
+   "boundingbox": [
+    "36.1639767",
+    "36.1839767",
+    "-80.3203283",
+    "-80.3003283"
+   ]
+  },
+  {
+   "place_id": 340269471,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 11789769633,
+   "lat": "36.1740258",
+   "lon": "-80.3143395",
+   "category": "place",
+   "type": "neighbourhood",
+   "place_rank": 24,
+   "importance": 0.08006560692759591,
+   "addresstype": "neighbourhood",
+   "name": "Shattalon Heights",
+   "display_name": "Shattalon Heights, Winston-Salem, Forsyth County, North Carolina, 27010, United States",
+   "boundingbox": [
+    "36.1640258",
+    "36.1840258",
+    "-80.3243395",
+    "-80.3043395"
+   ]
+  },
+  {
+   "place_id": 340187598,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 11789749016,
+   "lat": "36.1453284",
+   "lon": "-80.3426801",
+   "category": "place",
+   "type": "neighbourhood",
+   "place_rank": 24,
+   "importance": 0.08006560692759591,
+   "addresstype": "neighbourhood",
+   "name": "Shattalon Lake Estates",
+   "display_name": "Shattalon Lake Estates, Winston-Salem, Forsyth County, North Carolina, 27106, United States",
+   "boundingbox": [
+    "36.1353284",
+    "36.1553284",
+    "-80.3526801",
+    "-80.3326801"
+   ]
+  }
+ ],
+ "shattalon, South Carolina": [],
+ "hodges substation, North Carolina": [],
+ "hodges substation, South Carolina": [],
+ "hodges, North Carolina": [
+  {
+   "place_id": 345015279,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 16462912,
+   "lat": "35.8358219",
+   "lon": "-79.0379105",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.053370834668497714,
+   "addresstype": "road",
+   "name": "Hodges",
+   "display_name": "Hodges, Governors Club, Chatham County, North Carolina, United States",
+   "boundingbox": [
+    "35.8354050",
+    "35.8362560",
+    "-79.0380590",
+    "-79.0377040"
+   ]
+  },
+  {
+   "place_id": 339107378,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 693435609,
+   "lat": "36.2024951",
+   "lon": "-81.6710050",
+   "category": "waterway",
+   "type": "stream",
+   "place_rank": 22,
+   "importance": 0.1067200709544518,
+   "addresstype": "stream",
+   "name": "Hodges Creek",
+   "display_name": "Hodges Creek, Boone, Watauga County, North Carolina, 28607, United States",
+   "boundingbox": [
+    "36.2023340",
+    "36.2026361",
+    "-81.6718485",
+    "-81.6701660"
+   ]
+  },
+  {
+   "place_id": 340886014,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 693435623,
+   "lat": "36.2021103",
+   "lon": "-81.6839361",
+   "category": "waterway",
+   "type": "stream",
+   "place_rank": 22,
+   "importance": 0.1067200709544518,
+   "addresstype": "stream",
+   "name": "Hodges Creek",
+   "display_name": "Hodges Creek, Boone, Watauga County, North Carolina, 28608, United States",
+   "boundingbox": [
+    "36.2020190",
+    "36.2022244",
+    "-81.6843409",
+    "-81.6835306"
+   ]
+  }
+ ],
+ "hodges, South Carolina": [
+  {
+   "place_id": 337781665,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 194066,
+   "lat": "34.2876186",
+   "lon": "-82.2442889",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 16,
+   "importance": 0.3492426022163027,
+   "addresstype": "town",
+   "name": "Hodges",
+   "display_name": "Hodges, Greenwood County, South Carolina, United States",
+   "boundingbox": [
+    "34.2802700",
+    "34.2949070",
+    "-82.2566020",
+    "-82.2392620"
+   ]
+  },
+  {
+   "place_id": 341707855,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 38857349,
+   "lat": "34.2877690",
+   "lon": "-82.2479381",
+   "category": "place",
+   "type": "village",
+   "place_rank": 19,
+   "importance": 0.14669536659800103,
+   "addresstype": "village",
+   "name": "Hodges",
+   "display_name": "Hodges, Greenwood County, South Carolina, United States",
+   "boundingbox": [
+    "34.2802700",
+    "34.2949070",
+    "-82.2566020",
+    "-82.2392620"
+   ]
+  }
+ ],
+ "north greensboro substation, North Carolina": [],
+ "north greensboro substation, South Carolina": [],
+ "north greensboro, North Carolina": [
+  {
+   "place_id": 346481776,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 479967959,
+   "lat": "36.0683549",
+   "lon": "-79.8105812",
+   "category": "amenity",
+   "type": "university",
+   "place_rank": 30,
+   "importance": 0.48164111731554715,
+   "addresstype": "amenity",
+   "name": "University of North Carolina - Greensboro",
+   "display_name": "University of North Carolina - Greensboro, 1400, Spring Garden Street, Greensboro, Guilford County, North Carolina, 27412, United States",
+   "boundingbox": [
+    "36.0631246",
+    "36.0735888",
+    "-79.8162420",
+    "-79.8052884"
+   ]
+  },
+  {
+   "place_id": 345581600,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 479968151,
+   "lat": "36.0780523",
+   "lon": "-79.7711093",
+   "category": "amenity",
+   "type": "university",
+   "place_rank": 30,
+   "importance": 0.4650925527064339,
+   "addresstype": "amenity",
+   "name": "North Carolina Agricultural and Technical State University",
+   "display_name": "North Carolina Agricultural and Technical State University, 1601, East Market Street, Scott Park, Greensboro, Guilford County, North Carolina, 27411, United States",
+   "boundingbox": [
+    "36.0716027",
+    "36.0835940",
+    "-79.7786405",
+    "-79.7658872"
+   ]
+  },
+  {
+   "place_id": 343493361,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 921983272,
+   "lat": "36.0634268",
+   "lon": "-79.7436185",
+   "category": "amenity",
+   "type": "university",
+   "place_rank": 30,
+   "importance": 6.667353322647467e-05,
+   "addresstype": "amenity",
+   "name": "North Carolina A&T State University Farm",
+   "display_name": "North Carolina A&T State University Farm, Huckabee Drive, Greensboro, Guilford County, North Carolina, 27401, United States",
+   "boundingbox": [
+    "36.0572708",
+    "36.0696912",
+    "-79.7462308",
+    "-79.7340847"
+   ]
+  },
+  {
+   "place_id": 345706469,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 390618442,
+   "lat": "36.0632310",
+   "lon": "-79.8111146",
+   "category": "amenity",
+   "type": "police",
+   "place_rank": 30,
+   "importance": 6.667353322647467e-05,
+   "addresstype": "amenity",
+   "name": "The University of North Carolina at Greenboro Police",
+   "display_name": "The University of North Carolina at Greenboro Police, 1200, West Gate City Boulevard, Glenwood, Greensboro, Guilford County, North Carolina, 27403, United States",
+   "boundingbox": [
+    "36.0630626",
+    "36.0633790",
+    "-79.8115258",
+    "-79.8106588"
+   ]
+  },
+  {
+   "place_id": 345695598,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 499172290,
+   "lat": "36.0849767",
+   "lon": "-79.8137690",
+   "category": "office",
+   "type": "association",
+   "place_rank": 30,
+   "importance": 6.667353322647467e-05,
+   "addresstype": "office",
+   "name": "North Carolina Coaches Association",
+   "display_name": "North Carolina Coaches Association, 1101, North Josephine Boyd Street, Lake Daniel, Greensboro, Guilford County, North Carolina, 27412, United States",
+   "boundingbox": [
+    "36.0848979",
+    "36.0850506",
+    "-79.8138950",
+    "-79.8136429"
+   ]
+  }
+ ],
+ "north greensboro, South Carolina": [
+  {
+   "place_id": 346538562,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 208202822,
+   "lat": "36.0697432",
+   "lon": "-79.7922380",
+   "category": "amenity",
+   "type": "theatre",
+   "place_rank": 30,
+   "importance": 0.1773516541617975,
+   "addresstype": "amenity",
+   "name": "Carolina Theatre",
+   "display_name": "Carolina Theatre, 310, South Greene Street, Cumberland, Greensboro, Guilford County, North Carolina, 27401, United States",
+   "boundingbox": [
+    "36.0696042",
+    "36.0699309",
+    "-79.7926154",
+    "-79.7918637"
+   ]
+  },
+  {
+   "place_id": 424117874,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 12162318003,
+   "lat": "36.0679294",
+   "lon": "-79.7905144",
+   "category": "historic",
+   "type": "memorial",
+   "place_rank": 30,
+   "importance": 6.667353322647467e-05,
+   "addresstype": "historic",
+   "name": "North Carolina Railroad",
+   "display_name": "North Carolina Railroad, South Elm Street, Cumberland, Greensboro, Guilford County, North Carolina, 27406, United States",
+   "boundingbox": [
+    "36.0678794",
+    "36.0679794",
+    "-79.7905644",
+    "-79.7904644"
+   ]
+  }
+ ],
+ "lilesville substation, North Carolina": [],
+ "lilesville substation, South Carolina": [],
+ "lilesville, North Carolina": [
+  {
+   "place_id": 344669213,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 178953,
+   "lat": "34.9676535",
+   "lon": "-79.9845032",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 16,
+   "importance": 0.31461790426364866,
+   "addresstype": "village",
+   "name": "Lilesville",
+   "display_name": "Lilesville, Anson County, North Carolina, United States",
+   "boundingbox": [
+    "34.9602900",
+    "34.9747110",
+    "-79.9934250",
+    "-79.9755870"
+   ]
+  }
+ ],
+ "lilesville, South Carolina": [
+  {
+   "place_id": 340905828,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 16400514,
+   "lat": "34.9609862",
+   "lon": "-80.0706695",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05338253986419467,
+   "addresstype": "road",
+   "name": "Lilesville Road",
+   "display_name": "Lilesville Road, South Wadesboro, Wadesboro, Anson County, North Carolina, 28170, United States",
+   "boundingbox": [
+    "34.9599898",
+    "34.9633801",
+    "-80.0728869",
+    "-80.0678224"
+   ]
+  }
+ ],
+ "mooresville substation, North Carolina": [],
+ "mooresville substation, South Carolina": [],
+ "mooresville, North Carolina": [
+  {
+   "place_id": 340379778,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 180283,
+   "lat": "35.5848596",
+   "lon": "-80.8100724",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 16,
+   "importance": 0.5295631742126236,
+   "addresstype": "town",
+   "name": "Mooresville",
+   "display_name": "Mooresville, Iredell County, North Carolina, 28115, United States",
+   "boundingbox": [
+    "35.5235630",
+    "35.6424730",
+    "-80.9114040",
+    "-80.7633170"
+   ]
+  }
+ ],
+ "mooresville, South Carolina": [
+  {
+   "place_id": 336828698,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 617903555,
+   "lat": "35.5792429",
+   "lon": "-80.8163013",
+   "category": "amenity",
+   "type": "library",
+   "place_rank": 30,
+   "importance": 5.9153887235782674e-05,
+   "addresstype": "amenity",
+   "name": "Mooresville Public Library",
+   "display_name": "Mooresville Public Library, 304, South Main Street, Mooresville, Iredell County, North Carolina, 28115, United States",
+   "boundingbox": [
+    "35.5789358",
+    "35.5795478",
+    "-80.8166871",
+    "-80.8159162"
+   ]
+  }
+ ],
+ "lee cc substation, North Carolina": [],
+ "lee cc substation, South Carolina": [],
+ "lee cc, North Carolina": [
+  {
+   "place_id": 352360061,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 16479448,
+   "lat": "35.2482141",
+   "lon": "-81.5330400",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Lee",
+   "display_name": "Lee, Cleveland County, North Carolina, 28152, United States",
+   "boundingbox": [
+    "35.2479430",
+    "35.2484930",
+    "-81.5334630",
+    "-81.5326220"
+   ]
+  }
+ ],
+ "lee cc, South Carolina": [
+  {
+   "place_id": 340916743,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 246334213,
+   "lat": "34.0056153",
+   "lon": "-80.9490703",
+   "category": "highway",
+   "type": "footway",
+   "place_rank": 27,
+   "importance": 0.04006700770580605,
+   "addresstype": "road",
+   "name": "Lee",
+   "display_name": "Lee, Columbia, Richland County, South Carolina, 29207, United States",
+   "boundingbox": [
+    "34.0052123",
+    "34.0059891",
+    "-80.9492438",
+    "-80.9487247"
+   ]
+  }
+ ],
+ "lookout substation, North Carolina": [],
+ "lookout substation, South Carolina": [],
+ "lookout, North Carolina": [
+  {
+   "place_id": 343965842,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 3905366070,
+   "lat": "35.1080535",
+   "lon": "-77.0409143",
+   "category": "amenity",
+   "type": "driving_school",
+   "place_rank": 30,
+   "importance": 6.057755397874445e-05,
+   "addresstype": "amenity",
+   "name": "Lookout",
+   "display_name": "Lookout, Broad Street, Craven Terrace, New Bern, Craven County, North Carolina, 28563, United States",
+   "boundingbox": [
+    "35.1080035",
+    "35.1081035",
+    "-77.0409643",
+    "-77.0408643"
+   ]
+  },
+  {
+   "place_id": 344155159,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 2921120,
+   "lat": "34.8307770",
+   "lon": "-76.3420670",
+   "category": "leisure",
+   "type": "nature_reserve",
+   "place_rank": 24,
+   "importance": 0.38548409705301084,
+   "addresstype": "nature_reserve",
+   "name": "Cape Lookout National Seashore",
+   "display_name": "Cape Lookout National Seashore, Carteret County, North Carolina, United States",
+   "boundingbox": [
+    "34.5876826",
+    "35.0740583",
+    "-76.6528224",
+    "-76.0317141"
+   ]
+  },
+  {
+   "place_id": 344081004,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 727525529,
+   "lat": "34.6227533",
+   "lon": "-76.5245327",
+   "category": "man_made",
+   "type": "lighthouse",
+   "place_rank": 30,
+   "importance": 0.31977730603466514,
+   "addresstype": "man_made",
+   "name": "Cape Lookout Lighthouse",
+   "display_name": "Cape Lookout Lighthouse, Lighthouse Boardwalk, Carteret County, North Carolina, United States",
+   "boundingbox": [
+    "34.6227120",
+    "34.6227885",
+    "-76.5245787",
+    "-76.5244861"
+   ]
+  },
+  {
+   "place_id": 341435456,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 357802481,
+   "lat": "35.6223334",
+   "lon": "-82.5659605",
+   "category": "natural",
+   "type": "peak",
+   "place_rank": 18,
+   "importance": 0.16006473105973906,
+   "addresstype": "peak",
+   "name": "Lookout Mountain",
+   "display_name": "Lookout Mountain, Asheville, Buncombe County, North Carolina, 28804, United States",
+   "boundingbox": [
+    "35.6222834",
+    "35.6223834",
+    "-82.5660105",
+    "-82.5659105"
+   ]
+  },
+  {
+   "place_id": 341595979,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 357808124,
+   "lat": "35.6373401",
+   "lon": "-82.2868581",
+   "category": "natural",
+   "type": "peak",
+   "place_rank": 18,
+   "importance": 0.16003469825284197,
+   "addresstype": "peak",
+   "name": "Lookout Mountain",
+   "display_name": "Lookout Mountain, Montreat, Buncombe County, North Carolina, 28757, United States",
+   "boundingbox": [
+    "35.6372901",
+    "35.6373901",
+    "-82.2869081",
+    "-82.2868081"
+   ]
+  }
+ ],
+ "lookout, South Carolina": [
+  {
+   "place_id": 343451639,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 299322609,
+   "lat": "32.1834643",
+   "lon": "-80.7084582",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.053390096131837914,
+   "addresstype": "road",
+   "name": "Lookout",
+   "display_name": "Lookout, Palmetto Dunes, Hilton Head Island, Beaufort County, South Carolina, 29926, United States",
+   "boundingbox": [
+    "32.1829900",
+    "32.1840358",
+    "-80.7087810",
+    "-80.7082770"
+   ]
+  },
+  {
+   "place_id": 340739316,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 550037002,
+   "lat": "35.0386445",
+   "lon": "-81.0100873",
+   "category": "leisure",
+   "type": "park",
+   "place_rank": 24,
+   "importance": 0.08004124132143127,
+   "addresstype": "park",
+   "name": "Lookout Park",
+   "display_name": "Lookout Park, 1965, Tega Cay, York County, South Carolina, 29708, United States",
+   "boundingbox": [
+    "35.0364503",
+    "35.0408558",
+    "-81.0109110",
+    "-81.0093634"
+   ]
+  }
+ ],
+ "crest street substation, North Carolina": [],
+ "crest street substation, South Carolina": [],
+ "crest street, North Carolina": [
+  {
+   "place_id": 346429492,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 384802998,
+   "lat": "36.0125350",
+   "lon": "-78.9400161",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 20,
+   "importance": 0.13340041580834666,
+   "addresstype": "suburb",
+   "name": "Crest Street",
+   "display_name": "Crest Street, Durham, Durham County, North Carolina, United States",
+   "boundingbox": [
+    "36.0105510",
+    "36.0150910",
+    "-78.9432530",
+    "-78.9366495"
+   ]
+  },
+  {
+   "place_id": 346423412,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 3881556433,
+   "lat": "36.0124929",
+   "lon": "-78.9391717",
+   "category": "place",
+   "type": "neighbourhood",
+   "place_rank": 24,
+   "importance": 0.08006708247501332,
+   "addresstype": "neighbourhood",
+   "name": "Crest Street",
+   "display_name": "Crest Street, Durham, Durham County, North Carolina, 27710, United States",
+   "boundingbox": [
+    "36.0024929",
+    "36.0224929",
+    "-78.9491717",
+    "-78.9291717"
+   ]
+  },
+  {
+   "place_id": 346920540,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 27331877,
+   "lat": "36.0128802",
+   "lon": "-78.9460449",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05340041580834665,
+   "addresstype": "road",
+   "name": "Crest Street",
+   "display_name": "Crest Street, Duke Manor Apartments, Durham, Durham County, North Carolina, 27710, United States",
+   "boundingbox": [
+    "36.0128505",
+    "36.0146428",
+    "-78.9468346",
+    "-78.9435753"
+   ]
+  },
+  {
+   "place_id": 346461157,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 693997710,
+   "lat": "36.0128521",
+   "lon": "-78.9390925",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05340041580834665,
+   "addresstype": "road",
+   "name": "Crest Street",
+   "display_name": "Crest Street, Durham, Durham County, North Carolina, 27705, United States",
+   "boundingbox": [
+    "36.0126905",
+    "36.0130010",
+    "-78.9398532",
+    "-78.9383299"
+   ]
+  },
+  {
+   "place_id": 342867650,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 709278007,
+   "lat": "36.0148185",
+   "lon": "-78.9470028",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05340041580834665,
+   "addresstype": "road",
+   "name": "Crest Street",
+   "display_name": "Crest Street, Duke Manor Apartments, Durham, Durham County, North Carolina, 27705, United States",
+   "boundingbox": [
+    "36.0145962",
+    "36.0150326",
+    "-78.9471670",
+    "-78.9468346"
+   ]
+  }
+ ],
+ "crest street, South Carolina": [
+  {
+   "place_id": 338761672,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12555713,
+   "lat": "34.9335252",
+   "lon": "-81.0195096",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.053391089494163387,
+   "addresstype": "road",
+   "name": "Crest Street",
+   "display_name": "Crest Street, Rock Hill, York County, South Carolina, 29730, United States",
+   "boundingbox": [
+    "34.9321500",
+    "34.9352470",
+    "-81.0219255",
+    "-81.0173000"
+   ]
+  },
+  {
+   "place_id": 338866742,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12408472,
+   "lat": "34.9247793",
+   "lon": "-82.2347933",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05338760585946437,
+   "addresstype": "road",
+   "name": "Crest Street",
+   "display_name": "Crest Street, Bonaire Acres, Maple, Greenville County, South Carolina, 29650, United States",
+   "boundingbox": [
+    "34.9245300",
+    "34.9250250",
+    "-82.2353810",
+    "-82.2342070"
+   ]
+  },
+  {
+   "place_id": 353238509,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12408466,
+   "lat": "34.7268641",
+   "lon": "-82.2565961",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05338415121690696,
+   "addresstype": "road",
+   "name": "Crest Street",
+   "display_name": "Crest Street, The Cedars, Simpsonville, Greenville County, South Carolina, 29680, United States",
+   "boundingbox": [
+    "34.7263140",
+    "34.7269650",
+    "-82.2571870",
+    "-82.2558214"
+   ]
+  },
+  {
+   "place_id": 338966998,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12408465,
+   "lat": "34.8656185",
+   "lon": "-82.4403591",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.053370834668497714,
+   "addresstype": "road",
+   "name": "Crest Street",
+   "display_name": "Crest Street, Hughes Heights, Berea, Greenville County, South Carolina, 29617, United States",
+   "boundingbox": [
+    "34.8646541",
+    "34.8665540",
+    "-82.4407561",
+    "-82.4398840"
+   ]
+  },
+  {
+   "place_id": 338731589,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12516934,
+   "lat": "34.0534703",
+   "lon": "-81.0403778",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.053370834668497714,
+   "addresstype": "road",
+   "name": "Crest Street",
+   "display_name": "Crest Street, Barony, Richland County, South Carolina, 29203, United States",
+   "boundingbox": [
+    "34.0532499",
+    "34.0536956",
+    "-81.0415265",
+    "-81.0392299"
+   ]
+  }
+ ],
+ "morning star substation, North Carolina": [],
+ "morning star substation, South Carolina": [],
+ "morning star, North Carolina": [
+  {
+   "place_id": 341492977,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 154299660,
+   "lat": "35.5128845",
+   "lon": "-82.8148546",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.13336833524071104,
+   "addresstype": "hamlet",
+   "name": "Morning Star",
+   "display_name": "Morning Star, Haywood County, North Carolina, 28716, United States",
+   "boundingbox": [
+    "35.4928845",
+    "35.5328845",
+    "-82.8348546",
+    "-82.7948546"
+   ]
+  },
+  {
+   "place_id": 340193223,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 18917886,
+   "lat": "36.1204404",
+   "lon": "-81.7224995",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Morning Star",
+   "display_name": "Morning Star, Kelsey, Watauga County, North Carolina, 28605, United States",
+   "boundingbox": [
+    "36.1197192",
+    "36.1212054",
+    "-81.7228992",
+    "-81.7220271"
+   ]
+  },
+  {
+   "place_id": 340352741,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 16499029,
+   "lat": "35.7413657",
+   "lon": "-80.2086005",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.0533433333333333,
+   "addresstype": "road",
+   "name": "Deborah Drive",
+   "display_name": "Deborah Drive, Davidson County, North Carolina, 27292, United States",
+   "boundingbox": [
+    "35.7413325",
+    "35.7414698",
+    "-80.2097848",
+    "-80.2074137"
+   ]
+  }
+ ],
+ "morning star, South Carolina": [
+  {
+   "place_id": 343361576,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1478666524,
+   "lat": "32.7893007",
+   "lon": "-79.9524963",
+   "category": "landuse",
+   "type": "religious",
+   "place_rank": 24,
+   "importance": 0.08007015716792551,
+   "addresstype": "religious",
+   "name": "Morning Star",
+   "display_name": "Morning Star, 19, West Side, Charleston, Charleston County, South Carolina, 29403, United States",
+   "boundingbox": [
+    "32.7891349",
+    "32.7894608",
+    "-79.9527375",
+    "-79.9522555"
+   ]
+  }
+ ],
+ "ashe st substation, North Carolina": [],
+ "ashe st substation, South Carolina": [],
+ "ashe st, North Carolina": [
+  {
+   "place_id": 343852888,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 16545468,
+   "lat": "35.9815850",
+   "lon": "-78.8691515",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05340041580834665,
+   "addresstype": "road",
+   "name": "Ashe Street",
+   "display_name": "Ashe Street, Hayes, Durham, Durham County, North Carolina, 27701, United States",
+   "boundingbox": [
+    "35.9815272",
+    "35.9824092",
+    "-78.8750433",
+    "-78.8631797"
+   ]
+  },
+  {
+   "place_id": 344788525,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 694823631,
+   "lat": "35.9832331",
+   "lon": "-78.8790420",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05340041580834665,
+   "addresstype": "road",
+   "name": "Ashe Street",
+   "display_name": "Ashe Street, Durham, Durham County, North Carolina, 27701, United States",
+   "boundingbox": [
+    "35.9829443",
+    "35.9835275",
+    "-78.8804759",
+    "-78.8776069"
+   ]
+  },
+  {
+   "place_id": 346444297,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 16596091,
+   "lat": "36.0606793",
+   "lon": "-79.7952963",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05340000686655982,
+   "addresstype": "road",
+   "name": "Ashe Street",
+   "display_name": "Ashe Street, Warnersville, Greensboro, Guilford County, North Carolina, 27406, United States",
+   "boundingbox": [
+    "36.0589890",
+    "36.0607292",
+    "-79.7970898",
+    "-79.7951160"
+   ]
+  },
+  {
+   "place_id": 346417973,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 340750688,
+   "lat": "36.0534071",
+   "lon": "-79.7964314",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05340000686655982,
+   "addresstype": "road",
+   "name": "Ashe Street",
+   "display_name": "Ashe Street, Greensboro, Guilford County, North Carolina, 27406, United States",
+   "boundingbox": [
+    "36.0527154",
+    "36.0541200",
+    "-79.7966416",
+    "-79.7963070"
+   ]
+  },
+  {
+   "place_id": 347444357,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 340750683,
+   "lat": "36.0522273",
+   "lon": "-79.7968178",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05340000686655982,
+   "addresstype": "road",
+   "name": "Ashe Street",
+   "display_name": "Ashe Street, Oak Grove, Greensboro, Guilford County, North Carolina, 27406, United States",
+   "boundingbox": [
+    "36.0517410",
+    "36.0527154",
+    "-79.7969990",
+    "-79.7966416"
+   ]
+  }
+ ],
+ "ashe st, South Carolina": [
+  {
+   "place_id": 344714992,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 38730528,
+   "lat": "32.7924078",
+   "lon": "-79.9458330",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05340349050125883,
+   "addresstype": "road",
+   "name": "Ashe Street",
+   "display_name": "Ashe Street, The Gathering at Morris Square, Cannonborough-Elliotborough, Charleston, Charleston County, South Carolina, 29403, United States",
+   "boundingbox": [
+    "32.7912781",
+    "32.7935365",
+    "-79.9465899",
+    "-79.9450778"
+   ]
+  },
+  {
+   "place_id": 344730011,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 38730520,
+   "lat": "32.7940844",
+   "lon": "-79.9467990",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05340349050125883,
+   "addresstype": "road",
+   "name": "Ashe Street",
+   "display_name": "Ashe Street, Wilson's Farm, Cannonborough-Elliotborough, Charleston, Charleston County, South Carolina, 29403, United States",
+   "boundingbox": [
+    "32.7935677",
+    "32.7944399",
+    "-79.9468600",
+    "-79.9464979"
+   ]
+  },
+  {
+   "place_id": 345364323,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12565787,
+   "lat": "34.9976890",
+   "lon": "-81.2292140",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05338531395437549,
+   "addresstype": "road",
+   "name": "Ashe Street",
+   "display_name": "Ashe Street, York, York County, South Carolina, 29745, United States",
+   "boundingbox": [
+    "34.9973470",
+    "34.9980310",
+    "-81.2296060",
+    "-81.2288220"
+   ]
+  },
+  {
+   "place_id": 344482649,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12493368,
+   "lat": "34.6257622",
+   "lon": "-79.6729920",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.053383849088273407,
+   "addresstype": "road",
+   "name": "Ashe Street",
+   "display_name": "Ashe Street, Lake Terrace, Bennettsville, Marlboro County, South Carolina, 29512, United States",
+   "boundingbox": [
+    "34.6252764",
+    "34.6259360",
+    "-79.6729945",
+    "-79.6725204"
+   ]
+  },
+  {
+   "place_id": 344006301,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12494298,
+   "lat": "33.9807020",
+   "lon": "-81.1600361",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Ashe Street",
+   "display_name": "Ashe Street, Oak Grove Estates, Lexington County, South Carolina, 20973, United States",
+   "boundingbox": [
+    "33.9785120",
+    "33.9826250",
+    "-81.1609670",
+    "-81.1600350"
+   ]
+  }
+ ],
+ "cliffside steam substation, North Carolina": [],
+ "cliffside steam substation, South Carolina": [],
+ "cliffside steam, North Carolina": [
+  {
+   "place_id": 340486133,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 419539162,
+   "lat": "35.2163297",
+   "lon": "-81.7602470",
+   "category": "landuse",
+   "type": "industrial",
+   "place_rank": 24,
+   "importance": 0.04539457909600718,
+   "addresstype": "industrial",
+   "name": "James E. Rogers Energy Complex",
+   "display_name": "James E. Rogers Energy Complex, Cleveland County, North Carolina, United States",
+   "boundingbox": [
+    "35.2120959",
+    "35.2215755",
+    "-81.7666822",
+    "-81.7541241"
+   ]
+  }
+ ],
+ "cliffside steam, South Carolina": [],
+ "dan river cc substation, North Carolina": [],
+ "dan river cc substation, South Carolina": [],
+ "dan river cc, North Carolina": [
+  {
+   "place_id": 342989558,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 158330822,
+   "lat": "36.4645823",
+   "lon": "-79.7625355",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.13336833524071104,
+   "addresstype": "hamlet",
+   "name": "Dan River",
+   "display_name": "Dan River, Rockingham County, North Carolina, 27288, United States",
+   "boundingbox": [
+    "36.4445823",
+    "36.4845823",
+    "-79.7825355",
+    "-79.7425355"
+   ]
+  }
+ ],
+ "dan river cc, South Carolina": [
+  {
+   "place_id": 340567215,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12570189,
+   "lat": "35.0120635",
+   "lon": "-81.8263560",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05337502327000836,
+   "addresstype": "road",
+   "name": "Dan River Road",
+   "display_name": "Dan River Road, Converse, Spartanburg County, South Carolina, 29307, United States",
+   "boundingbox": [
+    "35.0068309",
+    "35.0202540",
+    "-81.8306512",
+    "-81.8253690"
+   ]
+  },
+  {
+   "place_id": 340417717,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1113399815,
+   "lat": "35.0031099",
+   "lon": "-81.8240290",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Dan River Road",
+   "display_name": "Dan River Road, Clifton Station, Clifton, Spartanburg County, South Carolina, 29307, United States",
+   "boundingbox": [
+    "34.9986124",
+    "35.0067771",
+    "-81.8283963",
+    "-81.8206426"
+   ]
+  }
+ ],
+ "east durham substation, North Carolina": [],
+ "east durham substation, South Carolina": [],
+ "east durham, North Carolina": [
+  {
+   "place_id": 340438971,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 10060690,
+   "lat": "35.9851743",
+   "lon": "-78.8709261",
+   "category": "leisure",
+   "type": "park",
+   "place_rank": 24,
+   "importance": 0.08006708247501332,
+   "addresstype": "park",
+   "name": "East Durham Park",
+   "display_name": "East Durham Park, 2500, Durham, Durham County, North Carolina, 27703, United States",
+   "boundingbox": [
+    "35.9844893",
+    "35.9880227",
+    "-78.8716110",
+    "-78.8694912"
+   ]
+  },
+  {
+   "place_id": 343708276,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 33060769,
+   "lat": "35.9842111",
+   "lon": "-78.8721122",
+   "category": "leisure",
+   "type": "park",
+   "place_rank": 24,
+   "importance": 0.08006708247501332,
+   "addresstype": "park",
+   "name": "East Durham Park",
+   "display_name": "East Durham Park, 2416, Durham, Durham County, North Carolina, 27703, United States",
+   "boundingbox": [
+    "35.9841042",
+    "35.9843774",
+    "-78.8722830",
+    "-78.8716083"
+   ]
+  },
+  {
+   "place_id": 341924873,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 336994163,
+   "lat": "35.7903461",
+   "lon": "-78.7755562",
+   "category": "highway",
+   "type": "tertiary",
+   "place_rank": 26,
+   "importance": 0.053395244525825857,
+   "addresstype": "road",
+   "name": "East Durham Road",
+   "display_name": "East Durham Road, Cary, Wake County, North Carolina, 27511, United States",
+   "boundingbox": [
+    "35.7899465",
+    "35.7910238",
+    "-78.7779840",
+    "-78.7730893"
+   ]
+  }
+ ],
+ "east durham, South Carolina": [
+  {
+   "place_id": 342659301,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12541937,
+   "lat": "35.1804606",
+   "lon": "-82.1972593",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05337733958953227,
+   "addresstype": "road",
+   "name": "East Durham Street",
+   "display_name": "East Durham Street, Landrum, Spartanburg County, South Carolina, 29356, United States",
+   "boundingbox": [
+    "35.1798130",
+    "35.1811030",
+    "-82.1976950",
+    "-82.1968160"
+   ]
+  }
+ ],
+ "amity substation, North Carolina": [],
+ "amity substation, South Carolina": [],
+ "amity, North Carolina": [
+  {
+   "place_id": 340344273,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 154080163,
+   "lat": "35.6973612",
+   "lon": "-80.7734041",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.13336833524071104,
+   "addresstype": "hamlet",
+   "name": "Amity Hill",
+   "display_name": "Amity Hill, Iredell County, North Carolina, 27013, United States",
+   "boundingbox": [
+    "35.6773612",
+    "35.7173612",
+    "-80.7934041",
+    "-80.7534041"
+   ]
+  },
+  {
+   "place_id": 340737088,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1163453574,
+   "lat": "35.1949619",
+   "lon": "-80.7718553",
+   "category": "place",
+   "type": "neighbourhood",
+   "place_rank": 24,
+   "importance": 0.08007101625085829,
+   "addresstype": "neighbourhood",
+   "name": "Amity Garden",
+   "display_name": "Amity Garden, Eastfield, Charlotte, Mecklenburg County, North Carolina, United States",
+   "boundingbox": [
+    "35.1903371",
+    "35.1994953",
+    "-80.7770218",
+    "-80.7677006"
+   ]
+  },
+  {
+   "place_id": 340757941,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1133270300,
+   "lat": "35.1798319",
+   "lon": "-80.7808263",
+   "category": "landuse",
+   "type": "residential",
+   "place_rank": 24,
+   "importance": 0.08007101625085829,
+   "addresstype": "residential",
+   "name": "Amity Place",
+   "display_name": "Amity Place, Castleton Gardens, Charlotte, Mecklenburg County, North Carolina, United States",
+   "boundingbox": [
+    "35.1782776",
+    "35.1814044",
+    "-80.7817489",
+    "-80.7794410"
+   ]
+  },
+  {
+   "place_id": 341069110,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 16665493,
+   "lat": "35.2305541",
+   "lon": "-80.7396612",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.053404349584191615,
+   "addresstype": "road",
+   "name": "Amity Court",
+   "display_name": "Amity Court, Hickory Grove, Charlotte, Mecklenburg County, North Carolina, 28215, United States",
+   "boundingbox": [
+    "35.2301660",
+    "35.2311340",
+    "-80.7407840",
+    "-80.7384310"
+   ]
+  },
+  {
+   "place_id": 340815956,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 648297621,
+   "lat": "35.2023114",
+   "lon": "-80.7605989",
+   "category": "highway",
+   "type": "secondary",
+   "place_rank": 26,
+   "importance": 0.053404349584191615,
+   "addresstype": "road",
+   "name": "North Sharon Amity Road",
+   "display_name": "North Sharon Amity Road, Eastland, Charlotte, Mecklenburg County, North Carolina, 28205, United States",
+   "boundingbox": [
+    "35.2017419",
+    "35.2028382",
+    "-80.7606585",
+    "-80.7604358"
+   ]
+  }
+ ],
+ "amity, South Carolina": [
+  {
+   "place_id": 343191429,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 318096034,
+   "lat": "33.5030083",
+   "lon": "-81.7152144",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05339075989929042,
+   "addresstype": "road",
+   "name": "Amity Lane Southwest",
+   "display_name": "Amity Lane Southwest, Aiken, Aiken County, South Carolina, 29803, United States",
+   "boundingbox": [
+    "33.5028667",
+    "33.5032808",
+    "-81.7155652",
+    "-81.7149194"
+   ]
+  },
+  {
+   "place_id": 342037578,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12554766,
+   "lat": "35.0143723",
+   "lon": "-81.2713669",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05338531395437549,
+   "addresstype": "road",
+   "name": "Amity Drive",
+   "display_name": "Amity Drive, York County, South Carolina, 29745, United States",
+   "boundingbox": [
+    "35.0127830",
+    "35.0157380",
+    "-81.2719140",
+    "-81.2708140"
+   ]
+  },
+  {
+   "place_id": 342209573,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12561485,
+   "lat": "35.0275033",
+   "lon": "-82.0098952",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.053378589303425615,
+   "addresstype": "road",
+   "name": "Amity Lane",
+   "display_name": "Amity Lane, Spartanburg County, South Carolina, 29316, United States",
+   "boundingbox": [
+    "35.0266943",
+    "35.0286110",
+    "-82.0107510",
+    "-82.0097410"
+   ]
+  },
+  {
+   "place_id": 341833801,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12164789,
+   "lat": "35.1097244",
+   "lon": "-81.6082040",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.053370834668497714,
+   "addresstype": "road",
+   "name": "Amity Drive",
+   "display_name": "Amity Drive, Cherokee County, South Carolina, 29341, United States",
+   "boundingbox": [
+    "35.1088090",
+    "35.1106210",
+    "-81.6084400",
+    "-81.6075010"
+   ]
+  },
+  {
+   "place_id": 341264459,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 922333662,
+   "lat": "34.4914915",
+   "lon": "-82.5694132",
+   "category": "highway",
+   "type": "tertiary",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Amity Road",
+   "display_name": "Amity Road, Meadow Brook, Anderson County, South Carolina, 29621, United States",
+   "boundingbox": [
+    "34.4840000",
+    "34.4985259",
+    "-82.5756291",
+    "-82.5630510"
+   ]
+  }
+ ],
+ "mine shaft retail substation, North Carolina": [],
+ "mine shaft retail substation, South Carolina": [],
+ "mine shaft retail, North Carolina": [],
+ "mine shaft retail, South Carolina": [],
+ "mcguire nuclear substation, North Carolina": [],
+ "mcguire nuclear substation, South Carolina": [],
+ "mcguire nuclear, North Carolina": [
+  {
+   "place_id": 340172114,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 861200493,
+   "lat": "35.4312892",
+   "lon": "-80.9475254",
+   "category": "landuse",
+   "type": "industrial",
+   "place_rank": 24,
+   "importance": 0.40790851255351646,
+   "addresstype": "industrial",
+   "name": "McGuire Nuclear Station",
+   "display_name": "McGuire Nuclear Station, Mecklenburg County, North Carolina, United States",
+   "boundingbox": [
+    "35.4280415",
+    "35.4357397",
+    "-80.9538961",
+    "-80.9410000"
+   ]
+  },
+  {
+   "place_id": 337587238,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 16699670,
+   "lat": "35.4330350",
+   "lon": "-80.9433177",
+   "category": "highway",
+   "type": "unclassified",
+   "place_rank": 26,
+   "importance": 0.053370834668497714,
+   "addresstype": "road",
+   "name": "McGuire Nuclear Stat Road",
+   "display_name": "McGuire Nuclear Stat Road, McGuire Nuclear Station, Mecklenburg County, North Carolina, 28165, United States",
+   "boundingbox": [
+    "35.4324140",
+    "35.4337030",
+    "-80.9440990",
+    "-80.9425800"
+   ]
+  },
+  {
+   "place_id": 341562275,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 159200823,
+   "lat": "35.4273598",
+   "lon": "-80.9407427",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.053370834668497714,
+   "addresstype": "road",
+   "name": "McGuire Nuclear Station Road",
+   "display_name": "McGuire Nuclear Station Road, Huntersville, Mecklenburg County, North Carolina, 28165, United States",
+   "boundingbox": [
+    "35.4269902",
+    "35.4277870",
+    "-80.9409815",
+    "-80.9406470"
+   ]
+  },
+  {
+   "place_id": 341450298,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 16699672,
+   "lat": "35.4279270",
+   "lon": "-80.9406657",
+   "category": "highway",
+   "type": "unclassified",
+   "place_rank": 26,
+   "importance": 0.053370834668497714,
+   "addresstype": "road",
+   "name": "McGuire Nuclear Stat Road",
+   "display_name": "McGuire Nuclear Stat Road, Huntersville, Mecklenburg County, North Carolina, 28165, United States",
+   "boundingbox": [
+    "35.4277870",
+    "35.4280660",
+    "-80.9406920",
+    "-80.9406470"
+   ]
+  },
+  {
+   "place_id": 337339110,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 159201394,
+   "lat": "35.4250104",
+   "lon": "-80.9423301",
+   "category": "highway",
+   "type": "service",
+   "place_rank": 27,
+   "importance": 0.040037501335164406,
+   "addresstype": "road",
+   "name": "McGuire Nuclear Station Road",
+   "display_name": "McGuire Nuclear Station Road, Mecklenburg County, North Carolina, 28165, United States",
+   "boundingbox": [
+    "35.4239504",
+    "35.4269902",
+    "-80.9444334",
+    "-80.9409815"
+   ]
+  }
+ ],
+ "mcguire nuclear, South Carolina": [],
+ "oak hollow substation, North Carolina": [],
+ "oak hollow substation, South Carolina": [],
+ "oak hollow, North Carolina": [
+  {
+   "place_id": 345793323,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 195771,
+   "lat": "36.0209231",
+   "lon": "-79.9933547",
+   "category": "water",
+   "type": "lake",
+   "place_rank": 20,
+   "importance": 0.13339487067978942,
+   "addresstype": "lake",
+   "name": "Oak Hollow Lake",
+   "display_name": "Oak Hollow Lake, High Point, Guilford County, North Carolina, United States",
+   "boundingbox": [
+    "35.9945040",
+    "36.0473374",
+    "-80.0198850",
+    "-79.9783956"
+   ]
+  },
+  {
+   "place_id": 341039736,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 10058736002,
+   "lat": "36.0167883",
+   "lon": "-80.0032266",
+   "category": "waterway",
+   "type": "dock",
+   "place_rank": 20,
+   "importance": 0.13339487067978942,
+   "addresstype": "dock",
+   "name": "Oak Hollow Dock",
+   "display_name": "Oak Hollow Dock, High Point, Guilford County, North Carolina, 27265, United States",
+   "boundingbox": [
+    "36.0167383",
+    "36.0168383",
+    "-80.0032766",
+    "-80.0031766"
+   ]
+  },
+  {
+   "place_id": 339466723,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 154300989,
+   "lat": "36.0354146",
+   "lon": "-80.0053172",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.13336833524071104,
+   "addresstype": "hamlet",
+   "name": "Oak Hollow Lake",
+   "display_name": "Oak Hollow Lake, High Point, Guilford County, North Carolina, 27265, United States",
+   "boundingbox": [
+    "36.0154146",
+    "36.0554146",
+    "-80.0253172",
+    "-79.9853172"
+   ]
+  },
+  {
+   "place_id": 338059843,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 12214920804,
+   "lat": "36.1687259",
+   "lon": "-80.3170987",
+   "category": "place",
+   "type": "neighbourhood",
+   "place_rank": 24,
+   "importance": 0.08006560692759591,
+   "addresstype": "neighbourhood",
+   "name": "Old Hollow Oak Estates",
+   "display_name": "Old Hollow Oak Estates, Winston-Salem, Forsyth County, North Carolina, 27010, United States",
+   "boundingbox": [
+    "36.1587259",
+    "36.1787259",
+    "-80.3270987",
+    "-80.3070987"
+   ]
+  },
+  {
+   "place_id": 338062699,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 111222,
+   "lat": "36.0108542",
+   "lon": "-79.9974531",
+   "category": "leisure",
+   "type": "park",
+   "place_rank": 24,
+   "importance": 0.08006153734645606,
+   "addresstype": "park",
+   "name": "Oak Hollow Park",
+   "display_name": "Oak Hollow Park, High Point, Guilford County, North Carolina, United States",
+   "boundingbox": [
+    "36.0064349",
+    "36.0152515",
+    "-80.0105328",
+    "-79.9909657"
+   ]
+  }
+ ],
+ "oak hollow, South Carolina": [
+  {
+   "place_id": 341138867,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 154166434,
+   "lat": "34.9437277",
+   "lon": "-82.3692853",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.13336833524071104,
+   "addresstype": "hamlet",
+   "name": "Oak Hollow",
+   "display_name": "Oak Hollow, Greenville County, South Carolina, 29698, United States",
+   "boundingbox": [
+    "34.9237277",
+    "34.9637277",
+    "-82.3892853",
+    "-82.3492853"
+   ]
+  },
+  {
+   "place_id": 341162511,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12108036,
+   "lat": "34.5954343",
+   "lon": "-82.6999564",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.053369339284351835,
+   "addresstype": "road",
+   "name": "Oak Hollow",
+   "display_name": "Oak Hollow, North Forest Estates, Anderson County, South Carolina, 29677, United States",
+   "boundingbox": [
+    "34.5954090",
+    "34.5963540",
+    "-82.7021170",
+    "-82.6975690"
+   ]
+  }
+ ],
+ "mebane substation, North Carolina": [],
+ "mebane substation, South Carolina": [],
+ "mebane, North Carolina": [
+  {
+   "place_id": 346281364,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 179973,
+   "lat": "36.0959715",
+   "lon": "-79.2669619",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 16,
+   "importance": 0.39542339164457335,
+   "addresstype": "town",
+   "name": "Mebane",
+   "display_name": "Mebane, Alamance County, North Carolina, United States",
+   "boundingbox": [
+    "36.0572140",
+    "36.1353230",
+    "-79.3198470",
+    "-79.2241500"
+   ]
+  }
+ ],
+ "mebane, South Carolina": [
+  {
+   "place_id": 345683990,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 242126871,
+   "lat": "36.0966207",
+   "lon": "-79.2714544",
+   "category": "amenity",
+   "type": "library",
+   "place_rank": 30,
+   "importance": 4.5979247730174985e-05,
+   "addresstype": "amenity",
+   "name": "Alamance County Public Library - Mebane Campus",
+   "display_name": "Alamance County Public Library - Mebane Campus, 101, South 1st Street, Mebane, Alamance County, North Carolina, 27302, United States",
+   "boundingbox": [
+    "36.0964663",
+    "36.0968304",
+    "-79.2716225",
+    "-79.2712461"
+   ]
+  },
+  {
+   "place_id": 343173050,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 357786357,
+   "lat": "36.0887493",
+   "lon": "-79.2752954",
+   "category": "amenity",
+   "type": "school",
+   "place_rank": 30,
+   "importance": 4.5979247730174985e-05,
+   "addresstype": "amenity",
+   "name": "South Mebane School",
+   "display_name": "South Mebane School, South 2nd Street, Buena Vista Estates, Mebane, Alamance County, North Carolina, 27302, United States",
+   "boundingbox": [
+    "36.0886993",
+    "36.0887993",
+    "-79.2753454",
+    "-79.2752454"
+   ]
+  },
+  {
+   "place_id": 346500579,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 4208077492,
+   "lat": "36.0943731",
+   "lon": "-79.2652561",
+   "category": "tourism",
+   "type": "attraction",
+   "place_rank": 30,
+   "importance": 4.5979247730174985e-05,
+   "addresstype": "tourism",
+   "name": "Buffaloe Lanes Mebane",
+   "display_name": "Buffaloe Lanes Mebane, South 7th Street, Mebane, Alamance County, North Carolina, 27302, United States",
+   "boundingbox": [
+    "36.0943231",
+    "36.0944231",
+    "-79.2653061",
+    "-79.2652061"
+   ]
+  },
+  {
+   "place_id": 342926475,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 795324771,
+   "lat": "36.0752159",
+   "lon": "-79.3002025",
+   "category": "building",
+   "type": "commercial",
+   "place_rank": 30,
+   "importance": 3.500190737769158e-05,
+   "addresstype": "building",
+   "name": "Fresenius Kidney Care Mebane",
+   "display_name": "Fresenius Kidney Care Mebane, 1410, South 3rd Street, Mebane, Alamance County, North Carolina, 27302, United States",
+   "boundingbox": [
+    "36.0751046",
+    "36.0753086",
+    "-79.3005083",
+    "-79.2998979"
+   ]
+  }
+ ],
+ "stonewater substation, North Carolina": [],
+ "stonewater substation, South Carolina": [],
+ "stonewater, North Carolina": [
+  {
+   "place_id": 345013453,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1091124962,
+   "lat": "35.8467725",
+   "lon": "-78.9071507",
+   "category": "place",
+   "type": "neighbourhood",
+   "place_rank": 24,
+   "importance": 0.08006191119249254,
+   "addresstype": "neighbourhood",
+   "name": "Stonewater",
+   "display_name": "Stonewater, Cary, Wake County, North Carolina, United States",
+   "boundingbox": [
+    "35.8425764",
+    "35.8511985",
+    "-78.9149819",
+    "-78.8990410"
+   ]
+  },
+  {
+   "place_id": 342082325,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1379127160,
+   "lat": "35.3546840",
+   "lon": "-80.9636933",
+   "category": "place",
+   "type": "neighbourhood",
+   "place_rank": 24,
+   "importance": 0.08004422446021207,
+   "addresstype": "neighbourhood",
+   "name": "Stonewater",
+   "display_name": "Stonewater, Mount Holly, Gaston County, North Carolina, United States",
+   "boundingbox": [
+    "35.3480969",
+    "35.3615024",
+    "-80.9695816",
+    "-80.9462893"
+   ]
+  }
+ ],
+ "stonewater, South Carolina": [
+  {
+   "place_id": 341449517,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12455980,
+   "lat": "34.6973074",
+   "lon": "-82.2456573",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05336333485923549,
+   "addresstype": "road",
+   "name": "Stonewater Drive",
+   "display_name": "Stonewater Drive, Fairview Lake, Greenville County, South Carolina, 29680, United States",
+   "boundingbox": [
+    "34.6955340",
+    "34.6988260",
+    "-82.2464370",
+    "-82.2455990"
+   ]
+  },
+  {
+   "place_id": 339077047,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 235548217,
+   "lat": "34.9316453",
+   "lon": "-80.8517765",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05336333485923549,
+   "addresstype": "road",
+   "name": "Stonewater Court",
+   "display_name": "Stonewater Court, Sun City Carolina Lakes, Lancaster County, South Carolina, 29707, United States",
+   "boundingbox": [
+    "34.9312390",
+    "34.9320515",
+    "-80.8518862",
+    "-80.8516668"
+   ]
+  }
+ ],
+ "westfork substation, North Carolina": [],
+ "westfork substation, South Carolina": [],
+ "westfork, North Carolina": [
+  {
+   "place_id": 343995650,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 16519401,
+   "lat": "35.0094950",
+   "lon": "-78.9850459",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05339571602960247,
+   "addresstype": "road",
+   "name": "Westfork Drive",
+   "display_name": "Westfork Drive, Arran Lakes West, Fayetteville, Cumberland County, North Carolina, 28304, United States",
+   "boundingbox": [
+    "35.0079870",
+    "35.0107420",
+    "-78.9859170",
+    "-78.9849330"
+   ]
+  },
+  {
+   "place_id": 343628761,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 16595611,
+   "lat": "35.9981070",
+   "lon": "-79.9781606",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05339487067978939,
+   "addresstype": "road",
+   "name": "Westfork Lane",
+   "display_name": "Westfork Lane, High Point, Guilford County, North Carolina, 27265, United States",
+   "boundingbox": [
+    "35.9980978",
+    "35.9981162",
+    "-79.9787673",
+    "-79.9775539"
+   ]
+  },
+  {
+   "place_id": 341186616,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 301664194,
+   "lat": "35.5803228",
+   "lon": "-80.5121681",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Westfork Drive",
+   "display_name": "Westfork Drive, Rowan County, North Carolina, 28416, United States",
+   "boundingbox": [
+    "35.5792055",
+    "35.5806029",
+    "-80.5131071",
+    "-80.5120292"
+   ]
+  },
+  {
+   "place_id": 340507437,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 16643511,
+   "lat": "35.4245684",
+   "lon": "-81.2560336",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.053362097352559666,
+   "addresstype": "road",
+   "name": "Westfork Trail",
+   "display_name": "Westfork Trail, Laboratory, Lincoln County, North Carolina, 28092, United States",
+   "boundingbox": [
+    "35.4227910",
+    "35.4265143",
+    "-81.2580282",
+    "-81.2539170"
+   ]
+  },
+  {
+   "place_id": 346218284,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 16582332,
+   "lat": "36.1816115",
+   "lon": "-77.7533195",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.0533433333333333,
+   "addresstype": "road",
+   "name": "Westfork Lane",
+   "display_name": "Westfork Lane, Halifax County, North Carolina, 27823, United States",
+   "boundingbox": [
+    "36.1815493",
+    "36.1816888",
+    "-77.7540683",
+    "-77.7525716"
+   ]
+  }
+ ],
+ "westfork, South Carolina": [
+  {
+   "place_id": 339726293,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12491857,
+   "lat": "33.8771012",
+   "lon": "-81.3587667",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.0533433333333333,
+   "addresstype": "road",
+   "name": "Westfork Road",
+   "display_name": "Westfork Road, Lexington County, South Carolina, 29054, United States",
+   "boundingbox": [
+    "33.8752050",
+    "33.8780660",
+    "-81.3633060",
+    "-81.3545600"
+   ]
+  }
+ ],
+ "winecoff substation, North Carolina": [],
+ "winecoff substation, South Carolina": [],
+ "winecoff, North Carolina": [
+  {
+   "place_id": 340768722,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1499906233,
+   "lat": "35.4354852",
+   "lon": "-80.6227357",
+   "category": "place",
+   "type": "neighbourhood",
+   "place_rank": 24,
+   "importance": 0.08005996719310289,
+   "addresstype": "neighbourhood",
+   "name": "Villas at Winecoff",
+   "display_name": "Villas at Winecoff, Concord, Cabarrus County, North Carolina, United States",
+   "boundingbox": [
+    "35.4340909",
+    "35.4368860",
+    "-80.6250230",
+    "-80.6179923"
+   ]
+  },
+  {
+   "place_id": 340831340,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 16437994,
+   "lat": "35.4230892",
+   "lon": "-80.5997781",
+   "category": "highway",
+   "type": "tertiary",
+   "place_rank": 26,
+   "importance": 0.05339330052643622,
+   "addresstype": "road",
+   "name": "Winecoff Avenue Northwest",
+   "display_name": "Winecoff Avenue Northwest, Gibson Village, Wil-Mar Park, Concord, Cabarrus County, North Carolina, 28026, United States",
+   "boundingbox": [
+    "35.4214360",
+    "35.4258917",
+    "-80.6045692",
+    "-80.5955404"
+   ]
+  },
+  {
+   "place_id": 340823028,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 466001216,
+   "lat": "35.4199095",
+   "lon": "-80.6071395",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05339330052643622,
+   "addresstype": "road",
+   "name": "Winecoff Avenue Northwest",
+   "display_name": "Winecoff Avenue Northwest, Sidestown-Shankletown, Wil-Mar Park, Concord, Cabarrus County, North Carolina, 28026, United States",
+   "boundingbox": [
+    "35.4186440",
+    "35.4211750",
+    "-80.6092530",
+    "-80.6050260"
+   ]
+  },
+  {
+   "place_id": 340823056,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 689086205,
+   "lat": "35.4376543",
+   "lon": "-80.6254718",
+   "category": "highway",
+   "type": "tertiary",
+   "place_rank": 26,
+   "importance": 0.05339330052643622,
+   "addresstype": "road",
+   "name": "Winecoff School Road",
+   "display_name": "Winecoff School Road, North Concord, Concord, Cabarrus County, North Carolina, 28027, United States",
+   "boundingbox": [
+    "35.4351516",
+    "35.4401427",
+    "-80.6258920",
+    "-80.6251388"
+   ]
+  },
+  {
+   "place_id": 340755950,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 467281391,
+   "lat": "35.4344900",
+   "lon": "-80.6233143",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05339330052643622,
+   "addresstype": "road",
+   "name": "Winecoff Woods Northwest Drive",
+   "display_name": "Winecoff Woods Northwest Drive, Villas at Winecoff, Concord, Cabarrus County, North Carolina, 28082, United States",
+   "boundingbox": [
+    "35.4344709",
+    "35.4351703",
+    "-80.6250535",
+    "-80.6220728"
+   ]
+  }
+ ],
+ "winecoff, South Carolina": [],
+ "conley substation, North Carolina": [],
+ "conley substation, South Carolina": [],
+ "conley, North Carolina": [
+  {
+   "place_id": 337999999,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 42848002,
+   "lat": "35.8124043",
+   "lon": "-82.0176482",
+   "category": "waterway",
+   "type": "stream",
+   "place_rank": 22,
+   "importance": 0.10670166857404438,
+   "addresstype": "stream",
+   "name": "Conley Branch",
+   "display_name": "Conley Branch, Sevier, McDowell County, North Carolina, United States",
+   "boundingbox": [
+    "35.8078530",
+    "35.8174370",
+    "-82.0203266",
+    "-82.0172220"
+   ]
+  },
+  {
+   "place_id": 341600254,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 42818123,
+   "lat": "35.8191701",
+   "lon": "-82.0215108",
+   "category": "waterway",
+   "type": "stream",
+   "place_rank": 22,
+   "importance": 0.10670166857404438,
+   "addresstype": "stream",
+   "name": "Conley Branch",
+   "display_name": "Conley Branch, McDowell County, North Carolina, United States",
+   "boundingbox": [
+    "35.8172720",
+    "35.8219780",
+    "-82.0244660",
+    "-82.0182260"
+   ]
+  },
+  {
+   "place_id": 337867523,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 43371236,
+   "lat": "35.1573361",
+   "lon": "-83.5816711",
+   "category": "waterway",
+   "type": "stream",
+   "place_rank": 22,
+   "importance": 0.10667666666666664,
+   "addresstype": "stream",
+   "name": "Conley Camp Branch",
+   "display_name": "Conley Camp Branch, Macon County, North Carolina, United States",
+   "boundingbox": [
+    "35.1546464",
+    "35.1622030",
+    "-83.5858323",
+    "-83.5806410"
+   ]
+  },
+  {
+   "place_id": 336923360,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1152795905,
+   "lat": "36.1823119",
+   "lon": "-81.9789288",
+   "category": "landuse",
+   "type": "cemetery",
+   "place_rank": 24,
+   "importance": 0.08003955825131606,
+   "addresstype": "cemetery",
+   "name": "Conley Hicks Cemetery",
+   "display_name": "Conley Hicks Cemetery, Avery County, North Carolina, United States",
+   "boundingbox": [
+    "36.1821620",
+    "36.1825502",
+    "-81.9790552",
+    "-81.9787932"
+   ]
+  },
+  {
+   "place_id": 346839023,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 625350147,
+   "lat": "34.9353838",
+   "lon": "-77.6283910",
+   "category": "landuse",
+   "type": "residential",
+   "place_rank": 24,
+   "importance": 0.08003500190737771,
+   "addresstype": "residential",
+   "name": "Conley Hills",
+   "display_name": "Conley Hills, Haw Branch, Onslow County, North Carolina, United States",
+   "boundingbox": [
+    "34.9341612",
+    "34.9368834",
+    "-77.6297285",
+    "-77.6276203"
+   ]
+  }
+ ],
+ "conley, South Carolina": [
+  {
+   "place_id": 343448044,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 45831483,
+   "lat": "33.0285227",
+   "lon": "-80.1097496",
+   "category": "leisure",
+   "type": "park",
+   "place_rank": 24,
+   "importance": 0.08004810177767602,
+   "addresstype": "park",
+   "name": "Tom Conley Park",
+   "display_name": "Tom Conley Park, Ladson, Berkeley County, South Carolina, United States",
+   "boundingbox": [
+    "33.0266562",
+    "33.0301675",
+    "-80.1115044",
+    "-80.1088125"
+   ]
+  },
+  {
+   "place_id": 337508105,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12550594,
+   "lat": "34.9297545",
+   "lon": "-81.9202835",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05339350194552526,
+   "addresstype": "road",
+   "name": "Conley Street",
+   "display_name": "Conley Street, Roslyn Shores, Spartanburg, Spartanburg County, South Carolina, 29306, United States",
+   "boundingbox": [
+    "34.9293460",
+    "34.9301733",
+    "-81.9211820",
+    "-81.9193896"
+   ]
+  },
+  {
+   "place_id": 343416669,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 45823714,
+   "lat": "33.0255619",
+   "lon": "-80.1106401",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05338143511100935,
+   "addresstype": "road",
+   "name": "Conley Cove Drive",
+   "display_name": "Conley Cove Drive, Ladson, Berkeley County, South Carolina, 29456, United States",
+   "boundingbox": [
+    "33.0254397",
+    "33.0256841",
+    "-80.1108696",
+    "-80.1104106"
+   ]
+  },
+  {
+   "place_id": 337822063,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12525432,
+   "lat": "34.8369583",
+   "lon": "-83.2089781",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Conley Road",
+   "display_name": "Conley Road, Whetstone, Oconee County, South Carolina, 29664, United States",
+   "boundingbox": [
+    "34.8322685",
+    "34.8472490",
+    "-83.2121785",
+    "-83.2016667"
+   ]
+  },
+  {
+   "place_id": 341863686,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12415767,
+   "lat": "34.7890713",
+   "lon": "-82.3758331",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Conley Street",
+   "display_name": "Conley Street, Belmont Heights, Gantt, Greenville County, South Carolina, 29605, United States",
+   "boundingbox": [
+    "34.7881280",
+    "34.7899710",
+    "-82.3763970",
+    "-82.3753210"
+   ]
+  }
+ ],
+ "castle hayne substation, North Carolina": [],
+ "castle hayne substation, South Carolina": [],
+ "castle hayne, North Carolina": [
+  {
+   "place_id": 344035488,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 177387,
+   "lat": "34.3548975",
+   "lon": "-77.9065508",
+   "category": "boundary",
+   "type": "statistical",
+   "place_rank": 25,
+   "importance": 0.33557113795112237,
+   "addresstype": "statistical",
+   "name": "Castle Hayne",
+   "display_name": "Castle Hayne, New Hanover County, North Carolina, United States",
+   "boundingbox": [
+    "34.3392300",
+    "34.3716880",
+    "-77.9210310",
+    "-77.8913560"
+   ]
+  },
+  {
+   "place_id": 344128823,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 158584492,
+   "lat": "34.3557241",
+   "lon": "-77.8999864",
+   "category": "place",
+   "type": "town",
+   "place_rank": 18,
+   "importance": 0.33557113795112237,
+   "addresstype": "town",
+   "name": "Castle Hayne",
+   "display_name": "Castle Hayne, New Hanover County, North Carolina, 28429, United States",
+   "boundingbox": [
+    "34.3157241",
+    "34.3957241",
+    "-77.9399864",
+    "-77.8599864"
+   ]
+  }
+ ],
+ "castle hayne, South Carolina": [],
+ "folkstone substation, North Carolina": [],
+ "folkstone substation, South Carolina": [],
+ "folkstone, North Carolina": [
+  {
+   "place_id": 344065177,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 158564856,
+   "lat": "34.5367495",
+   "lon": "-77.5045804",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.1333733340962844,
+   "addresstype": "hamlet",
+   "name": "Folkstone",
+   "display_name": "Folkstone, Onslow County, North Carolina, United States",
+   "boundingbox": [
+    "34.5167495",
+    "34.5567495",
+    "-77.5245804",
+    "-77.4845804"
+   ]
+  }
+ ],
+ "folkstone, South Carolina": [
+  {
+   "place_id": 340838309,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 541769184,
+   "lat": "34.9371422",
+   "lon": "-80.8013608",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.053375671778438966,
+   "addresstype": "road",
+   "name": "Folkstone Lane",
+   "display_name": "Folkstone Lane, Bent Creek, Lancaster County, South Carolina, 29707, United States",
+   "boundingbox": [
+    "34.9369764",
+    "34.9377272",
+    "-80.8022877",
+    "-80.8006679"
+   ]
+  },
+  {
+   "place_id": 340856661,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12517417,
+   "lat": "34.1046732",
+   "lon": "-80.9399408",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Folkstone Road",
+   "display_name": "Folkstone Road, Farrowoods, Richland County, South Carolina, 29223, United States",
+   "boundingbox": [
+    "34.0994185",
+    "34.1052091",
+    "-80.9417303",
+    "-80.9385308"
+   ]
+  },
+  {
+   "place_id": 341198160,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12410529,
+   "lat": "34.8135622",
+   "lon": "-82.4234519",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Folkstone Street",
+   "display_name": "Folkstone Street, Monte Carlo MHC, Chestnut Hills, Dunean, Greenville County, South Carolina, 29605, United States",
+   "boundingbox": [
+    "34.8112530",
+    "34.8136100",
+    "-82.4243190",
+    "-82.4210056"
+   ]
+  },
+  {
+   "place_id": 341253874,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12526059,
+   "lat": "34.8977536",
+   "lon": "-82.5584626",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Folkstone Court",
+   "display_name": "Folkstone Court, Beverly Hills, Pickens County, South Carolina, 29640, United States",
+   "boundingbox": [
+    "34.8972689",
+    "34.8985393",
+    "-82.5597265",
+    "-82.5570801"
+   ]
+  },
+  {
+   "place_id": 343295913,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12375693,
+   "lat": "32.9635129",
+   "lon": "-80.1816765",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Folkstone Way",
+   "display_name": "Folkstone Way, Ashborough East, Dorchester County, South Carolina, 29485, United States",
+   "boundingbox": [
+    "32.9629810",
+    "32.9636620",
+    "-80.1824650",
+    "-80.1810920"
+   ]
+  }
+ ],
+ "fayetteville dupont substation, North Carolina": [],
+ "fayetteville dupont substation, South Carolina": [],
+ "fayetteville dupont, North Carolina": [],
+ "fayetteville dupont, South Carolina": [],
+ "hope mills church st section substation, North Carolina": [],
+ "hope mills church st section substation, South Carolina": [],
+ "hope mills church st section, North Carolina": [],
+ "hope mills church st section, South Carolina": [],
+ "hill crest substation, North Carolina": [],
+ "hill crest substation, South Carolina": [],
+ "hill crest, North Carolina": [
+  {
+   "place_id": 342947682,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 158235017,
+   "lat": "35.3134878",
+   "lon": "-79.4164164",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.13336833524071104,
+   "addresstype": "hamlet",
+   "name": "Hill Crest",
+   "display_name": "Hill Crest, Carthage, Moore County, North Carolina, 29327, United States",
+   "boundingbox": [
+    "35.2934878",
+    "35.3334878",
+    "-79.4364164",
+    "-79.3964164"
+   ]
+  },
+  {
+   "place_id": 339119332,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 16566568,
+   "lat": "35.4433142",
+   "lon": "-83.9396595",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05336833524071104,
+   "addresstype": "road",
+   "name": "Hill Crest",
+   "display_name": "Hill Crest, Tapoco, Graham County, North Carolina, United States",
+   "boundingbox": [
+    "35.4428811",
+    "35.4435723",
+    "-83.9409030",
+    "-83.9383962"
+   ]
+  }
+ ],
+ "hill crest, South Carolina": [
+  {
+   "place_id": 344791649,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12331885,
+   "lat": "32.9145054",
+   "lon": "-80.6670901",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05338524528877695,
+   "addresstype": "road",
+   "name": "Hill Crest",
+   "display_name": "Hill Crest, Walterboro, Colleton County, South Carolina, 29488, United States",
+   "boundingbox": [
+    "32.9142921",
+    "32.9147214",
+    "-80.6677138",
+    "-80.6664654"
+   ]
+  }
+ ],
+ "southern pines substation, North Carolina": [],
+ "southern pines substation, South Carolina": [],
+ "southern pines, North Carolina": [
+  {
+   "place_id": 344398348,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 180010,
+   "lat": "35.1740471",
+   "lon": "-79.3922539",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 16,
+   "importance": 0.45839591610396974,
+   "addresstype": "town",
+   "name": "Southern Pines",
+   "display_name": "Southern Pines, Moore County, North Carolina, 28387, United States",
+   "boundingbox": [
+    "35.1299281",
+    "35.2548623",
+    "-79.4478870",
+    "-79.3632506"
+   ]
+  }
+ ],
+ "southern pines, South Carolina": [
+  {
+   "place_id": 340989237,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 715176208,
+   "lat": "34.9845495",
+   "lon": "-81.8358742",
+   "category": "place",
+   "type": "neighbourhood",
+   "place_rank": 24,
+   "importance": 0.08004168993667503,
+   "addresstype": "neighbourhood",
+   "name": "Southern Pines",
+   "display_name": "Southern Pines, Converse, Spartanburg County, South Carolina, United States",
+   "boundingbox": [
+    "34.9829836",
+    "34.9857415",
+    "-81.8379414",
+    "-81.8343941"
+   ]
+  },
+  {
+   "place_id": 341188204,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1364855158,
+   "lat": "34.8877916",
+   "lon": "-82.3088800",
+   "category": "landuse",
+   "type": "residential",
+   "place_rank": 24,
+   "importance": 0.08003500190737771,
+   "addresstype": "residential",
+   "name": "Southern Pines",
+   "display_name": "Southern Pines, Cunningham Acres, Taylors, Greenville County, South Carolina, United States",
+   "boundingbox": [
+    "34.8872865",
+    "34.8884913",
+    "-82.3100621",
+    "-82.3077227"
+   ]
+  }
+ ],
+ "milburnie substation, North Carolina": [],
+ "milburnie substation, South Carolina": [],
+ "milburnie, North Carolina": [
+  {
+   "place_id": 343976752,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 157584890,
+   "lat": "35.7985186",
+   "lon": "-78.5355607",
+   "category": "place",
+   "type": "suburb",
+   "place_rank": 19,
+   "importance": 0.14670416800183103,
+   "addresstype": "suburb",
+   "name": "Milburnie",
+   "display_name": "Milburnie, Wake County, North Carolina, 27620, United States",
+   "boundingbox": [
+    "35.7785186",
+    "35.8185186",
+    "-78.5555607",
+    "-78.5155607"
+   ]
+  }
+ ],
+ "milburnie, South Carolina": [],
+ "eastover substation, North Carolina": [],
+ "eastover, North Carolina": [
+  {
+   "place_id": 346871846,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 179834,
+   "lat": "35.0992190",
+   "lon": "-78.7882955",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 16,
+   "importance": 0.36902538090653614,
+   "addresstype": "city",
+   "name": "Eastover",
+   "display_name": "Eastover, Cumberland County, North Carolina, United States",
+   "boundingbox": [
+    "35.0626480",
+    "35.1357750",
+    "-78.8396550",
+    "-78.7409640"
+   ]
+  },
+  {
+   "place_id": 344891665,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 158351149,
+   "lat": "35.2746078",
+   "lon": "-77.5758019",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.13339276951247422,
+   "addresstype": "hamlet",
+   "name": "Eastover",
+   "display_name": "Eastover, Kinston, Lenoir County, North Carolina, 28501, United States",
+   "boundingbox": [
+    "35.2546078",
+    "35.2946078",
+    "-77.5958019",
+    "-77.5558019"
+   ]
+  },
+  {
+   "place_id": 345062369,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 158346048,
+   "lat": "35.0965534",
+   "lon": "-78.7839112",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.1333773395895323,
+   "addresstype": "hamlet",
+   "name": "Eastover",
+   "display_name": "Eastover, Cumberland County, North Carolina, United States",
+   "boundingbox": [
+    "35.0765534",
+    "35.1165534",
+    "-78.8039112",
+    "-78.7639112"
+   ]
+  },
+  {
+   "place_id": 341839592,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 154299900,
+   "lat": "35.1991751",
+   "lon": "-80.8189060",
+   "category": "place",
+   "type": "suburb",
+   "place_rank": 19,
+   "importance": 0.09078915819201436,
+   "addresstype": "suburb",
+   "name": "Eastover",
+   "display_name": "Eastover, Charlotte, Mecklenburg County, North Carolina, 28274, United States",
+   "boundingbox": [
+    "35.1791751",
+    "35.2191751",
+    "-80.8389060",
+    "-80.7989060"
+   ]
+  }
+ ],
+ "clayton industrial substation, North Carolina": [],
+ "clayton industrial substation, South Carolina": [],
+ "clayton industrial, North Carolina": [
+  {
+   "place_id": 342121133,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 10735222626,
+   "lat": "35.5491284",
+   "lon": "-78.3935953",
+   "category": "craft",
+   "type": "roofer",
+   "place_rank": 30,
+   "importance": 3.500190737769158e-05,
+   "addresstype": "craft",
+   "name": "Ready Roofing Company - Clayton NC",
+   "display_name": "Ready Roofing Company - Clayton NC, 228, Airport Industrial Drive, Whitley Heights, Clayton, Johnston County, North Carolina, 27520, United States",
+   "boundingbox": [
+    "35.5490784",
+    "35.5491784",
+    "-78.3936453",
+    "-78.3935453"
+   ]
+  },
+  {
+   "place_id": 344569051,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 254402683,
+   "lat": "35.5897262",
+   "lon": "-78.3872588",
+   "category": "shop",
+   "type": "car_repair",
+   "place_rank": 30,
+   "importance": 2.6000610360830357e-05,
+   "addresstype": "shop",
+   "name": "Central Carolina Auto Center Inc",
+   "display_name": "Central Carolina Auto Center Inc, 115, Uzzle Industrial Drive, Clayton, Johnston County, North Carolina, 27520, United States",
+   "boundingbox": [
+    "35.5896847",
+    "35.5897676",
+    "-78.3874705",
+    "-78.3870471"
+   ]
+  }
+ ],
+ "clayton industrial, South Carolina": [],
+ "selma substation, North Carolina": [],
+ "selma substation, South Carolina": [],
+ "selma, North Carolina": [
+  {
+   "place_id": 344362244,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 179029,
+   "lat": "35.5365485",
+   "lon": "-78.2844435",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 16,
+   "importance": 0.37154897114460894,
+   "addresstype": "town",
+   "name": "Selma",
+   "display_name": "Selma, Johnston County, North Carolina, United States",
+   "boundingbox": [
+    "35.5141250",
+    "35.5754480",
+    "-78.3348090",
+    "-78.2515590"
+   ]
+  }
+ ],
+ "selma, South Carolina": [
+  {
+   "place_id": 344834742,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 158357995,
+   "lat": "34.4454398",
+   "lon": "-79.3744908",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.13336833524071104,
+   "addresstype": "hamlet",
+   "name": "Selma",
+   "display_name": "Selma, Dillon County, South Carolina, 29536, United States",
+   "boundingbox": [
+    "34.4254398",
+    "34.4654398",
+    "-79.3944908",
+    "-79.3544908"
+   ]
+  }
+ ],
+ "holly ridge north substation, North Carolina": [],
+ "holly ridge north substation, South Carolina": [],
+ "holly ridge north, North Carolina": [
+  {
+   "place_id": 344232781,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 180210,
+   "lat": "34.4954448",
+   "lon": "-77.5549696",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 16,
+   "importance": 0.3618648643770844,
+   "addresstype": "town",
+   "name": "Holly Ridge",
+   "display_name": "Holly Ridge, Onslow County, North Carolina, United States",
+   "boundingbox": [
+    "34.4712250",
+    "34.5333470",
+    "-77.5719030",
+    "-77.4824220"
+   ]
+  }
+ ],
+ "holly ridge north, South Carolina": [],
+ "lof substation, North Carolina": [],
+ "lof substation, South Carolina": [],
+ "lof, North Carolina": [
+  {
+   "place_id": 341432642,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 241090892,
+   "lat": "35.4919281",
+   "lon": "-82.9866964",
+   "category": "shop",
+   "type": "clothes",
+   "place_rank": 30,
+   "importance": 5.737773708700721e-05,
+   "addresstype": "shop",
+   "name": "The Southern Lof",
+   "display_name": "The Southern Lof, 172, North Main Street, Waynesville, Haywood County, North Carolina, 28786, United States",
+   "boundingbox": [
+    "35.4918265",
+    "35.4919977",
+    "-82.9868394",
+    "-82.9864582"
+   ]
+  }
+ ],
+ "lof, South Carolina": [],
+ "brunswick substation, North Carolina": [],
+ "brunswick substation, South Carolina": [],
+ "brunswick, North Carolina": [
+  {
+   "place_id": 344710351,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 177329,
+   "lat": "34.2867996",
+   "lon": "-78.7011356",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 16,
+   "importance": 0.3359598069503246,
+   "addresstype": "village",
+   "name": "Brunswick",
+   "display_name": "Brunswick, Columbus County, North Carolina, 28424, United States",
+   "boundingbox": [
+    "34.2833020",
+    "34.3026490",
+    "-78.7158850",
+    "-78.6963750"
+   ]
+  },
+  {
+   "place_id": 346441488,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 316979051,
+   "lat": "34.0718195",
+   "lon": "-78.1914215",
+   "category": "place",
+   "type": "county",
+   "place_rank": 12,
+   "importance": 0.24000999999999997,
+   "addresstype": "county",
+   "name": "Brunswick",
+   "display_name": "Brunswick, North Carolina, United States",
+   "boundingbox": [
+    "33.3718195",
+    "34.7718195",
+    "-78.8914215",
+    "-77.4914215"
+   ]
+  },
+  {
+   "place_id": 344725050,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 2528677,
+   "lat": "34.0624283",
+   "lon": "-78.2443400",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 12,
+   "importance": 0.5517197519920137,
+   "addresstype": "county",
+   "name": "Brunswick County",
+   "display_name": "Brunswick County, North Carolina, United States",
+   "boundingbox": [
+    "33.7528780",
+    "34.3719761",
+    "-78.6509341",
+    "-77.8970110"
+   ]
+  }
+ ],
+ "brunswick, South Carolina": [
+  {
+   "place_id": 339415311,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12515289,
+   "lat": "34.0565078",
+   "lon": "-81.0078374",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.053400341039139355,
+   "addresstype": "road",
+   "name": "Brunswick Drive",
+   "display_name": "Brunswick Drive, Columbia, Richland County, South Carolina, 29203, United States",
+   "boundingbox": [
+    "34.0562125",
+    "34.0567470",
+    "-81.0087130",
+    "-81.0069842"
+   ]
+  },
+  {
+   "place_id": 341432570,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 327612432,
+   "lat": "34.8912003",
+   "lon": "-81.0422188",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.053391089494163387,
+   "addresstype": "road",
+   "name": "Brunswick Drive",
+   "display_name": "Brunswick Drive, Country Club Estates, Rock Hill, York County, South Carolina, 29730, United States",
+   "boundingbox": [
+    "34.8905550",
+    "34.8921567",
+    "-81.0439283",
+    "-81.0405131"
+   ]
+  },
+  {
+   "place_id": 344107582,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12086796,
+   "lat": "33.5142984",
+   "lon": "-81.7109186",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05339075989929042,
+   "addresstype": "road",
+   "name": "Brunswick Lane",
+   "display_name": "Brunswick Lane, Bonniview Estates, Millbrook Estates, Aiken County, South Carolina, 29803, United States",
+   "boundingbox": [
+    "33.5136451",
+    "33.5147610",
+    "-81.7113660",
+    "-81.7108930"
+   ]
+  },
+  {
+   "place_id": 344066508,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12396116,
+   "lat": "34.1843646",
+   "lon": "-79.8602634",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.05339068055237656,
+   "addresstype": "road",
+   "name": "South Brunswick Court",
+   "display_name": "South Brunswick Court, Oak Forest, Florence County, South Carolina, 29501, United States",
+   "boundingbox": [
+    "34.1841790",
+    "34.1845502",
+    "-79.8604764",
+    "-79.8600504"
+   ]
+  },
+  {
+   "place_id": 343571878,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 189369770,
+   "lat": "33.8797971",
+   "lon": "-78.5905838",
+   "category": "highway",
+   "type": "residential",
+   "place_rank": 26,
+   "importance": 0.053370834668497714,
+   "addresstype": "road",
+   "name": "Brunswick Circle",
+   "display_name": "Brunswick Circle, Little River, Horry County, South Carolina, 28467, United States",
+   "boundingbox": [
+    "33.8792613",
+    "33.8804159",
+    "-78.5912297",
+    "-78.5899659"
+   ]
+  }
+ ],
+ "delco substation, North Carolina": [],
+ "delco substation, South Carolina": [],
+ "delco, North Carolina": [
+  {
+   "place_id": 343564766,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 158644881,
+   "lat": "34.3157241",
+   "lon": "-78.2247211",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.13336833524071104,
+   "addresstype": "hamlet",
+   "name": "Delco",
+   "display_name": "Delco, Columbus County, North Carolina, 28456, United States",
+   "boundingbox": [
+    "34.2957241",
+    "34.3357241",
+    "-78.2447211",
+    "-78.2047211"
+   ]
+  }
+ ],
+ "delco, South Carolina": [
+  {
+   "place_id": 344729511,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 357814582,
+   "lat": "34.3129730",
+   "lon": "-78.2156810",
+   "category": "amenity",
+   "type": "post_office",
+   "place_rank": 30,
+   "importance": 3.500190737769158e-05,
+   "addresstype": "amenity",
+   "name": "Delco Post Office",
+   "display_name": "Delco Post Office, South Front Street, New Berlin, Columbus County, North Carolina, 28436, United States",
+   "boundingbox": [
+    "34.3129230",
+    "34.3130230",
+    "-78.2157310",
+    "-78.2156310"
+   ]
+  }
+ ],
+ "rtp substation, North Carolina": [],
+ "rtp substation, South Carolina": [],
+ "rtp, North Carolina": [
+  {
+   "place_id": 345332561,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 630286580,
+   "lat": "35.8575804",
+   "lon": "-78.8674769",
+   "category": "highway",
+   "type": "cycleway",
+   "place_rank": 27,
+   "importance": 0.04003000152590218,
+   "addresstype": "road",
+   "name": "RTP",
+   "display_name": "RTP, Research Triangle Park, Wake County, North Carolina, 27709, United States",
+   "boundingbox": [
+    "35.8571237",
+    "35.8579689",
+    "-78.8680810",
+    "-78.8668083"
+   ]
+  }
+ ],
+ "rtp, South Carolina": [
+  {
+   "place_id": 344456321,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 106183043,
+   "lat": "35.8878551",
+   "lon": "-78.8486570",
+   "category": "tourism",
+   "type": "hotel",
+   "place_rank": 30,
+   "importance": 6.708247501330613e-05,
+   "addresstype": "tourism",
+   "name": "Extended Stay America - Raleigh - RTP - 4919 Miami Blvd.",
+   "display_name": "Extended Stay America - Raleigh - RTP - 4919 Miami Blvd., 4919, South Miami Boulevard, Nelson, Durham, Durham County, North Carolina, 27703, United States",
+   "boundingbox": [
+    "35.8875392",
+    "35.8881596",
+    "-78.8488436",
+    "-78.8479998"
+   ]
+  },
+  {
+   "place_id": 343901945,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 821537284,
+   "lat": "35.9314842",
+   "lon": "-78.8439422",
+   "category": "building",
+   "type": "yes",
+   "place_rank": 30,
+   "importance": 6.708247501330613e-05,
+   "addresstype": "building",
+   "name": "GoDog - RTP",
+   "display_name": "GoDog - RTP, 2612, South Miami Boulevard, Brassfield, Durham, Durham County, North Carolina, 27703, United States",
+   "boundingbox": [
+    "35.9313851",
+    "35.9316259",
+    "-78.8442629",
+    "-78.8436214"
+   ]
+  },
+  {
+   "place_id": 343813548,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 4376959899,
+   "lat": "35.8946100",
+   "lon": "-78.8488351",
+   "category": "tourism",
+   "type": "hotel",
+   "place_rank": 30,
+   "importance": 6.708247501330613e-05,
+   "addresstype": "tourism",
+   "name": "Extended Stay America - Durham - RTP - Miami Blvd. - North",
+   "display_name": "Extended Stay America - Durham - RTP - Miami Blvd. - North, South Miami Boulevard, Nelson, Durham, Durham County, North Carolina, 27703, United States",
+   "boundingbox": [
+    "35.8945600",
+    "35.8946600",
+    "-78.8488851",
+    "-78.8487851"
+   ]
+  }
+ ],
+ "wilson substation, North Carolina": [],
+ "wilson substation, South Carolina": [],
+ "wilson, North Carolina": [
+  {
+   "place_id": 341807259,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 2528757,
+   "lat": "35.7059114",
+   "lon": "-77.9175714",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 12,
+   "importance": 0.5465483336740429,
+   "addresstype": "county",
+   "name": "Wilson County",
+   "display_name": "Wilson County, North Carolina, United States",
+   "boundingbox": [
+    "35.5728680",
+    "35.8684080",
+    "-78.1919334",
+    "-77.6679990"
+   ]
+  },
+  {
+   "place_id": 343379685,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 180339,
+   "lat": "35.7241718",
+   "lon": "-77.9115243",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 16,
+   "importance": 0.5264253029554175,
+   "addresstype": "city",
+   "name": "Wilson",
+   "display_name": "Wilson, Wilson County, North Carolina, United States",
+   "boundingbox": [
+    "35.6716500",
+    "35.8138570",
+    "-78.0401440",
+    "-77.8656110"
+   ]
+  }
+ ],
+ "wilson, South Carolina": [
+  {
+   "place_id": 344024873,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 154350313,
+   "lat": "33.6632190",
+   "lon": "-80.1184119",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.19619210675062,
+   "addresstype": "hamlet",
+   "name": "Wilson",
+   "display_name": "Wilson, Clarendon County, South Carolina, United States",
+   "boundingbox": [
+    "33.6432190",
+    "33.6832190",
+    "-80.1384119",
+    "-80.0984119"
+   ]
+  }
+ ],
+ "falls substation, North Carolina": [],
+ "falls substation, South Carolina": [],
+ "falls, North Carolina": [
+  {
+   "place_id": 340370350,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 157619154,
+   "lat": "35.9398724",
+   "lon": "-78.5794464",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.13337083466849772,
+   "addresstype": "hamlet",
+   "name": "Falls",
+   "display_name": "Falls, Wake County, North Carolina, 27895, United States",
+   "boundingbox": [
+    "35.9198724",
+    "35.9598724",
+    "-78.5994464",
+    "-78.5594464"
+   ]
+  }
+ ],
+ "falls, South Carolina": [
+  {
+   "place_id": 342448144,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 194023,
+   "lat": "34.5751447",
+   "lon": "-80.9020237",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 16,
+   "importance": 0.410690382019838,
+   "addresstype": "town",
+   "name": "Great Falls",
+   "display_name": "Great Falls, Chester County, South Carolina, 29055, United States",
+   "boundingbox": [
+    "34.5560850",
+    "34.5975620",
+    "-80.9283390",
+    "-80.8842980"
+   ]
+  },
+  {
+   "place_id": 340455970,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 192178,
+   "lat": "35.0090005",
+   "lon": "-81.9667361",
+   "category": "place",
+   "type": "locality",
+   "place_rank": 25,
+   "importance": 0.3728855590490345,
+   "addresstype": "locality",
+   "name": "Valley Falls",
+   "display_name": "Valley Falls, Spartanburg County, South Carolina, United States",
+   "boundingbox": [
+    "34.9892779",
+    "35.0289170",
+    "-82.0017022",
+    "-81.9372870"
+   ]
+  },
+  {
+   "place_id": 342615837,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 194105,
+   "lat": "34.0923375",
+   "lon": "-82.5956875",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 16,
+   "importance": 0.35892997054582615,
+   "addresstype": "town",
+   "name": "Calhoun Falls",
+   "display_name": "Calhoun Falls, Abbeville County, South Carolina, 29628, United States",
+   "boundingbox": [
+    "34.0767550",
+    "34.1138450",
+    "-82.6129950",
+    "-82.5780100"
+   ]
+  },
+  {
+   "place_id": 340518055,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 154125508,
+   "lat": "35.0648519",
+   "lon": "-81.5423152",
+   "category": "place",
+   "type": "hamlet",
+   "place_rank": 20,
+   "importance": 0.21080589711721126,
+   "addresstype": "hamlet",
+   "name": "Cherokee Falls",
+   "display_name": "Cherokee Falls, Cherokee County, South Carolina, United States",
+   "boundingbox": [
+    "35.0448519",
+    "35.0848519",
+    "-81.5623152",
+    "-81.5223152"
+   ]
+  },
+  {
+   "place_id": 342360299,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "node",
+   "osm_id": 446973982,
+   "lat": "35.1051610",
+   "lon": "-82.6610710",
+   "category": "waterway",
+   "type": "waterfall",
+   "place_rank": 20,
+   "importance": 0.13618373728802152,
+   "addresstype": "waterfall",
+   "name": "Raven Cliff Falls",
+   "display_name": "Raven Cliff Falls, Greenville County, South Carolina, United States",
+   "boundingbox": [
+    "35.1051110",
+    "35.1052110",
+    "-82.6611210",
+    "-82.6610210"
+   ]
+  }
+ ],
+ "franklinton franklinton substation, North Carolina": [],
+ "franklinton franklinton substation, South Carolina": [],
+ "franklinton franklinton, North Carolina": [
+  {
+   "place_id": 346220716,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 179710,
+   "lat": "36.1018163",
+   "lon": "-78.4580543",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 16,
+   "importance": 0.3629003094109262,
+   "addresstype": "village",
+   "name": "Franklinton",
+   "display_name": "Franklinton, Franklin County, North Carolina, 27525, United States",
+   "boundingbox": [
+    "36.0957970",
+    "36.1118360",
+    "-78.4667590",
+    "-78.4348860"
+   ]
+  },
+  {
+   "place_id": 346292435,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 38220372,
+   "lat": "36.1055427",
+   "lon": "-78.4733775",
+   "category": "water",
+   "type": "lake",
+   "place_rank": 20,
+   "importance": 0.13336833524071104,
+   "addresstype": "lake",
+   "name": "Franklinton Reservoir",
+   "display_name": "Franklinton Reservoir, Franklin County, North Carolina, United States",
+   "boundingbox": [
+    "36.1042910",
+    "36.1067787",
+    "-78.4754136",
+    "-78.4728233"
+   ]
+  },
+  {
+   "place_id": 346319023,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 432240695,
+   "lat": "36.1061162",
+   "lon": "-78.4730119",
+   "category": "waterway",
+   "type": "dam",
+   "place_rank": 20,
+   "importance": 0.13336833524071104,
+   "addresstype": "dam",
+   "name": "Franklinton Reservoir Dam",
+   "display_name": "Franklinton Reservoir Dam, Franklin County, North Carolina, 27525, United States",
+   "boundingbox": [
+    "36.1057007",
+    "36.1064602",
+    "-78.4733082",
+    "-78.4728233"
+   ]
+  }
+ ],
+ "franklinton franklinton, South Carolina": [],
+ "franklinton novo substation, North Carolina": [],
+ "franklinton novo substation, South Carolina": [],
+ "franklinton novo, North Carolina": [],
+ "franklinton novo, South Carolina": [],
+ "asheville substation, North Carolina": [],
+ "asheville substation, South Carolina": [],
+ "asheville, North Carolina": [
+  {
+   "place_id": 341503317,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "relation",
+   "osm_id": 180348,
+   "lat": "35.5953630",
+   "lon": "-82.5508407",
+   "category": "boundary",
+   "type": "administrative",
+   "place_rank": 16,
+   "importance": 0.5924464204509101,
+   "addresstype": "city",
+   "name": "Asheville",
+   "display_name": "Asheville, Buncombe County, North Carolina, United States",
+   "boundingbox": [
+    "35.4164642",
+    "35.6560763",
+    "-82.6703643",
+    "-82.4604691"
+   ]
+  }
+ ],
+ "asheville, South Carolina": [
+  {
+   "place_id": 341018203,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1038904914,
+   "lat": "34.9807917",
+   "lon": "-81.9665756",
+   "category": "landuse",
+   "type": "retail",
+   "place_rank": 24,
+   "importance": 0.08003513160906382,
+   "addresstype": "retail",
+   "name": "Asheville Highway Commons",
+   "display_name": "Asheville Highway Commons, Ridgewood Heights, Hilltop, Spartanburg County, South Carolina, United States",
+   "boundingbox": [
+    "34.9803420",
+    "34.9812203",
+    "-81.9670947",
+    "-81.9659700"
+   ]
+  },
+  {
+   "place_id": 340985896,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1365265980,
+   "lat": "34.9683944",
+   "lon": "-81.9507306",
+   "category": "highway",
+   "type": "primary",
+   "place_rank": 26,
+   "importance": 0.05339350194552526,
+   "addresstype": "road",
+   "name": "Asheville Highway",
+   "display_name": "Asheville Highway, Spartanburg, Spartanburg County, South Carolina, 29304, United States",
+   "boundingbox": [
+    "34.9674893",
+    "34.9693029",
+    "-81.9517854",
+    "-81.9496729"
+   ]
+  },
+  {
+   "place_id": 341038360,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 12564576,
+   "lat": "34.9622461",
+   "lon": "-81.9434345",
+   "category": "highway",
+   "type": "primary",
+   "place_rank": 26,
+   "importance": 0.05339350194552526,
+   "addresstype": "road",
+   "name": "Asheville Highway",
+   "display_name": "Asheville Highway, Spartanburg, Spartanburg County, South Carolina, 29303, United States",
+   "boundingbox": [
+    "34.9616495",
+    "34.9627830",
+    "-81.9442157",
+    "-81.9426966"
+   ]
+  },
+  {
+   "place_id": 341048840,
+   "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+   "osm_type": "way",
+   "osm_id": 1420687436,
+   "lat": "34.9694010",
+   "lon": "-81.9518977",
+   "category": "highway",
+   "type": "primary",
+   "place_rank": 26,
+   "importance": 0.05339350194552526,
+   "addresstype": "road",
+   "name": "Asheville Highway",
+   "display_name": "Asheville Highway, Hayne Station, Hilltop, Spartanburg County, South Carolina, 29304, United States",
+   "boundingbox": [
+    "34.9693029",
+    "34.9694991",
+    "-81.9520100",
+    "-81.9517854"
+   ]
+  }
  ]
 }

@@ -47,8 +47,10 @@ def line_miles(description):
 def compute():
     data = json.load(open(DATASET))
     projects = {p["project_id"]: p for p in data["desc_projects"] + data["gpc_projects"]}
+    # the estimate below is written for a DESC x Georgia Power pair (GPC costs are CEII-redacted)
     top = next(o for o in data["overlaps"]
-               if o["confidence"] == "confirmed" and projects[o["project_id_a"]].get("total_cost_usd"))
+               if o["confidence"] == "confirmed" and o["utility_b"] == "Georgia Power"
+               and projects[o["project_id_a"]].get("total_cost_usd"))
     desc, gpc = projects[top["project_id_a"]], projects[top["project_id_b"]]
     cost = desc["total_cost_usd"]
     miles = line_miles(desc.get("description"))
