@@ -34,10 +34,14 @@ export default function GridlockMap({
   projects,
   flagCountByProject,
   selectedOverlap,
+  hideUtility,
 }: {
   projects: Project[];
   flagCountByProject: Record<string, number>;
   selectedOverlap: { a: Project; b: Project } | null;
+  /** Omit this utility's row from the legend -- used on a company's own dashboard,
+   *  where only that company's projects are ever shown on the map anyway. */
+  hideUtility?: string;
 }) {
   const pair: [[number, number], [number, number]] | null = selectedOverlap
     ? [selectedOverlap.a.geo_center as [number, number], selectedOverlap.b.geo_center as [number, number]]
@@ -112,17 +116,19 @@ export default function GridlockMap({
         )}
         <FocusController pair={pair} />
       </MapContainer>
-      <MapLegend />
+      <MapLegend hideUtility={hideUtility} />
     </div>
   );
 }
 
-function MapLegend() {
+function MapLegend({ hideUtility }: { hideUtility?: string }) {
+  const showDesc = hideUtility !== "Dominion Energy South Carolina";
+  const showGpc = hideUtility !== "Georgia Power";
   return (
     <div className="absolute bottom-6 left-3 z-[1000] rounded-lg border border-[var(--border)] bg-[var(--panel)]/90 backdrop-blur-sm px-3 py-2.5 text-[11px] flex flex-col gap-1.5 shadow-lg">
       <div className="text-[9.5px] uppercase tracking-[0.1em] text-[var(--muted)] font-medium">Legend</div>
-      <LegendRow swatch={<Dot color={DESC_COLOR} />} label="DESC project" />
-      <LegendRow swatch={<Dot color={GPC_COLOR} />} label="Georgia Power project" />
+      {showDesc && <LegendRow swatch={<Dot color={DESC_COLOR} />} label="DESC project" />}
+      {showGpc && <LegendRow swatch={<Dot color={GPC_COLOR} />} label="Georgia Power project" />}
       <LegendRow swatch={<Dot color="var(--muted)" dashed />} label="Estimated location" />
       <LegendRow
         swatch={<span className="block w-3.5 h-3.5 rounded-full" style={{ border: `2px solid ${FLAG_COLOR}` }} />}

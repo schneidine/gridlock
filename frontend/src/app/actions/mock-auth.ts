@@ -19,5 +19,5 @@ export async function mockSignIn(formData: FormData) {
 export async function mockSignOut() {
   const cookieStore = await cookies();
   cookieStore.delete("gridlock_org");
-  redirect("/login");
+  redirect("/");
 }

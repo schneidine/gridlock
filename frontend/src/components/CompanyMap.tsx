@@ -7,6 +7,15 @@ import type { Project } from "@/lib/types";
 // server -- ssr:false is required here, not just an optimization.
 const GridlockMap = dynamic(() => import("@/components/GridlockMap"), { ssr: false });
 
-export default function CompanyMap({ projects }: { projects: Project[] }) {
-  return <GridlockMap projects={projects} flagCountByProject={{}} selectedOverlap={null} />;
+export default function CompanyMap({ projects, myUtilityName }: { projects: Project[]; myUtilityName: string }) {
+  const otherUtilityName =
+    myUtilityName === "Dominion Energy South Carolina" ? "Georgia Power" : "Dominion Energy South Carolina";
+  return (
+    <GridlockMap
+      projects={projects}
+      flagCountByProject={{}}
+      selectedOverlap={null}
+      hideUtility={otherUtilityName}
+    />
+  );
 }

@@ -48,7 +48,7 @@ export default async function DashboardPage() {
       </header>
       <div className="flex-1 min-h-0">
         {companyName ? (
-          <CompanyMap projects={projects} />
+          <CompanyMap projects={projects} myUtilityName={utilityName!} />
         ) : (
           <div className="h-full flex items-center justify-center text-[var(--muted)]">
             Sign in to see your company&apos;s sites.
